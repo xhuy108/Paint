@@ -9,6 +9,7 @@ namespace demo
             this.Width = 900;
             this.Height = 700;
             Bitmap bm = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+            // hello this is new change 
             
             g = Graphics.FromImage(bm);
             g.Clear(Color.White);

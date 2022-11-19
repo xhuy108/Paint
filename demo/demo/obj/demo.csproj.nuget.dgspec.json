@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\1.SCHOOL\\HK3\\LTTQ\\Paint\\Winform\\demo\\demo\\demo.csproj": {}
+    "D:\\1.SCHOOL\\HK3\\LTTQ\\Paint\\Winform\\demo\\demo\\demo\\demo.csproj": {}
   },
   "projects": {
-    "D:\\1.SCHOOL\\HK3\\LTTQ\\Paint\\Winform\\demo\\demo\\demo.csproj": {
+    "D:\\1.SCHOOL\\HK3\\LTTQ\\Paint\\Winform\\demo\\demo\\demo\\demo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\1.SCHOOL\\HK3\\LTTQ\\Paint\\Winform\\demo\\demo\\demo.csproj",
+        "projectUniqueName": "D:\\1.SCHOOL\\HK3\\LTTQ\\Paint\\Winform\\demo\\demo\\demo\\demo.csproj",
         "projectName": "demo",
-        "projectPath": "D:\\1.SCHOOL\\HK3\\LTTQ\\Paint\\Winform\\demo\\demo\\demo.csproj",
+        "projectPath": "D:\\1.SCHOOL\\HK3\\LTTQ\\Paint\\Winform\\demo\\demo\\demo\\demo.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\1.SCHOOL\\HK3\\LTTQ\\Paint\\Winform\\demo\\demo\\obj\\",
+        "outputPath": "D:\\1.SCHOOL\\HK3\\LTTQ\\Paint\\Winform\\demo\\demo\\demo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
