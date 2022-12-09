@@ -9,3 +9,19 @@ C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Project\WindowsFormsApp1\Windows
 C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Project\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Project\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Project\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Năm 2 - HK1\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Năm 2 - HK1\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Năm 2 - HK1\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Năm 2 - HK1\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Năm 2 - HK1\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Năm 2 - HK1\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Năm 2 - HK1\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Năm 2 - HK1\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Năm 2 - HK1\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Năm 2 - HK1\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.licenses
+C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Năm 2 - HK1\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Năm 2 - HK1\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Năm 2 - HK1\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Năm 2 - HK1\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Năm 2 - HK1\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.dll
+C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Năm 2 - HK1\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
