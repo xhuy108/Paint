@@ -32,36 +32,36 @@ namespace WindowsFormsApp1
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges31 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges32 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges33 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges34 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges35 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges36 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges37 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges38 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges39 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges40 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges41 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges42 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges43 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges44 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges45 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges46 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges47 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges48 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges49 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges50 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges51 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges52 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges53 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges54 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges55 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges56 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges57 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges58 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges59 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges60 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges13 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges14 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges15 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges16 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges17 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges18 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges19 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges20 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges21 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges22 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges23 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges24 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges25 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges26 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges27 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges28 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges29 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges30 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.importFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -217,6 +217,7 @@ namespace WindowsFormsApp1
             // importFileToolStripMenuItem
             // 
             this.importFileToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.importFileToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.importFileToolStripMenuItem.Name = "importFileToolStripMenuItem";
             this.importFileToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.importFileToolStripMenuItem.Text = "Import File";
@@ -224,6 +225,7 @@ namespace WindowsFormsApp1
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.openToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.openToolStripMenuItem.Text = "Open";
@@ -231,6 +233,7 @@ namespace WindowsFormsApp1
             // openRecentFileToolStripMenuItem
             // 
             this.openRecentFileToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.openRecentFileToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.openRecentFileToolStripMenuItem.Name = "openRecentFileToolStripMenuItem";
             this.openRecentFileToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.openRecentFileToolStripMenuItem.Text = "Open Recent File";
@@ -238,6 +241,7 @@ namespace WindowsFormsApp1
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.BackColor = System.Drawing.Color.DimGray;
+            this.toolStripMenuItem4.ForeColor = System.Drawing.Color.White;
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
             this.toolStripMenuItem4.Size = new System.Drawing.Size(224, 26);
             this.toolStripMenuItem4.Text = "Save";
@@ -245,6 +249,7 @@ namespace WindowsFormsApp1
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.BackColor = System.Drawing.Color.DimGray;
+            this.toolStripMenuItem3.ForeColor = System.Drawing.Color.White;
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
             this.toolStripMenuItem3.Size = new System.Drawing.Size(224, 26);
             this.toolStripMenuItem3.Text = "Import File";
@@ -252,6 +257,7 @@ namespace WindowsFormsApp1
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.BackColor = System.Drawing.Color.DimGray;
+            this.toolStripMenuItem2.ForeColor = System.Drawing.Color.White;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
             this.toolStripMenuItem2.Text = "New";
@@ -259,6 +265,7 @@ namespace WindowsFormsApp1
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.saveToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.saveToolStripMenuItem.Text = "Save";
@@ -266,6 +273,7 @@ namespace WindowsFormsApp1
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.saveAsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
             this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.saveAsToolStripMenuItem.Text = "Save As";
@@ -291,6 +299,7 @@ namespace WindowsFormsApp1
             // undoToolStripMenuItem
             // 
             this.undoToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.undoToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
             this.undoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.undoToolStripMenuItem.Text = "Undo";
@@ -298,6 +307,7 @@ namespace WindowsFormsApp1
             // redoToolStripMenuItem
             // 
             this.redoToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.redoToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
             this.redoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.redoToolStripMenuItem.Text = "Redo";
@@ -305,6 +315,7 @@ namespace WindowsFormsApp1
             // cutToolStripMenuItem
             // 
             this.cutToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.cutToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
             this.cutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.cutToolStripMenuItem.Text = "Cut";
@@ -312,6 +323,7 @@ namespace WindowsFormsApp1
             // copyToolStripMenuItem
             // 
             this.copyToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.copyToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
             this.copyToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.copyToolStripMenuItem.Text = "Copy";
@@ -319,6 +331,7 @@ namespace WindowsFormsApp1
             // pasteToolStripMenuItem
             // 
             this.pasteToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.pasteToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
             this.pasteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.pasteToolStripMenuItem.Text = "Paste";
@@ -326,6 +339,7 @@ namespace WindowsFormsApp1
             // cropToolStripMenuItem
             // 
             this.cropToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.cropToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.cropToolStripMenuItem.Name = "cropToolStripMenuItem";
             this.cropToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.cropToolStripMenuItem.Text = "Crop";
@@ -333,6 +347,7 @@ namespace WindowsFormsApp1
             // rotateLeftToolStripMenuItem
             // 
             this.rotateLeftToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.rotateLeftToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.rotateLeftToolStripMenuItem.Name = "rotateLeftToolStripMenuItem";
             this.rotateLeftToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.rotateLeftToolStripMenuItem.Text = "Rotate Left";
@@ -340,6 +355,7 @@ namespace WindowsFormsApp1
             // rotateRightToolStripMenuItem
             // 
             this.rotateRightToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.rotateRightToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.rotateRightToolStripMenuItem.Name = "rotateRightToolStripMenuItem";
             this.rotateRightToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.rotateRightToolStripMenuItem.Text = "Rotate Right";
@@ -347,6 +363,7 @@ namespace WindowsFormsApp1
             // flipHorizontallyToolStripMenuItem
             // 
             this.flipHorizontallyToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.flipHorizontallyToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.flipHorizontallyToolStripMenuItem.Name = "flipHorizontallyToolStripMenuItem";
             this.flipHorizontallyToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.flipHorizontallyToolStripMenuItem.Text = "Flip Horizontally";
@@ -354,6 +371,7 @@ namespace WindowsFormsApp1
             // imageSizeToolStripMenuItem
             // 
             this.imageSizeToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.imageSizeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.imageSizeToolStripMenuItem.Name = "imageSizeToolStripMenuItem";
             this.imageSizeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.imageSizeToolStripMenuItem.Text = "Image Size";
@@ -371,6 +389,7 @@ namespace WindowsFormsApp1
             // levelsToolStripMenuItem
             // 
             this.levelsToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.levelsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.levelsToolStripMenuItem.Name = "levelsToolStripMenuItem";
             this.levelsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.levelsToolStripMenuItem.Text = "Levels";
@@ -378,6 +397,7 @@ namespace WindowsFormsApp1
             // hueToolStripMenuItem
             // 
             this.hueToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.hueToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.hueToolStripMenuItem.Name = "hueToolStripMenuItem";
             this.hueToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.hueToolStripMenuItem.Text = "Hue";
@@ -398,6 +418,7 @@ namespace WindowsFormsApp1
             // addToolStripMenuItem
             // 
             this.addToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.addToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
             this.addToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.addToolStripMenuItem.Text = "Add";
@@ -405,6 +426,7 @@ namespace WindowsFormsApp1
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.deleteToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
             this.deleteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.deleteToolStripMenuItem.Text = "Delete";
@@ -412,6 +434,7 @@ namespace WindowsFormsApp1
             // inverseToolStripMenuItem
             // 
             this.inverseToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.inverseToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.inverseToolStripMenuItem.Name = "inverseToolStripMenuItem";
             this.inverseToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.inverseToolStripMenuItem.Text = "Inverse";
@@ -419,6 +442,7 @@ namespace WindowsFormsApp1
             // transformToolStripMenuItem
             // 
             this.transformToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.transformToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.transformToolStripMenuItem.Name = "transformToolStripMenuItem";
             this.transformToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.transformToolStripMenuItem.Text = "Transform";
@@ -467,6 +491,7 @@ namespace WindowsFormsApp1
             // brushToolStripMenuItem
             // 
             this.brushToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.brushToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.brushToolStripMenuItem.Name = "brushToolStripMenuItem";
             this.brushToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.brushToolStripMenuItem.Text = "Brush";
@@ -474,6 +499,7 @@ namespace WindowsFormsApp1
             // eraserToolStripMenuItem
             // 
             this.eraserToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.eraserToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.eraserToolStripMenuItem.Name = "eraserToolStripMenuItem";
             this.eraserToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.eraserToolStripMenuItem.Text = "Eraser";
@@ -481,6 +507,7 @@ namespace WindowsFormsApp1
             // shapeBrushToolStripMenuItem
             // 
             this.shapeBrushToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.shapeBrushToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.shapeBrushToolStripMenuItem.Name = "shapeBrushToolStripMenuItem";
             this.shapeBrushToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.shapeBrushToolStripMenuItem.Text = "Shape brush";
@@ -488,6 +515,7 @@ namespace WindowsFormsApp1
             // dotBrushToolStripMenuItem
             // 
             this.dotBrushToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.dotBrushToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.dotBrushToolStripMenuItem.Name = "dotBrushToolStripMenuItem";
             this.dotBrushToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.dotBrushToolStripMenuItem.Text = "Dot brush";
@@ -495,6 +523,7 @@ namespace WindowsFormsApp1
             // moveToolStripMenuItem
             // 
             this.moveToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.moveToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.moveToolStripMenuItem.Name = "moveToolStripMenuItem";
             this.moveToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.moveToolStripMenuItem.Text = "Move";
@@ -502,6 +531,7 @@ namespace WindowsFormsApp1
             // fillToolStripMenuItem
             // 
             this.fillToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.fillToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.fillToolStripMenuItem.Name = "fillToolStripMenuItem";
             this.fillToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.fillToolStripMenuItem.Text = "Fill";
@@ -509,6 +539,7 @@ namespace WindowsFormsApp1
             // gradientToolStripMenuItem
             // 
             this.gradientToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.gradientToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.gradientToolStripMenuItem.Name = "gradientToolStripMenuItem";
             this.gradientToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.gradientToolStripMenuItem.Text = "Gradient";
@@ -516,6 +547,7 @@ namespace WindowsFormsApp1
             // selectToolStripMenuItem1
             // 
             this.selectToolStripMenuItem1.BackColor = System.Drawing.Color.DimGray;
+            this.selectToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
             this.selectToolStripMenuItem1.Name = "selectToolStripMenuItem1";
             this.selectToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.selectToolStripMenuItem1.Text = "Select";
@@ -523,6 +555,7 @@ namespace WindowsFormsApp1
             // lassoToolStripMenuItem
             // 
             this.lassoToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.lassoToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.lassoToolStripMenuItem.Name = "lassoToolStripMenuItem";
             this.lassoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.lassoToolStripMenuItem.Text = "Lasso";
@@ -530,6 +563,7 @@ namespace WindowsFormsApp1
             // textToolStripMenuItem
             // 
             this.textToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.textToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.textToolStripMenuItem.Name = "textToolStripMenuItem";
             this.textToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.textToolStripMenuItem.Text = "Text";
@@ -537,6 +571,7 @@ namespace WindowsFormsApp1
             // objectToolStripMenuItem
             // 
             this.objectToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.objectToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.objectToolStripMenuItem.Name = "objectToolStripMenuItem";
             this.objectToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.objectToolStripMenuItem.Text = "Object";
@@ -605,11 +640,11 @@ namespace WindowsFormsApp1
             this.bunifuButton22.ColorContrastOnClick = 45;
             this.bunifuButton22.ColorContrastOnHover = 45;
             this.bunifuButton22.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges31.BottomLeft = true;
-            borderEdges31.BottomRight = true;
-            borderEdges31.TopLeft = true;
-            borderEdges31.TopRight = true;
-            this.bunifuButton22.CustomizableEdges = borderEdges31;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.bunifuButton22.CustomizableEdges = borderEdges1;
             this.bunifuButton22.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton22.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton22.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -694,11 +729,11 @@ namespace WindowsFormsApp1
             this.bunifuButton21.ColorContrastOnClick = 45;
             this.bunifuButton21.ColorContrastOnHover = 45;
             this.bunifuButton21.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges32.BottomLeft = true;
-            borderEdges32.BottomRight = true;
-            borderEdges32.TopLeft = true;
-            borderEdges32.TopRight = true;
-            this.bunifuButton21.CustomizableEdges = borderEdges32;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.bunifuButton21.CustomizableEdges = borderEdges2;
             this.bunifuButton21.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton21.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton21.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -807,11 +842,11 @@ namespace WindowsFormsApp1
             this.bunifuButton20.ColorContrastOnClick = 45;
             this.bunifuButton20.ColorContrastOnHover = 45;
             this.bunifuButton20.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges33.BottomLeft = true;
-            borderEdges33.BottomRight = true;
-            borderEdges33.TopLeft = true;
-            borderEdges33.TopRight = true;
-            this.bunifuButton20.CustomizableEdges = borderEdges33;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.bunifuButton20.CustomizableEdges = borderEdges3;
             this.bunifuButton20.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton20.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton20.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -896,11 +931,11 @@ namespace WindowsFormsApp1
             this.bunifuButton19.ColorContrastOnClick = 45;
             this.bunifuButton19.ColorContrastOnHover = 45;
             this.bunifuButton19.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges34.BottomLeft = true;
-            borderEdges34.BottomRight = true;
-            borderEdges34.TopLeft = true;
-            borderEdges34.TopRight = true;
-            this.bunifuButton19.CustomizableEdges = borderEdges34;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.bunifuButton19.CustomizableEdges = borderEdges4;
             this.bunifuButton19.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton19.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton19.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -985,11 +1020,11 @@ namespace WindowsFormsApp1
             this.bunifuButton18.ColorContrastOnClick = 45;
             this.bunifuButton18.ColorContrastOnHover = 45;
             this.bunifuButton18.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges35.BottomLeft = true;
-            borderEdges35.BottomRight = true;
-            borderEdges35.TopLeft = true;
-            borderEdges35.TopRight = true;
-            this.bunifuButton18.CustomizableEdges = borderEdges35;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.bunifuButton18.CustomizableEdges = borderEdges5;
             this.bunifuButton18.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton18.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton18.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1074,11 +1109,11 @@ namespace WindowsFormsApp1
             this.bunifuButton17.ColorContrastOnClick = 45;
             this.bunifuButton17.ColorContrastOnHover = 45;
             this.bunifuButton17.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges36.BottomLeft = true;
-            borderEdges36.BottomRight = true;
-            borderEdges36.TopLeft = true;
-            borderEdges36.TopRight = true;
-            this.bunifuButton17.CustomizableEdges = borderEdges36;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.bunifuButton17.CustomizableEdges = borderEdges6;
             this.bunifuButton17.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton17.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton17.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1163,11 +1198,11 @@ namespace WindowsFormsApp1
             this.bunifuButton16.ColorContrastOnClick = 45;
             this.bunifuButton16.ColorContrastOnHover = 45;
             this.bunifuButton16.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges37.BottomLeft = true;
-            borderEdges37.BottomRight = true;
-            borderEdges37.TopLeft = true;
-            borderEdges37.TopRight = true;
-            this.bunifuButton16.CustomizableEdges = borderEdges37;
+            borderEdges7.BottomLeft = true;
+            borderEdges7.BottomRight = true;
+            borderEdges7.TopLeft = true;
+            borderEdges7.TopRight = true;
+            this.bunifuButton16.CustomizableEdges = borderEdges7;
             this.bunifuButton16.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton16.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton16.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1252,11 +1287,11 @@ namespace WindowsFormsApp1
             this.bunifuButton15.ColorContrastOnClick = 45;
             this.bunifuButton15.ColorContrastOnHover = 45;
             this.bunifuButton15.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges38.BottomLeft = true;
-            borderEdges38.BottomRight = true;
-            borderEdges38.TopLeft = true;
-            borderEdges38.TopRight = true;
-            this.bunifuButton15.CustomizableEdges = borderEdges38;
+            borderEdges8.BottomLeft = true;
+            borderEdges8.BottomRight = true;
+            borderEdges8.TopLeft = true;
+            borderEdges8.TopRight = true;
+            this.bunifuButton15.CustomizableEdges = borderEdges8;
             this.bunifuButton15.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton15.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton15.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1341,11 +1376,11 @@ namespace WindowsFormsApp1
             this.bunifuButton14.ColorContrastOnClick = 45;
             this.bunifuButton14.ColorContrastOnHover = 45;
             this.bunifuButton14.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges39.BottomLeft = true;
-            borderEdges39.BottomRight = true;
-            borderEdges39.TopLeft = true;
-            borderEdges39.TopRight = true;
-            this.bunifuButton14.CustomizableEdges = borderEdges39;
+            borderEdges9.BottomLeft = true;
+            borderEdges9.BottomRight = true;
+            borderEdges9.TopLeft = true;
+            borderEdges9.TopRight = true;
+            this.bunifuButton14.CustomizableEdges = borderEdges9;
             this.bunifuButton14.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton14.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton14.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1469,11 +1504,11 @@ namespace WindowsFormsApp1
             this.bunifuButton8.ColorContrastOnClick = 45;
             this.bunifuButton8.ColorContrastOnHover = 45;
             this.bunifuButton8.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges40.BottomLeft = true;
-            borderEdges40.BottomRight = true;
-            borderEdges40.TopLeft = true;
-            borderEdges40.TopRight = true;
-            this.bunifuButton8.CustomizableEdges = borderEdges40;
+            borderEdges10.BottomLeft = true;
+            borderEdges10.BottomRight = true;
+            borderEdges10.TopLeft = true;
+            borderEdges10.TopRight = true;
+            this.bunifuButton8.CustomizableEdges = borderEdges10;
             this.bunifuButton8.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton8.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton8.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1558,11 +1593,11 @@ namespace WindowsFormsApp1
             this.bunifuButton7.ColorContrastOnClick = 45;
             this.bunifuButton7.ColorContrastOnHover = 45;
             this.bunifuButton7.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges41.BottomLeft = true;
-            borderEdges41.BottomRight = true;
-            borderEdges41.TopLeft = true;
-            borderEdges41.TopRight = true;
-            this.bunifuButton7.CustomizableEdges = borderEdges41;
+            borderEdges11.BottomLeft = true;
+            borderEdges11.BottomRight = true;
+            borderEdges11.TopLeft = true;
+            borderEdges11.TopRight = true;
+            this.bunifuButton7.CustomizableEdges = borderEdges11;
             this.bunifuButton7.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton7.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton7.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1647,11 +1682,11 @@ namespace WindowsFormsApp1
             this.bunifuButton3.ColorContrastOnClick = 45;
             this.bunifuButton3.ColorContrastOnHover = 45;
             this.bunifuButton3.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges42.BottomLeft = true;
-            borderEdges42.BottomRight = true;
-            borderEdges42.TopLeft = true;
-            borderEdges42.TopRight = true;
-            this.bunifuButton3.CustomizableEdges = borderEdges42;
+            borderEdges12.BottomLeft = true;
+            borderEdges12.BottomRight = true;
+            borderEdges12.TopLeft = true;
+            borderEdges12.TopRight = true;
+            this.bunifuButton3.CustomizableEdges = borderEdges12;
             this.bunifuButton3.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton3.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton3.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1736,11 +1771,11 @@ namespace WindowsFormsApp1
             this.bunifuButton2.ColorContrastOnClick = 45;
             this.bunifuButton2.ColorContrastOnHover = 45;
             this.bunifuButton2.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges43.BottomLeft = true;
-            borderEdges43.BottomRight = true;
-            borderEdges43.TopLeft = true;
-            borderEdges43.TopRight = true;
-            this.bunifuButton2.CustomizableEdges = borderEdges43;
+            borderEdges13.BottomLeft = true;
+            borderEdges13.BottomRight = true;
+            borderEdges13.TopLeft = true;
+            borderEdges13.TopRight = true;
+            this.bunifuButton2.CustomizableEdges = borderEdges13;
             this.bunifuButton2.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton2.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton2.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1826,11 +1861,11 @@ namespace WindowsFormsApp1
             this.bunifuButton13.ColorContrastOnClick = 45;
             this.bunifuButton13.ColorContrastOnHover = 45;
             this.bunifuButton13.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges44.BottomLeft = true;
-            borderEdges44.BottomRight = true;
-            borderEdges44.TopLeft = true;
-            borderEdges44.TopRight = true;
-            this.bunifuButton13.CustomizableEdges = borderEdges44;
+            borderEdges14.BottomLeft = true;
+            borderEdges14.BottomRight = true;
+            borderEdges14.TopLeft = true;
+            borderEdges14.TopRight = true;
+            this.bunifuButton13.CustomizableEdges = borderEdges14;
             this.bunifuButton13.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton13.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton13.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1915,11 +1950,11 @@ namespace WindowsFormsApp1
             this.bunifuButton1.ColorContrastOnClick = 45;
             this.bunifuButton1.ColorContrastOnHover = 45;
             this.bunifuButton1.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges45.BottomLeft = true;
-            borderEdges45.BottomRight = true;
-            borderEdges45.TopLeft = true;
-            borderEdges45.TopRight = true;
-            this.bunifuButton1.CustomizableEdges = borderEdges45;
+            borderEdges15.BottomLeft = true;
+            borderEdges15.BottomRight = true;
+            borderEdges15.TopLeft = true;
+            borderEdges15.TopRight = true;
+            this.bunifuButton1.CustomizableEdges = borderEdges15;
             this.bunifuButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton1.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2005,11 +2040,11 @@ namespace WindowsFormsApp1
             this.bunifuButton9.ColorContrastOnClick = 45;
             this.bunifuButton9.ColorContrastOnHover = 45;
             this.bunifuButton9.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges46.BottomLeft = true;
-            borderEdges46.BottomRight = true;
-            borderEdges46.TopLeft = true;
-            borderEdges46.TopRight = true;
-            this.bunifuButton9.CustomizableEdges = borderEdges46;
+            borderEdges16.BottomLeft = true;
+            borderEdges16.BottomRight = true;
+            borderEdges16.TopLeft = true;
+            borderEdges16.TopRight = true;
+            this.bunifuButton9.CustomizableEdges = borderEdges16;
             this.bunifuButton9.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton9.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton9.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2094,11 +2129,11 @@ namespace WindowsFormsApp1
             this.bunifuButton10.ColorContrastOnClick = 45;
             this.bunifuButton10.ColorContrastOnHover = 45;
             this.bunifuButton10.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges47.BottomLeft = true;
-            borderEdges47.BottomRight = true;
-            borderEdges47.TopLeft = true;
-            borderEdges47.TopRight = true;
-            this.bunifuButton10.CustomizableEdges = borderEdges47;
+            borderEdges17.BottomLeft = true;
+            borderEdges17.BottomRight = true;
+            borderEdges17.TopLeft = true;
+            borderEdges17.TopRight = true;
+            this.bunifuButton10.CustomizableEdges = borderEdges17;
             this.bunifuButton10.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton10.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton10.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2183,11 +2218,11 @@ namespace WindowsFormsApp1
             this.bunifuButton12.ColorContrastOnClick = 45;
             this.bunifuButton12.ColorContrastOnHover = 45;
             this.bunifuButton12.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges48.BottomLeft = true;
-            borderEdges48.BottomRight = true;
-            borderEdges48.TopLeft = true;
-            borderEdges48.TopRight = true;
-            this.bunifuButton12.CustomizableEdges = borderEdges48;
+            borderEdges18.BottomLeft = true;
+            borderEdges18.BottomRight = true;
+            borderEdges18.TopLeft = true;
+            borderEdges18.TopRight = true;
+            this.bunifuButton12.CustomizableEdges = borderEdges18;
             this.bunifuButton12.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton12.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton12.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2272,11 +2307,11 @@ namespace WindowsFormsApp1
             this.bunifuButton11.ColorContrastOnClick = 45;
             this.bunifuButton11.ColorContrastOnHover = 45;
             this.bunifuButton11.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges49.BottomLeft = true;
-            borderEdges49.BottomRight = true;
-            borderEdges49.TopLeft = true;
-            borderEdges49.TopRight = true;
-            this.bunifuButton11.CustomizableEdges = borderEdges49;
+            borderEdges19.BottomLeft = true;
+            borderEdges19.BottomRight = true;
+            borderEdges19.TopLeft = true;
+            borderEdges19.TopRight = true;
+            this.bunifuButton11.CustomizableEdges = borderEdges19;
             this.bunifuButton11.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton11.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton11.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2361,11 +2396,11 @@ namespace WindowsFormsApp1
             this.bunifuButton5.ColorContrastOnClick = 45;
             this.bunifuButton5.ColorContrastOnHover = 45;
             this.bunifuButton5.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges50.BottomLeft = true;
-            borderEdges50.BottomRight = true;
-            borderEdges50.TopLeft = true;
-            borderEdges50.TopRight = true;
-            this.bunifuButton5.CustomizableEdges = borderEdges50;
+            borderEdges20.BottomLeft = true;
+            borderEdges20.BottomRight = true;
+            borderEdges20.TopLeft = true;
+            borderEdges20.TopRight = true;
+            this.bunifuButton5.CustomizableEdges = borderEdges20;
             this.bunifuButton5.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton5.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton5.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2450,11 +2485,11 @@ namespace WindowsFormsApp1
             this.bunifuButton4.ColorContrastOnClick = 45;
             this.bunifuButton4.ColorContrastOnHover = 45;
             this.bunifuButton4.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges51.BottomLeft = true;
-            borderEdges51.BottomRight = true;
-            borderEdges51.TopLeft = true;
-            borderEdges51.TopRight = true;
-            this.bunifuButton4.CustomizableEdges = borderEdges51;
+            borderEdges21.BottomLeft = true;
+            borderEdges21.BottomRight = true;
+            borderEdges21.TopLeft = true;
+            borderEdges21.TopRight = true;
+            this.bunifuButton4.CustomizableEdges = borderEdges21;
             this.bunifuButton4.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton4.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton4.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2539,11 +2574,11 @@ namespace WindowsFormsApp1
             this.bunifuButton6.ColorContrastOnClick = 45;
             this.bunifuButton6.ColorContrastOnHover = 45;
             this.bunifuButton6.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges52.BottomLeft = true;
-            borderEdges52.BottomRight = true;
-            borderEdges52.TopLeft = true;
-            borderEdges52.TopRight = true;
-            this.bunifuButton6.CustomizableEdges = borderEdges52;
+            borderEdges22.BottomLeft = true;
+            borderEdges22.BottomRight = true;
+            borderEdges22.TopLeft = true;
+            borderEdges22.TopRight = true;
+            this.bunifuButton6.CustomizableEdges = borderEdges22;
             this.bunifuButton6.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton6.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton6.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2782,11 +2817,11 @@ namespace WindowsFormsApp1
             this.bunifuButton30.ColorContrastOnClick = 45;
             this.bunifuButton30.ColorContrastOnHover = 45;
             this.bunifuButton30.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges53.BottomLeft = true;
-            borderEdges53.BottomRight = true;
-            borderEdges53.TopLeft = true;
-            borderEdges53.TopRight = true;
-            this.bunifuButton30.CustomizableEdges = borderEdges53;
+            borderEdges23.BottomLeft = true;
+            borderEdges23.BottomRight = true;
+            borderEdges23.TopLeft = true;
+            borderEdges23.TopRight = true;
+            this.bunifuButton30.CustomizableEdges = borderEdges23;
             this.bunifuButton30.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton30.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton30.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2871,11 +2906,11 @@ namespace WindowsFormsApp1
             this.bunifuButton29.ColorContrastOnClick = 45;
             this.bunifuButton29.ColorContrastOnHover = 45;
             this.bunifuButton29.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges54.BottomLeft = true;
-            borderEdges54.BottomRight = true;
-            borderEdges54.TopLeft = true;
-            borderEdges54.TopRight = true;
-            this.bunifuButton29.CustomizableEdges = borderEdges54;
+            borderEdges24.BottomLeft = true;
+            borderEdges24.BottomRight = true;
+            borderEdges24.TopLeft = true;
+            borderEdges24.TopRight = true;
+            this.bunifuButton29.CustomizableEdges = borderEdges24;
             this.bunifuButton29.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton29.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton29.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2960,11 +2995,11 @@ namespace WindowsFormsApp1
             this.bunifuButton28.ColorContrastOnClick = 45;
             this.bunifuButton28.ColorContrastOnHover = 45;
             this.bunifuButton28.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges55.BottomLeft = true;
-            borderEdges55.BottomRight = true;
-            borderEdges55.TopLeft = true;
-            borderEdges55.TopRight = true;
-            this.bunifuButton28.CustomizableEdges = borderEdges55;
+            borderEdges25.BottomLeft = true;
+            borderEdges25.BottomRight = true;
+            borderEdges25.TopLeft = true;
+            borderEdges25.TopRight = true;
+            this.bunifuButton28.CustomizableEdges = borderEdges25;
             this.bunifuButton28.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton28.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton28.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -3049,11 +3084,11 @@ namespace WindowsFormsApp1
             this.bunifuButton27.ColorContrastOnClick = 45;
             this.bunifuButton27.ColorContrastOnHover = 45;
             this.bunifuButton27.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges56.BottomLeft = true;
-            borderEdges56.BottomRight = true;
-            borderEdges56.TopLeft = true;
-            borderEdges56.TopRight = true;
-            this.bunifuButton27.CustomizableEdges = borderEdges56;
+            borderEdges26.BottomLeft = true;
+            borderEdges26.BottomRight = true;
+            borderEdges26.TopLeft = true;
+            borderEdges26.TopRight = true;
+            this.bunifuButton27.CustomizableEdges = borderEdges26;
             this.bunifuButton27.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton27.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton27.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -3138,11 +3173,11 @@ namespace WindowsFormsApp1
             this.bunifuButton26.ColorContrastOnClick = 45;
             this.bunifuButton26.ColorContrastOnHover = 45;
             this.bunifuButton26.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges57.BottomLeft = true;
-            borderEdges57.BottomRight = true;
-            borderEdges57.TopLeft = true;
-            borderEdges57.TopRight = true;
-            this.bunifuButton26.CustomizableEdges = borderEdges57;
+            borderEdges27.BottomLeft = true;
+            borderEdges27.BottomRight = true;
+            borderEdges27.TopLeft = true;
+            borderEdges27.TopRight = true;
+            this.bunifuButton26.CustomizableEdges = borderEdges27;
             this.bunifuButton26.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton26.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton26.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -3227,11 +3262,11 @@ namespace WindowsFormsApp1
             this.bunifuButton25.ColorContrastOnClick = 45;
             this.bunifuButton25.ColorContrastOnHover = 45;
             this.bunifuButton25.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges58.BottomLeft = true;
-            borderEdges58.BottomRight = true;
-            borderEdges58.TopLeft = true;
-            borderEdges58.TopRight = true;
-            this.bunifuButton25.CustomizableEdges = borderEdges58;
+            borderEdges28.BottomLeft = true;
+            borderEdges28.BottomRight = true;
+            borderEdges28.TopLeft = true;
+            borderEdges28.TopRight = true;
+            this.bunifuButton25.CustomizableEdges = borderEdges28;
             this.bunifuButton25.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton25.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton25.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -3316,11 +3351,11 @@ namespace WindowsFormsApp1
             this.bunifuButton24.ColorContrastOnClick = 45;
             this.bunifuButton24.ColorContrastOnHover = 45;
             this.bunifuButton24.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges59.BottomLeft = true;
-            borderEdges59.BottomRight = true;
-            borderEdges59.TopLeft = true;
-            borderEdges59.TopRight = true;
-            this.bunifuButton24.CustomizableEdges = borderEdges59;
+            borderEdges29.BottomLeft = true;
+            borderEdges29.BottomRight = true;
+            borderEdges29.TopLeft = true;
+            borderEdges29.TopRight = true;
+            this.bunifuButton24.CustomizableEdges = borderEdges29;
             this.bunifuButton24.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton24.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton24.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -3405,11 +3440,11 @@ namespace WindowsFormsApp1
             this.bunifuButton23.ColorContrastOnClick = 45;
             this.bunifuButton23.ColorContrastOnHover = 45;
             this.bunifuButton23.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges60.BottomLeft = true;
-            borderEdges60.BottomRight = true;
-            borderEdges60.TopLeft = true;
-            borderEdges60.TopRight = true;
-            this.bunifuButton23.CustomizableEdges = borderEdges60;
+            borderEdges30.BottomLeft = true;
+            borderEdges30.BottomRight = true;
+            borderEdges30.TopLeft = true;
+            borderEdges30.TopRight = true;
+            this.bunifuButton23.CustomizableEdges = borderEdges30;
             this.bunifuButton23.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton23.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton23.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
