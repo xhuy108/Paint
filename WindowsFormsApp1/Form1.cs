@@ -15,30 +15,75 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
-            menuStrip1.Renderer = new MyRenderer();
-        }
-        
-        private class MyRenderer : ToolStripProfessionalRenderer
-        {
-            public MyRenderer() : base(new MyColors()) { }
+            menuStrip1.Renderer = new MenuStripRenderer();
         }
 
-        private class MyColors : ProfessionalColorTable
+        private static Color MainColor = Color.DimGray;
+
+        public class MenuStripRenderer : ToolStripProfessionalRenderer
         {
+            protected override void OnRenderMenuItemBackground(ToolStripItemRenderEventArgs e)
+            {
+                Rectangle rect = new Rectangle(Point.Empty, e.Item.Size);
+
+                if (e.Item.Selected)
+                {
+                    Color color = Color.DarkGray;
+                    using (SolidBrush brush = new SolidBrush(color))
+                        e.Graphics.FillRectangle(brush, rect);
+                }
+                else
+                {
+                    using (SolidBrush brush = new SolidBrush(Color.FromArgb(37, 37, 37)))
+                        e.Graphics.FillRectangle(brush, rect);
+                }
+            }
+
+            protected override void OnRenderItemText(ToolStripItemTextRenderEventArgs e)
+            {
+                e.Item.ForeColor = Color.White;
+                base.OnRenderItemText(e);
+            }
+
+            protected override void OnRenderSeparator(ToolStripSeparatorRenderEventArgs e)
+            {
+                base.OnRenderSeparator(e);
+            }
+
+            public MenuStripRenderer() : base(new MenuStripColors()) { }
+        }
+
+        public class MenuStripColors : ProfessionalColorTable
+        {
+            public override Color ToolStripDropDownBackground
+            {
+                get { return MainColor; }
+            }
+
             public override Color MenuItemSelected
             {
-                get { return Color.DarkGray; }
+                get { return MainColor; }
             }
+
+            public override Color MenuItemBorder
+            {
+                get { return MainColor; }
+            }
+
             public override Color MenuItemSelectedGradientBegin
             {
-                get { return Color.DarkGray; }
+                get { return MainColor; }
             }
+
             public override Color MenuItemSelectedGradientEnd
             {
-                get { return Color.DarkGray; }
+                get { return MainColor; }
+            }
+
+            public override Color MenuBorder
+            {
+                get { return MainColor; }
             }
         }
-
-        
     }
 }
