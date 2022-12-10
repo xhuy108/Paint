@@ -30,7 +30,6 @@ C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\WindowsFormsApp1\bin\Debug
 C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
 C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
 C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
-C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
 C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
 C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
 C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.licenses
@@ -38,3 +37,4 @@ C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\WindowsFormsApp1\obj\Debug
 C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
 C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\WindowsFormsApp1\obj\Debug\Paint.Form1.resources
