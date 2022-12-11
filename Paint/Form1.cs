@@ -18,8 +18,6 @@ namespace Paint
             menuStrip1.Renderer = new MenuStripRenderer();
         }
 
-        private static Color MainColor = Color.DimGray;
-
         public class MenuStripRenderer : ToolStripProfessionalRenderer
         {
             protected override void OnRenderMenuItemBackground(ToolStripItemRenderEventArgs e)
@@ -57,32 +55,31 @@ namespace Paint
         {
             public override Color ToolStripDropDownBackground
             {
-                get { return MainColor; }
+                get { return Color.DimGray; }
             }
 
             public override Color MenuItemSelected
             {
-                get { return MainColor; }
+                get { return Color.DimGray; }
             }
 
             public override Color MenuItemBorder
             {
-                get { return MainColor; }
-            }
-
-            public override Color MenuItemSelectedGradientBegin
-            {
-                get { return MainColor; }
-            }
-
-            public override Color MenuItemSelectedGradientEnd
-            {
-                get { return MainColor; }
+                get { return Color.DimGray; }
             }
 
             public override Color MenuBorder
             {
-                get { return MainColor; }
+                get { return Color.DimGray; }
+            }
+        }
+
+        private void btn_SelectColor_Click(object sender, EventArgs e)
+        {
+            ColorDialog colorPicker = new ColorDialog();
+            if (colorPicker.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox_Color.BackColor = colorPicker.Color;
             }
         }
     }
