@@ -159,6 +159,9 @@ namespace Paint
             this.lb_BrushSize = new System.Windows.Forms.Label();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.panel_paint = new System.Windows.Forms.Panel();
+            this.ptb_paint = new System.Windows.Forms.PictureBox();
+            this.lb_brush = new System.Windows.Forms.ListBox();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -173,6 +176,8 @@ namespace Paint
             this.tableLayoutPanel5.SuspendLayout();
             this.panel8.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
+            this.panel_paint.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_paint)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -211,7 +216,7 @@ namespace Paint
             this.saveAsToolStripMenuItem});
             this.fileToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(40, 24);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // importFileToolStripMenuItem
@@ -219,7 +224,7 @@ namespace Paint
             this.importFileToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
             this.importFileToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.importFileToolStripMenuItem.Name = "importFileToolStripMenuItem";
-            this.importFileToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
+            this.importFileToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.importFileToolStripMenuItem.Text = "Import File";
             // 
             // openToolStripMenuItem
@@ -227,7 +232,7 @@ namespace Paint
             this.openToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
             this.openToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.openToolStripMenuItem.Text = "Open";
             // 
             // openRecentFileToolStripMenuItem
@@ -235,7 +240,7 @@ namespace Paint
             this.openRecentFileToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
             this.openRecentFileToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.openRecentFileToolStripMenuItem.Name = "openRecentFileToolStripMenuItem";
-            this.openRecentFileToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
+            this.openRecentFileToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.openRecentFileToolStripMenuItem.Text = "Open Recent File";
             // 
             // toolStripMenuItem4
@@ -243,7 +248,7 @@ namespace Paint
             this.toolStripMenuItem4.BackColor = System.Drawing.Color.DimGray;
             this.toolStripMenuItem4.ForeColor = System.Drawing.Color.White;
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(218, 26);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(178, 22);
             this.toolStripMenuItem4.Text = "Save";
             // 
             // toolStripMenuItem3
@@ -251,7 +256,7 @@ namespace Paint
             this.toolStripMenuItem3.BackColor = System.Drawing.Color.DimGray;
             this.toolStripMenuItem3.ForeColor = System.Drawing.Color.White;
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(218, 26);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(178, 22);
             this.toolStripMenuItem3.Text = "Import File";
             // 
             // toolStripMenuItem2
@@ -259,7 +264,7 @@ namespace Paint
             this.toolStripMenuItem2.BackColor = System.Drawing.Color.DimGray;
             this.toolStripMenuItem2.ForeColor = System.Drawing.Color.White;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(218, 26);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(178, 22);
             this.toolStripMenuItem2.Text = "New";
             // 
             // saveToolStripMenuItem
@@ -267,7 +272,7 @@ namespace Paint
             this.saveToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
             this.saveToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.saveToolStripMenuItem.Text = "Save";
             // 
             // saveAsToolStripMenuItem
@@ -275,7 +280,7 @@ namespace Paint
             this.saveAsToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
             this.saveAsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.saveAsToolStripMenuItem.Text = "Save As";
             // 
             // editToolStripMenuItem
@@ -293,7 +298,7 @@ namespace Paint
             this.imageSizeToolStripMenuItem});
             this.editToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(49, 24);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(42, 24);
             this.editToolStripMenuItem.Text = "Edit";
             // 
             // undoToolStripMenuItem
@@ -301,7 +306,7 @@ namespace Paint
             this.undoToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
             this.undoToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.undoToolStripMenuItem.Text = "Undo";
             // 
             // redoToolStripMenuItem
@@ -309,7 +314,7 @@ namespace Paint
             this.redoToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
             this.redoToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
-            this.redoToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
+            this.redoToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.redoToolStripMenuItem.Text = "Redo";
             // 
             // cutToolStripMenuItem
@@ -317,7 +322,7 @@ namespace Paint
             this.cutToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
             this.cutToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.cutToolStripMenuItem.Text = "Cut";
             // 
             // copyToolStripMenuItem
@@ -325,7 +330,7 @@ namespace Paint
             this.copyToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
             this.copyToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.copyToolStripMenuItem.Text = "Copy";
             // 
             // pasteToolStripMenuItem
@@ -333,7 +338,7 @@ namespace Paint
             this.pasteToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
             this.pasteToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.pasteToolStripMenuItem.Text = "Paste";
             // 
             // cropToolStripMenuItem
@@ -341,7 +346,7 @@ namespace Paint
             this.cropToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
             this.cropToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.cropToolStripMenuItem.Name = "cropToolStripMenuItem";
-            this.cropToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
+            this.cropToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.cropToolStripMenuItem.Text = "Crop";
             // 
             // rotateLeftToolStripMenuItem
@@ -349,7 +354,7 @@ namespace Paint
             this.rotateLeftToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
             this.rotateLeftToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.rotateLeftToolStripMenuItem.Name = "rotateLeftToolStripMenuItem";
-            this.rotateLeftToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
+            this.rotateLeftToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.rotateLeftToolStripMenuItem.Text = "Rotate Left";
             // 
             // rotateRightToolStripMenuItem
@@ -357,7 +362,7 @@ namespace Paint
             this.rotateRightToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
             this.rotateRightToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.rotateRightToolStripMenuItem.Name = "rotateRightToolStripMenuItem";
-            this.rotateRightToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
+            this.rotateRightToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.rotateRightToolStripMenuItem.Text = "Rotate Right";
             // 
             // flipHorizontallyToolStripMenuItem
@@ -365,7 +370,7 @@ namespace Paint
             this.flipHorizontallyToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
             this.flipHorizontallyToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.flipHorizontallyToolStripMenuItem.Name = "flipHorizontallyToolStripMenuItem";
-            this.flipHorizontallyToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
+            this.flipHorizontallyToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.flipHorizontallyToolStripMenuItem.Text = "Flip Horizontally";
             // 
             // imageSizeToolStripMenuItem
@@ -373,7 +378,7 @@ namespace Paint
             this.imageSizeToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
             this.imageSizeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.imageSizeToolStripMenuItem.Name = "imageSizeToolStripMenuItem";
-            this.imageSizeToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
+            this.imageSizeToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.imageSizeToolStripMenuItem.Text = "Image Size";
             // 
             // filterToolStripMenuItem
@@ -383,7 +388,7 @@ namespace Paint
             this.hueToolStripMenuItem});
             this.filterToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.filterToolStripMenuItem.Name = "filterToolStripMenuItem";
-            this.filterToolStripMenuItem.Size = new System.Drawing.Size(56, 24);
+            this.filterToolStripMenuItem.Size = new System.Drawing.Size(49, 24);
             this.filterToolStripMenuItem.Text = "Filter";
             // 
             // levelsToolStripMenuItem
@@ -391,7 +396,7 @@ namespace Paint
             this.levelsToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
             this.levelsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.levelsToolStripMenuItem.Name = "levelsToolStripMenuItem";
-            this.levelsToolStripMenuItem.Size = new System.Drawing.Size(138, 26);
+            this.levelsToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.levelsToolStripMenuItem.Text = "Levels";
             // 
             // hueToolStripMenuItem
@@ -399,7 +404,7 @@ namespace Paint
             this.hueToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
             this.hueToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.hueToolStripMenuItem.Name = "hueToolStripMenuItem";
-            this.hueToolStripMenuItem.Size = new System.Drawing.Size(138, 26);
+            this.hueToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.hueToolStripMenuItem.Text = "Hue";
             // 
             // selectToolStripMenuItem
@@ -412,7 +417,7 @@ namespace Paint
             this.transformToolStripMenuItem});
             this.selectToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.selectToolStripMenuItem.Name = "selectToolStripMenuItem";
-            this.selectToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
+            this.selectToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
             this.selectToolStripMenuItem.Text = "Select";
             // 
             // addToolStripMenuItem
@@ -420,7 +425,7 @@ namespace Paint
             this.addToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
             this.addToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.addToolStripMenuItem.Text = "Add";
             // 
             // deleteToolStripMenuItem
@@ -428,7 +433,7 @@ namespace Paint
             this.deleteToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
             this.deleteToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.deleteToolStripMenuItem.Text = "Delete";
             // 
             // inverseToolStripMenuItem
@@ -436,7 +441,7 @@ namespace Paint
             this.inverseToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
             this.inverseToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.inverseToolStripMenuItem.Name = "inverseToolStripMenuItem";
-            this.inverseToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.inverseToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.inverseToolStripMenuItem.Text = "Inverse";
             // 
             // transformToolStripMenuItem
@@ -444,28 +449,28 @@ namespace Paint
             this.transformToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
             this.transformToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.transformToolStripMenuItem.Name = "transformToolStripMenuItem";
-            this.transformToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.transformToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.transformToolStripMenuItem.Text = "Transform";
             // 
             // snapToolStripMenuItem
             // 
             this.snapToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.snapToolStripMenuItem.Name = "snapToolStripMenuItem";
-            this.snapToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
+            this.snapToolStripMenuItem.Size = new System.Drawing.Size(50, 24);
             this.snapToolStripMenuItem.Text = "Snap";
             // 
             // colorToolStripMenuItem
             // 
             this.colorToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
-            this.colorToolStripMenuItem.Size = new System.Drawing.Size(63, 24);
+            this.colorToolStripMenuItem.Size = new System.Drawing.Size(52, 24);
             this.colorToolStripMenuItem.Text = "Color";
             // 
             // viewToolStripMenuItem
             // 
             this.viewToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(61, 24);
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(50, 24);
             this.viewToolStripMenuItem.Text = "View";
             // 
             // toolToolStripMenuItem
@@ -485,7 +490,7 @@ namespace Paint
             this.objectToolStripMenuItem});
             this.toolToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.toolToolStripMenuItem.Name = "toolToolStripMenuItem";
-            this.toolToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
+            this.toolToolStripMenuItem.Size = new System.Drawing.Size(44, 24);
             this.toolToolStripMenuItem.Text = "Tool";
             // 
             // brushToolStripMenuItem
@@ -493,7 +498,7 @@ namespace Paint
             this.brushToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
             this.brushToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.brushToolStripMenuItem.Name = "brushToolStripMenuItem";
-            this.brushToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.brushToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.brushToolStripMenuItem.Text = "Brush";
             // 
             // eraserToolStripMenuItem
@@ -501,7 +506,7 @@ namespace Paint
             this.eraserToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
             this.eraserToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.eraserToolStripMenuItem.Name = "eraserToolStripMenuItem";
-            this.eraserToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.eraserToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.eraserToolStripMenuItem.Text = "Eraser";
             // 
             // shapeBrushToolStripMenuItem
@@ -509,7 +514,7 @@ namespace Paint
             this.shapeBrushToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
             this.shapeBrushToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.shapeBrushToolStripMenuItem.Name = "shapeBrushToolStripMenuItem";
-            this.shapeBrushToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.shapeBrushToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.shapeBrushToolStripMenuItem.Text = "Shape brush";
             // 
             // dotBrushToolStripMenuItem
@@ -517,7 +522,7 @@ namespace Paint
             this.dotBrushToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
             this.dotBrushToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.dotBrushToolStripMenuItem.Name = "dotBrushToolStripMenuItem";
-            this.dotBrushToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.dotBrushToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.dotBrushToolStripMenuItem.Text = "Dot brush";
             // 
             // moveToolStripMenuItem
@@ -525,7 +530,7 @@ namespace Paint
             this.moveToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
             this.moveToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.moveToolStripMenuItem.Name = "moveToolStripMenuItem";
-            this.moveToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.moveToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.moveToolStripMenuItem.Text = "Move";
             // 
             // fillToolStripMenuItem
@@ -533,7 +538,7 @@ namespace Paint
             this.fillToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
             this.fillToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.fillToolStripMenuItem.Name = "fillToolStripMenuItem";
-            this.fillToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.fillToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.fillToolStripMenuItem.Text = "Fill";
             // 
             // gradientToolStripMenuItem
@@ -541,7 +546,7 @@ namespace Paint
             this.gradientToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
             this.gradientToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.gradientToolStripMenuItem.Name = "gradientToolStripMenuItem";
-            this.gradientToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.gradientToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.gradientToolStripMenuItem.Text = "Gradient";
             // 
             // selectToolStripMenuItem1
@@ -549,7 +554,7 @@ namespace Paint
             this.selectToolStripMenuItem1.BackColor = System.Drawing.Color.DimGray;
             this.selectToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
             this.selectToolStripMenuItem1.Name = "selectToolStripMenuItem1";
-            this.selectToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.selectToolStripMenuItem1.Size = new System.Drawing.Size(148, 22);
             this.selectToolStripMenuItem1.Text = "Select";
             // 
             // lassoToolStripMenuItem
@@ -557,7 +562,7 @@ namespace Paint
             this.lassoToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
             this.lassoToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.lassoToolStripMenuItem.Name = "lassoToolStripMenuItem";
-            this.lassoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.lassoToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.lassoToolStripMenuItem.Text = "Lasso";
             // 
             // textToolStripMenuItem
@@ -565,7 +570,7 @@ namespace Paint
             this.textToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
             this.textToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.textToolStripMenuItem.Name = "textToolStripMenuItem";
-            this.textToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.textToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.textToolStripMenuItem.Text = "Text";
             // 
             // objectToolStripMenuItem
@@ -573,21 +578,21 @@ namespace Paint
             this.objectToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
             this.objectToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.objectToolStripMenuItem.Name = "objectToolStripMenuItem";
-            this.objectToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.objectToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.objectToolStripMenuItem.Text = "Object";
             // 
             // windowToolStripMenuItem
             // 
             this.windowToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.windowToolStripMenuItem.Name = "windowToolStripMenuItem";
-            this.windowToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
+            this.windowToolStripMenuItem.Size = new System.Drawing.Size(69, 24);
             this.windowToolStripMenuItem.Text = "Window";
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(56, 24);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(47, 24);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // contextMenuStrip1
@@ -692,7 +697,7 @@ namespace Paint
             this.btn_Redo.OnIdleState.BorderThickness = 1;
             this.btn_Redo.OnIdleState.FillColor = System.Drawing.Color.DimGray;
             this.btn_Redo.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_Redo.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton22.OnIdleState.IconLeftImage")));
+            this.btn_Redo.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Redo.OnIdleState.IconLeftImage")));
             this.btn_Redo.OnIdleState.IconRightImage = null;
             this.btn_Redo.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btn_Redo.OnPressedState.BorderRadius = 10;
@@ -782,7 +787,7 @@ namespace Paint
             this.btn_Undo.OnIdleState.BorderThickness = 1;
             this.btn_Undo.OnIdleState.FillColor = System.Drawing.Color.DimGray;
             this.btn_Undo.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_Undo.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton21.OnIdleState.IconLeftImage")));
+            this.btn_Undo.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Undo.OnIdleState.IconLeftImage")));
             this.btn_Undo.OnIdleState.IconRightImage = null;
             this.btn_Undo.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btn_Undo.OnPressedState.BorderRadius = 10;
@@ -896,7 +901,7 @@ namespace Paint
             this.btn_OpenProjectDialog.OnIdleState.BorderThickness = 1;
             this.btn_OpenProjectDialog.OnIdleState.FillColor = System.Drawing.Color.DimGray;
             this.btn_OpenProjectDialog.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_OpenProjectDialog.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton20.OnIdleState.IconLeftImage")));
+            this.btn_OpenProjectDialog.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_OpenProjectDialog.OnIdleState.IconLeftImage")));
             this.btn_OpenProjectDialog.OnIdleState.IconRightImage = null;
             this.btn_OpenProjectDialog.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btn_OpenProjectDialog.OnPressedState.BorderRadius = 10;
@@ -986,7 +991,7 @@ namespace Paint
             this.btn_OpenVersionDialog.OnIdleState.BorderThickness = 1;
             this.btn_OpenVersionDialog.OnIdleState.FillColor = System.Drawing.Color.DimGray;
             this.btn_OpenVersionDialog.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_OpenVersionDialog.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton19.OnIdleState.IconLeftImage")));
+            this.btn_OpenVersionDialog.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_OpenVersionDialog.OnIdleState.IconLeftImage")));
             this.btn_OpenVersionDialog.OnIdleState.IconRightImage = null;
             this.btn_OpenVersionDialog.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btn_OpenVersionDialog.OnPressedState.BorderRadius = 10;
@@ -1076,7 +1081,7 @@ namespace Paint
             this.btn_ShowDetail.OnIdleState.BorderThickness = 1;
             this.btn_ShowDetail.OnIdleState.FillColor = System.Drawing.Color.DimGray;
             this.btn_ShowDetail.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_ShowDetail.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton18.OnIdleState.IconLeftImage")));
+            this.btn_ShowDetail.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_ShowDetail.OnIdleState.IconLeftImage")));
             this.btn_ShowDetail.OnIdleState.IconRightImage = null;
             this.btn_ShowDetail.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btn_ShowDetail.OnPressedState.BorderRadius = 10;
@@ -1166,7 +1171,7 @@ namespace Paint
             this.btn_AnnotationMode.OnIdleState.BorderThickness = 1;
             this.btn_AnnotationMode.OnIdleState.FillColor = System.Drawing.Color.DimGray;
             this.btn_AnnotationMode.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_AnnotationMode.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton17.OnIdleState.IconLeftImage")));
+            this.btn_AnnotationMode.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_AnnotationMode.OnIdleState.IconLeftImage")));
             this.btn_AnnotationMode.OnIdleState.IconRightImage = null;
             this.btn_AnnotationMode.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btn_AnnotationMode.OnPressedState.BorderRadius = 10;
@@ -1256,7 +1261,7 @@ namespace Paint
             this.btn_OpenMaterialDialog.OnIdleState.BorderThickness = 1;
             this.btn_OpenMaterialDialog.OnIdleState.FillColor = System.Drawing.Color.DimGray;
             this.btn_OpenMaterialDialog.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_OpenMaterialDialog.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton16.OnIdleState.IconLeftImage")));
+            this.btn_OpenMaterialDialog.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_OpenMaterialDialog.OnIdleState.IconLeftImage")));
             this.btn_OpenMaterialDialog.OnIdleState.IconRightImage = null;
             this.btn_OpenMaterialDialog.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btn_OpenMaterialDialog.OnPressedState.BorderRadius = 10;
@@ -1346,7 +1351,7 @@ namespace Paint
             this.btn_Submit.OnIdleState.BorderThickness = 1;
             this.btn_Submit.OnIdleState.FillColor = System.Drawing.Color.DimGray;
             this.btn_Submit.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_Submit.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton15.OnIdleState.IconLeftImage")));
+            this.btn_Submit.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Submit.OnIdleState.IconLeftImage")));
             this.btn_Submit.OnIdleState.IconRightImage = null;
             this.btn_Submit.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btn_Submit.OnPressedState.BorderRadius = 10;
@@ -1436,7 +1441,7 @@ namespace Paint
             this.btn_OpenNetworkDialog.OnIdleState.BorderThickness = 1;
             this.btn_OpenNetworkDialog.OnIdleState.FillColor = System.Drawing.Color.DimGray;
             this.btn_OpenNetworkDialog.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_OpenNetworkDialog.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton14.OnIdleState.IconLeftImage")));
+            this.btn_OpenNetworkDialog.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_OpenNetworkDialog.OnIdleState.IconLeftImage")));
             this.btn_OpenNetworkDialog.OnIdleState.IconRightImage = null;
             this.btn_OpenNetworkDialog.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btn_OpenNetworkDialog.OnPressedState.BorderRadius = 10;
@@ -2715,6 +2720,7 @@ namespace Paint
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.DimGray;
+            this.panel6.Controls.Add(this.lb_brush);
             this.panel6.Controls.Add(this.label5);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(0, 491);
@@ -2890,7 +2896,7 @@ namespace Paint
             this.btn_ClearRotation.OnIdleState.BorderThickness = 1;
             this.btn_ClearRotation.OnIdleState.FillColor = System.Drawing.Color.DimGray;
             this.btn_ClearRotation.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_ClearRotation.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton30.OnIdleState.IconLeftImage")));
+            this.btn_ClearRotation.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_ClearRotation.OnIdleState.IconLeftImage")));
             this.btn_ClearRotation.OnIdleState.IconRightImage = null;
             this.btn_ClearRotation.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btn_ClearRotation.OnPressedState.BorderRadius = 10;
@@ -2980,7 +2986,7 @@ namespace Paint
             this.btn_RotateLeft.OnIdleState.BorderThickness = 1;
             this.btn_RotateLeft.OnIdleState.FillColor = System.Drawing.Color.DimGray;
             this.btn_RotateLeft.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_RotateLeft.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton29.OnIdleState.IconLeftImage")));
+            this.btn_RotateLeft.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_RotateLeft.OnIdleState.IconLeftImage")));
             this.btn_RotateLeft.OnIdleState.IconRightImage = null;
             this.btn_RotateLeft.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btn_RotateLeft.OnPressedState.BorderRadius = 10;
@@ -3070,7 +3076,7 @@ namespace Paint
             this.btn_FlipHorizontally.OnIdleState.BorderThickness = 1;
             this.btn_FlipHorizontally.OnIdleState.FillColor = System.Drawing.Color.DimGray;
             this.btn_FlipHorizontally.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_FlipHorizontally.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton28.OnIdleState.IconLeftImage")));
+            this.btn_FlipHorizontally.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_FlipHorizontally.OnIdleState.IconLeftImage")));
             this.btn_FlipHorizontally.OnIdleState.IconRightImage = null;
             this.btn_FlipHorizontally.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btn_FlipHorizontally.OnPressedState.BorderRadius = 10;
@@ -3160,7 +3166,7 @@ namespace Paint
             this.btn_RotateRight.OnIdleState.BorderThickness = 1;
             this.btn_RotateRight.OnIdleState.FillColor = System.Drawing.Color.DimGray;
             this.btn_RotateRight.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_RotateRight.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton27.OnIdleState.IconLeftImage")));
+            this.btn_RotateRight.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_RotateRight.OnIdleState.IconLeftImage")));
             this.btn_RotateRight.OnIdleState.IconRightImage = null;
             this.btn_RotateRight.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btn_RotateRight.OnPressedState.BorderRadius = 10;
@@ -3250,7 +3256,7 @@ namespace Paint
             this.btn_ZoomIn.OnIdleState.BorderThickness = 1;
             this.btn_ZoomIn.OnIdleState.FillColor = System.Drawing.Color.DimGray;
             this.btn_ZoomIn.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_ZoomIn.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton26.OnIdleState.IconLeftImage")));
+            this.btn_ZoomIn.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_ZoomIn.OnIdleState.IconLeftImage")));
             this.btn_ZoomIn.OnIdleState.IconRightImage = null;
             this.btn_ZoomIn.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btn_ZoomIn.OnPressedState.BorderRadius = 10;
@@ -3340,7 +3346,7 @@ namespace Paint
             this.btn_ActualPixel.OnIdleState.BorderThickness = 1;
             this.btn_ActualPixel.OnIdleState.FillColor = System.Drawing.Color.DimGray;
             this.btn_ActualPixel.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_ActualPixel.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton25.OnIdleState.IconLeftImage")));
+            this.btn_ActualPixel.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_ActualPixel.OnIdleState.IconLeftImage")));
             this.btn_ActualPixel.OnIdleState.IconRightImage = null;
             this.btn_ActualPixel.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btn_ActualPixel.OnPressedState.BorderRadius = 10;
@@ -3430,7 +3436,7 @@ namespace Paint
             this.btn_ZoomOut.OnIdleState.BorderThickness = 1;
             this.btn_ZoomOut.OnIdleState.FillColor = System.Drawing.Color.DimGray;
             this.btn_ZoomOut.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_ZoomOut.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton24.OnIdleState.IconLeftImage")));
+            this.btn_ZoomOut.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_ZoomOut.OnIdleState.IconLeftImage")));
             this.btn_ZoomOut.OnIdleState.IconRightImage = null;
             this.btn_ZoomOut.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btn_ZoomOut.OnPressedState.BorderRadius = 10;
@@ -3521,7 +3527,7 @@ namespace Paint
             this.btn_FitToWindowSize.OnIdleState.BorderThickness = 1;
             this.btn_FitToWindowSize.OnIdleState.FillColor = System.Drawing.Color.DimGray;
             this.btn_FitToWindowSize.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_FitToWindowSize.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton23.OnIdleState.IconLeftImage")));
+            this.btn_FitToWindowSize.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_FitToWindowSize.OnIdleState.IconLeftImage")));
             this.btn_FitToWindowSize.OnIdleState.IconRightImage = null;
             this.btn_FitToWindowSize.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btn_FitToWindowSize.OnPressedState.BorderRadius = 10;
@@ -3597,10 +3603,54 @@ namespace Paint
             // 
             this.toolTip1.ShowAlways = true;
             // 
+            // panel_paint
+            // 
+            this.panel_paint.Controls.Add(this.ptb_paint);
+            this.panel_paint.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_paint.Location = new System.Drawing.Point(275, 64);
+            this.panel_paint.Name = "panel_paint";
+            this.panel_paint.Size = new System.Drawing.Size(512, 619);
+            this.panel_paint.TabIndex = 12;
+            // 
+            // ptb_paint
+            // 
+            this.ptb_paint.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ptb_paint.Location = new System.Drawing.Point(0, 0);
+            this.ptb_paint.Name = "ptb_paint";
+            this.ptb_paint.Size = new System.Drawing.Size(512, 619);
+            this.ptb_paint.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.ptb_paint.TabIndex = 0;
+            this.ptb_paint.TabStop = false;
+            this.ptb_paint.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ptb_paint_MouseDown);
+            this.ptb_paint.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ptb_paint_MouseMove);
+            this.ptb_paint.MouseUp += new System.Windows.Forms.MouseEventHandler(this.ptb_paint_MouseUp);
+            // 
+            // lb_brush
+            // 
+            this.lb_brush.BackColor = System.Drawing.Color.DimGray;
+            this.lb_brush.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lb_brush.Dock = System.Windows.Forms.DockStyle.Right;
+            this.lb_brush.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_brush.ForeColor = System.Drawing.Color.White;
+            this.lb_brush.FormattingEnabled = true;
+            this.lb_brush.ItemHeight = 17;
+            this.lb_brush.Items.AddRange(new object[] {
+            "Solid Color Brush",
+            "Linear Gradient Brush",
+            "Radial Gradient Brush",
+            "Image Brush",
+            "Drawing Brush",
+            "Visual Brush"});
+            this.lb_brush.Location = new System.Drawing.Point(6, 28);
+            this.lb_brush.Name = "lb_brush";
+            this.lb_brush.Size = new System.Drawing.Size(233, 100);
+            this.lb_brush.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1036, 683);
+            this.Controls.Add(this.panel_paint);
             this.Controls.Add(this.tableLayoutPanel6);
             this.Controls.Add(this.tableLayoutPanel4);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -3612,6 +3662,7 @@ namespace Paint
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Paint";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -3627,6 +3678,9 @@ namespace Paint
             this.tableLayoutPanel5.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
+            this.panel_paint.ResumeLayout(false);
+            this.panel_paint.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_paint)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3730,6 +3784,9 @@ namespace Paint
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label lb_BrushControl;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Panel panel_paint;
+        private System.Windows.Forms.PictureBox ptb_paint;
+        private System.Windows.Forms.ListBox lb_brush;
     }
 }
 
