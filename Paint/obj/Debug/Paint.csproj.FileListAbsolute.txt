@@ -12,3 +12,4 @@ C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\obj\Debug\Paint.cspr
 C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll

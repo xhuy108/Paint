@@ -74,13 +74,39 @@ namespace Paint
             }
         }
 
+        private void textBox_RGBvalueChange()
+        {
+            textBox_Rvalue.Text = pictureBox_Color_Front.BackColor.R.ToString();
+            textBox_Gvalue.Text = pictureBox_Color_Front.BackColor.G.ToString();
+            textBox_Bvalue.Text = pictureBox_Color_Front.BackColor.B.ToString();
+        }
+
         private void btn_SelectColor_Click(object sender, EventArgs e)
         {
             ColorDialog colorPicker = new ColorDialog();
             if (colorPicker.ShowDialog() == DialogResult.OK)
             {
-                pictureBox_Color.BackColor = colorPicker.Color;
+                pictureBox_Color_Front.BackColor = colorPicker.Color;
+                textBox_RGBvalueChange();
             }
+        }
+
+        private void pictureBox_Color_Back_Click(object sender, EventArgs e)
+        {
+            Color tmp = pictureBox_Color_Front.BackColor;
+            pictureBox_Color_Front.BackColor = pictureBox_Color_Back.BackColor;
+            pictureBox_Color_Back.BackColor = tmp;
+            textBox_RGBvalueChange();
+        }
+
+        private void colorBarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            colorWheelToolStripMenuItem.Checked = false;
+        }
+
+        private void colorWheelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            colorBarToolStripMenuItem.Checked = false;
         }
     }
 }
