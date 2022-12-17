@@ -91,7 +91,7 @@ namespace Paint
             }
         }
 
-        private void pictureBox_Color_Back_Click(object sender, EventArgs e)
+        private void color_Swap(object sender, EventArgs e)
         {
             Color tmp = pictureBox_Color_Front.BackColor;
             pictureBox_Color_Front.BackColor = pictureBox_Color_Back.BackColor;
@@ -107,6 +107,17 @@ namespace Paint
         private void colorWheelToolStripMenuItem_Click(object sender, EventArgs e)
         {
             colorBarToolStripMenuItem.Checked = false;
+        }
+
+        private void colorPicker_ColorPicked(object sender, EventArgs e)
+        {
+            pictureBox_Color_Front.BackColor = colorPicker.SelectedColor;
+            textBox_RGBvalueChange();
+        }
+
+        private void colorPicker_MouseMove(object sender, MouseEventArgs e)
+        {
+            pictureBox_ColorPreview.BackColor = colorPicker._canvas.GetPixel(e.X, e.Y);
         }
     }
 }
