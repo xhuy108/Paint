@@ -140,9 +140,11 @@ namespace Paint
             this.panel3 = new System.Windows.Forms.Panel();
             this.lb_BrushPreview = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.lb_brush = new System.Windows.Forms.ListBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.lb_BrushControl = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
@@ -161,7 +163,6 @@ namespace Paint
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel_paint = new System.Windows.Forms.Panel();
             this.ptb_paint = new System.Windows.Forms.PictureBox();
-            this.lb_brush = new System.Windows.Forms.ListBox();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -226,6 +227,7 @@ namespace Paint
             this.importFileToolStripMenuItem.Name = "importFileToolStripMenuItem";
             this.importFileToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.importFileToolStripMenuItem.Text = "Import File";
+            this.importFileToolStripMenuItem.Click += new System.EventHandler(this.importfileToolStripMenuItem_Click);
             // 
             // openToolStripMenuItem
             // 
@@ -2729,6 +2731,27 @@ namespace Paint
             this.panel6.Size = new System.Drawing.Size(239, 128);
             this.panel6.TabIndex = 7;
             // 
+            // lb_brush
+            // 
+            this.lb_brush.BackColor = System.Drawing.Color.DimGray;
+            this.lb_brush.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lb_brush.Dock = System.Windows.Forms.DockStyle.Right;
+            this.lb_brush.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_brush.ForeColor = System.Drawing.Color.White;
+            this.lb_brush.FormattingEnabled = true;
+            this.lb_brush.ItemHeight = 17;
+            this.lb_brush.Items.AddRange(new object[] {
+            "Solid Color Brush",
+            "Linear Gradient Brush",
+            "Radial Gradient Brush",
+            "Image Brush",
+            "Drawing Brush",
+            "Visual Brush"});
+            this.lb_brush.Location = new System.Drawing.Point(6, 28);
+            this.lb_brush.Name = "lb_brush";
+            this.lb_brush.Size = new System.Drawing.Size(233, 100);
+            this.lb_brush.TabIndex = 6;
+            // 
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
@@ -2764,6 +2787,7 @@ namespace Paint
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.DimGray;
+            this.panel4.Controls.Add(this.panel5);
             this.panel4.Controls.Add(this.lb_BrushControl);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 308);
@@ -2771,6 +2795,14 @@ namespace Paint
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(239, 183);
             this.panel4.TabIndex = 6;
+            // 
+            // panel5
+            // 
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(0, 28);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(239, 155);
+            this.panel5.TabIndex = 6;
             // 
             // lb_BrushControl
             // 
@@ -3605,6 +3637,7 @@ namespace Paint
             // 
             // panel_paint
             // 
+            this.panel_paint.BackColor = System.Drawing.Color.White;
             this.panel_paint.Controls.Add(this.ptb_paint);
             this.panel_paint.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_paint.Location = new System.Drawing.Point(275, 64);
@@ -3614,37 +3647,17 @@ namespace Paint
             // 
             // ptb_paint
             // 
+            this.ptb_paint.BackColor = System.Drawing.Color.Transparent;
             this.ptb_paint.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ptb_paint.Location = new System.Drawing.Point(0, 0);
             this.ptb_paint.Name = "ptb_paint";
             this.ptb_paint.Size = new System.Drawing.Size(512, 619);
-            this.ptb_paint.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.ptb_paint.TabIndex = 0;
             this.ptb_paint.TabStop = false;
+            this.ptb_paint.Paint += new System.Windows.Forms.PaintEventHandler(this.ptb_paint_Paint);
             this.ptb_paint.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ptb_paint_MouseDown);
             this.ptb_paint.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ptb_paint_MouseMove);
             this.ptb_paint.MouseUp += new System.Windows.Forms.MouseEventHandler(this.ptb_paint_MouseUp);
-            // 
-            // lb_brush
-            // 
-            this.lb_brush.BackColor = System.Drawing.Color.DimGray;
-            this.lb_brush.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lb_brush.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lb_brush.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_brush.ForeColor = System.Drawing.Color.White;
-            this.lb_brush.FormattingEnabled = true;
-            this.lb_brush.ItemHeight = 17;
-            this.lb_brush.Items.AddRange(new object[] {
-            "Solid Color Brush",
-            "Linear Gradient Brush",
-            "Radial Gradient Brush",
-            "Image Brush",
-            "Drawing Brush",
-            "Visual Brush"});
-            this.lb_brush.Location = new System.Drawing.Point(6, 28);
-            this.lb_brush.Name = "lb_brush";
-            this.lb_brush.Size = new System.Drawing.Size(233, 100);
-            this.lb_brush.TabIndex = 6;
             // 
             // Form1
             // 
@@ -3679,7 +3692,6 @@ namespace Paint
             this.panel8.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.panel_paint.ResumeLayout(false);
-            this.panel_paint.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_paint)).EndInit();
             this.ResumeLayout(false);
 
@@ -3787,6 +3799,7 @@ namespace Paint
         private System.Windows.Forms.Panel panel_paint;
         private System.Windows.Forms.PictureBox ptb_paint;
         private System.Windows.Forms.ListBox lb_brush;
+        private System.Windows.Forms.Panel panel5;
     }
 }
 

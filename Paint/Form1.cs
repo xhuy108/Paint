@@ -8,27 +8,38 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
+using System.IO;
+
+using Paint.MyShape;
+using Paint.MyAct;
+
 
 namespace Paint
 {
     public partial class Form1 : Form
     {
+        private static Color MainColor = Color.Black;
+        private static int Size = 10;
+
         bool draw = false;
-        Pen pen = new Pen(Color.Black);
+        MPen pen = new MPen(Color.Black, Size);
+
+        Image _img;
         
+        private Graphics gr;
+
         Point lastPoint = Point.Empty;
 
         public Form1()
         {
             InitializeComponent();
+            DoubleBuffered = true;
             menuStrip1.Renderer = new MenuStripRenderer();
-            
+            gr = ptb_paint.CreateGraphics();
             
         }
 
-        private static Color MainColor = Color.DimGray;
-        private static float Size = 10;
-
+        
         public class MenuStripRenderer : ToolStripProfessionalRenderer
         {
             protected override void OnRenderMenuItemBackground(ToolStripItemRenderEventArgs e)
@@ -94,31 +105,35 @@ namespace Paint
                 get { return MainColor; }
             }
         }
-
         private void ptb_paint_MouseMove(object sender, MouseEventArgs e)
         {
-            pen = new Pen(MainColor, Size);
-            if (draw == true)
-            {
-                if (lastPoint != null)
-                {
-                    if (ptb_paint.Image == null)
-                    {
-                        Bitmap bmp = new Bitmap(ptb_paint.Width, ptb_paint.Height);
-                        ptb_paint.Image = bmp;
-                    }
-                    using (Graphics g = Graphics.FromImage(ptb_paint.Image))
-                    {
-                        g.DrawLine(pen, lastPoint, e.Location);
-                        g.SmoothingMode = SmoothingMode.AntiAlias;
-                        lastPoint = e.Location;
-
-                    }
-                    ptb_paint.Invalidate();
-
-                }
-            }
+            
+           
         }
+        //private void ptb_paint_MouseMove(object sender, MouseEventArgs e)
+        //{
+        //    pen = new Pen(MainColor, Size);
+        //    if (draw == true)
+        //    {
+        //        if (lastPoint != null)
+        //        {
+        //            if (ptb_paint.Image == null)
+        //            {
+        //                Bitmap bmp = new Bitmap(ptb_paint.Width, ptb_paint.Height);
+        //                ptb_paint.Image = bmp;
+        //            }
+        //            using (Graphics g = Graphics.FromImage(ptb_paint.Image))
+        //            {
+        //                g.DrawLine(pen, lastPoint, e.Location);
+        //                g.SmoothingMode = SmoothingMode.AntiAlias;
+        //                lastPoint = e.Location;
+
+        //            }
+        //            ptb_paint.Invalidate();
+
+        //        }
+        //    }
+        //}
 
         private void ptb_paint_MouseDown(object sender, MouseEventArgs e)
         {
@@ -126,7 +141,7 @@ namespace Paint
             lastPoint = e.Location;
             
         }
-//SolidColorBrush: Paints an area with a solid Color.
+        //SolidColorBrush: Paints an area with a solid Color.
 
 //LinearGradientBrush: Paints an area with a linear gradient.
 
@@ -148,7 +163,62 @@ namespace Paint
         {
             this.DoubleBuffered = true;
            
-            MainColor = Color.DimGray;
+        }
+
+        // mo file
+        public void onClickMouseMove(Point p, Point lastPoint, Shape pen, PictureBox ptb)
+        {
+            if (draw == true)
+            {
+                Brush brush = new SolidBrush(pen.color);
+                if (lastPoint != null)
+                {
+                    if (ptb.Image == null)
+                    {
+                        Bitmap bmp = new Bitmap(ptb.Width, ptb.Height);
+                        ptb.Image = bmp;
+                    }
+                    using (Graphics g = Graphics.FromImage(ptb.Image))
+                    {
+                        g.InterpolationMode = InterpolationMode.HighQualityBicubic;
+                        
+                        g.FillRectangle(brush, new System.Drawing.Rectangle(p.X, p.Y, pen.size, pen.size));
+                        g.FillRectangle(brush, new System.Drawing.Rectangle(p.X, p.Y, pen.size, pen.size));
+                        lastPoint = p;
+                    }
+                    ptb.Invalidate();
+
+                }
+            }
+        }
+
+        
+        public void OpenImage(PictureBox picturebox)
+        {
+            OpenFileDialog openFile = new OpenFileDialog();
+            openFile.Filter = "Image Files(*.png;*.jpg; *.jpeg; *.gif; *.bmp)|*.png;*.jpg; *.jpeg; *.gif; *.bmp";
+            openFile.CheckFileExists = true;
+            openFile.CheckPathExists = true;
+            if (openFile.ShowDialog() == DialogResult.OK)
+            {
+                picturebox.Image = new Bitmap(openFile.FileName);
+                picturebox.Size = panel_paint.Size;
+                
+            }
+        }
+        
+
+        
+        private void importfileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+            OpenImage(ptb_paint);
+        }
+
+        private void ptb_paint_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+
         }
     }
 }
