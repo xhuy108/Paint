@@ -63,9 +63,16 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manager\MyData.cs" />
+    <Compile Include="MyItem\MyPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyItem\MyPtb.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyShape\MyLine.cs" />
+    <Compile Include="MyShape\MyPen.cs" />
     <Compile Include="MyShape\Shape.cs" />
-    <Compile Include="MyAct\painter_event.cs" />
-    <Compile Include="MyShape\pen_tool.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -94,6 +101,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="MyAct\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

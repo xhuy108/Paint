@@ -158,11 +158,11 @@ namespace Paint
             this.btn_FitToWindowSize = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.lb_Navigator = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.data_paint = new Paint.Manager.MyData();
+            this.panel_paint = new Paint.MyItem.MyPanel(data_paint);
             this.lb_BrushSize = new System.Windows.Forms.Label();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.panel_paint = new System.Windows.Forms.Panel();
-            this.ptb_paint = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -177,8 +177,6 @@ namespace Paint
             this.tableLayoutPanel5.SuspendLayout();
             this.panel8.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
-            this.panel_paint.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_paint)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -3637,27 +3635,15 @@ namespace Paint
             // 
             // panel_paint
             // 
+            this.panel_paint.allowDraw = false;
             this.panel_paint.BackColor = System.Drawing.Color.White;
-            this.panel_paint.Controls.Add(this.ptb_paint);
             this.panel_paint.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_paint.lastPoint = new System.Drawing.Point(0, 0);
             this.panel_paint.Location = new System.Drawing.Point(275, 64);
             this.panel_paint.Name = "panel_paint";
             this.panel_paint.Size = new System.Drawing.Size(512, 619);
+            this.panel_paint.startPoint = new System.Drawing.Point(0, 0);
             this.panel_paint.TabIndex = 12;
-            // 
-            // ptb_paint
-            // 
-            this.ptb_paint.BackColor = System.Drawing.Color.Transparent;
-            this.ptb_paint.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ptb_paint.Location = new System.Drawing.Point(0, 0);
-            this.ptb_paint.Name = "ptb_paint";
-            this.ptb_paint.Size = new System.Drawing.Size(512, 619);
-            this.ptb_paint.TabIndex = 0;
-            this.ptb_paint.TabStop = false;
-            this.ptb_paint.Paint += new System.Windows.Forms.PaintEventHandler(this.ptb_paint_Paint);
-            this.ptb_paint.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ptb_paint_MouseDown);
-            this.ptb_paint.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ptb_paint_MouseMove);
-            this.ptb_paint.MouseUp += new System.Windows.Forms.MouseEventHandler(this.ptb_paint_MouseUp);
             // 
             // Form1
             // 
@@ -3691,8 +3677,6 @@ namespace Paint
             this.tableLayoutPanel5.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
-            this.panel_paint.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_paint)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3796,10 +3780,9 @@ namespace Paint
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label lb_BrushControl;
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.Panel panel_paint;
-        private System.Windows.Forms.PictureBox ptb_paint;
         private System.Windows.Forms.ListBox lb_brush;
         private System.Windows.Forms.Panel panel5;
+        private MyItem.MyPanel panel_paint;
     }
 }
 

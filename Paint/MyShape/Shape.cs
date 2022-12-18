@@ -18,7 +18,8 @@ namespace Paint
         {
             return this.MemberwiseClone();
         }
-
+        // cho biết index
+        public int index { get; set; }
         // cho biết ten
         public string name { get; set; }
         // xem có duoc chon
@@ -44,8 +45,7 @@ namespace Paint
         // cho biết size
         public int size { get; set; }
         // vẽ shape
-        public abstract void draw(Graphics g);
-
+        
         
     }
 }
