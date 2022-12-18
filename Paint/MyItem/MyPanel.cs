@@ -71,6 +71,7 @@ namespace Paint.MyItem
             {
                 if (allowDraw && !lastPoint.IsEmpty && !startPoint.IsEmpty)
                     _points.Add(startPoint);
+
             }
             else if (shapeSelected == 1)
             {
@@ -89,7 +90,7 @@ namespace Paint.MyItem
             if (shapeSelected == 0)
             {
                 e.Graphics.DrawLine(p, startPoint, startPoint);
-                
+
             }
             else if (shapeSelected == 1)
             {
