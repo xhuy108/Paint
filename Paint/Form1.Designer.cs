@@ -69,7 +69,6 @@ namespace Paint
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openRecentFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -92,7 +91,6 @@ namespace Paint
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inverseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.transformToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.snapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.transparentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.swapForToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -241,7 +239,6 @@ namespace Paint
             this.editToolStripMenuItem,
             this.filterToolStripMenuItem,
             this.selectToolStripMenuItem,
-            this.snapToolStripMenuItem,
             this.colorToolStripMenuItem,
             this.viewToolStripMenuItem,
             this.toolToolStripMenuItem,
@@ -260,7 +257,6 @@ namespace Paint
             this.openToolStripMenuItem,
             this.openRecentFileToolStripMenuItem,
             this.toolStripMenuItem4,
-            this.toolStripMenuItem3,
             this.toolStripMenuItem2,
             this.saveToolStripMenuItem,
             this.saveAsToolStripMenuItem});
@@ -300,14 +296,6 @@ namespace Paint
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
             this.toolStripMenuItem4.Size = new System.Drawing.Size(218, 26);
             this.toolStripMenuItem4.Text = "Save";
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.toolStripMenuItem3.ForeColor = System.Drawing.Color.White;
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(218, 26);
-            this.toolStripMenuItem3.Text = "Import File";
             // 
             // toolStripMenuItem2
             // 
@@ -501,13 +489,6 @@ namespace Paint
             this.transformToolStripMenuItem.Name = "transformToolStripMenuItem";
             this.transformToolStripMenuItem.Size = new System.Drawing.Size(160, 26);
             this.transformToolStripMenuItem.Text = "Transform";
-            // 
-            // snapToolStripMenuItem
-            // 
-            this.snapToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.snapToolStripMenuItem.Name = "snapToolStripMenuItem";
-            this.snapToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
-            this.snapToolStripMenuItem.Text = "Snap";
             // 
             // colorToolStripMenuItem
             // 
@@ -4246,7 +4227,6 @@ namespace Paint
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem filterToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem selectToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem snapToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem colorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolToolStripMenuItem;
@@ -4288,7 +4268,6 @@ namespace Paint
         private System.Windows.Forms.ToolStripMenuItem textToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem objectToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
