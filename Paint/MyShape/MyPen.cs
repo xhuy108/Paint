@@ -8,33 +8,30 @@ using System.Drawing.Drawing2D;
 
 namespace Paint.MyShape
 {
-    public class MPen:Shape
+    public class MyPen : Shape
     {
         // cho biết phải bút xóa không
         public bool isErase { get; set; }
-        public MPen()
+        public MyPen()
         {
             name = "Pen";
+            index = 0;
         }
-        public MPen(Color clor)
+        public MyPen(Color clor)
         {
             name = "Pen";
             color = clor;
+            index = 0;
         }
-        public MPen(Color clor, int siz)
+        public MyPen(Color clor, int siz)
         {
             name = "Pen";
             color = clor;
             size = siz;
+            index = 0;
         }
-        public override void draw(Graphics g)
-        {
-            Pen pen = new Pen(color, size);
-
-            
-            
-        }
-        //public DrawLine(Graphics g, )
         
+        //public DrawLine(Graphics g, )
+
     }
 }

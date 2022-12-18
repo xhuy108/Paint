@@ -11,8 +11,8 @@ using System.Drawing.Drawing2D;
 using System.IO;
 
 using Paint.MyShape;
-using Paint.MyAct;
-
+using Paint.Manager;
+using Paint.MyItem;
 
 namespace Paint
 {
@@ -20,12 +20,12 @@ namespace Paint
     {
         private static Color MainColor = Color.Black;
         private static int Size = 10;
+        private int count_ptb = 0;
+        public MyData data_paint = new MyData();
 
         bool draw = false;
-        MPen pen = new MPen(Color.Black, Size);
-
+        MyPen pen = new MyPen(Color.Black, Size);
         Image _img;
-        
         private Graphics gr;
 
         Point lastPoint = Point.Empty;
@@ -35,7 +35,7 @@ namespace Paint
             InitializeComponent();
             DoubleBuffered = true;
             menuStrip1.Renderer = new MenuStripRenderer();
-            gr = ptb_paint.CreateGraphics();
+            gr = panel_paint.CreateGraphics();
             
         }
 
@@ -105,59 +105,7 @@ namespace Paint
                 get { return MainColor; }
             }
         }
-        private void ptb_paint_MouseMove(object sender, MouseEventArgs e)
-        {
-            
-           
-        }
-        //private void ptb_paint_MouseMove(object sender, MouseEventArgs e)
-        //{
-        //    pen = new Pen(MainColor, Size);
-        //    if (draw == true)
-        //    {
-        //        if (lastPoint != null)
-        //        {
-        //            if (ptb_paint.Image == null)
-        //            {
-        //                Bitmap bmp = new Bitmap(ptb_paint.Width, ptb_paint.Height);
-        //                ptb_paint.Image = bmp;
-        //            }
-        //            using (Graphics g = Graphics.FromImage(ptb_paint.Image))
-        //            {
-        //                g.DrawLine(pen, lastPoint, e.Location);
-        //                g.SmoothingMode = SmoothingMode.AntiAlias;
-        //                lastPoint = e.Location;
-
-        //            }
-        //            ptb_paint.Invalidate();
-
-        //        }
-        //    }
-        //}
-
-        private void ptb_paint_MouseDown(object sender, MouseEventArgs e)
-        {
-            draw = true;
-            lastPoint = e.Location;
-            
-        }
-        //SolidColorBrush: Paints an area with a solid Color.
-
-//LinearGradientBrush: Paints an area with a linear gradient.
-
-//RadialGradientBrush: Paints an area with a radial gradient.
-
-//ImageBrush: Paints an area with an image(represented by an ImageSource object).
-
-//DrawingBrush: Paints an area with a Drawing.The drawing may include vector and bitmap objects.
-
-//VisualBrush: Paints an area with a Visual object. 
-        private void ptb_paint_MouseUp(object sender, MouseEventArgs e)
-        {
-            draw = false;
-            lastPoint = Point.Empty;
-            
-        }
+        
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -166,34 +114,8 @@ namespace Paint
         }
 
         // mo file
-        public void onClickMouseMove(Point p, Point lastPoint, Shape pen, PictureBox ptb)
-        {
-            if (draw == true)
-            {
-                Brush brush = new SolidBrush(pen.color);
-                if (lastPoint != null)
-                {
-                    if (ptb.Image == null)
-                    {
-                        Bitmap bmp = new Bitmap(ptb.Width, ptb.Height);
-                        ptb.Image = bmp;
-                    }
-                    using (Graphics g = Graphics.FromImage(ptb.Image))
-                    {
-                        g.InterpolationMode = InterpolationMode.HighQualityBicubic;
-                        
-                        g.FillRectangle(brush, new System.Drawing.Rectangle(p.X, p.Y, pen.size, pen.size));
-                        g.FillRectangle(brush, new System.Drawing.Rectangle(p.X, p.Y, pen.size, pen.size));
-                        lastPoint = p;
-                    }
-                    ptb.Invalidate();
-
-                }
-            }
-        }
-
-        
-        public void OpenImage(PictureBox picturebox)
+ 
+        public void OpenImage(MyPtb picturebox)
         {
             OpenFileDialog openFile = new OpenFileDialog();
             openFile.Filter = "Image Files(*.png;*.jpg; *.jpeg; *.gif; *.bmp)|*.png;*.jpg; *.jpeg; *.gif; *.bmp";
@@ -207,18 +129,14 @@ namespace Paint
             }
         }
         
-
-        
         private void importfileToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
-            OpenImage(ptb_paint);
+            MyPtb _myptb = new MyPtb(panel_paint);
+            OpenImage(_myptb);
+            _myptb.ptb_index = count_ptb;
+            count_ptb++;
+            panel_paint.list_ptb.Add(_myptb);
         }
 
-        private void ptb_paint_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
-
-        }
     }
 }
