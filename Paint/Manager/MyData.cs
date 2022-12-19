@@ -26,8 +26,8 @@ namespace Paint.Manager
         public bool isRedo { get; set; }
         public bool isUndo { get; set; }
         // redo, undo
-        public  Stack<Bitmap> UndoStack = new Stack<Bitmap>();
-        public  Stack<Bitmap> RedoStack = new Stack<Bitmap>();
+        public Stack<Bitmap> UndoStack = new Stack<Bitmap>();
+        public Stack<Bitmap> RedoStack = new Stack<Bitmap>();
         public MyData()
         {
             shapeSelected_index = 0;

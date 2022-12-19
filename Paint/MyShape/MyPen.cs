@@ -30,7 +30,7 @@ namespace Paint.MyShape
             size = siz;
             index = 0;
         }
-        
+
         //public DrawLine(Graphics g, )
 
     }

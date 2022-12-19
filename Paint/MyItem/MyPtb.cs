@@ -32,13 +32,13 @@ namespace Paint.MyItem
         protected override void OnMouseMove(MouseEventArgs e)
         {
             base.OnMouseMove(e);
-            
-            if (e.Button == MouseButtons.Left && isPtbSelected == true )
+
+            if (e.Button == MouseButtons.Left && isPtbSelected == true)
             {
                 this.Left += e.X - move.X;
                 this.Top += e.Y - move.Y;
             }
-            if(e.Button == MouseButtons.Left)
+            if (e.Button == MouseButtons.Left)
             {
 
             }
@@ -49,7 +49,7 @@ namespace Paint.MyItem
         {
             base.OnKeyDown(e);
             //this.SizeMode = PictureBoxSizeMode.StretchImage;
-            if ((e.KeyCode == Keys.OemMinus || e.KeyCode == Keys.Subtract) )
+            if ((e.KeyCode == Keys.OemMinus || e.KeyCode == Keys.Subtract))
             {
                 Size t = new Size(this.Size.Width - 5, this.Size.Height - 5);
                 using (Bitmap bm = new Bitmap(this.Image, t))
@@ -62,12 +62,12 @@ namespace Paint.MyItem
                 this.Size = new Size(this.Size.Width + 5, this.Size.Height + 5);
             }
         }
-        
+
         public static Image resizeImage(Image imgToResize, Size size)
         {
             return (Image)(new Bitmap(imgToResize, size));
         }
-        
+
         protected override void OnClick(EventArgs e)
         {
             base.OnClick(e);
