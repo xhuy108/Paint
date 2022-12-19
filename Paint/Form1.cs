@@ -36,8 +36,7 @@ namespace Paint
             InitializeComponent();
             DoubleBuffered = true;
             menuStrip1.Renderer = new MenuStripRenderer();
-            //gr = panel_paint.CreateGraphics();
-            panel_paint = new MyPanel(data_paint);
+            panel_paint.update(data_paint);
         }
 
 
@@ -182,6 +181,11 @@ namespace Paint
         private void colorPicker_MouseMove(object sender, MouseEventArgs e)
         {
             pictureBox_ColorPreview.BackColor = colorPicker._canvas.GetPixel(e.X, e.Y);
+        }
+        private void btn_Undo_Click(object sender, EventArgs e)
+        {
+            panel_paint.Undo_Click();
+            panel_paint.updateData(data_paint);
         }
     }
 }

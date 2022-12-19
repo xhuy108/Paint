@@ -22,12 +22,20 @@ namespace Paint.Manager
         public int _size { get; set; }
         // chuot di qua control
         public bool isMouseCrossCtrl { get; set; }
+        // xem có redo, undo không
+        public bool isRedo { get; set; }
+        public bool isUndo { get; set; }
+        // redo, undo
+        public Stack<Bitmap> UndoStack = new Stack<Bitmap>();
+        public Stack<Bitmap> RedoStack = new Stack<Bitmap>();
         public MyData()
         {
-            shapeSelected_index = 1;
+            shapeSelected_index = 0;
             _color = Color.Black;
             _size = 10;
             isMouseCrossCtrl = false;
+            isRedo = false;
+            isUndo = false;
         }
     }
 }
