@@ -17,37 +17,47 @@ namespace Paint.MyItem
         // diem ve
         public Point startPoint { get; set; }
         // cho biết shape cần vẽ
+        public MyData Data = new MyData();
 
-        private int shapeSelected;
-        private Color colorSelected;
-        private int sizeSelected;
-        private bool isControlCross;
         private List<Tuple<Point, Point>> _lines = new List<Tuple<Point, Point>>();
         private List<Tuple<Point, Point>> _points = new List<Tuple<Point, Point>>();
+
+        private Bitmap bm;
         private Pen p;
         //Graphics g;
         public MyPanel()
         {
-            list_ptb = new List<MyPtb>();          
-            p = new Pen(colorSelected, sizeSelected);
+            list_ptb = new List<MyPtb>();         
+            p = new Pen(Data._color, Data._size);
             DoubleBuffered = true;
+            bm = new Bitmap(this.Width, this.Height);
+            this.DrawToBitmap(bm, new Rectangle(0,0,this.Width,this.Height));
         }
-        public MyPanel(MyData data)
+        public void Undo_Click()
         {
-            list_ptb = new List<MyPtb>();
-            allowDraw = false;
-            shapeSelected = data.shapeSelected_index;
-            colorSelected = data._color;
-            sizeSelected = data._size;
-            isControlCross = data.isMouseCrossCtrl;
-            //g = this.CreateGraphics();
-            p = new Pen(colorSelected, sizeSelected);
-
-            DoubleBuffered = true;
+            if(Data.UndoStack.Count > 0)
+            {
+                Data.RedoStack.Push((Bitmap)bm.Clone());
+                bm = Data.UndoStack.Pop();
+                Graphics g = Graphics.FromImage(bm);
+                Invalidate();
+            }
         }
-        private void updateData(MyData dt)
+        public void update(MyData data)
         {
-            dt.isMouseCrossCtrl = isControlCross;
+            Data.UndoStack = data.UndoStack;
+            Data.RedoStack = data.RedoStack;
+            Data.shapeSelected_index = data.shapeSelected_index;
+            Data._color = data._color;
+            Data._size = data._size;
+            Data.isMouseCrossCtrl = data.isMouseCrossCtrl;
+            Data.isRedo = data.isRedo;
+            Data.isUndo = data.isUndo;
+        }
+        public void updateData(MyData data)
+        {
+            data.UndoStack = Data.UndoStack; 
+            data.RedoStack = Data.RedoStack;
         }
 
         protected override void OnMouseDown(MouseEventArgs e)
@@ -56,12 +66,12 @@ namespace Paint.MyItem
             if (e.Button == MouseButtons.Left)
             {
                 allowDraw = true;
-                if (shapeSelected == 0)
+                if (Data.shapeSelected_index == 0)
                 {
                     lastPoint = e.Location;
                    
                 }
-                else if (shapeSelected == 1)
+                else if (Data.shapeSelected_index == 1)
                 {
                     lastPoint = e.Location;
                     
@@ -80,14 +90,14 @@ namespace Paint.MyItem
             base.OnMouseMove(e);
             if (e.Button == MouseButtons.Left)
             {
-                if (shapeSelected == 0)
+                if (Data.shapeSelected_index == 0)
                 {
                     startPoint = e.Location;
                     if(allowDraw && !lastPoint.IsEmpty && !startPoint.IsEmpty)
                         _points.Add(new Tuple<Point, Point>(lastPoint, startPoint));
                     lastPoint = startPoint;
                 }
-                else if (shapeSelected == 1)
+                else if (Data.shapeSelected_index == 1)
                 {
                     startPoint = e.Location;
                     
@@ -99,12 +109,12 @@ namespace Paint.MyItem
         protected override void OnMouseUp(MouseEventArgs e)
         {
             base.OnMouseUp(e);
-            if (shapeSelected == 0)
+            if (Data.shapeSelected_index == 0)
             {
                 lastPoint = Point.Empty;
                 startPoint = Point.Empty;
             }
-            else if (shapeSelected == 1)
+            else if (Data.shapeSelected_index == 1)
             {
                 if (allowDraw && !lastPoint.IsEmpty && !startPoint.IsEmpty)
                     _lines.Add(new Tuple<Point, Point>(lastPoint, startPoint));
@@ -117,15 +127,19 @@ namespace Paint.MyItem
         }
         protected override void OnPaint(PaintEventArgs e)
         {
-            if(shapeSelected ==0)
+            if (Data.shapeSelected_index == 0)
             {
+                
+                Data.UndoStack.Push((Bitmap)bm.Clone());
                 _draw_point(e.Graphics, p);
+                Data.RedoStack.Clear();
             }
-            else if (shapeSelected == 1)
+            else if (Data.shapeSelected_index == 1)
             {
+                Data.UndoStack.Push((Bitmap)bm.Clone());
                 _draw_line(e.Graphics, p);
+                Data.RedoStack.Clear();
             }
-
         }
         private void _draw_line(Graphics g, Pen p)
         {

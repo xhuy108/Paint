@@ -147,7 +147,6 @@ namespace Paint
             this.panel5 = new System.Windows.Forms.Panel();
             this.lb_BrushControl = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.panel_paint = new MyItem.MyPanel(data_paint);
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.btn_ClearRotation = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_RotateLeft = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -158,6 +157,7 @@ namespace Paint
             this.btn_ZoomOut = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_FitToWindowSize = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.lb_Navigator = new System.Windows.Forms.Label();
+            this.panel_paint = new Paint.MyItem.MyPanel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.lb_BrushSize = new System.Windows.Forms.Label();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
@@ -804,6 +804,7 @@ namespace Paint
             this.btn_Undo.TextPadding = new System.Windows.Forms.Padding(0);
             this.toolTip1.SetToolTip(this.btn_Undo, "Undo");
             this.btn_Undo.UseDefaultRadiusAndThickness = true;
+            this.btn_Undo.Click += new System.EventHandler(this.btn_Undo_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -2748,6 +2749,7 @@ namespace Paint
             this.lb_brush.Name = "lb_brush";
             this.lb_brush.Size = new System.Drawing.Size(233, 100);
             this.lb_brush.TabIndex = 6;
+            this.lb_brush.Visible = false;
             // 
             // label5
             // 
@@ -3588,6 +3590,18 @@ namespace Paint
             this.lb_Navigator.Text = "Navigator";
             this.lb_Navigator.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // panel_paint
+            // 
+            this.panel_paint.allowDraw = false;
+            this.panel_paint.BackColor = System.Drawing.Color.White;
+            this.panel_paint.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_paint.lastPoint = new System.Drawing.Point(0, 0);
+            this.panel_paint.Location = new System.Drawing.Point(275, 64);
+            this.panel_paint.Name = "panel_paint";
+            this.panel_paint.Size = new System.Drawing.Size(512, 619);
+            this.panel_paint.startPoint = new System.Drawing.Point(0, 0);
+            this.panel_paint.TabIndex = 12;
+            // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.DimGray;
@@ -3611,18 +3625,6 @@ namespace Paint
             this.lb_BrushSize.TabIndex = 0;
             this.lb_BrushSize.Text = "Brush size";
             this.lb_BrushSize.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel_paint
-            // 
-            this.panel_paint.allowDraw = false;
-            this.panel_paint.BackColor = System.Drawing.Color.White;
-            this.panel_paint.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_paint.lastPoint = new System.Drawing.Point(0, 0);
-            this.panel_paint.Location = new System.Drawing.Point(275, 64);
-            this.panel_paint.Name = "panel_paint";
-            this.panel_paint.Size = new System.Drawing.Size(512, 619);
-            this.panel_paint.startPoint = new System.Drawing.Point(0, 0);
-            this.panel_paint.TabIndex = 12;
             // 
             // tableLayoutPanel6
             // 

@@ -22,21 +22,12 @@ namespace Paint
         private static int Size = 10;
         private int count_ptb = 0;
         public MyData data_paint = new MyData();
-
-        bool draw = false;
-        MyPen pen = new MyPen(Color.Black, Size);
-        Image _img;
-        private Graphics gr;
-
-        Point lastPoint = Point.Empty;
-
         public Form1()
         {
             InitializeComponent();
             DoubleBuffered = true;
             menuStrip1.Renderer = new MenuStripRenderer();
-            gr = panel_paint.CreateGraphics();
-            
+            panel_paint.update(data_paint);
         }
 
         public class MenuStripRenderer : ToolStripProfessionalRenderer
@@ -137,5 +128,10 @@ namespace Paint
             panel_paint.list_ptb.Add(_myptb);
         }
 
+        private void btn_Undo_Click(object sender, EventArgs e)
+        {
+            panel_paint.Undo_Click();
+            panel_paint.updateData(data_paint);
+        }
     }
 }
