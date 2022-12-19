@@ -39,7 +39,6 @@ namespace Paint
             
         }
 
-        
         public class MenuStripRenderer : ToolStripProfessionalRenderer
         {
             protected override void OnRenderMenuItemBackground(ToolStripItemRenderEventArgs e)

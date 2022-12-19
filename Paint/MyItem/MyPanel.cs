@@ -18,13 +18,20 @@ namespace Paint.MyItem
         public Point startPoint { get; set; }
         // cho biết shape cần vẽ
 
-
         private int shapeSelected;
         private Color colorSelected;
         private int sizeSelected;
         private bool isControlCross;
         private List<Tuple<Point, Point>> _lines = new List<Tuple<Point, Point>>();
-        private List< Point> _points = new List< Point>();
+        private List<Tuple<Point, Point>> _points = new List<Tuple<Point, Point>>();
+        private Pen p;
+        //Graphics g;
+        public MyPanel()
+        {
+            list_ptb = new List<MyPtb>();          
+            p = new Pen(colorSelected, sizeSelected);
+            DoubleBuffered = true;
+        }
         public MyPanel(MyData data)
         {
             list_ptb = new List<MyPtb>();
@@ -33,6 +40,8 @@ namespace Paint.MyItem
             colorSelected = data._color;
             sizeSelected = data._size;
             isControlCross = data.isMouseCrossCtrl;
+            //g = this.CreateGraphics();
+            p = new Pen(colorSelected, sizeSelected);
 
             DoubleBuffered = true;
         }
@@ -40,13 +49,23 @@ namespace Paint.MyItem
         {
             dt.isMouseCrossCtrl = isControlCross;
         }
+
         protected override void OnMouseDown(MouseEventArgs e)
         {
             base.OnMouseDown(e);
             if (e.Button == MouseButtons.Left)
             {
                 allowDraw = true;
-                lastPoint = e.Location;
+                if (shapeSelected == 0)
+                {
+                    lastPoint = e.Location;
+                   
+                }
+                else if (shapeSelected == 1)
+                {
+                    lastPoint = e.Location;
+                    
+                }
             }
             else
             {
@@ -60,7 +79,20 @@ namespace Paint.MyItem
         {
             base.OnMouseMove(e);
             if (e.Button == MouseButtons.Left)
-                startPoint = e.Location;
+            {
+                if (shapeSelected == 0)
+                {
+                    startPoint = e.Location;
+                    if(allowDraw && !lastPoint.IsEmpty && !startPoint.IsEmpty)
+                        _points.Add(new Tuple<Point, Point>(lastPoint, startPoint));
+                    lastPoint = startPoint;
+                }
+                else if (shapeSelected == 1)
+                {
+                    startPoint = e.Location;
+                    
+                }
+            }
             Invalidate();
         }
 
@@ -69,37 +101,46 @@ namespace Paint.MyItem
             base.OnMouseUp(e);
             if (shapeSelected == 0)
             {
-                if (allowDraw && !lastPoint.IsEmpty && !startPoint.IsEmpty)
-                    _points.Add(startPoint);
-
+                lastPoint = Point.Empty;
+                startPoint = Point.Empty;
             }
             else if (shapeSelected == 1)
             {
                 if (allowDraw && !lastPoint.IsEmpty && !startPoint.IsEmpty)
                     _lines.Add(new Tuple<Point, Point>(lastPoint, startPoint));
+                lastPoint = Point.Empty;
+                startPoint = Point.Empty;
+                
             }
-
-            allowDraw = false;
-            lastPoint = Point.Empty;
-            startPoint = Point.Empty;
             Invalidate();
+            allowDraw = false;
         }
         protected override void OnPaint(PaintEventArgs e)
         {
-            Pen p = new Pen(colorSelected, sizeSelected);
-            if (shapeSelected == 0)
+            if(shapeSelected ==0)
             {
-                e.Graphics.DrawLine(p, startPoint, startPoint);
-
+                _draw_point(e.Graphics, p);
             }
             else if (shapeSelected == 1)
             {
-                foreach (var line in _lines)
-                    e.Graphics.DrawLine(p, line.Item1, line.Item2);
-                if (!lastPoint.IsEmpty && !startPoint.IsEmpty)
-                    e.Graphics.DrawLine(p, lastPoint, startPoint);
+                _draw_line(e.Graphics, p);
             }
 
         }
+        private void _draw_line(Graphics g, Pen p)
+        {
+            foreach (var line in _lines)
+                g.DrawLine(p, line.Item1, line.Item2);
+            if (!lastPoint.IsEmpty && !startPoint.IsEmpty)
+                g.DrawLine(p, lastPoint, startPoint);
+        }
+        private void _draw_point(Graphics g, Pen p)
+        {
+            foreach (var point in _points)
+            {
+                g.DrawLine(p, point.Item1, point.Item2); 
+            } 
+        }
+
     }
 }
