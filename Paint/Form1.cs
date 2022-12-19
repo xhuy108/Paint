@@ -7,18 +7,39 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Drawing2D;
+using System.IO;
 
+using Paint.MyShape;
+using Paint.Manager;
+using Paint.MyItem;
 
 namespace Paint
 {
     public partial class Form1 : Form
     {
+
+        private static Color MainColor = Color.Black;
+        private static int Size = 10;
+        private int count_ptb = 0;
+        public MyData data_paint = new MyData();
+
+        bool draw = false;
+        MyPen pen = new MyPen(Color.Black, Size);
+        Image _img;
+        private Graphics gr;
+
+        Point lastPoint = Point.Empty;
+        
         public Form1()
         {
-            this.SetStyle(ControlStyles.SupportsTransparentBackColor, true);
             InitializeComponent();
+            DoubleBuffered = true;
             menuStrip1.Renderer = new MenuStripRenderer();
+            //gr = panel_paint.CreateGraphics();
+            panel_paint = new MyPanel(data_paint);
         }
+
 
         public class MenuStripRenderer : ToolStripProfessionalRenderer
         {
@@ -57,25 +78,66 @@ namespace Paint
         {
             public override Color ToolStripDropDownBackground
             {
-                get { return Color.DimGray; }
+                get { return MainColor; }
             }
 
             public override Color MenuItemSelected
             {
-                get { return Color.DimGray; }
+                get { return MainColor; }
             }
 
             public override Color MenuItemBorder
             {
-                get { return Color.DimGray; }
+                get { return MainColor; }
+            }
+
+            public override Color MenuItemSelectedGradientBegin
+            {
+                get { return MainColor; }
+            }
+
+            public override Color MenuItemSelectedGradientEnd
+            {
+                get { return MainColor; }
             }
 
             public override Color MenuBorder
             {
-                get { return Color.DimGray; }
+                get { return MainColor; }
             }
         }
 
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.DoubleBuffered = true;
+
+        }
+
+        // mo file
+
+        public void OpenImage(MyPtb picturebox)
+        {
+            OpenFileDialog openFile = new OpenFileDialog();
+            openFile.Filter = "Image Files(*.png;*.jpg; *.jpeg; *.gif; *.bmp)|*.png;*.jpg; *.jpeg; *.gif; *.bmp";
+            openFile.CheckFileExists = true;
+            openFile.CheckPathExists = true;
+            if (openFile.ShowDialog() == DialogResult.OK)
+            {
+                picturebox.Image = new Bitmap(openFile.FileName);
+                picturebox.Size = panel_paint.Size;
+
+            }
+        }
+
+        private void openfileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MyPtb _myptb = new MyPtb(panel_paint);
+            OpenImage(_myptb);
+            _myptb.ptb_index = count_ptb;
+            count_ptb++;
+            panel_paint.list_ptb.Add(_myptb);
+        }
         private void textBox_RGBvalueChange()
         {
             textBox_Rvalue.Text = pictureBox_Color_Front.BackColor.R.ToString();
