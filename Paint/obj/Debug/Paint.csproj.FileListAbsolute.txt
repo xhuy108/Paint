@@ -26,3 +26,16 @@ D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\XH\Paint\Paint\obj\Debug\Paint.csproj.Co
 D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\XH\Paint\Paint\obj\Debug\Paint.csproj.CopyComplete
 D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\XH\Paint\Paint\obj\Debug\WindowsFormsApp1.exe
 D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\XH\Paint\Paint\obj\Debug\WindowsFormsApp1.pdb
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\WindowsFormsApp1.exe.config
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\WindowsFormsApp1.exe
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\WindowsFormsApp1.pdb
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\obj\Debug\Paint.csproj.AssemblyReference.cache
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\obj\Debug\Paint.csproj.SuggestedBindingRedirects.cache
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\obj\Debug\Paint.Form1.resources
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\obj\Debug\Paint.csproj.GenerateResource.cache
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\obj\Debug\WindowsFormsApp1.exe.licenses
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\obj\Debug\Paint.csproj.CoreCompileInputs.cache
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\obj\Debug\Paint.csproj.CopyComplete
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\obj\Debug\WindowsFormsApp1.exe
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\obj\Debug\WindowsFormsApp1.pdb

@@ -22,6 +22,7 @@ namespace Paint
         private static Color MainColor = Color.Black;
         private static int Size = 10;
         private int count_ptb = 0;
+        // chỗ lưu tất cả data
         public MyData data_paint = new MyData();
 
         bool draw = false;
