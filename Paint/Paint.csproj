@@ -72,6 +72,16 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manager\MyData.cs" />
+    <Compile Include="MyItem\MyPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyItem\MyPtb.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyShape\MyLine.cs" />
+    <Compile Include="MyShape\MyPen.cs" />
+    <Compile Include="MyShape\Shape.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

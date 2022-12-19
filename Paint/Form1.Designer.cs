@@ -30,7 +30,6 @@ namespace Paint
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
@@ -124,7 +123,7 @@ namespace Paint
             this.initializeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.showHideTabToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.btn_Redo = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -197,7 +196,8 @@ namespace Paint
             this.panel_BrushSize = new System.Windows.Forms.Panel();
             this.lb_BrushSize = new System.Windows.Forms.Label();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip1 = new System.Windows.Forms.ToolTip();
+            this.panel_paint = new Paint.MyItem.MyPanel();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -280,6 +280,7 @@ namespace Paint
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
             this.openToolStripMenuItem.Text = "Open";
+            this.openToolStripMenuItem.Click += new System.EventHandler(this.openfileToolStripMenuItem_Click);
             // 
             // openRecentFileToolStripMenuItem
             // 
@@ -999,6 +1000,7 @@ namespace Paint
             this.btn_Undo.TextPadding = new System.Windows.Forms.Padding(0);
             this.toolTip1.SetToolTip(this.btn_Undo, "Undo");
             this.btn_Undo.UseDefaultRadiusAndThickness = true;
+            this.btn_Undo.Click += new System.EventHandler(this.btn_Undo_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -3122,7 +3124,7 @@ namespace Paint
             this.textBox_Gvalue.Multiline = true;
             this.textBox_Gvalue.Name = "textBox_Gvalue";
             this.textBox_Gvalue.ReadOnly = true;
-            this.textBox_Gvalue.Size = new System.Drawing.Size(30, 18);
+            this.textBox_Gvalue.Size = new System.Drawing.Size(28, 18);
             this.textBox_Gvalue.TabIndex = 56;
             this.textBox_Gvalue.Text = "0";
             // 
@@ -4167,10 +4169,24 @@ namespace Paint
             // 
             this.toolTip1.ShowAlways = true;
             // 
+            // panel_paint
+            // 
+            this.panel_paint.allowDraw = false;
+            this.panel_paint.BackColor = System.Drawing.Color.White;
+            this.panel_paint.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_paint.lastPoint = new System.Drawing.Point(0, 0);
+            this.panel_paint.Location = new System.Drawing.Point(256, 64);
+            this.panel_paint.Name = "panel_paint";
+            this.panel_paint.Size = new System.Drawing.Size(527, 569);
+            this.panel_paint.startPoint = new System.Drawing.Point(0, 0);
+            this.panel_paint.TabIndex = 12;
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1032, 633);
+            this.Controls.Add(this.panel_paint);
             this.Controls.Add(this.tableLayoutPanel6);
             this.Controls.Add(this.tableLayoutPanel4);
             this.Controls.Add(this.tableLayoutPanel_PaintTool);
@@ -4183,6 +4199,7 @@ namespace Paint
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Paint";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -4221,7 +4238,7 @@ namespace Paint
         }
 
         #endregion
-
+  
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
@@ -4357,6 +4374,7 @@ namespace Paint
         private System.Windows.Forms.TableLayoutPanel subTableLayoutPanel_Color2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox_ColorPreview;
+        private MyItem.MyPanel panel_paint;
     }
 }
 
