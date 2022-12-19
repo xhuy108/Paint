@@ -18,10 +18,19 @@ namespace Paint
 {
     public partial class Form1 : Form
     {
+
         private static Color MainColor = Color.Black;
         private static int Size = 10;
         private int count_ptb = 0;
         public MyData data_paint = new MyData();
+
+        bool draw = false;
+        MyPen pen = new MyPen(Color.Black, Size);
+        Image _img;
+        private Graphics gr;
+
+        Point lastPoint = Point.Empty;
+        
         public Form1()
         {
             InitializeComponent();
@@ -29,6 +38,7 @@ namespace Paint
             menuStrip1.Renderer = new MenuStripRenderer();
             panel_paint.update(data_paint);
         }
+
 
         public class MenuStripRenderer : ToolStripProfessionalRenderer
         {
@@ -95,16 +105,16 @@ namespace Paint
                 get { return MainColor; }
             }
         }
-        
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
             this.DoubleBuffered = true;
-           
+
         }
 
         // mo file
- 
+
         public void OpenImage(MyPtb picturebox)
         {
             OpenFileDialog openFile = new OpenFileDialog();
@@ -115,11 +125,11 @@ namespace Paint
             {
                 picturebox.Image = new Bitmap(openFile.FileName);
                 picturebox.Size = panel_paint.Size;
-                
+
             }
         }
-        
-        private void importfileToolStripMenuItem_Click(object sender, EventArgs e)
+
+        private void openfileToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MyPtb _myptb = new MyPtb(panel_paint);
             OpenImage(_myptb);
@@ -127,7 +137,51 @@ namespace Paint
             count_ptb++;
             panel_paint.list_ptb.Add(_myptb);
         }
+        private void textBox_RGBvalueChange()
+        {
+            textBox_Rvalue.Text = pictureBox_Color_Front.BackColor.R.ToString();
+            textBox_Gvalue.Text = pictureBox_Color_Front.BackColor.G.ToString();
+            textBox_Bvalue.Text = pictureBox_Color_Front.BackColor.B.ToString();
+        }
 
+        private void btn_SelectColor_Click(object sender, EventArgs e)
+        {
+            ColorDialog colorPicker = new ColorDialog();
+            if (colorPicker.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox_Color_Front.BackColor = colorPicker.Color;
+                textBox_RGBvalueChange();
+            }
+        }
+
+        private void color_Swap(object sender, EventArgs e)
+        {
+            Color tmp = pictureBox_Color_Front.BackColor;
+            pictureBox_Color_Front.BackColor = pictureBox_Color_Back.BackColor;
+            pictureBox_Color_Back.BackColor = tmp;
+            textBox_RGBvalueChange();
+        }
+
+        private void colorBarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            colorWheelToolStripMenuItem.Checked = false;
+        }
+
+        private void colorWheelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            colorBarToolStripMenuItem.Checked = false;
+        }
+
+        private void colorPicker_ColorPicked(object sender, EventArgs e)
+        {
+            pictureBox_Color_Front.BackColor = colorPicker.SelectedColor;
+            textBox_RGBvalueChange();
+        }
+
+        private void colorPicker_MouseMove(object sender, MouseEventArgs e)
+        {
+            pictureBox_ColorPreview.BackColor = colorPicker._canvas.GetPixel(e.X, e.Y);
+        }
         private void btn_Undo_Click(object sender, EventArgs e)
         {
             panel_paint.Undo_Click();

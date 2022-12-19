@@ -27,15 +27,15 @@ namespace Paint.MyItem
         //Graphics g;
         public MyPanel()
         {
-            list_ptb = new List<MyPtb>();         
+            list_ptb = new List<MyPtb>();
             p = new Pen(Data._color, Data._size);
             DoubleBuffered = true;
             bm = new Bitmap(this.Width, this.Height);
-            this.DrawToBitmap(bm, new Rectangle(0,0,this.Width,this.Height));
+            this.DrawToBitmap(bm, new Rectangle(0, 0, this.Width, this.Height));
         }
         public void Undo_Click()
         {
-            if(Data.UndoStack.Count > 0)
+            if (Data.UndoStack.Count > 0)
             {
                 Data.RedoStack.Push((Bitmap)bm.Clone());
                 bm = Data.UndoStack.Pop();
@@ -56,7 +56,7 @@ namespace Paint.MyItem
         }
         public void updateData(MyData data)
         {
-            data.UndoStack = Data.UndoStack; 
+            data.UndoStack = Data.UndoStack;
             data.RedoStack = Data.RedoStack;
         }
 
@@ -69,12 +69,12 @@ namespace Paint.MyItem
                 if (Data.shapeSelected_index == 0)
                 {
                     lastPoint = e.Location;
-                   
+
                 }
                 else if (Data.shapeSelected_index == 1)
                 {
                     lastPoint = e.Location;
-                    
+
                 }
             }
             else
@@ -93,14 +93,14 @@ namespace Paint.MyItem
                 if (Data.shapeSelected_index == 0)
                 {
                     startPoint = e.Location;
-                    if(allowDraw && !lastPoint.IsEmpty && !startPoint.IsEmpty)
+                    if (allowDraw && !lastPoint.IsEmpty && !startPoint.IsEmpty)
                         _points.Add(new Tuple<Point, Point>(lastPoint, startPoint));
                     lastPoint = startPoint;
                 }
                 else if (Data.shapeSelected_index == 1)
                 {
                     startPoint = e.Location;
-                    
+
                 }
             }
             Invalidate();
@@ -120,7 +120,7 @@ namespace Paint.MyItem
                     _lines.Add(new Tuple<Point, Point>(lastPoint, startPoint));
                 lastPoint = Point.Empty;
                 startPoint = Point.Empty;
-                
+
             }
             Invalidate();
             allowDraw = false;
@@ -129,7 +129,7 @@ namespace Paint.MyItem
         {
             if (Data.shapeSelected_index == 0)
             {
-                
+
                 Data.UndoStack.Push((Bitmap)bm.Clone());
                 _draw_point(e.Graphics, p);
                 Data.RedoStack.Clear();
@@ -152,8 +152,8 @@ namespace Paint.MyItem
         {
             foreach (var point in _points)
             {
-                g.DrawLine(p, point.Item1, point.Item2); 
-            } 
+                g.DrawLine(p, point.Item1, point.Item2);
+            }
         }
 
     }

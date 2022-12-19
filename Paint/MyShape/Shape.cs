@@ -12,7 +12,7 @@ using System.IO;
 
 namespace Paint
 {
-    public abstract class Shape:ICloneable
+    public abstract class Shape : ICloneable
     {
         public object Clone()
         {
@@ -45,7 +45,7 @@ namespace Paint
         // cho biết size
         public int size { get; set; }
         // vẽ shape
-        
-        
+
+
     }
 }

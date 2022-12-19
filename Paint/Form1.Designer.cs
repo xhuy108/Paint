@@ -62,13 +62,13 @@ namespace Paint
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges28 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges29 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges30 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges31 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.importFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openRecentFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -91,9 +91,23 @@ namespace Paint
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inverseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.transformToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.snapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.transparentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.swapForToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.initializeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorBarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorWheelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lockPalletToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.zoomInToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.zoomOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fitToWindowSizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.rotateLeftToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.rotateRightToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.rotateRightToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.flipHorizontallyToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.brushToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eraserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -107,6 +121,8 @@ namespace Paint
             this.textToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.objectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.windowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.initializeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.showHideTabToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
@@ -121,7 +137,7 @@ namespace Paint
             this.btn_OpenMaterialDialog = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_Submit = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_OpenNetworkDialog = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel_PaintTool = new System.Windows.Forms.TableLayoutPanel();
             this.btn_Gradient = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_Bucket = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_Eraser = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -135,19 +151,40 @@ namespace Paint
             this.btn_Shape = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_Fill = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_Move = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.panel_Color = new System.Windows.Forms.Panel();
+            this.subTableLayoutPanel_Color2 = new System.Windows.Forms.TableLayoutPanel();
+            this.colorPicker = new AboControls.ExtendedControls.ColorPickerControl();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lb_Color = new System.Windows.Forms.Label();
+            this.pictureBox_ColorPreview = new System.Windows.Forms.PictureBox();
+            this.label_ColorPreview = new System.Windows.Forms.Label();
+            this.subTableLayoutPanel_Color = new System.Windows.Forms.TableLayoutPanel();
+            this.btn_SelectColor = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.subPanelBtextBox = new System.Windows.Forms.Panel();
+            this.textBox_Bvalue = new System.Windows.Forms.TextBox();
+            this.label_B_value = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.subPanelGtextBox = new System.Windows.Forms.Panel();
+            this.textBox_Gvalue = new System.Windows.Forms.TextBox();
+            this.label_G_value = new System.Windows.Forms.Label();
+            this.subPanelColorPicked = new System.Windows.Forms.Panel();
+            this.pictureBox_Color_Front = new System.Windows.Forms.PictureBox();
+            this.pictureBox_Color_Back = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.lb_BrushPreview = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.lb_brush = new System.Windows.Forms.ListBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.subPanelRtextBox = new System.Windows.Forms.Panel();
+            this.textBox_Rvalue = new System.Windows.Forms.TextBox();
+            this.label_R_value = new System.Windows.Forms.Label();
+            this.lb_Color = new System.Windows.Forms.Label();
+            this.panel_BrushPreview = new System.Windows.Forms.Panel();
+            this.lb_BrushPreview = new System.Windows.Forms.Label();
+            this.panel_Brush = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel_BrushControl = new System.Windows.Forms.Panel();
             this.lb_BrushControl = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel_Navigator = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel_NavigatorTool = new System.Windows.Forms.TableLayoutPanel();
             this.btn_ClearRotation = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_RotateLeft = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_FlipHorizontally = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -157,24 +194,38 @@ namespace Paint
             this.btn_ZoomOut = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_FitToWindowSize = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.lb_Navigator = new System.Windows.Forms.Label();
-            this.panel_paint = new Paint.MyItem.MyPanel();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel_BrushSize = new System.Windows.Forms.Panel();
             this.lb_BrushSize = new System.Windows.Forms.Label();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.panel_paint = new Paint.MyItem.MyPanel();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel_PaintTool.SuspendLayout();
+            this.panel_Color.SuspendLayout();
+            this.subTableLayoutPanel_Color2.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
-            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ColorPreview)).BeginInit();
+            this.subTableLayoutPanel_Color.SuspendLayout();
+            this.subPanelBtextBox.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
-            this.panel8.SuspendLayout();
+            this.subPanelGtextBox.SuspendLayout();
+            this.subPanelColorPicked.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Color_Front)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Color_Back)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.subPanelRtextBox.SuspendLayout();
+            this.panel_BrushPreview.SuspendLayout();
+            this.panel_Brush.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            this.panel_BrushControl.SuspendLayout();
+            this.panel_Navigator.SuspendLayout();
+            this.tableLayoutPanel_NavigatorTool.SuspendLayout();
+            this.panel_BrushSize.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -189,7 +240,6 @@ namespace Paint
             this.editToolStripMenuItem,
             this.filterToolStripMenuItem,
             this.selectToolStripMenuItem,
-            this.snapToolStripMenuItem,
             this.colorToolStripMenuItem,
             this.viewToolStripMenuItem,
             this.toolToolStripMenuItem,
@@ -197,7 +247,7 @@ namespace Paint
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1036, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1032, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -208,7 +258,6 @@ namespace Paint
             this.openToolStripMenuItem,
             this.openRecentFileToolStripMenuItem,
             this.toolStripMenuItem4,
-            this.toolStripMenuItem3,
             this.toolStripMenuItem2,
             this.saveToolStripMenuItem,
             this.saveAsToolStripMenuItem});
@@ -219,67 +268,59 @@ namespace Paint
             // 
             // importFileToolStripMenuItem
             // 
-            this.importFileToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.importFileToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.importFileToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.importFileToolStripMenuItem.Name = "importFileToolStripMenuItem";
-            this.importFileToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.importFileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.importFileToolStripMenuItem.Text = "Import File";
-            this.importFileToolStripMenuItem.Click += new System.EventHandler(this.importfileToolStripMenuItem_Click);
             // 
             // openToolStripMenuItem
             // 
-            this.openToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.openToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.openToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.openToolStripMenuItem.Text = "Open";
+            this.openToolStripMenuItem.Click += new System.EventHandler(this.openfileToolStripMenuItem_Click);
             // 
             // openRecentFileToolStripMenuItem
             // 
-            this.openRecentFileToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.openRecentFileToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.openRecentFileToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.openRecentFileToolStripMenuItem.Name = "openRecentFileToolStripMenuItem";
-            this.openRecentFileToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.openRecentFileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.openRecentFileToolStripMenuItem.Text = "Open Recent File";
             // 
             // toolStripMenuItem4
             // 
-            this.toolStripMenuItem4.BackColor = System.Drawing.Color.DimGray;
+            this.toolStripMenuItem4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.toolStripMenuItem4.ForeColor = System.Drawing.Color.White;
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(178, 22);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem4.Text = "Save";
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.BackColor = System.Drawing.Color.DimGray;
-            this.toolStripMenuItem3.ForeColor = System.Drawing.Color.White;
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(178, 22);
-            this.toolStripMenuItem3.Text = "Import File";
             // 
             // toolStripMenuItem2
             // 
-            this.toolStripMenuItem2.BackColor = System.Drawing.Color.DimGray;
+            this.toolStripMenuItem2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.toolStripMenuItem2.ForeColor = System.Drawing.Color.White;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(178, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem2.Text = "New";
             // 
             // saveToolStripMenuItem
             // 
-            this.saveToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.saveToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.saveToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveToolStripMenuItem.Text = "Save";
             // 
             // saveAsToolStripMenuItem
             // 
-            this.saveAsToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.saveAsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.saveAsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveAsToolStripMenuItem.Text = "Save As";
             // 
             // editToolStripMenuItem
@@ -302,7 +343,7 @@ namespace Paint
             // 
             // undoToolStripMenuItem
             // 
-            this.undoToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.undoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.undoToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
             this.undoToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
@@ -310,7 +351,7 @@ namespace Paint
             // 
             // redoToolStripMenuItem
             // 
-            this.redoToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.redoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.redoToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
             this.redoToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
@@ -318,7 +359,7 @@ namespace Paint
             // 
             // cutToolStripMenuItem
             // 
-            this.cutToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.cutToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.cutToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
             this.cutToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
@@ -326,7 +367,7 @@ namespace Paint
             // 
             // copyToolStripMenuItem
             // 
-            this.copyToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.copyToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.copyToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
             this.copyToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
@@ -334,7 +375,7 @@ namespace Paint
             // 
             // pasteToolStripMenuItem
             // 
-            this.pasteToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.pasteToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.pasteToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
             this.pasteToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
@@ -342,7 +383,7 @@ namespace Paint
             // 
             // cropToolStripMenuItem
             // 
-            this.cropToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.cropToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.cropToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.cropToolStripMenuItem.Name = "cropToolStripMenuItem";
             this.cropToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
@@ -350,7 +391,7 @@ namespace Paint
             // 
             // rotateLeftToolStripMenuItem
             // 
-            this.rotateLeftToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.rotateLeftToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.rotateLeftToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.rotateLeftToolStripMenuItem.Name = "rotateLeftToolStripMenuItem";
             this.rotateLeftToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
@@ -358,7 +399,7 @@ namespace Paint
             // 
             // rotateRightToolStripMenuItem
             // 
-            this.rotateRightToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.rotateRightToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.rotateRightToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.rotateRightToolStripMenuItem.Name = "rotateRightToolStripMenuItem";
             this.rotateRightToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
@@ -366,7 +407,7 @@ namespace Paint
             // 
             // flipHorizontallyToolStripMenuItem
             // 
-            this.flipHorizontallyToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.flipHorizontallyToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.flipHorizontallyToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.flipHorizontallyToolStripMenuItem.Name = "flipHorizontallyToolStripMenuItem";
             this.flipHorizontallyToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
@@ -374,7 +415,7 @@ namespace Paint
             // 
             // imageSizeToolStripMenuItem
             // 
-            this.imageSizeToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.imageSizeToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.imageSizeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.imageSizeToolStripMenuItem.Name = "imageSizeToolStripMenuItem";
             this.imageSizeToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
@@ -392,7 +433,7 @@ namespace Paint
             // 
             // levelsToolStripMenuItem
             // 
-            this.levelsToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.levelsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.levelsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.levelsToolStripMenuItem.Name = "levelsToolStripMenuItem";
             this.levelsToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
@@ -400,7 +441,7 @@ namespace Paint
             // 
             // hueToolStripMenuItem
             // 
-            this.hueToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.hueToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.hueToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.hueToolStripMenuItem.Name = "hueToolStripMenuItem";
             this.hueToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
@@ -421,7 +462,7 @@ namespace Paint
             // 
             // addToolStripMenuItem
             // 
-            this.addToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.addToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.addToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
             this.addToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
@@ -429,7 +470,7 @@ namespace Paint
             // 
             // deleteToolStripMenuItem
             // 
-            this.deleteToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.deleteToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.deleteToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
             this.deleteToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
@@ -437,7 +478,7 @@ namespace Paint
             // 
             // inverseToolStripMenuItem
             // 
-            this.inverseToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.inverseToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.inverseToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.inverseToolStripMenuItem.Name = "inverseToolStripMenuItem";
             this.inverseToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
@@ -445,32 +486,169 @@ namespace Paint
             // 
             // transformToolStripMenuItem
             // 
-            this.transformToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.transformToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.transformToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.transformToolStripMenuItem.Name = "transformToolStripMenuItem";
             this.transformToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.transformToolStripMenuItem.Text = "Transform";
             // 
-            // snapToolStripMenuItem
-            // 
-            this.snapToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.snapToolStripMenuItem.Name = "snapToolStripMenuItem";
-            this.snapToolStripMenuItem.Size = new System.Drawing.Size(50, 24);
-            this.snapToolStripMenuItem.Text = "Snap";
-            // 
             // colorToolStripMenuItem
             // 
+            this.colorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.transparentToolStripMenuItem,
+            this.swapForToolStripMenuItem,
+            this.initializeToolStripMenuItem,
+            this.colorBarToolStripMenuItem,
+            this.colorWheelToolStripMenuItem,
+            this.lockPalletToolStripMenuItem});
             this.colorToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
             this.colorToolStripMenuItem.Size = new System.Drawing.Size(52, 24);
             this.colorToolStripMenuItem.Text = "Color";
             // 
+            // transparentToolStripMenuItem
+            // 
+            this.transparentToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.transparentToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.transparentToolStripMenuItem.Name = "transparentToolStripMenuItem";
+            this.transparentToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.transparentToolStripMenuItem.Text = "Transparent";
+            // 
+            // swapForToolStripMenuItem
+            // 
+            this.swapForToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.swapForToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.swapForToolStripMenuItem.Name = "swapForToolStripMenuItem";
+            this.swapForToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.swapForToolStripMenuItem.Text = "Swap Fore/BG(S)";
+            // 
+            // initializeToolStripMenuItem
+            // 
+            this.initializeToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.initializeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.initializeToolStripMenuItem.Name = "initializeToolStripMenuItem";
+            this.initializeToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.initializeToolStripMenuItem.Text = "Initialize";
+            // 
+            // colorBarToolStripMenuItem
+            // 
+            this.colorBarToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.colorBarToolStripMenuItem.Checked = true;
+            this.colorBarToolStripMenuItem.CheckOnClick = true;
+            this.colorBarToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.colorBarToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.colorBarToolStripMenuItem.Name = "colorBarToolStripMenuItem";
+            this.colorBarToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.colorBarToolStripMenuItem.Text = "Color Bar";
+            this.colorBarToolStripMenuItem.Click += new System.EventHandler(this.colorBarToolStripMenuItem_Click);
+            // 
+            // colorWheelToolStripMenuItem
+            // 
+            this.colorWheelToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.colorWheelToolStripMenuItem.CheckOnClick = true;
+            this.colorWheelToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.colorWheelToolStripMenuItem.Name = "colorWheelToolStripMenuItem";
+            this.colorWheelToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.colorWheelToolStripMenuItem.Text = "Color Wheel";
+            this.colorWheelToolStripMenuItem.Click += new System.EventHandler(this.colorWheelToolStripMenuItem_Click);
+            // 
+            // lockPalletToolStripMenuItem
+            // 
+            this.lockPalletToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.lockPalletToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.lockPalletToolStripMenuItem.Name = "lockPalletToolStripMenuItem";
+            this.lockPalletToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.lockPalletToolStripMenuItem.Text = "Lock Palette";
+            // 
             // viewToolStripMenuItem
             // 
+            this.viewToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.zoomInToolStripMenuItem,
+            this.zoomOutToolStripMenuItem,
+            this.fitToWindowSizeToolStripMenuItem,
+            this.toolStripMenuItem5,
+            this.toolStripMenuItem6,
+            this.rotateLeftToolStripMenuItem1,
+            this.rotateRightToolStripMenuItem1,
+            this.rotateRightToolStripMenuItem2,
+            this.flipHorizontallyToolStripMenuItem1});
             this.viewToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(50, 24);
             this.viewToolStripMenuItem.Text = "View";
+            // 
+            // zoomInToolStripMenuItem
+            // 
+            this.zoomInToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.zoomInToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.zoomInToolStripMenuItem.Name = "zoomInToolStripMenuItem";
+            this.zoomInToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.zoomInToolStripMenuItem.Text = "Zoom In";
+            // 
+            // zoomOutToolStripMenuItem
+            // 
+            this.zoomOutToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.zoomOutToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.zoomOutToolStripMenuItem.Name = "zoomOutToolStripMenuItem";
+            this.zoomOutToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.zoomOutToolStripMenuItem.Text = "Zoom Out";
+            // 
+            // fitToWindowSizeToolStripMenuItem
+            // 
+            this.fitToWindowSizeToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.fitToWindowSizeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.fitToWindowSizeToolStripMenuItem.Name = "fitToWindowSizeToolStripMenuItem";
+            this.fitToWindowSizeToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.fitToWindowSizeToolStripMenuItem.Text = "Fit to Window Size";
+            // 
+            // toolStripMenuItem5
+            // 
+            this.toolStripMenuItem5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.toolStripMenuItem5.ForeColor = System.Drawing.Color.White;
+            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(192, 22);
+            this.toolStripMenuItem5.Text = "100%";
+            // 
+            // toolStripMenuItem6
+            // 
+            this.toolStripMenuItem6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.toolStripMenuItem6.ForeColor = System.Drawing.Color.White;
+            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(192, 22);
+            this.toolStripMenuItem6.Text = "200%";
+            // 
+            // rotateLeftToolStripMenuItem1
+            // 
+            this.rotateLeftToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.rotateLeftToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
+            this.rotateLeftToolStripMenuItem1.Name = "rotateLeftToolStripMenuItem1";
+            this.rotateLeftToolStripMenuItem1.Size = new System.Drawing.Size(192, 22);
+            this.rotateLeftToolStripMenuItem1.Text = "Rotate Left";
+            // 
+            // rotateRightToolStripMenuItem1
+            // 
+            this.rotateRightToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.rotateRightToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
+            this.rotateRightToolStripMenuItem1.Name = "rotateRightToolStripMenuItem1";
+            this.rotateRightToolStripMenuItem1.Size = new System.Drawing.Size(192, 22);
+            this.rotateRightToolStripMenuItem1.Text = "Release Rotate/Flip";
+            // 
+            // rotateRightToolStripMenuItem2
+            // 
+            this.rotateRightToolStripMenuItem2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.rotateRightToolStripMenuItem2.ForeColor = System.Drawing.Color.White;
+            this.rotateRightToolStripMenuItem2.Name = "rotateRightToolStripMenuItem2";
+            this.rotateRightToolStripMenuItem2.Size = new System.Drawing.Size(192, 22);
+            this.rotateRightToolStripMenuItem2.Text = "Rotate Right";
+            // 
+            // flipHorizontallyToolStripMenuItem1
+            // 
+            this.flipHorizontallyToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.flipHorizontallyToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
+            this.flipHorizontallyToolStripMenuItem1.Name = "flipHorizontallyToolStripMenuItem1";
+            this.flipHorizontallyToolStripMenuItem1.Size = new System.Drawing.Size(192, 22);
+            this.flipHorizontallyToolStripMenuItem1.Text = "Flip Horizontally";
             // 
             // toolToolStripMenuItem
             // 
@@ -494,7 +672,7 @@ namespace Paint
             // 
             // brushToolStripMenuItem
             // 
-            this.brushToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.brushToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.brushToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.brushToolStripMenuItem.Name = "brushToolStripMenuItem";
             this.brushToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
@@ -502,7 +680,7 @@ namespace Paint
             // 
             // eraserToolStripMenuItem
             // 
-            this.eraserToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.eraserToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.eraserToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.eraserToolStripMenuItem.Name = "eraserToolStripMenuItem";
             this.eraserToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
@@ -510,7 +688,7 @@ namespace Paint
             // 
             // shapeBrushToolStripMenuItem
             // 
-            this.shapeBrushToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.shapeBrushToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.shapeBrushToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.shapeBrushToolStripMenuItem.Name = "shapeBrushToolStripMenuItem";
             this.shapeBrushToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
@@ -518,7 +696,7 @@ namespace Paint
             // 
             // dotBrushToolStripMenuItem
             // 
-            this.dotBrushToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.dotBrushToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.dotBrushToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.dotBrushToolStripMenuItem.Name = "dotBrushToolStripMenuItem";
             this.dotBrushToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
@@ -526,7 +704,7 @@ namespace Paint
             // 
             // moveToolStripMenuItem
             // 
-            this.moveToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.moveToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.moveToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.moveToolStripMenuItem.Name = "moveToolStripMenuItem";
             this.moveToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
@@ -534,7 +712,7 @@ namespace Paint
             // 
             // fillToolStripMenuItem
             // 
-            this.fillToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.fillToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.fillToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.fillToolStripMenuItem.Name = "fillToolStripMenuItem";
             this.fillToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
@@ -542,7 +720,7 @@ namespace Paint
             // 
             // gradientToolStripMenuItem
             // 
-            this.gradientToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.gradientToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.gradientToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.gradientToolStripMenuItem.Name = "gradientToolStripMenuItem";
             this.gradientToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
@@ -550,7 +728,7 @@ namespace Paint
             // 
             // selectToolStripMenuItem1
             // 
-            this.selectToolStripMenuItem1.BackColor = System.Drawing.Color.DimGray;
+            this.selectToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.selectToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
             this.selectToolStripMenuItem1.Name = "selectToolStripMenuItem1";
             this.selectToolStripMenuItem1.Size = new System.Drawing.Size(148, 22);
@@ -558,7 +736,7 @@ namespace Paint
             // 
             // lassoToolStripMenuItem
             // 
-            this.lassoToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.lassoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.lassoToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.lassoToolStripMenuItem.Name = "lassoToolStripMenuItem";
             this.lassoToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
@@ -566,7 +744,7 @@ namespace Paint
             // 
             // textToolStripMenuItem
             // 
-            this.textToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.textToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.textToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.textToolStripMenuItem.Name = "textToolStripMenuItem";
             this.textToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
@@ -574,7 +752,7 @@ namespace Paint
             // 
             // objectToolStripMenuItem
             // 
-            this.objectToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.objectToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.objectToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.objectToolStripMenuItem.Name = "objectToolStripMenuItem";
             this.objectToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
@@ -582,10 +760,29 @@ namespace Paint
             // 
             // windowToolStripMenuItem
             // 
+            this.windowToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.initializeToolStripMenuItem1,
+            this.showHideTabToolStripMenuItem});
             this.windowToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.windowToolStripMenuItem.Name = "windowToolStripMenuItem";
             this.windowToolStripMenuItem.Size = new System.Drawing.Size(69, 24);
             this.windowToolStripMenuItem.Text = "Window";
+            // 
+            // initializeToolStripMenuItem1
+            // 
+            this.initializeToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.initializeToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
+            this.initializeToolStripMenuItem1.Name = "initializeToolStripMenuItem1";
+            this.initializeToolStripMenuItem1.Size = new System.Drawing.Size(164, 22);
+            this.initializeToolStripMenuItem1.Text = "Initialize";
+            // 
+            // showHideTabToolStripMenuItem
+            // 
+            this.showHideTabToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.showHideTabToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.showHideTabToolStripMenuItem.Name = "showHideTabToolStripMenuItem";
+            this.showHideTabToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.showHideTabToolStripMenuItem.Text = "Show/Hide Tab";
             // 
             // helpToolStripMenuItem
             // 
@@ -608,7 +805,7 @@ namespace Paint
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 28);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1036, 36);
+            this.panel1.Size = new System.Drawing.Size(1032, 36);
             this.panel1.TabIndex = 2;
             // 
             // tableLayoutPanel3
@@ -1460,44 +1657,43 @@ namespace Paint
             this.toolTip1.SetToolTip(this.btn_OpenNetworkDialog, "Open network dialog");
             this.btn_OpenNetworkDialog.UseDefaultRadiusAndThickness = true;
             // 
-            // tableLayoutPanel1
+            // tableLayoutPanel_PaintTool
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.btn_Gradient, 0, 6);
-            this.tableLayoutPanel1.Controls.Add(this.btn_Bucket, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.btn_Eraser, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.btn_Brush, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btn_Select, 0, 7);
-            this.tableLayoutPanel1.Controls.Add(this.btn_Lasso, 0, 8);
-            this.tableLayoutPanel1.Controls.Add(this.btn_MagicWandTool, 0, 9);
-            this.tableLayoutPanel1.Controls.Add(this.btn_Text, 0, 10);
-            this.tableLayoutPanel1.Controls.Add(this.btn_Hand, 0, 12);
-            this.tableLayoutPanel1.Controls.Add(this.btn_Eyedropper, 0, 11);
-            this.tableLayoutPanel1.Controls.Add(this.btn_Shape, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.btn_Fill, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.btn_Move, 0, 3);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 64);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 13;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(36, 619);
-            this.tableLayoutPanel1.TabIndex = 3;
+            this.tableLayoutPanel_PaintTool.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tableLayoutPanel_PaintTool.ColumnCount = 1;
+            this.tableLayoutPanel_PaintTool.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel_PaintTool.Controls.Add(this.btn_Gradient, 0, 6);
+            this.tableLayoutPanel_PaintTool.Controls.Add(this.btn_Bucket, 0, 5);
+            this.tableLayoutPanel_PaintTool.Controls.Add(this.btn_Eraser, 0, 1);
+            this.tableLayoutPanel_PaintTool.Controls.Add(this.btn_Brush, 0, 0);
+            this.tableLayoutPanel_PaintTool.Controls.Add(this.btn_Select, 0, 7);
+            this.tableLayoutPanel_PaintTool.Controls.Add(this.btn_Lasso, 0, 8);
+            this.tableLayoutPanel_PaintTool.Controls.Add(this.btn_MagicWandTool, 0, 9);
+            this.tableLayoutPanel_PaintTool.Controls.Add(this.btn_Text, 0, 10);
+            this.tableLayoutPanel_PaintTool.Controls.Add(this.btn_Hand, 0, 12);
+            this.tableLayoutPanel_PaintTool.Controls.Add(this.btn_Eyedropper, 0, 11);
+            this.tableLayoutPanel_PaintTool.Controls.Add(this.btn_Shape, 0, 2);
+            this.tableLayoutPanel_PaintTool.Controls.Add(this.btn_Fill, 0, 4);
+            this.tableLayoutPanel_PaintTool.Controls.Add(this.btn_Move, 0, 3);
+            this.tableLayoutPanel_PaintTool.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tableLayoutPanel_PaintTool.Location = new System.Drawing.Point(0, 64);
+            this.tableLayoutPanel_PaintTool.Name = "tableLayoutPanel_PaintTool";
+            this.tableLayoutPanel_PaintTool.RowCount = 13;
+            this.tableLayoutPanel_PaintTool.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel_PaintTool.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel_PaintTool.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel_PaintTool.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel_PaintTool.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel_PaintTool.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel_PaintTool.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel_PaintTool.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel_PaintTool.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel_PaintTool.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel_PaintTool.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel_PaintTool.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel_PaintTool.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel_PaintTool.Size = new System.Drawing.Size(36, 569);
+            this.tableLayoutPanel_PaintTool.TabIndex = 3;
             // 
             // btn_Gradient
             // 
@@ -1546,7 +1742,7 @@ namespace Paint
             this.btn_Gradient.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Gradient.IdleIconLeftImage")));
             this.btn_Gradient.IdleIconRightImage = null;
             this.btn_Gradient.IndicateFocus = false;
-            this.btn_Gradient.Location = new System.Drawing.Point(3, 243);
+            this.btn_Gradient.Location = new System.Drawing.Point(3, 231);
             this.btn_Gradient.Name = "btn_Gradient";
             this.btn_Gradient.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Gradient.OnDisabledState.BorderRadius = 10;
@@ -1636,7 +1832,7 @@ namespace Paint
             this.btn_Bucket.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Bucket.IdleIconLeftImage")));
             this.btn_Bucket.IdleIconRightImage = null;
             this.btn_Bucket.IndicateFocus = false;
-            this.btn_Bucket.Location = new System.Drawing.Point(3, 203);
+            this.btn_Bucket.Location = new System.Drawing.Point(3, 193);
             this.btn_Bucket.Name = "btn_Bucket";
             this.btn_Bucket.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Bucket.OnDisabledState.BorderRadius = 10;
@@ -1726,7 +1922,7 @@ namespace Paint
             this.btn_Eraser.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Eraser.IdleIconLeftImage")));
             this.btn_Eraser.IdleIconRightImage = null;
             this.btn_Eraser.IndicateFocus = false;
-            this.btn_Eraser.Location = new System.Drawing.Point(3, 43);
+            this.btn_Eraser.Location = new System.Drawing.Point(3, 41);
             this.btn_Eraser.Name = "btn_Eraser";
             this.btn_Eraser.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Eraser.OnDisabledState.BorderRadius = 10;
@@ -1906,7 +2102,7 @@ namespace Paint
             this.btn_Select.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Select.IdleIconLeftImage")));
             this.btn_Select.IdleIconRightImage = null;
             this.btn_Select.IndicateFocus = false;
-            this.btn_Select.Location = new System.Drawing.Point(3, 283);
+            this.btn_Select.Location = new System.Drawing.Point(3, 269);
             this.btn_Select.Name = "btn_Select";
             this.btn_Select.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Select.OnDisabledState.BorderRadius = 10;
@@ -1996,7 +2192,7 @@ namespace Paint
             this.btn_Lasso.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Lasso.IdleIconLeftImage")));
             this.btn_Lasso.IdleIconRightImage = null;
             this.btn_Lasso.IndicateFocus = false;
-            this.btn_Lasso.Location = new System.Drawing.Point(3, 323);
+            this.btn_Lasso.Location = new System.Drawing.Point(3, 307);
             this.btn_Lasso.Name = "btn_Lasso";
             this.btn_Lasso.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Lasso.OnDisabledState.BorderRadius = 10;
@@ -2086,7 +2282,7 @@ namespace Paint
             this.btn_MagicWandTool.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_MagicWandTool.IdleIconLeftImage")));
             this.btn_MagicWandTool.IdleIconRightImage = null;
             this.btn_MagicWandTool.IndicateFocus = false;
-            this.btn_MagicWandTool.Location = new System.Drawing.Point(3, 363);
+            this.btn_MagicWandTool.Location = new System.Drawing.Point(3, 345);
             this.btn_MagicWandTool.Name = "btn_MagicWandTool";
             this.btn_MagicWandTool.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_MagicWandTool.OnDisabledState.BorderRadius = 10;
@@ -2176,7 +2372,7 @@ namespace Paint
             this.btn_Text.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Text.IdleIconLeftImage")));
             this.btn_Text.IdleIconRightImage = null;
             this.btn_Text.IndicateFocus = false;
-            this.btn_Text.Location = new System.Drawing.Point(3, 403);
+            this.btn_Text.Location = new System.Drawing.Point(3, 383);
             this.btn_Text.Name = "btn_Text";
             this.btn_Text.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Text.OnDisabledState.BorderRadius = 10;
@@ -2266,7 +2462,7 @@ namespace Paint
             this.btn_Hand.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Hand.IdleIconLeftImage")));
             this.btn_Hand.IdleIconRightImage = null;
             this.btn_Hand.IndicateFocus = false;
-            this.btn_Hand.Location = new System.Drawing.Point(3, 483);
+            this.btn_Hand.Location = new System.Drawing.Point(3, 459);
             this.btn_Hand.Name = "btn_Hand";
             this.btn_Hand.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Hand.OnDisabledState.BorderRadius = 10;
@@ -2356,7 +2552,7 @@ namespace Paint
             this.btn_Eyedropper.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Eyedropper.IdleIconLeftImage")));
             this.btn_Eyedropper.IdleIconRightImage = null;
             this.btn_Eyedropper.IndicateFocus = false;
-            this.btn_Eyedropper.Location = new System.Drawing.Point(3, 443);
+            this.btn_Eyedropper.Location = new System.Drawing.Point(3, 421);
             this.btn_Eyedropper.Name = "btn_Eyedropper";
             this.btn_Eyedropper.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Eyedropper.OnDisabledState.BorderRadius = 10;
@@ -2446,7 +2642,7 @@ namespace Paint
             this.btn_Shape.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Shape.IdleIconLeftImage")));
             this.btn_Shape.IdleIconRightImage = null;
             this.btn_Shape.IndicateFocus = false;
-            this.btn_Shape.Location = new System.Drawing.Point(3, 83);
+            this.btn_Shape.Location = new System.Drawing.Point(3, 79);
             this.btn_Shape.Name = "btn_Shape";
             this.btn_Shape.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Shape.OnDisabledState.BorderRadius = 10;
@@ -2536,7 +2732,7 @@ namespace Paint
             this.btn_Fill.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Fill.IdleIconLeftImage")));
             this.btn_Fill.IdleIconRightImage = null;
             this.btn_Fill.IndicateFocus = false;
-            this.btn_Fill.Location = new System.Drawing.Point(3, 163);
+            this.btn_Fill.Location = new System.Drawing.Point(3, 155);
             this.btn_Fill.Name = "btn_Fill";
             this.btn_Fill.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Fill.OnDisabledState.BorderRadius = 10;
@@ -2626,7 +2822,7 @@ namespace Paint
             this.btn_Move.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Move.IdleIconLeftImage")));
             this.btn_Move.IdleIconRightImage = null;
             this.btn_Move.IndicateFocus = false;
-            this.btn_Move.Location = new System.Drawing.Point(3, 123);
+            this.btn_Move.Location = new System.Drawing.Point(3, 117);
             this.btn_Move.Name = "btn_Move";
             this.btn_Move.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Move.OnDisabledState.BorderRadius = 10;
@@ -2669,16 +2865,388 @@ namespace Paint
             this.toolTip1.SetToolTip(this.btn_Move, "Move Tool");
             this.btn_Move.UseDefaultRadiusAndThickness = true;
             // 
+            // panel_Color
+            // 
+            this.panel_Color.BackColor = System.Drawing.Color.DimGray;
+            this.panel_Color.Controls.Add(this.subTableLayoutPanel_Color2);
+            this.panel_Color.Controls.Add(this.subTableLayoutPanel_Color);
+            this.panel_Color.Controls.Add(this.lb_Color);
+            this.panel_Color.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_Color.Location = new System.Drawing.Point(0, 0);
+            this.panel_Color.Margin = new System.Windows.Forms.Padding(0);
+            this.panel_Color.Name = "panel_Color";
+            this.panel_Color.Size = new System.Drawing.Size(220, 175);
+            this.panel_Color.TabIndex = 4;
+            // 
+            // subTableLayoutPanel_Color2
+            // 
+            this.subTableLayoutPanel_Color2.ColumnCount = 1;
+            this.subTableLayoutPanel_Color2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.subTableLayoutPanel_Color2.Controls.Add(this.colorPicker, 0, 0);
+            this.subTableLayoutPanel_Color2.Controls.Add(this.panel2, 0, 1);
+            this.subTableLayoutPanel_Color2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.subTableLayoutPanel_Color2.Location = new System.Drawing.Point(62, 28);
+            this.subTableLayoutPanel_Color2.Name = "subTableLayoutPanel_Color2";
+            this.subTableLayoutPanel_Color2.RowCount = 2;
+            this.subTableLayoutPanel_Color2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.subTableLayoutPanel_Color2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.subTableLayoutPanel_Color2.Size = new System.Drawing.Size(158, 147);
+            this.subTableLayoutPanel_Color2.TabIndex = 65;
+            // 
+            // colorPicker
+            // 
+            this.colorPicker.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.colorPicker.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.colorPicker.Location = new System.Drawing.Point(3, 3);
+            this.colorPicker.Name = "colorPicker";
+            this.colorPicker.Size = new System.Drawing.Size(152, 111);
+            this.colorPicker.TabIndex = 64;
+            this.colorPicker.ColorPicked += new System.EventHandler(this.colorPicker_ColorPicked);
+            this.colorPicker.MouseMove += new System.Windows.Forms.MouseEventHandler(this.colorPicker_MouseMove);
+            // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.DimGray;
-            this.panel2.Controls.Add(this.lb_Color);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Controls.Add(this.pictureBox_ColorPreview);
+            this.panel2.Controls.Add(this.label_ColorPreview);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 117);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(239, 187);
-            this.panel2.TabIndex = 4;
+            this.panel2.Size = new System.Drawing.Size(158, 19);
+            this.panel2.TabIndex = 65;
+            // 
+            // pictureBox_ColorPreview
+            // 
+            this.pictureBox_ColorPreview.BackColor = System.Drawing.Color.Black;
+            this.pictureBox_ColorPreview.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox_ColorPreview.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox_ColorPreview.Location = new System.Drawing.Point(83, 0);
+            this.pictureBox_ColorPreview.Name = "pictureBox_ColorPreview";
+            this.pictureBox_ColorPreview.Size = new System.Drawing.Size(58, 19);
+            this.pictureBox_ColorPreview.TabIndex = 64;
+            this.pictureBox_ColorPreview.TabStop = false;
+            // 
+            // label_ColorPreview
+            // 
+            this.label_ColorPreview.AutoSize = true;
+            this.label_ColorPreview.BackColor = System.Drawing.Color.Transparent;
+            this.label_ColorPreview.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label_ColorPreview.Font = new System.Drawing.Font("Century Schoolbook", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_ColorPreview.ForeColor = System.Drawing.Color.White;
+            this.label_ColorPreview.Location = new System.Drawing.Point(0, 0);
+            this.label_ColorPreview.Name = "label_ColorPreview";
+            this.label_ColorPreview.Size = new System.Drawing.Size(83, 15);
+            this.label_ColorPreview.TabIndex = 63;
+            this.label_ColorPreview.Text = "Color Preview:";
+            // 
+            // subTableLayoutPanel_Color
+            // 
+            this.subTableLayoutPanel_Color.ColumnCount = 1;
+            this.subTableLayoutPanel_Color.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.subTableLayoutPanel_Color.Controls.Add(this.btn_SelectColor, 0, 4);
+            this.subTableLayoutPanel_Color.Controls.Add(this.subPanelBtextBox, 0, 3);
+            this.subTableLayoutPanel_Color.Controls.Add(this.panel7, 0, 2);
+            this.subTableLayoutPanel_Color.Controls.Add(this.subPanelColorPicked, 0, 0);
+            this.subTableLayoutPanel_Color.Controls.Add(this.panel3, 0, 1);
+            this.subTableLayoutPanel_Color.Dock = System.Windows.Forms.DockStyle.Left;
+            this.subTableLayoutPanel_Color.Location = new System.Drawing.Point(0, 28);
+            this.subTableLayoutPanel_Color.Name = "subTableLayoutPanel_Color";
+            this.subTableLayoutPanel_Color.RowCount = 5;
+            this.subTableLayoutPanel_Color.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56F));
+            this.subTableLayoutPanel_Color.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.39754F));
+            this.subTableLayoutPanel_Color.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.39754F));
+            this.subTableLayoutPanel_Color.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.39754F));
+            this.subTableLayoutPanel_Color.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 38.80738F));
+            this.subTableLayoutPanel_Color.Size = new System.Drawing.Size(62, 147);
+            this.subTableLayoutPanel_Color.TabIndex = 57;
+            // 
+            // btn_SelectColor
+            // 
+            this.btn_SelectColor.AllowAnimations = true;
+            this.btn_SelectColor.AllowMouseEffects = true;
+            this.btn_SelectColor.AllowToggling = false;
+            this.btn_SelectColor.AnimationSpeed = 200;
+            this.btn_SelectColor.AutoGenerateColors = false;
+            this.btn_SelectColor.AutoRoundBorders = false;
+            this.btn_SelectColor.AutoSizeLeftIcon = true;
+            this.btn_SelectColor.AutoSizeRightIcon = true;
+            this.btn_SelectColor.BackColor = System.Drawing.Color.Transparent;
+            this.btn_SelectColor.BackColor1 = System.Drawing.Color.DimGray;
+            this.btn_SelectColor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_SelectColor.BackgroundImage")));
+            this.btn_SelectColor.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_SelectColor.ButtonText = "";
+            this.btn_SelectColor.ButtonTextMarginLeft = 0;
+            this.btn_SelectColor.ColorContrastOnClick = 45;
+            this.btn_SelectColor.ColorContrastOnHover = 45;
+            this.btn_SelectColor.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges23.BottomLeft = true;
+            borderEdges23.BottomRight = true;
+            borderEdges23.TopLeft = true;
+            borderEdges23.TopRight = true;
+            this.btn_SelectColor.CustomizableEdges = borderEdges23;
+            this.btn_SelectColor.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_SelectColor.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btn_SelectColor.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btn_SelectColor.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btn_SelectColor.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btn_SelectColor.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_SelectColor.ForeColor = System.Drawing.Color.White;
+            this.btn_SelectColor.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_SelectColor.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btn_SelectColor.IconLeftPadding = new System.Windows.Forms.Padding(3);
+            this.btn_SelectColor.IconMarginLeft = 11;
+            this.btn_SelectColor.IconPadding = 5;
+            this.btn_SelectColor.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_SelectColor.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btn_SelectColor.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btn_SelectColor.IconSize = 25;
+            this.btn_SelectColor.IdleBorderColor = System.Drawing.Color.White;
+            this.btn_SelectColor.IdleBorderRadius = 8;
+            this.btn_SelectColor.IdleBorderThickness = 1;
+            this.btn_SelectColor.IdleFillColor = System.Drawing.Color.DimGray;
+            this.btn_SelectColor.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_SelectColor.IdleIconLeftImage")));
+            this.btn_SelectColor.IdleIconRightImage = null;
+            this.btn_SelectColor.IndicateFocus = false;
+            this.btn_SelectColor.Location = new System.Drawing.Point(6, 113);
+            this.btn_SelectColor.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
+            this.btn_SelectColor.Name = "btn_SelectColor";
+            this.btn_SelectColor.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btn_SelectColor.OnDisabledState.BorderRadius = 8;
+            this.btn_SelectColor.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_SelectColor.OnDisabledState.BorderThickness = 1;
+            this.btn_SelectColor.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btn_SelectColor.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btn_SelectColor.OnDisabledState.IconLeftImage = null;
+            this.btn_SelectColor.OnDisabledState.IconRightImage = null;
+            this.btn_SelectColor.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btn_SelectColor.onHoverState.BorderRadius = 8;
+            this.btn_SelectColor.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_SelectColor.onHoverState.BorderThickness = 1;
+            this.btn_SelectColor.onHoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btn_SelectColor.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_SelectColor.onHoverState.IconLeftImage = null;
+            this.btn_SelectColor.onHoverState.IconRightImage = null;
+            this.btn_SelectColor.OnIdleState.BorderColor = System.Drawing.Color.White;
+            this.btn_SelectColor.OnIdleState.BorderRadius = 8;
+            this.btn_SelectColor.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_SelectColor.OnIdleState.BorderThickness = 1;
+            this.btn_SelectColor.OnIdleState.FillColor = System.Drawing.Color.DimGray;
+            this.btn_SelectColor.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btn_SelectColor.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_SelectColor.OnIdleState.IconLeftImage")));
+            this.btn_SelectColor.OnIdleState.IconRightImage = null;
+            this.btn_SelectColor.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btn_SelectColor.OnPressedState.BorderRadius = 8;
+            this.btn_SelectColor.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_SelectColor.OnPressedState.BorderThickness = 1;
+            this.btn_SelectColor.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btn_SelectColor.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btn_SelectColor.OnPressedState.IconLeftImage = null;
+            this.btn_SelectColor.OnPressedState.IconRightImage = null;
+            this.btn_SelectColor.Size = new System.Drawing.Size(28, 28);
+            this.btn_SelectColor.TabIndex = 48;
+            this.btn_SelectColor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_SelectColor.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_SelectColor.TextMarginLeft = 0;
+            this.btn_SelectColor.TextPadding = new System.Windows.Forms.Padding(0);
+            this.toolTip1.SetToolTip(this.btn_SelectColor, "Brush Tool");
+            this.btn_SelectColor.UseDefaultRadiusAndThickness = true;
+            this.btn_SelectColor.Click += new System.EventHandler(this.btn_SelectColor_Click);
+            // 
+            // subPanelBtextBox
+            // 
+            this.subPanelBtextBox.Controls.Add(this.textBox_Bvalue);
+            this.subPanelBtextBox.Controls.Add(this.label_B_value);
+            this.subPanelBtextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.subPanelBtextBox.Location = new System.Drawing.Point(0, 92);
+            this.subPanelBtextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.subPanelBtextBox.Name = "subPanelBtextBox";
+            this.subPanelBtextBox.Size = new System.Drawing.Size(62, 18);
+            this.subPanelBtextBox.TabIndex = 4;
+            // 
+            // textBox_Bvalue
+            // 
+            this.textBox_Bvalue.BackColor = System.Drawing.Color.DimGray;
+            this.textBox_Bvalue.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox_Bvalue.Dock = System.Windows.Forms.DockStyle.Left;
+            this.textBox_Bvalue.Font = new System.Drawing.Font("Century Schoolbook", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_Bvalue.ForeColor = System.Drawing.Color.White;
+            this.textBox_Bvalue.Location = new System.Drawing.Point(21, 0);
+            this.textBox_Bvalue.Margin = new System.Windows.Forms.Padding(0);
+            this.textBox_Bvalue.Multiline = true;
+            this.textBox_Bvalue.Name = "textBox_Bvalue";
+            this.textBox_Bvalue.ReadOnly = true;
+            this.textBox_Bvalue.Size = new System.Drawing.Size(30, 18);
+            this.textBox_Bvalue.TabIndex = 57;
+            this.textBox_Bvalue.Text = "0";
+            // 
+            // label_B_value
+            // 
+            this.label_B_value.AutoSize = true;
+            this.label_B_value.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label_B_value.Font = new System.Drawing.Font("Century Schoolbook", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_B_value.ForeColor = System.Drawing.Color.White;
+            this.label_B_value.Location = new System.Drawing.Point(0, 0);
+            this.label_B_value.Margin = new System.Windows.Forms.Padding(6);
+            this.label_B_value.Name = "label_B_value";
+            this.label_B_value.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            this.label_B_value.Size = new System.Drawing.Size(21, 15);
+            this.label_B_value.TabIndex = 53;
+            this.label_B_value.Text = "B:";
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.subPanelGtextBox);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel7.Location = new System.Drawing.Point(0, 74);
+            this.panel7.Margin = new System.Windows.Forms.Padding(0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(62, 18);
+            this.panel7.TabIndex = 3;
+            // 
+            // subPanelGtextBox
+            // 
+            this.subPanelGtextBox.Controls.Add(this.textBox_Gvalue);
+            this.subPanelGtextBox.Controls.Add(this.label_G_value);
+            this.subPanelGtextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.subPanelGtextBox.Location = new System.Drawing.Point(0, 0);
+            this.subPanelGtextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.subPanelGtextBox.Name = "subPanelGtextBox";
+            this.subPanelGtextBox.Size = new System.Drawing.Size(62, 18);
+            this.subPanelGtextBox.TabIndex = 3;
+            // 
+            // textBox_Gvalue
+            // 
+            this.textBox_Gvalue.BackColor = System.Drawing.Color.DimGray;
+            this.textBox_Gvalue.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox_Gvalue.Dock = System.Windows.Forms.DockStyle.Left;
+            this.textBox_Gvalue.Font = new System.Drawing.Font("Century Schoolbook", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_Gvalue.ForeColor = System.Drawing.Color.White;
+            this.textBox_Gvalue.Location = new System.Drawing.Point(22, 0);
+            this.textBox_Gvalue.Multiline = true;
+            this.textBox_Gvalue.Name = "textBox_Gvalue";
+            this.textBox_Gvalue.ReadOnly = true;
+            this.textBox_Gvalue.Size = new System.Drawing.Size(28, 18);
+            this.textBox_Gvalue.TabIndex = 56;
+            this.textBox_Gvalue.Text = "0";
+            // 
+            // label_G_value
+            // 
+            this.label_G_value.AutoSize = true;
+            this.label_G_value.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label_G_value.Font = new System.Drawing.Font("Century Schoolbook", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_G_value.ForeColor = System.Drawing.Color.White;
+            this.label_G_value.Location = new System.Drawing.Point(0, 0);
+            this.label_G_value.Margin = new System.Windows.Forms.Padding(6);
+            this.label_G_value.Name = "label_G_value";
+            this.label_G_value.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            this.label_G_value.Size = new System.Drawing.Size(22, 15);
+            this.label_G_value.TabIndex = 52;
+            this.label_G_value.Text = "G:";
+            // 
+            // subPanelColorPicked
+            // 
+            this.subPanelColorPicked.Controls.Add(this.pictureBox_Color_Front);
+            this.subPanelColorPicked.Controls.Add(this.pictureBox_Color_Back);
+            this.subPanelColorPicked.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.subPanelColorPicked.Location = new System.Drawing.Point(0, 0);
+            this.subPanelColorPicked.Margin = new System.Windows.Forms.Padding(0);
+            this.subPanelColorPicked.Name = "subPanelColorPicked";
+            this.subPanelColorPicked.Size = new System.Drawing.Size(62, 56);
+            this.subPanelColorPicked.TabIndex = 0;
+            // 
+            // pictureBox_Color_Front
+            // 
+            this.pictureBox_Color_Front.BackColor = System.Drawing.Color.Black;
+            this.pictureBox_Color_Front.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox_Color_Front.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_Color_Front.Location = new System.Drawing.Point(8, 6);
+            this.pictureBox_Color_Front.Name = "pictureBox_Color_Front";
+            this.pictureBox_Color_Front.Size = new System.Drawing.Size(28, 28);
+            this.pictureBox_Color_Front.TabIndex = 50;
+            this.pictureBox_Color_Front.TabStop = false;
+            this.pictureBox_Color_Front.Click += new System.EventHandler(this.color_Swap);
+            // 
+            // pictureBox_Color_Back
+            // 
+            this.pictureBox_Color_Back.BackColor = System.Drawing.Color.ForestGreen;
+            this.pictureBox_Color_Back.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox_Color_Back.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_Color_Back.Location = new System.Drawing.Point(22, 19);
+            this.pictureBox_Color_Back.Name = "pictureBox_Color_Back";
+            this.pictureBox_Color_Back.Size = new System.Drawing.Size(28, 28);
+            this.pictureBox_Color_Back.TabIndex = 49;
+            this.pictureBox_Color_Back.TabStop = false;
+            this.pictureBox_Color_Back.Click += new System.EventHandler(this.color_Swap);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(0, 56);
+            this.panel3.Margin = new System.Windows.Forms.Padding(0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(62, 18);
+            this.panel3.TabIndex = 1;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.panel5);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(62, 18);
+            this.panel4.TabIndex = 2;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.subPanelRtextBox);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(62, 18);
+            this.panel5.TabIndex = 3;
+            // 
+            // subPanelRtextBox
+            // 
+            this.subPanelRtextBox.Controls.Add(this.textBox_Rvalue);
+            this.subPanelRtextBox.Controls.Add(this.label_R_value);
+            this.subPanelRtextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.subPanelRtextBox.Location = new System.Drawing.Point(0, 0);
+            this.subPanelRtextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.subPanelRtextBox.Name = "subPanelRtextBox";
+            this.subPanelRtextBox.Size = new System.Drawing.Size(62, 18);
+            this.subPanelRtextBox.TabIndex = 3;
+            // 
+            // textBox_Rvalue
+            // 
+            this.textBox_Rvalue.BackColor = System.Drawing.Color.DimGray;
+            this.textBox_Rvalue.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox_Rvalue.Dock = System.Windows.Forms.DockStyle.Left;
+            this.textBox_Rvalue.Font = new System.Drawing.Font("Century Schoolbook", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_Rvalue.ForeColor = System.Drawing.Color.White;
+            this.textBox_Rvalue.Location = new System.Drawing.Point(21, 0);
+            this.textBox_Rvalue.Multiline = true;
+            this.textBox_Rvalue.Name = "textBox_Rvalue";
+            this.textBox_Rvalue.ReadOnly = true;
+            this.textBox_Rvalue.Size = new System.Drawing.Size(30, 18);
+            this.textBox_Rvalue.TabIndex = 54;
+            this.textBox_Rvalue.Text = "0";
+            // 
+            // label_R_value
+            // 
+            this.label_R_value.AutoSize = true;
+            this.label_R_value.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label_R_value.Font = new System.Drawing.Font("Century Schoolbook", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_R_value.ForeColor = System.Drawing.Color.White;
+            this.label_R_value.Location = new System.Drawing.Point(0, 0);
+            this.label_R_value.Margin = new System.Windows.Forms.Padding(6);
+            this.label_R_value.Name = "label_R_value";
+            this.label_R_value.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            this.label_R_value.Size = new System.Drawing.Size(21, 15);
+            this.label_R_value.TabIndex = 51;
+            this.label_R_value.Text = "R:";
             // 
             // lb_Color
             // 
@@ -2688,21 +3256,21 @@ namespace Paint
             this.lb_Color.ForeColor = System.Drawing.Color.White;
             this.lb_Color.Location = new System.Drawing.Point(0, 0);
             this.lb_Color.Name = "lb_Color";
-            this.lb_Color.Size = new System.Drawing.Size(239, 28);
+            this.lb_Color.Size = new System.Drawing.Size(220, 28);
             this.lb_Color.TabIndex = 5;
             this.lb_Color.Text = "Color";
             this.lb_Color.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel3
+            // panel_BrushPreview
             // 
-            this.panel3.BackColor = System.Drawing.Color.DimGray;
-            this.panel3.Controls.Add(this.lb_BrushPreview);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 187);
-            this.panel3.Margin = new System.Windows.Forms.Padding(0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(239, 121);
-            this.panel3.TabIndex = 6;
+            this.panel_BrushPreview.BackColor = System.Drawing.Color.DimGray;
+            this.panel_BrushPreview.Controls.Add(this.lb_BrushPreview);
+            this.panel_BrushPreview.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_BrushPreview.Location = new System.Drawing.Point(0, 175);
+            this.panel_BrushPreview.Margin = new System.Windows.Forms.Padding(0);
+            this.panel_BrushPreview.Name = "panel_BrushPreview";
+            this.panel_BrushPreview.Size = new System.Drawing.Size(220, 110);
+            this.panel_BrushPreview.TabIndex = 6;
             // 
             // lb_BrushPreview
             // 
@@ -2712,44 +3280,21 @@ namespace Paint
             this.lb_BrushPreview.ForeColor = System.Drawing.Color.White;
             this.lb_BrushPreview.Location = new System.Drawing.Point(0, 0);
             this.lb_BrushPreview.Name = "lb_BrushPreview";
-            this.lb_BrushPreview.Size = new System.Drawing.Size(239, 28);
+            this.lb_BrushPreview.Size = new System.Drawing.Size(220, 28);
             this.lb_BrushPreview.TabIndex = 5;
             this.lb_BrushPreview.Text = "Brush Preview";
             this.lb_BrushPreview.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel6
+            // panel_Brush
             // 
-            this.panel6.BackColor = System.Drawing.Color.DimGray;
-            this.panel6.Controls.Add(this.lb_brush);
-            this.panel6.Controls.Add(this.label5);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(0, 491);
-            this.panel6.Margin = new System.Windows.Forms.Padding(0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(239, 128);
-            this.panel6.TabIndex = 7;
-            // 
-            // lb_brush
-            // 
-            this.lb_brush.BackColor = System.Drawing.Color.DimGray;
-            this.lb_brush.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lb_brush.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lb_brush.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_brush.ForeColor = System.Drawing.Color.White;
-            this.lb_brush.FormattingEnabled = true;
-            this.lb_brush.ItemHeight = 17;
-            this.lb_brush.Items.AddRange(new object[] {
-            "Solid Color Brush",
-            "Linear Gradient Brush",
-            "Radial Gradient Brush",
-            "Image Brush",
-            "Drawing Brush",
-            "Visual Brush"});
-            this.lb_brush.Location = new System.Drawing.Point(6, 28);
-            this.lb_brush.Name = "lb_brush";
-            this.lb_brush.Size = new System.Drawing.Size(233, 100);
-            this.lb_brush.TabIndex = 6;
-            this.lb_brush.Visible = false;
+            this.panel_Brush.BackColor = System.Drawing.Color.DimGray;
+            this.panel_Brush.Controls.Add(this.label5);
+            this.panel_Brush.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_Brush.Location = new System.Drawing.Point(0, 451);
+            this.panel_Brush.Margin = new System.Windows.Forms.Padding(0);
+            this.panel_Brush.Name = "panel_Brush";
+            this.panel_Brush.Size = new System.Drawing.Size(220, 118);
+            this.panel_Brush.TabIndex = 7;
             // 
             // label5
             // 
@@ -2759,7 +3304,7 @@ namespace Paint
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(0, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(239, 28);
+            this.label5.Size = new System.Drawing.Size(220, 28);
             this.label5.TabIndex = 5;
             this.label5.Text = "Brush ";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2768,40 +3313,31 @@ namespace Paint
             // 
             this.tableLayoutPanel4.ColumnCount = 1;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Controls.Add(this.panel4, 0, 2);
-            this.tableLayoutPanel4.Controls.Add(this.panel6, 0, 3);
-            this.tableLayoutPanel4.Controls.Add(this.panel2, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.panel3, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.panel_Brush, 0, 3);
+            this.tableLayoutPanel4.Controls.Add(this.panel_BrushControl, 0, 2);
+            this.tableLayoutPanel4.Controls.Add(this.panel_Color, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.panel_BrushPreview, 0, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(36, 64);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 4;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.24F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.68F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29.6F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.48F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(239, 619);
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.88525F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.49797F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29.32621F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.29057F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(220, 569);
             this.tableLayoutPanel4.TabIndex = 10;
             // 
-            // panel4
+            // panel_BrushControl
             // 
-            this.panel4.BackColor = System.Drawing.Color.DimGray;
-            this.panel4.Controls.Add(this.panel5);
-            this.panel4.Controls.Add(this.lb_BrushControl);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(0, 308);
-            this.panel4.Margin = new System.Windows.Forms.Padding(0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(239, 183);
-            this.panel4.TabIndex = 6;
-            // 
-            // panel5
-            // 
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(0, 28);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(239, 155);
-            this.panel5.TabIndex = 6;
+            this.panel_BrushControl.BackColor = System.Drawing.Color.DimGray;
+            this.panel_BrushControl.Controls.Add(this.lb_BrushControl);
+            this.panel_BrushControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_BrushControl.Location = new System.Drawing.Point(0, 285);
+            this.panel_BrushControl.Margin = new System.Windows.Forms.Padding(0);
+            this.panel_BrushControl.Name = "panel_BrushControl";
+            this.panel_BrushControl.Size = new System.Drawing.Size(220, 166);
+            this.panel_BrushControl.TabIndex = 6;
             // 
             // lb_BrushControl
             // 
@@ -2811,50 +3347,50 @@ namespace Paint
             this.lb_BrushControl.ForeColor = System.Drawing.Color.White;
             this.lb_BrushControl.Location = new System.Drawing.Point(0, 0);
             this.lb_BrushControl.Name = "lb_BrushControl";
-            this.lb_BrushControl.Size = new System.Drawing.Size(239, 28);
+            this.lb_BrushControl.Size = new System.Drawing.Size(220, 28);
             this.lb_BrushControl.TabIndex = 5;
             this.lb_BrushControl.Text = "Brush Control";
             this.lb_BrushControl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel7
+            // panel_Navigator
             // 
-            this.panel7.BackColor = System.Drawing.Color.DimGray;
-            this.panel7.Controls.Add(this.tableLayoutPanel5);
-            this.panel7.Controls.Add(this.lb_Navigator);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Margin = new System.Windows.Forms.Padding(0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(249, 227);
-            this.panel7.TabIndex = 0;
+            this.panel_Navigator.BackColor = System.Drawing.Color.DimGray;
+            this.panel_Navigator.Controls.Add(this.tableLayoutPanel_NavigatorTool);
+            this.panel_Navigator.Controls.Add(this.lb_Navigator);
+            this.panel_Navigator.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_Navigator.Location = new System.Drawing.Point(0, 0);
+            this.panel_Navigator.Margin = new System.Windows.Forms.Padding(0);
+            this.panel_Navigator.Name = "panel_Navigator";
+            this.panel_Navigator.Size = new System.Drawing.Size(249, 209);
+            this.panel_Navigator.TabIndex = 0;
             // 
-            // tableLayoutPanel5
+            // tableLayoutPanel_NavigatorTool
             // 
-            this.tableLayoutPanel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tableLayoutPanel5.ColumnCount = 8;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel5.Controls.Add(this.btn_ClearRotation, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.btn_RotateLeft, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.btn_FlipHorizontally, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.btn_RotateRight, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.btn_ZoomIn, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.btn_ActualPixel, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.btn_ZoomOut, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.btn_FitToWindowSize, 0, 0);
-            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 28);
-            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 1;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(249, 31);
-            this.tableLayoutPanel5.TabIndex = 1;
+            this.tableLayoutPanel_NavigatorTool.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tableLayoutPanel_NavigatorTool.ColumnCount = 8;
+            this.tableLayoutPanel_NavigatorTool.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel_NavigatorTool.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel_NavigatorTool.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel_NavigatorTool.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel_NavigatorTool.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel_NavigatorTool.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel_NavigatorTool.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel_NavigatorTool.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel_NavigatorTool.Controls.Add(this.btn_ClearRotation, 0, 0);
+            this.tableLayoutPanel_NavigatorTool.Controls.Add(this.btn_RotateLeft, 0, 0);
+            this.tableLayoutPanel_NavigatorTool.Controls.Add(this.btn_FlipHorizontally, 0, 0);
+            this.tableLayoutPanel_NavigatorTool.Controls.Add(this.btn_RotateRight, 0, 0);
+            this.tableLayoutPanel_NavigatorTool.Controls.Add(this.btn_ZoomIn, 0, 0);
+            this.tableLayoutPanel_NavigatorTool.Controls.Add(this.btn_ActualPixel, 0, 0);
+            this.tableLayoutPanel_NavigatorTool.Controls.Add(this.btn_ZoomOut, 0, 0);
+            this.tableLayoutPanel_NavigatorTool.Controls.Add(this.btn_FitToWindowSize, 0, 0);
+            this.tableLayoutPanel_NavigatorTool.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel_NavigatorTool.Location = new System.Drawing.Point(0, 28);
+            this.tableLayoutPanel_NavigatorTool.Name = "tableLayoutPanel_NavigatorTool";
+            this.tableLayoutPanel_NavigatorTool.RowCount = 1;
+            this.tableLayoutPanel_NavigatorTool.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel_NavigatorTool.Size = new System.Drawing.Size(249, 31);
+            this.tableLayoutPanel_NavigatorTool.TabIndex = 1;
             // 
             // btn_ClearRotation
             // 
@@ -2875,11 +3411,11 @@ namespace Paint
             this.btn_ClearRotation.ColorContrastOnClick = 45;
             this.btn_ClearRotation.ColorContrastOnHover = 45;
             this.btn_ClearRotation.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges23.BottomLeft = true;
-            borderEdges23.BottomRight = true;
-            borderEdges23.TopLeft = true;
-            borderEdges23.TopRight = true;
-            this.btn_ClearRotation.CustomizableEdges = borderEdges23;
+            borderEdges24.BottomLeft = true;
+            borderEdges24.BottomRight = true;
+            borderEdges24.TopLeft = true;
+            borderEdges24.TopRight = true;
+            this.btn_ClearRotation.CustomizableEdges = borderEdges24;
             this.btn_ClearRotation.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_ClearRotation.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_ClearRotation.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2965,11 +3501,11 @@ namespace Paint
             this.btn_RotateLeft.ColorContrastOnClick = 45;
             this.btn_RotateLeft.ColorContrastOnHover = 45;
             this.btn_RotateLeft.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges24.BottomLeft = true;
-            borderEdges24.BottomRight = true;
-            borderEdges24.TopLeft = true;
-            borderEdges24.TopRight = true;
-            this.btn_RotateLeft.CustomizableEdges = borderEdges24;
+            borderEdges25.BottomLeft = true;
+            borderEdges25.BottomRight = true;
+            borderEdges25.TopLeft = true;
+            borderEdges25.TopRight = true;
+            this.btn_RotateLeft.CustomizableEdges = borderEdges25;
             this.btn_RotateLeft.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_RotateLeft.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_RotateLeft.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -3055,11 +3591,11 @@ namespace Paint
             this.btn_FlipHorizontally.ColorContrastOnClick = 45;
             this.btn_FlipHorizontally.ColorContrastOnHover = 45;
             this.btn_FlipHorizontally.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges25.BottomLeft = true;
-            borderEdges25.BottomRight = true;
-            borderEdges25.TopLeft = true;
-            borderEdges25.TopRight = true;
-            this.btn_FlipHorizontally.CustomizableEdges = borderEdges25;
+            borderEdges26.BottomLeft = true;
+            borderEdges26.BottomRight = true;
+            borderEdges26.TopLeft = true;
+            borderEdges26.TopRight = true;
+            this.btn_FlipHorizontally.CustomizableEdges = borderEdges26;
             this.btn_FlipHorizontally.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_FlipHorizontally.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_FlipHorizontally.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -3145,11 +3681,11 @@ namespace Paint
             this.btn_RotateRight.ColorContrastOnClick = 45;
             this.btn_RotateRight.ColorContrastOnHover = 45;
             this.btn_RotateRight.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges26.BottomLeft = true;
-            borderEdges26.BottomRight = true;
-            borderEdges26.TopLeft = true;
-            borderEdges26.TopRight = true;
-            this.btn_RotateRight.CustomizableEdges = borderEdges26;
+            borderEdges27.BottomLeft = true;
+            borderEdges27.BottomRight = true;
+            borderEdges27.TopLeft = true;
+            borderEdges27.TopRight = true;
+            this.btn_RotateRight.CustomizableEdges = borderEdges27;
             this.btn_RotateRight.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_RotateRight.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_RotateRight.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -3235,11 +3771,11 @@ namespace Paint
             this.btn_ZoomIn.ColorContrastOnClick = 45;
             this.btn_ZoomIn.ColorContrastOnHover = 45;
             this.btn_ZoomIn.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges27.BottomLeft = true;
-            borderEdges27.BottomRight = true;
-            borderEdges27.TopLeft = true;
-            borderEdges27.TopRight = true;
-            this.btn_ZoomIn.CustomizableEdges = borderEdges27;
+            borderEdges28.BottomLeft = true;
+            borderEdges28.BottomRight = true;
+            borderEdges28.TopLeft = true;
+            borderEdges28.TopRight = true;
+            this.btn_ZoomIn.CustomizableEdges = borderEdges28;
             this.btn_ZoomIn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_ZoomIn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_ZoomIn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -3325,11 +3861,11 @@ namespace Paint
             this.btn_ActualPixel.ColorContrastOnClick = 45;
             this.btn_ActualPixel.ColorContrastOnHover = 45;
             this.btn_ActualPixel.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges28.BottomLeft = true;
-            borderEdges28.BottomRight = true;
-            borderEdges28.TopLeft = true;
-            borderEdges28.TopRight = true;
-            this.btn_ActualPixel.CustomizableEdges = borderEdges28;
+            borderEdges29.BottomLeft = true;
+            borderEdges29.BottomRight = true;
+            borderEdges29.TopLeft = true;
+            borderEdges29.TopRight = true;
+            this.btn_ActualPixel.CustomizableEdges = borderEdges29;
             this.btn_ActualPixel.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_ActualPixel.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_ActualPixel.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -3415,11 +3951,11 @@ namespace Paint
             this.btn_ZoomOut.ColorContrastOnClick = 45;
             this.btn_ZoomOut.ColorContrastOnHover = 45;
             this.btn_ZoomOut.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges29.BottomLeft = true;
-            borderEdges29.BottomRight = true;
-            borderEdges29.TopLeft = true;
-            borderEdges29.TopRight = true;
-            this.btn_ZoomOut.CustomizableEdges = borderEdges29;
+            borderEdges30.BottomLeft = true;
+            borderEdges30.BottomRight = true;
+            borderEdges30.TopLeft = true;
+            borderEdges30.TopRight = true;
+            this.btn_ZoomOut.CustomizableEdges = borderEdges30;
             this.btn_ZoomOut.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_ZoomOut.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_ZoomOut.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -3505,11 +4041,11 @@ namespace Paint
             this.btn_FitToWindowSize.ColorContrastOnClick = 45;
             this.btn_FitToWindowSize.ColorContrastOnHover = 45;
             this.btn_FitToWindowSize.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges30.BottomLeft = true;
-            borderEdges30.BottomRight = true;
-            borderEdges30.TopLeft = true;
-            borderEdges30.TopRight = true;
-            this.btn_FitToWindowSize.CustomizableEdges = borderEdges30;
+            borderEdges31.BottomLeft = true;
+            borderEdges31.BottomRight = true;
+            borderEdges31.TopLeft = true;
+            borderEdges31.TopRight = true;
+            this.btn_FitToWindowSize.CustomizableEdges = borderEdges31;
             this.btn_FitToWindowSize.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_FitToWindowSize.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_FitToWindowSize.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -3590,28 +4126,16 @@ namespace Paint
             this.lb_Navigator.Text = "Navigator";
             this.lb_Navigator.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel_paint
+            // panel_BrushSize
             // 
-            this.panel_paint.allowDraw = false;
-            this.panel_paint.BackColor = System.Drawing.Color.White;
-            this.panel_paint.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_paint.lastPoint = new System.Drawing.Point(0, 0);
-            this.panel_paint.Location = new System.Drawing.Point(275, 64);
-            this.panel_paint.Name = "panel_paint";
-            this.panel_paint.Size = new System.Drawing.Size(512, 619);
-            this.panel_paint.startPoint = new System.Drawing.Point(0, 0);
-            this.panel_paint.TabIndex = 12;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.DimGray;
-            this.panel8.Controls.Add(this.lb_BrushSize);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(0, 227);
-            this.panel8.Margin = new System.Windows.Forms.Padding(0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(249, 392);
-            this.panel8.TabIndex = 2;
+            this.panel_BrushSize.BackColor = System.Drawing.Color.DimGray;
+            this.panel_BrushSize.Controls.Add(this.lb_BrushSize);
+            this.panel_BrushSize.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_BrushSize.Location = new System.Drawing.Point(0, 209);
+            this.panel_BrushSize.Margin = new System.Windows.Forms.Padding(0);
+            this.panel_BrushSize.Name = "panel_BrushSize";
+            this.panel_BrushSize.Size = new System.Drawing.Size(249, 360);
+            this.panel_BrushSize.TabIndex = 2;
             // 
             // lb_BrushSize
             // 
@@ -3630,35 +4154,49 @@ namespace Paint
             // 
             this.tableLayoutPanel6.ColumnCount = 1;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Controls.Add(this.panel7, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.panel8, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.panel_Navigator, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.panel_BrushSize, 0, 1);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(787, 64);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(783, 64);
             this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 2;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 36.8336F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 63.1664F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(249, 619);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(249, 569);
             this.tableLayoutPanel6.TabIndex = 11;
             // 
             // toolTip1
             // 
             this.toolTip1.ShowAlways = true;
             // 
+            // panel_paint
+            // 
+            this.panel_paint.allowDraw = false;
+            this.panel_paint.BackColor = System.Drawing.Color.White;
+            this.panel_paint.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_paint.lastPoint = new System.Drawing.Point(0, 0);
+            this.panel_paint.Location = new System.Drawing.Point(256, 64);
+            this.panel_paint.Name = "panel_paint";
+            this.panel_paint.Size = new System.Drawing.Size(527, 569);
+            this.panel_paint.startPoint = new System.Drawing.Point(0, 0);
+            this.panel_paint.TabIndex = 12;
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1036, 683);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1032, 633);
             this.Controls.Add(this.panel_paint);
             this.Controls.Add(this.tableLayoutPanel6);
             this.Controls.Add(this.tableLayoutPanel4);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.tableLayoutPanel_PaintTool);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.MinimumSize = new System.Drawing.Size(950, 600);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Paint";
@@ -3668,28 +4206,45 @@ namespace Paint
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel_PaintTool.ResumeLayout(false);
+            this.panel_Color.ResumeLayout(false);
+            this.subTableLayoutPanel_Color2.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ColorPreview)).EndInit();
+            this.subTableLayoutPanel_Color.ResumeLayout(false);
+            this.subPanelBtextBox.ResumeLayout(false);
+            this.subPanelBtextBox.PerformLayout();
             this.panel7.ResumeLayout(false);
-            this.tableLayoutPanel5.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
+            this.subPanelGtextBox.ResumeLayout(false);
+            this.subPanelGtextBox.PerformLayout();
+            this.subPanelColorPicked.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Color_Front)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Color_Back)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.subPanelRtextBox.ResumeLayout(false);
+            this.subPanelRtextBox.PerformLayout();
+            this.panel_BrushPreview.ResumeLayout(false);
+            this.panel_Brush.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.panel_BrushControl.ResumeLayout(false);
+            this.panel_Navigator.ResumeLayout(false);
+            this.tableLayoutPanel_NavigatorTool.ResumeLayout(false);
+            this.panel_BrushSize.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
+  
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem filterToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem selectToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem snapToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem colorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolToolStripMenuItem;
@@ -3697,7 +4252,7 @@ namespace Paint
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_PaintTool;
         private System.Windows.Forms.ToolStripMenuItem importFileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openRecentFileToolStripMenuItem;
@@ -3731,15 +4286,14 @@ namespace Paint
         private System.Windows.Forms.ToolStripMenuItem textToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem objectToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel_Color;
         private System.Windows.Forms.Label lb_Color;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel_BrushPreview;
         private System.Windows.Forms.Label lb_BrushPreview;
-        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel_Brush;
         private System.Windows.Forms.Label label5;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_Lasso;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_Gradient;
@@ -3764,8 +4318,8 @@ namespace Paint
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_OpenMaterialDialog;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_Submit;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_OpenNetworkDialog;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.Panel panel_Navigator;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_NavigatorTool;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_ClearRotation;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_RotateLeft;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_FlipHorizontally;
@@ -3775,14 +4329,52 @@ namespace Paint
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_ZoomOut;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_FitToWindowSize;
         private System.Windows.Forms.Label lb_Navigator;
-        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel_BrushSize;
         private System.Windows.Forms.Label lb_BrushSize;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel_BrushControl;
         private System.Windows.Forms.Label lb_BrushControl;
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.ListBox lb_brush;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_SelectColor;
+        private System.Windows.Forms.PictureBox pictureBox_Color_Front;
+        private System.Windows.Forms.PictureBox pictureBox_Color_Back;
+        private System.Windows.Forms.ToolStripMenuItem transparentToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem swapForToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem initializeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem colorBarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem colorWheelToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lockPalletToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem initializeToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem showHideTabToolStripMenuItem;
+        private System.Windows.Forms.Label label_B_value;
+        private System.Windows.Forms.Label label_G_value;
+        private System.Windows.Forms.Label label_R_value;
+        private System.Windows.Forms.TextBox textBox_Rvalue;
+        private System.Windows.Forms.ToolStripMenuItem zoomInToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem zoomOutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fitToWindowSizeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
+        private System.Windows.Forms.ToolStripMenuItem rotateLeftToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem rotateRightToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem rotateRightToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem flipHorizontallyToolStripMenuItem1;
+        private System.Windows.Forms.Label label_ColorPreview;
+        private System.Windows.Forms.TableLayoutPanel subTableLayoutPanel_Color;
+        private System.Windows.Forms.Panel subPanelBtextBox;
+        private System.Windows.Forms.TextBox textBox_Bvalue;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel subPanelGtextBox;
+        private System.Windows.Forms.TextBox textBox_Gvalue;
+        private System.Windows.Forms.Panel subPanelColorPicked;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel subPanelRtextBox;
+        private AboControls.ExtendedControls.ColorPickerControl colorPicker;
+        private System.Windows.Forms.TableLayoutPanel subTableLayoutPanel_Color2;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox_ColorPreview;
         private MyItem.MyPanel panel_paint;
     }
 }
