@@ -16,6 +16,7 @@ namespace Paint
         {
             InitializeComponent();
             menuStrip1.Renderer = new MenuStripRenderer();
+            //testgh
         }
 
         private static Color MainColor = Color.DimGray;
