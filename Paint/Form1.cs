@@ -8,12 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Paint
 {
     public partial class Form1 : Form
     {
         public Form1()
         {
+            this.SetStyle(ControlStyles.SupportsTransparentBackColor, true);
             InitializeComponent();
             menuStrip1.Renderer = new MenuStripRenderer();
         }
