@@ -21,6 +21,7 @@ namespace Paint.MyItem
 
         private List<Tuple<Point, Point>> _lines = new List<Tuple<Point, Point>>();
         private List<Tuple<Point, Point>> _points = new List<Tuple<Point, Point>>();
+        private readonly object UndoRedoLock = new object();
 
         private Bitmap bm;
         private Pen p;
@@ -156,5 +157,20 @@ namespace Paint.MyItem
             }
         }
 
+        private void updateImage(Action update)
+        {
+            lock(UndoRedoLock)
+            {
+                Data.UndoStack.Push(bm);
+                try
+                {
+                    update();
+                }
+                catch
+                {
+                    Data.UndoStack.Pop();
+                }
+            }
+        }
     }
 }
