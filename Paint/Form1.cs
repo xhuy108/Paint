@@ -111,7 +111,8 @@ namespace Paint
         private void Form1_Load(object sender, EventArgs e)
         {
             this.DoubleBuffered = true;
-
+            data_paint._color = Color.Pink;
+            panel_paint.update(data_paint);
         }
 
         // mo file
@@ -185,7 +186,7 @@ namespace Paint
         }
         private void btn_Undo_Click(object sender, EventArgs e)
         {
-            panel_paint.Undo_Click();
+            //panel_paint.Undo_Click();
             panel_paint.updateData(data_paint);
         }
     }

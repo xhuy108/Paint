@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Linq;
 
 namespace Paint.MyItem
 {
@@ -24,30 +25,23 @@ namespace Paint.MyItem
         private readonly object UndoRedoLock = new object();
 
         private Bitmap bm;
-        private Pen p;
+        
         //Graphics g;
         public MyPanel()
         {
             list_ptb = new List<MyPtb>();
-            p = new Pen(Data._color, Data._size);
+            
             DoubleBuffered = true;
             bm = new Bitmap(this.Width, this.Height);
             this.DrawToBitmap(bm, new Rectangle(0, 0, this.Width, this.Height));
         }
-        public void Undo_Click()
-        {
-            if (Data.UndoStack.Count > 0)
-            {
-                Data.RedoStack.Push((Bitmap)bm.Clone());
-                bm = Data.UndoStack.Pop();
-                Graphics g = Graphics.FromImage(bm);
-                Invalidate();
-            }
-        }
+        
+
+
         public void update(MyData data)
         {
-            Data.UndoStack = data.UndoStack;
-            Data.RedoStack = data.RedoStack;
+            Data.UndoStackImage = data.UndoStackImage;
+            Data.RedoStackImage = data.RedoStackImage;
             Data.shapeSelected_index = data.shapeSelected_index;
             Data._color = data._color;
             Data._size = data._size;
@@ -57,8 +51,8 @@ namespace Paint.MyItem
         }
         public void updateData(MyData data)
         {
-            data.UndoStack = Data.UndoStack;
-            data.RedoStack = Data.RedoStack;
+            data.UndoStackImage = Data.UndoStackImage;
+            data.RedoStackImage = Data.RedoStackImage;
         }
 
         protected override void OnMouseDown(MouseEventArgs e)
@@ -128,18 +122,19 @@ namespace Paint.MyItem
         }
         protected override void OnPaint(PaintEventArgs e)
         {
+            Pen p = new Pen(Data._color, Data._size);
             if (Data.shapeSelected_index == 0)
             {
 
-                Data.UndoStack.Push((Bitmap)bm.Clone());
+                Data.UndoStackImage.Push((Bitmap)bm.Clone());
                 _draw_point(e.Graphics, p);
-                Data.RedoStack.Clear();
+                Data.RedoStackImage.Clear();
             }
             else if (Data.shapeSelected_index == 1)
             {
-                Data.UndoStack.Push((Bitmap)bm.Clone());
+                Data.UndoStackImage.Push((Bitmap)bm.Clone());
                 _draw_line(e.Graphics, p);
-                Data.RedoStack.Clear();
+                Data.RedoStackImage.Clear();
             }
         }
         private void _draw_line(Graphics g, Pen p)
@@ -161,16 +156,39 @@ namespace Paint.MyItem
         {
             lock(UndoRedoLock)
             {
-                Data.UndoStack.Push(bm);
+                Data.UndoStackImage.Push(bm);
                 try
                 {
                     update();
                 }
                 catch
                 {
-                    Data.UndoStack.Pop();
+                    Data.UndoStackImage.Pop();
                 }
             }
         }
+
+        private Bitmap DrawToBitmap(Control container)
+        {
+            // Get child controls based on z-order.
+            var childControls = container.Controls.Cast<Control>().ToArray();
+
+            // Reverse order so frontmost control is last.
+            Array.Reverse(childControls);
+
+            var maxBottom = childControls.Max(ctrl => ctrl.Bottom);
+            var maxRight = childControls.Max(ctrl => ctrl.Right);
+
+            // Create Bitmap with 10 pixels clearance in each direction.
+            var bmp = new Bitmap(maxRight + 10, maxBottom + 10);
+
+            foreach (var childControl in childControls)
+            {
+                childControl.DrawToBitmap(bmp, childControl.Bounds);
+            }
+
+            return bmp;
+        }
+
     }
 }
