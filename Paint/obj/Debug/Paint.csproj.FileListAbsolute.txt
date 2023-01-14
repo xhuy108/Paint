@@ -39,3 +39,16 @@ D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\obj\Debug\Paint.csproj.CoreCompile
 D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\obj\Debug\Paint.csproj.CopyComplete
 D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\obj\Debug\WindowsFormsApp1.exe
 D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\obj\Debug\WindowsFormsApp1.pdb
+T:\Paint fke\Paint\bin\Debug\WindowsFormsApp1.exe.config
+T:\Paint fke\Paint\bin\Debug\WindowsFormsApp1.exe
+T:\Paint fke\Paint\bin\Debug\WindowsFormsApp1.pdb
+T:\Paint fke\Paint\obj\Debug\Paint.csproj.AssemblyReference.cache
+T:\Paint fke\Paint\obj\Debug\Paint.csproj.SuggestedBindingRedirects.cache
+T:\Paint fke\Paint\obj\Debug\Paint.Form1.resources
+T:\Paint fke\Paint\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+T:\Paint fke\Paint\obj\Debug\Paint.csproj.GenerateResource.cache
+T:\Paint fke\Paint\obj\Debug\WindowsFormsApp1.exe.licenses
+T:\Paint fke\Paint\obj\Debug\Paint.csproj.CoreCompileInputs.cache
+T:\Paint fke\Paint\obj\Debug\Paint.csproj.CopyComplete
+T:\Paint fke\Paint\obj\Debug\WindowsFormsApp1.exe
+T:\Paint fke\Paint\obj\Debug\WindowsFormsApp1.pdb

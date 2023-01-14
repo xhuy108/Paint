@@ -20,6 +20,8 @@ namespace Paint.Manager
         public Color _color { get; set; }
         // size 
         public int _size { get; set; }
+        // opacity
+
         // chuot di qua control
         public bool isMouseCrossCtrl { get; set; }
         // xem có redo, undo không

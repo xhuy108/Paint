@@ -19,15 +19,16 @@ namespace Paint
     public partial class Form1 : Form
     {
 
+
         private static Color MainColor = Color.Black;
         private static int Size = 10;
         private int count_ptb = 0;
         // chỗ lưu tất cả data
         public MyData data_paint = new MyData();
 
-        bool draw = false;
+        //bool draw = false;
         MyPen pen = new MyPen(Color.Black, Size);
-        Image _img;
+        //Image _img;
         private Graphics gr;
 
         Point lastPoint = Point.Empty;
@@ -38,6 +39,8 @@ namespace Paint
             DoubleBuffered = true;
             menuStrip1.Renderer = new MenuStripRenderer();
             panel_paint.update(data_paint);
+            penSize1.myPanel = this.panel_paint;
+            colorPicker.panel = this.panel_paint;
         }
 
 
@@ -111,7 +114,8 @@ namespace Paint
         private void Form1_Load(object sender, EventArgs e)
         {
             this.DoubleBuffered = true;
-
+            this.data_paint._size = penSize1.Value;
+            this.panel_paint.update(data_paint);
         }
 
         // mo file

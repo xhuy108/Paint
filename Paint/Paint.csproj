@@ -73,6 +73,16 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Manager\MyData.cs" />
+    <Compile Include="MyBrush\PenColor.cs" />
+    <Compile Include="MyBrush\PenOpacity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyBrush\PenSize.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyBrush\CustomTrackbar.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="MyItem\MyPanel.cs">
       <SubType>Component</SubType>
     </Compile>
