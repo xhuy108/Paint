@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Runtime.CompilerServices;
 using System.Windows.Forms;
 
 namespace Paint.MyItem
@@ -23,12 +24,12 @@ namespace Paint.MyItem
         private List<Tuple<Point, Point>> _points = new List<Tuple<Point, Point>>();
 
         private Bitmap bm;
-        private Pen p;
+        //private Pen p;
         //Graphics g;
         public MyPanel()
         {
             list_ptb = new List<MyPtb>();
-            p = new Pen(Data._color, Data._size);
+            //p = new Pen(Data._color, Data._size);
             DoubleBuffered = true;
             bm = new Bitmap(this.Width, this.Height);
             this.DrawToBitmap(bm, new Rectangle(0, 0, this.Width, this.Height));
@@ -58,8 +59,11 @@ namespace Paint.MyItem
         {
             data.UndoStack = Data.UndoStack;
             data.RedoStack = Data.RedoStack;
+            data._color = Data._color;
+            data._size = Data._size;
         }
 
+        #region Ve
         protected override void OnMouseDown(MouseEventArgs e)
         {
             base.OnMouseDown(e);
@@ -85,6 +89,8 @@ namespace Paint.MyItem
             startPoint = Point.Empty;
             Invalidate();
         }
+
+        
         protected override void OnMouseMove(MouseEventArgs e)
         {
             base.OnMouseMove(e);
@@ -125,8 +131,12 @@ namespace Paint.MyItem
             Invalidate();
             allowDraw = false;
         }
+        #endregion
+
+
         protected override void OnPaint(PaintEventArgs e)
         {
+            Pen p = new Pen(Data._color, Data._size);
             if (Data.shapeSelected_index == 0)
             {
 
@@ -155,6 +165,6 @@ namespace Paint.MyItem
                 g.DrawLine(p, point.Item1, point.Item2);
             }
         }
-
+        
     }
 }
