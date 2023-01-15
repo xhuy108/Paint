@@ -164,11 +164,6 @@ namespace Paint
             textBox_RGBvalueChange();
         }
 
-        private void colorBarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            colorWheelToolStripMenuItem.Checked = false;
-        }
-
         private void colorWheelToolStripMenuItem_Click(object sender, EventArgs e)
         {
             colorBarToolStripMenuItem.Checked = false;
