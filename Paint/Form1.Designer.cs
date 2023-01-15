@@ -4174,6 +4174,8 @@ namespace Paint
             // 
             this.panel_paint.allowDraw = false;
             this.panel_paint.AutoScroll = true;
+            this.panel_paint.AutoScrollMargin = new System.Drawing.Size(4, 4);
+            this.panel_paint.AutoScrollMinSize = new System.Drawing.Size(4, 4);
             this.panel_paint.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel_paint.BackColor = System.Drawing.Color.White;
             this.panel_paint.Dock = System.Windows.Forms.DockStyle.Fill;

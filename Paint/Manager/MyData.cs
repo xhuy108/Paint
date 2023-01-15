@@ -26,8 +26,16 @@ namespace Paint.Manager
         public bool isRedo { get; set; }
         public bool isUndo { get; set; }
         // redo, undo
-        public Stack<Bitmap> UndoStack = new Stack<Bitmap>();
-        public Stack<Bitmap> RedoStack = new Stack<Bitmap>();
+        public Stack<Image> UndoStackImage = new Stack<Image>();
+        public Stack<Image> RedoStackImage = new Stack<Image>();
+        public Stack<Point> UndoStackLocation = new Stack<Point>();
+        public Stack<Point> RedoStackLocation = new Stack<Point>();
+
+        // stack để lưu obj mới nhất
+        public Stack<string> StackObject = new Stack<string>();
+        private string image = "Image";
+        private string location = "Location";
+
         public MyData()
         {
             shapeSelected_index = 0;
@@ -37,5 +45,63 @@ namespace Paint.Manager
             isRedo = false;
             isUndo = false;
         }
+        public void UpdateDataStack(MyData dt)
+        {
+            this.UndoStackImage = dt.UndoStackImage;
+            this.RedoStackImage = dt.RedoStackImage;
+        }
+        public void AddItem(Object obj)
+        {
+            if(obj.GetType() == typeof(MyItem.MyPtb))
+            {
+                MyItem.MyPtb myPtb = (MyItem.MyPtb)obj;
+                Point point = myPtb.Location;
+                UndoStackLocation.Push(point);
+                StackObject.Push(location);
+            }    
+            else if(obj.GetType() == typeof(Image))
+            {
+                Image img = (Image)obj;
+                UndoStackImage.Push(img);
+                StackObject.Push(image);
+            }    
+        }
+        public object Undo()
+        {
+            string obj = StackObject.Pop();
+            if(obj == location)
+            {
+                Point point = UndoStackLocation.Pop();
+                RedoStackLocation.Push(point);
+                return (object)UndoStackLocation.First();
+            }
+            else
+            {
+                Image img = UndoStackImage.Pop();
+                RedoStackImage.Push(img);
+                return (object)UndoStackImage.First();
+            }
+        }
+        public object Redo()
+        {
+            string obj = StackObject.Pop();
+            if(obj == location)
+            {
+                if (RedoStackLocation.Count == 0)
+                    return UndoStackLocation.First();
+                Point point = RedoStackLocation.Pop();
+                UndoStackLocation.Push(point);
+                return UndoStackLocation.First();
+            }
+            else 
+            {
+                if(RedoStackImage.Count == 0)
+                    return UndoStackImage.First();
+                Image img = RedoStackImage.Pop();
+                UndoStackImage.Push(img);
+                return UndoStackImage.First();
+            }
+        }
+
     }
 }
