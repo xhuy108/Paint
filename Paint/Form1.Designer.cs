@@ -152,6 +152,7 @@ namespace Paint
             this.btn_Move = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.panel_Color = new System.Windows.Forms.Panel();
             this.subTableLayoutPanel_Color2 = new System.Windows.Forms.TableLayoutPanel();
+            this.colorPicker = new AboControls.ExtendedControls.ColorPickerControl();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox_ColorPreview = new System.Windows.Forms.PictureBox();
             this.label_ColorPreview = new System.Windows.Forms.Label();
@@ -197,7 +198,6 @@ namespace Paint
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel_paint = new Paint.MyItem.MyPanel();
-            this.colorPicker = new AboControls.ExtendedControls.ColorPickerControl();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -509,7 +509,7 @@ namespace Paint
             this.transparentToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.transparentToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.transparentToolStripMenuItem.Name = "transparentToolStripMenuItem";
-            this.transparentToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.transparentToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
             this.transparentToolStripMenuItem.Text = "Transparent";
             // 
             // swapForToolStripMenuItem
@@ -517,7 +517,7 @@ namespace Paint
             this.swapForToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.swapForToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.swapForToolStripMenuItem.Name = "swapForToolStripMenuItem";
-            this.swapForToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.swapForToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
             this.swapForToolStripMenuItem.Text = "Swap Fore/BG(S)";
             // 
             // initializeToolStripMenuItem
@@ -525,7 +525,7 @@ namespace Paint
             this.initializeToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.initializeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.initializeToolStripMenuItem.Name = "initializeToolStripMenuItem";
-            this.initializeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.initializeToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
             this.initializeToolStripMenuItem.Text = "Initialize";
             // 
             // colorBarToolStripMenuItem
@@ -534,7 +534,7 @@ namespace Paint
             this.colorBarToolStripMenuItem.CheckOnClick = true;
             this.colorBarToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.colorBarToolStripMenuItem.Name = "colorBarToolStripMenuItem";
-            this.colorBarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.colorBarToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
             this.colorBarToolStripMenuItem.Text = "Color Bar";
             // 
             // lockPalletToolStripMenuItem
@@ -542,7 +542,7 @@ namespace Paint
             this.lockPalletToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.lockPalletToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.lockPalletToolStripMenuItem.Name = "lockPalletToolStripMenuItem";
-            this.lockPalletToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.lockPalletToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
             this.lockPalletToolStripMenuItem.Text = "Lock Palette";
             // 
             // viewToolStripMenuItem
@@ -2878,6 +2878,17 @@ namespace Paint
             this.subTableLayoutPanel_Color2.Size = new System.Drawing.Size(158, 147);
             this.subTableLayoutPanel_Color2.TabIndex = 65;
             // 
+            // colorPicker
+            // 
+            this.colorPicker.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.colorPicker.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.colorPicker.Location = new System.Drawing.Point(3, 3);
+            this.colorPicker.Name = "colorPicker";
+            this.colorPicker.Size = new System.Drawing.Size(152, 111);
+            this.colorPicker.TabIndex = 64;
+            this.colorPicker.ColorPicked += new System.EventHandler(this.colorPicker_ColorPicked);
+            this.colorPicker.MouseMove += new System.Windows.Forms.MouseEventHandler(this.colorPicker_MouseMove);
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.pictureBox_ColorPreview);
@@ -4159,17 +4170,6 @@ namespace Paint
             this.panel_paint.Size = new System.Drawing.Size(527, 569);
             this.panel_paint.startPoint = new System.Drawing.Point(0, 0);
             this.panel_paint.TabIndex = 12;
-            // 
-            // colorPicker
-            // 
-            this.colorPicker.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.colorPicker.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.colorPicker.Location = new System.Drawing.Point(3, 3);
-            this.colorPicker.Name = "colorPicker";
-            this.colorPicker.Size = new System.Drawing.Size(152, 111);
-            this.colorPicker.TabIndex = 64;
-            this.colorPicker.ColorPicked += new System.EventHandler(this.colorPicker_ColorPicked);
-            this.colorPicker.MouseMove += new System.Windows.Forms.MouseEventHandler(this.colorPicker_MouseMove);
             // 
             // Form1
             // 

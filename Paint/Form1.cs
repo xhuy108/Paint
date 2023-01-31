@@ -40,7 +40,7 @@ namespace Paint
             panel_paint.update(data_paint);
         }
 
-
+        #region Menu color
         public class MenuStripRenderer : ToolStripProfessionalRenderer
         {
             protected override void OnRenderMenuItemBackground(ToolStripItemRenderEventArgs e)
@@ -58,12 +58,6 @@ namespace Paint
                     using (SolidBrush brush = new SolidBrush(Color.FromArgb(37, 37, 37)))
                         e.Graphics.FillRectangle(brush, rect);
                 }
-            }
-
-            protected override void OnRenderItemText(ToolStripItemTextRenderEventArgs e)
-            {
-                e.Item.ForeColor = Color.White;
-                base.OnRenderItemText(e);
             }
 
             protected override void OnRenderSeparator(ToolStripSeparatorRenderEventArgs e)
@@ -91,22 +85,12 @@ namespace Paint
                 get { return MainColor; }
             }
 
-            public override Color MenuItemSelectedGradientBegin
-            {
-                get { return MainColor; }
-            }
-
-            public override Color MenuItemSelectedGradientEnd
-            {
-                get { return MainColor; }
-            }
-
             public override Color MenuBorder
             {
                 get { return MainColor; }
             }
         }
-
+        #endregion
 
         private void Form1_Load(object sender, EventArgs e)
         {
