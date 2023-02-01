@@ -21,6 +21,7 @@ namespace Paint.Manager
         // size 
         public int _size { get; set; }
         // opacity
+        public double _opacity { get; set; }
 
         // chuot di qua control
         public bool isMouseCrossCtrl { get; set; }
@@ -35,6 +36,7 @@ namespace Paint.Manager
             shapeSelected_index = 0;
             _color = Color.Black;
             _size = 10;
+            _opacity = 1;
             isMouseCrossCtrl = false;
             isRedo = false;
             isUndo = false;

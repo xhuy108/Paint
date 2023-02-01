@@ -51,6 +51,7 @@ namespace Paint.MyItem
             Data.shapeSelected_index = data.shapeSelected_index;
             Data._color = data._color;
             Data._size = data._size;
+            Data._opacity= data._opacity;
             Data.isMouseCrossCtrl = data.isMouseCrossCtrl;
             Data.isRedo = data.isRedo;
             Data.isUndo = data.isUndo;
@@ -61,12 +62,13 @@ namespace Paint.MyItem
             data.RedoStack = Data.RedoStack;
             data._color = Data._color;
             data._size = Data._size;
+            data._opacity = Data._opacity;
         }
 
-        #region Ve
+        #region Vẽ
         protected override void OnMouseDown(MouseEventArgs e)
         {
-            base.OnMouseDown(e);
+            base.OnMouseDown(e);  // bắt sự kiện
             if (e.Button == MouseButtons.Left)
             {
                 allowDraw = true;

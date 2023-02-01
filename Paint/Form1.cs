@@ -192,5 +192,15 @@ namespace Paint
             panel_paint.Undo_Click();
             panel_paint.updateData(data_paint);
         }
+
+        private void penSize1_Scroll(object sender, EventArgs e)
+        {
+            lbSizeValue.Text = Convert.ToString(penSize1.Value);
+        }
+
+        private void penOpacity1_Scroll(object sender, EventArgs e)
+        {
+            lbOpacityValue.Text = Convert.ToString(penOpacity1.Value);
+        }
     }
 }

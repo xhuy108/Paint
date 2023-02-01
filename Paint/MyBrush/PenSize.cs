@@ -7,12 +7,16 @@ using System.Threading.Tasks;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using Paint.MyItem;
+using Paint.Manager;
+
+
 
 namespace Paint.MyBrush
 {
     public class PenSize : TrackBar
     {
         public MyPanel myPanel;
+       
         public PenSize()
         {
             myPanel = new MyPanel();
@@ -22,12 +26,16 @@ namespace Paint.MyBrush
         {
             this.myPanel = myPanel;
         }
-
+      
         protected override void OnValueChanged(EventArgs e)
         {
+            
             base.OnValueChanged(e);
             myPanel.Data._size = this.Value;
             myPanel.update(myPanel.Data);
+
         }
+
+       
     }
 }

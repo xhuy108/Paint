@@ -182,10 +182,10 @@ namespace Paint
             this.label5 = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.panel_BrushControl = new System.Windows.Forms.Panel();
+            this.penOpacity1 = new Paint.MyBrush.PenOpacity();
             this.penSize1 = new Paint.MyBrush.PenSize();
             this.lbOpacityValue = new System.Windows.Forms.Label();
             this.lbSizeValue = new System.Windows.Forms.Label();
-            this.trkOpacity = new System.Windows.Forms.TrackBar();
             this.lbOpacity = new System.Windows.Forms.Label();
             this.lbSize = new System.Windows.Forms.Label();
             this.lb_BrushControl = new System.Windows.Forms.Label();
@@ -229,8 +229,8 @@ namespace Paint
             this.panel_Brush.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.panel_BrushControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.penOpacity1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.penSize1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trkOpacity)).BeginInit();
             this.panel_Navigator.SuspendLayout();
             this.tableLayoutPanel_NavigatorTool.SuspendLayout();
             this.panel_BrushSize.SuspendLayout();
@@ -3341,10 +3341,10 @@ namespace Paint
             // panel_BrushControl
             // 
             this.panel_BrushControl.BackColor = System.Drawing.Color.DimGray;
+            this.panel_BrushControl.Controls.Add(this.penOpacity1);
             this.panel_BrushControl.Controls.Add(this.penSize1);
             this.panel_BrushControl.Controls.Add(this.lbOpacityValue);
             this.panel_BrushControl.Controls.Add(this.lbSizeValue);
-            this.panel_BrushControl.Controls.Add(this.trkOpacity);
             this.panel_BrushControl.Controls.Add(this.lbOpacity);
             this.panel_BrushControl.Controls.Add(this.lbSize);
             this.panel_BrushControl.Controls.Add(this.lb_BrushControl);
@@ -3355,16 +3355,26 @@ namespace Paint
             this.panel_BrushControl.Size = new System.Drawing.Size(220, 166);
             this.panel_BrushControl.TabIndex = 6;
             // 
+            // penOpacity1
+            // 
+            this.penOpacity1.Location = new System.Drawing.Point(99, 98);
+            this.penOpacity1.Maximum = 1;
+            this.penOpacity1.Name = "penOpacity1";
+            this.penOpacity1.Size = new System.Drawing.Size(124, 80);
+            this.penOpacity1.TabIndex = 1;
+            this.penOpacity1.Scroll += new System.EventHandler(this.penOpacity1_Scroll);
+            // 
             // penSize1
             // 
             this.penSize1.AutoSize = false;
-            this.penSize1.Location = new System.Drawing.Point(99, 43);
+            this.penSize1.Location = new System.Drawing.Point(99, 41);
             this.penSize1.Maximum = 50;
             this.penSize1.Minimum = 1;
             this.penSize1.Name = "penSize1";
-            this.penSize1.Size = new System.Drawing.Size(123, 49);
+            this.penSize1.Size = new System.Drawing.Size(118, 49);
             this.penSize1.TabIndex = 11;
             this.penSize1.Value = 10;
+            this.penSize1.Scroll += new System.EventHandler(this.penSize1_Scroll);
             // 
             // lbOpacityValue
             // 
@@ -3375,28 +3385,17 @@ namespace Paint
             this.lbOpacityValue.Name = "lbOpacityValue";
             this.lbOpacityValue.Size = new System.Drawing.Size(21, 23);
             this.lbOpacityValue.TabIndex = 10;
-            this.lbOpacityValue.Text = "0";
+            this.lbOpacityValue.Text = "1";
             // 
             // lbSizeValue
             // 
             this.lbSizeValue.AutoSize = true;
             this.lbSizeValue.ForeColor = System.Drawing.SystemColors.Window;
-            this.lbSizeValue.Location = new System.Drawing.Point(83, 45);
+            this.lbSizeValue.Location = new System.Drawing.Point(72, 44);
             this.lbSizeValue.Name = "lbSizeValue";
-            this.lbSizeValue.Size = new System.Drawing.Size(21, 22);
+            this.lbSizeValue.Size = new System.Drawing.Size(32, 22);
             this.lbSizeValue.TabIndex = 7;
-            this.lbSizeValue.Text = "0";
-            // 
-            // trkOpacity
-            // 
-            this.trkOpacity.AutoSize = false;
-            this.trkOpacity.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.trkOpacity.Location = new System.Drawing.Point(110, 98);
-            this.trkOpacity.Maximum = 50;
-            this.trkOpacity.Name = "trkOpacity";
-            this.trkOpacity.Size = new System.Drawing.Size(112, 59);
-            this.trkOpacity.TabIndex = 9;
-            this.trkOpacity.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.lbSizeValue.Text = "10";
             // 
             // lbOpacity
             // 
@@ -4312,8 +4311,8 @@ namespace Paint
             this.tableLayoutPanel4.ResumeLayout(false);
             this.panel_BrushControl.ResumeLayout(false);
             this.panel_BrushControl.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.penOpacity1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.penSize1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trkOpacity)).EndInit();
             this.panel_Navigator.ResumeLayout(false);
             this.tableLayoutPanel_NavigatorTool.ResumeLayout(false);
             this.panel_BrushSize.ResumeLayout(false);
@@ -4461,11 +4460,11 @@ namespace Paint
         private MyItem.MyPanel panel_paint;
         private System.Windows.Forms.Label lbSize;
         private System.Windows.Forms.Label lbOpacity;
-        private System.Windows.Forms.TrackBar trkOpacity;
         private System.Windows.Forms.Label lbSizeValue;
         private System.Windows.Forms.Label lbOpacityValue;
         private System.Windows.Forms.Label lb_BrushSize;
         private MyBrush.PenSize penSize1;
+        private MyBrush.PenOpacity penOpacity1;
     }
 }
 

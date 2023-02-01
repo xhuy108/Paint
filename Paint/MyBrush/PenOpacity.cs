@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Paint.MyItem;
+using Paint.Manager;
 
 namespace Paint.MyBrush
 {
@@ -24,9 +25,10 @@ namespace Paint.MyBrush
         protected override void OnValueChanged(EventArgs e)
         {
             base.OnValueChanged(e);
-            //myPanel.Data. = this.Value;
+            myPanel.Data._opacity = this.Value;
             myPanel.update(myPanel.Data);
         }
+
 
     }
 }
