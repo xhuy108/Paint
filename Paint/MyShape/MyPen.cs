@@ -23,6 +23,12 @@ namespace Paint.MyShape
             color = clor;
             index = 0;
         }
+
+        public MyPen(int _size)
+        {
+            size = _size;
+            index = 0;
+        }
         public MyPen(Color clor, int siz)
         {
             name = "Pen";

@@ -36,7 +36,7 @@ namespace Paint.Manager
             shapeSelected_index = 0;
             _color = Color.Black;
             _size = 10;
-            _opacity = 1;
+            _opacity = 0;
             isMouseCrossCtrl = false;
             isRedo = false;
             isUndo = false;

@@ -40,7 +40,9 @@ namespace Paint
             menuStrip1.Renderer = new MenuStripRenderer();
             panel_paint.update(data_paint);
             penSize1.myPanel = this.panel_paint;
+            penOpacity1.myPanel = this.panel_paint;
             colorPicker.panel = this.panel_paint;
+            
         }
 
 
@@ -60,6 +62,7 @@ namespace Paint
                 {
                     using (SolidBrush brush = new SolidBrush(Color.FromArgb(37, 37, 37)))
                         e.Graphics.FillRectangle(brush, rect);
+
                 }
             }
 
@@ -115,6 +118,7 @@ namespace Paint
         {
             this.DoubleBuffered = true;
             this.data_paint._size = penSize1.Value;
+            this.data_paint._opacity = penOpacity1.Value;
             this.panel_paint.update(data_paint);
         }
 
@@ -202,5 +206,70 @@ namespace Paint
         {
             lbOpacityValue.Text = Convert.ToString(penOpacity1.Value);
         }
+
+        #region ptbSize_Click
+        private void ptbSize5_Click(object sender, EventArgs e)
+        {
+
+            penSize1.Value = 5;
+            lbSizeValue.Text = Convert.ToString(penSize1.Value);
+            
+        }
+
+        private void ptbSize1_Click(object sender, EventArgs e)
+        {
+            penSize1.Value = 1;
+            lbSizeValue.Text = Convert.ToString(penSize1.Value);
+        }
+
+        private void ptbSize10_Click(object sender, EventArgs e)
+        {
+            penSize1.Value = 10;
+            lbSizeValue.Text = Convert.ToString(penSize1.Value);
+        }
+
+        private void ptbSize15_Click(object sender, EventArgs e)
+        {
+            penSize1.Value = 15;
+            lbSizeValue.Text = Convert.ToString(penSize1.Value);
+        }
+
+        private void ptbSize20_Click(object sender, EventArgs e)
+        {
+            penSize1.Value = 20;
+            lbSizeValue.Text = Convert.ToString(penSize1.Value);
+        }
+
+        private void ptbSize25_Click(object sender, EventArgs e)
+        {
+            penSize1.Value = 25;
+            lbSizeValue.Text = Convert.ToString(penSize1.Value);
+        }
+
+        private void ptbSize30_Click(object sender, EventArgs e)
+        {
+            penSize1.Value = 30;
+            lbSizeValue.Text = Convert.ToString(penSize1.Value);
+        }
+
+        private void ptbSize35_Click(object sender, EventArgs e)
+        {
+            penSize1.Value = 35;
+            lbSizeValue.Text = Convert.ToString(penSize1.Value);
+        }
+
+        private void ptbSize40_Click(object sender, EventArgs e)
+        {
+            penSize1.Value = 40;
+            lbSizeValue.Text = Convert.ToString(penSize1.Value);
+        }
+
+        private void ptbSize45_Click(object sender, EventArgs e)
+        {
+            penSize1.Value = 45;
+            lbSizeValue.Text = Convert.ToString(penSize1.Value);
+        }
+
+        #endregion
     }
 }

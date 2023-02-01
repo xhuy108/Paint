@@ -17,6 +17,8 @@ namespace Paint.MyItem
         public Point lastPoint { get; set; }
         // diem ve
         public Point startPoint { get; set; }
+
+        
         // cho biết shape cần vẽ
         public MyData Data = new MyData();
 
