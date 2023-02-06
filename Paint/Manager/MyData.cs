@@ -20,6 +20,8 @@ namespace Paint.Manager
         public Color _color { get; set; }
         // size 
         public int _size { get; set; }
+        // co tao text khong
+        public bool isText { get; set; }
         // chuot di qua control
         public bool isMouseCrossCtrl { get; set; }
         // xem có redo, undo không
@@ -38,12 +40,13 @@ namespace Paint.Manager
 
         public MyData()
         {
-            shapeSelected_index = 0;
+            shapeSelected_index = 1;
             _color = Color.Black;
             _size = 10;
             isMouseCrossCtrl = false;
             isRedo = false;
             isUndo = false;
+            isText = false;
         }
         public void UpdateDataStack(MyData dt)
         {

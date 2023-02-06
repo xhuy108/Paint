@@ -39,3 +39,21 @@ C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\obj\Debug\Paint.Prop
 C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\obj\Debug\Paint.exe.licenses
 C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\obj\Debug\Paint.exe
 C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\obj\Debug\Paint.pdb
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.Data.Desktop.v22.2.dll
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.Data.v22.2.dll
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.Drawing.v22.2.dll
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.Printing.v22.2.Core.dll
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.Sparkline.v22.2.Core.dll
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.Utils.v22.2.dll
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.XtraEditors.v22.2.dll
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.Pdf.v22.2.Core.dll
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.Pdf.v22.2.Drawing.dll
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.Data.Desktop.v22.2.xml
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.Data.v22.2.xml
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.Printing.v22.2.Core.xml
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.Sparkline.v22.2.Core.xml
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.Utils.v22.2.xml
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.XtraEditors.v22.2.xml
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.Pdf.v22.2.Core.xml
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.Pdf.v22.2.Drawing.xml
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\obj\Debug\Paint.Form_shape_selected.resources

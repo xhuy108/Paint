@@ -28,7 +28,11 @@ namespace Paint
         bool draw = false;
         MyPen pen = new MyPen(Color.Black, Size);
         Image _img;
-        private Graphics gr;
+        Graphics _g;
+
+        int x = -1;
+        int y = -1;
+        bool allowDraw;
 
         Point lastPoint = Point.Empty;
         
@@ -38,9 +42,13 @@ namespace Paint
             DoubleBuffered = true;
             menuStrip1.Renderer = new MenuStripRenderer();
             panel_paint.update(data_paint);
+            _g = panel_paint.CreateGraphics();
+
+            _g.SmoothingMode = SmoothingMode.AntiAlias;
+            _g.Clear(BackColor);
         }
 
-
+        #region pick color
         public class MenuStripRenderer : ToolStripProfessionalRenderer
         {
             protected override void OnRenderMenuItemBackground(ToolStripItemRenderEventArgs e)
@@ -107,7 +115,7 @@ namespace Paint
             }
         }
 
-
+        #endregion
         private void Form1_Load(object sender, EventArgs e)
         {
             this.DoubleBuffered = true;
@@ -189,5 +197,48 @@ namespace Paint
             //panel_paint.Undo_Click();
             panel_paint.updateData(data_paint);
         }
+
+        private void pictureBox_Color_Front_BackColorChanged(object sender, EventArgs e)
+        {
+            data_paint._color = pictureBox_Color_Front.BackColor;
+            panel_paint.update(data_paint);
+        }
+
+        private void btn_Text_Click(object sender, EventArgs e)
+        {
+            data_paint.isText = true;
+        }
+
+        private void btn_Shape_Click(object sender, EventArgs e)
+        {
+            
+        }
+        #region panel_paint paint
+        private void panel_paint_MouseDown(object sender, MouseEventArgs e)
+        {
+            allowDraw = true;
+            x = e.X;
+            y = e.Y;
+        }
+
+        private void panel_paint_MouseUp(object sender, MouseEventArgs e)
+        {
+            allowDraw = false;
+            x = -1;
+            y = -1;
+        }
+
+        private void panel_paint_MouseMove(object sender, MouseEventArgs e)
+        {
+            int sive = 10;
+            Pen p = new Pen(pictureBox_Color_Front.BackColor, sive);
+            if (allowDraw && x != -1 && y != -1)
+            {
+                _g.DrawLine(p, new Point(x, y), e.Location);
+                x = e.X;
+                y = e.Y;
+            }
+        }
+        #endregion
     }
 }
