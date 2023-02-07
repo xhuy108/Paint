@@ -168,5 +168,10 @@ namespace Paint
             //panel_paint.Undo_Click();
             panel_paint.updateData(data_paint);
         }
+
+        private void btn_Shape_Click(object sender, EventArgs e)
+        {
+            tLP_Shape.Visible = true;
+        }
     }
 }
