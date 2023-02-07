@@ -231,6 +231,7 @@ namespace Paint
             this.menuStrip1.AutoSize = false;
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.menuStrip1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
@@ -260,7 +261,7 @@ namespace Paint
             this.saveAsToolStripMenuItem});
             this.fileToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(60, 24);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // importFileToolStripMenuItem
@@ -268,7 +269,7 @@ namespace Paint
             this.importFileToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.importFileToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.importFileToolStripMenuItem.Name = "importFileToolStripMenuItem";
-            this.importFileToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
+            this.importFileToolStripMenuItem.Size = new System.Drawing.Size(303, 40);
             this.importFileToolStripMenuItem.Text = "Import File";
             // 
             // openToolStripMenuItem
@@ -276,7 +277,7 @@ namespace Paint
             this.openToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.openToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(303, 40);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openfileToolStripMenuItem_Click);
             // 
@@ -285,7 +286,7 @@ namespace Paint
             this.openRecentFileToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.openRecentFileToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.openRecentFileToolStripMenuItem.Name = "openRecentFileToolStripMenuItem";
-            this.openRecentFileToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
+            this.openRecentFileToolStripMenuItem.Size = new System.Drawing.Size(303, 40);
             this.openRecentFileToolStripMenuItem.Text = "Open Recent File";
             // 
             // toolStripMenuItem4
@@ -293,7 +294,7 @@ namespace Paint
             this.toolStripMenuItem4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.toolStripMenuItem4.ForeColor = System.Drawing.Color.White;
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(218, 26);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(303, 40);
             this.toolStripMenuItem4.Text = "Save";
             // 
             // toolStripMenuItem2
@@ -301,7 +302,7 @@ namespace Paint
             this.toolStripMenuItem2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.toolStripMenuItem2.ForeColor = System.Drawing.Color.White;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(218, 26);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(303, 40);
             this.toolStripMenuItem2.Text = "New";
             // 
             // saveToolStripMenuItem
@@ -309,7 +310,7 @@ namespace Paint
             this.saveToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.saveToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(303, 40);
             this.saveToolStripMenuItem.Text = "Save";
             // 
             // saveAsToolStripMenuItem
@@ -317,7 +318,7 @@ namespace Paint
             this.saveAsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.saveAsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(303, 40);
             this.saveAsToolStripMenuItem.Text = "Save As";
             // 
             // editToolStripMenuItem
@@ -335,7 +336,7 @@ namespace Paint
             this.imageSizeToolStripMenuItem});
             this.editToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(49, 24);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(63, 24);
             this.editToolStripMenuItem.Text = "Edit";
             // 
             // undoToolStripMenuItem
@@ -343,7 +344,7 @@ namespace Paint
             this.undoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.undoToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(278, 40);
             this.undoToolStripMenuItem.Text = "Undo";
             // 
             // redoToolStripMenuItem
@@ -351,7 +352,7 @@ namespace Paint
             this.redoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.redoToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
-            this.redoToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
+            this.redoToolStripMenuItem.Size = new System.Drawing.Size(278, 40);
             this.redoToolStripMenuItem.Text = "Redo";
             // 
             // cutToolStripMenuItem
@@ -359,7 +360,7 @@ namespace Paint
             this.cutToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.cutToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(278, 40);
             this.cutToolStripMenuItem.Text = "Cut";
             // 
             // copyToolStripMenuItem
@@ -367,7 +368,7 @@ namespace Paint
             this.copyToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.copyToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(278, 40);
             this.copyToolStripMenuItem.Text = "Copy";
             // 
             // pasteToolStripMenuItem
@@ -375,7 +376,7 @@ namespace Paint
             this.pasteToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.pasteToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(278, 40);
             this.pasteToolStripMenuItem.Text = "Paste";
             // 
             // cropToolStripMenuItem
@@ -383,7 +384,7 @@ namespace Paint
             this.cropToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.cropToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.cropToolStripMenuItem.Name = "cropToolStripMenuItem";
-            this.cropToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
+            this.cropToolStripMenuItem.Size = new System.Drawing.Size(278, 40);
             this.cropToolStripMenuItem.Text = "Crop";
             // 
             // rotateLeftToolStripMenuItem
@@ -391,7 +392,7 @@ namespace Paint
             this.rotateLeftToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.rotateLeftToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.rotateLeftToolStripMenuItem.Name = "rotateLeftToolStripMenuItem";
-            this.rotateLeftToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
+            this.rotateLeftToolStripMenuItem.Size = new System.Drawing.Size(278, 40);
             this.rotateLeftToolStripMenuItem.Text = "Rotate Left";
             // 
             // rotateRightToolStripMenuItem
@@ -399,7 +400,7 @@ namespace Paint
             this.rotateRightToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.rotateRightToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.rotateRightToolStripMenuItem.Name = "rotateRightToolStripMenuItem";
-            this.rotateRightToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
+            this.rotateRightToolStripMenuItem.Size = new System.Drawing.Size(278, 40);
             this.rotateRightToolStripMenuItem.Text = "Rotate Right";
             // 
             // flipHorizontallyToolStripMenuItem
@@ -407,7 +408,7 @@ namespace Paint
             this.flipHorizontallyToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.flipHorizontallyToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.flipHorizontallyToolStripMenuItem.Name = "flipHorizontallyToolStripMenuItem";
-            this.flipHorizontallyToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
+            this.flipHorizontallyToolStripMenuItem.Size = new System.Drawing.Size(278, 40);
             this.flipHorizontallyToolStripMenuItem.Text = "Flip Horizontally";
             // 
             // imageSizeToolStripMenuItem
@@ -415,7 +416,7 @@ namespace Paint
             this.imageSizeToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.imageSizeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.imageSizeToolStripMenuItem.Name = "imageSizeToolStripMenuItem";
-            this.imageSizeToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
+            this.imageSizeToolStripMenuItem.Size = new System.Drawing.Size(278, 40);
             this.imageSizeToolStripMenuItem.Text = "Image Size";
             // 
             // filterToolStripMenuItem
@@ -425,7 +426,7 @@ namespace Paint
             this.hueToolStripMenuItem});
             this.filterToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.filterToolStripMenuItem.Name = "filterToolStripMenuItem";
-            this.filterToolStripMenuItem.Size = new System.Drawing.Size(56, 24);
+            this.filterToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
             this.filterToolStripMenuItem.Text = "Filter";
             // 
             // levelsToolStripMenuItem
@@ -433,7 +434,7 @@ namespace Paint
             this.levelsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.levelsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.levelsToolStripMenuItem.Name = "levelsToolStripMenuItem";
-            this.levelsToolStripMenuItem.Size = new System.Drawing.Size(138, 26);
+            this.levelsToolStripMenuItem.Size = new System.Drawing.Size(189, 40);
             this.levelsToolStripMenuItem.Text = "Levels";
             // 
             // hueToolStripMenuItem
@@ -441,7 +442,7 @@ namespace Paint
             this.hueToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.hueToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.hueToolStripMenuItem.Name = "hueToolStripMenuItem";
-            this.hueToolStripMenuItem.Size = new System.Drawing.Size(138, 26);
+            this.hueToolStripMenuItem.Size = new System.Drawing.Size(189, 40);
             this.hueToolStripMenuItem.Text = "Hue";
             // 
             // selectToolStripMenuItem
@@ -454,7 +455,7 @@ namespace Paint
             this.transformToolStripMenuItem});
             this.selectToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.selectToolStripMenuItem.Name = "selectToolStripMenuItem";
-            this.selectToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
+            this.selectToolStripMenuItem.Size = new System.Drawing.Size(92, 24);
             this.selectToolStripMenuItem.Text = "Select";
             // 
             // addToolStripMenuItem
@@ -462,7 +463,7 @@ namespace Paint
             this.addToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.addToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(160, 26);
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(222, 40);
             this.addToolStripMenuItem.Text = "Add";
             // 
             // deleteToolStripMenuItem
@@ -470,7 +471,7 @@ namespace Paint
             this.deleteToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.deleteToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(160, 26);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(222, 40);
             this.deleteToolStripMenuItem.Text = "Delete";
             // 
             // inverseToolStripMenuItem
@@ -478,7 +479,7 @@ namespace Paint
             this.inverseToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.inverseToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.inverseToolStripMenuItem.Name = "inverseToolStripMenuItem";
-            this.inverseToolStripMenuItem.Size = new System.Drawing.Size(160, 26);
+            this.inverseToolStripMenuItem.Size = new System.Drawing.Size(222, 40);
             this.inverseToolStripMenuItem.Text = "Inverse";
             // 
             // transformToolStripMenuItem
@@ -486,7 +487,7 @@ namespace Paint
             this.transformToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.transformToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.transformToolStripMenuItem.Name = "transformToolStripMenuItem";
-            this.transformToolStripMenuItem.Size = new System.Drawing.Size(160, 26);
+            this.transformToolStripMenuItem.Size = new System.Drawing.Size(222, 40);
             this.transformToolStripMenuItem.Text = "Transform";
             // 
             // colorToolStripMenuItem
@@ -499,7 +500,7 @@ namespace Paint
             this.lockPalletToolStripMenuItem});
             this.colorToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
-            this.colorToolStripMenuItem.Size = new System.Drawing.Size(63, 24);
+            this.colorToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
             this.colorToolStripMenuItem.Text = "Color";
             // 
             // transparentToolStripMenuItem
@@ -507,7 +508,7 @@ namespace Paint
             this.transparentToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.transparentToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.transparentToolStripMenuItem.Name = "transparentToolStripMenuItem";
-            this.transparentToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
+            this.transparentToolStripMenuItem.Size = new System.Drawing.Size(295, 40);
             this.transparentToolStripMenuItem.Text = "Transparent";
             // 
             // swapForToolStripMenuItem
@@ -515,7 +516,7 @@ namespace Paint
             this.swapForToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.swapForToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.swapForToolStripMenuItem.Name = "swapForToolStripMenuItem";
-            this.swapForToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
+            this.swapForToolStripMenuItem.Size = new System.Drawing.Size(295, 40);
             this.swapForToolStripMenuItem.Text = "Swap Fore/BG(S)";
             // 
             // initializeToolStripMenuItem
@@ -523,7 +524,7 @@ namespace Paint
             this.initializeToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.initializeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.initializeToolStripMenuItem.Name = "initializeToolStripMenuItem";
-            this.initializeToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
+            this.initializeToolStripMenuItem.Size = new System.Drawing.Size(295, 40);
             this.initializeToolStripMenuItem.Text = "Initialize";
             // 
             // colorBarToolStripMenuItem
@@ -532,7 +533,7 @@ namespace Paint
             this.colorBarToolStripMenuItem.CheckOnClick = true;
             this.colorBarToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.colorBarToolStripMenuItem.Name = "colorBarToolStripMenuItem";
-            this.colorBarToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
+            this.colorBarToolStripMenuItem.Size = new System.Drawing.Size(295, 40);
             this.colorBarToolStripMenuItem.Text = "Color Bar";
             // 
             // lockPalletToolStripMenuItem
@@ -540,7 +541,7 @@ namespace Paint
             this.lockPalletToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.lockPalletToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.lockPalletToolStripMenuItem.Name = "lockPalletToolStripMenuItem";
-            this.lockPalletToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
+            this.lockPalletToolStripMenuItem.Size = new System.Drawing.Size(295, 40);
             this.lockPalletToolStripMenuItem.Text = "Lock Palette";
             // 
             // viewToolStripMenuItem
@@ -558,7 +559,7 @@ namespace Paint
             this.flipHorizontallyToolStripMenuItem1});
             this.viewToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(61, 24);
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(78, 24);
             this.viewToolStripMenuItem.Text = "View";
             // 
             // zoomInToolStripMenuItem
@@ -566,7 +567,7 @@ namespace Paint
             this.zoomInToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.zoomInToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.zoomInToolStripMenuItem.Name = "zoomInToolStripMenuItem";
-            this.zoomInToolStripMenuItem.Size = new System.Drawing.Size(233, 26);
+            this.zoomInToolStripMenuItem.Size = new System.Drawing.Size(323, 40);
             this.zoomInToolStripMenuItem.Text = "Zoom In";
             // 
             // zoomOutToolStripMenuItem
@@ -574,7 +575,7 @@ namespace Paint
             this.zoomOutToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.zoomOutToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.zoomOutToolStripMenuItem.Name = "zoomOutToolStripMenuItem";
-            this.zoomOutToolStripMenuItem.Size = new System.Drawing.Size(233, 26);
+            this.zoomOutToolStripMenuItem.Size = new System.Drawing.Size(323, 40);
             this.zoomOutToolStripMenuItem.Text = "Zoom Out";
             // 
             // fitToWindowSizeToolStripMenuItem
@@ -582,7 +583,7 @@ namespace Paint
             this.fitToWindowSizeToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.fitToWindowSizeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.fitToWindowSizeToolStripMenuItem.Name = "fitToWindowSizeToolStripMenuItem";
-            this.fitToWindowSizeToolStripMenuItem.Size = new System.Drawing.Size(233, 26);
+            this.fitToWindowSizeToolStripMenuItem.Size = new System.Drawing.Size(323, 40);
             this.fitToWindowSizeToolStripMenuItem.Text = "Fit to Window Size";
             // 
             // toolStripMenuItem5
@@ -590,7 +591,7 @@ namespace Paint
             this.toolStripMenuItem5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.toolStripMenuItem5.ForeColor = System.Drawing.Color.White;
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(233, 26);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(323, 40);
             this.toolStripMenuItem5.Text = "100%";
             // 
             // toolStripMenuItem6
@@ -598,7 +599,7 @@ namespace Paint
             this.toolStripMenuItem6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.toolStripMenuItem6.ForeColor = System.Drawing.Color.White;
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(233, 26);
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(323, 40);
             this.toolStripMenuItem6.Text = "200%";
             // 
             // rotateLeftToolStripMenuItem1
@@ -606,7 +607,7 @@ namespace Paint
             this.rotateLeftToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.rotateLeftToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
             this.rotateLeftToolStripMenuItem1.Name = "rotateLeftToolStripMenuItem1";
-            this.rotateLeftToolStripMenuItem1.Size = new System.Drawing.Size(233, 26);
+            this.rotateLeftToolStripMenuItem1.Size = new System.Drawing.Size(323, 40);
             this.rotateLeftToolStripMenuItem1.Text = "Rotate Left";
             // 
             // rotateRightToolStripMenuItem1
@@ -614,7 +615,7 @@ namespace Paint
             this.rotateRightToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.rotateRightToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
             this.rotateRightToolStripMenuItem1.Name = "rotateRightToolStripMenuItem1";
-            this.rotateRightToolStripMenuItem1.Size = new System.Drawing.Size(233, 26);
+            this.rotateRightToolStripMenuItem1.Size = new System.Drawing.Size(323, 40);
             this.rotateRightToolStripMenuItem1.Text = "Release Rotate/Flip";
             // 
             // rotateRightToolStripMenuItem2
@@ -622,7 +623,7 @@ namespace Paint
             this.rotateRightToolStripMenuItem2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.rotateRightToolStripMenuItem2.ForeColor = System.Drawing.Color.White;
             this.rotateRightToolStripMenuItem2.Name = "rotateRightToolStripMenuItem2";
-            this.rotateRightToolStripMenuItem2.Size = new System.Drawing.Size(233, 26);
+            this.rotateRightToolStripMenuItem2.Size = new System.Drawing.Size(323, 40);
             this.rotateRightToolStripMenuItem2.Text = "Rotate Right";
             // 
             // flipHorizontallyToolStripMenuItem1
@@ -630,7 +631,7 @@ namespace Paint
             this.flipHorizontallyToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.flipHorizontallyToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
             this.flipHorizontallyToolStripMenuItem1.Name = "flipHorizontallyToolStripMenuItem1";
-            this.flipHorizontallyToolStripMenuItem1.Size = new System.Drawing.Size(233, 26);
+            this.flipHorizontallyToolStripMenuItem1.Size = new System.Drawing.Size(323, 40);
             this.flipHorizontallyToolStripMenuItem1.Text = "Flip Horizontally";
             // 
             // toolToolStripMenuItem
@@ -650,7 +651,7 @@ namespace Paint
             this.objectToolStripMenuItem});
             this.toolToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.toolToolStripMenuItem.Name = "toolToolStripMenuItem";
-            this.toolToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
+            this.toolToolStripMenuItem.Size = new System.Drawing.Size(69, 24);
             this.toolToolStripMenuItem.Text = "Tool";
             // 
             // brushToolStripMenuItem
@@ -658,7 +659,7 @@ namespace Paint
             this.brushToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.brushToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.brushToolStripMenuItem.Name = "brushToolStripMenuItem";
-            this.brushToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.brushToolStripMenuItem.Size = new System.Drawing.Size(250, 40);
             this.brushToolStripMenuItem.Text = "Brush";
             // 
             // eraserToolStripMenuItem
@@ -666,7 +667,7 @@ namespace Paint
             this.eraserToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.eraserToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.eraserToolStripMenuItem.Name = "eraserToolStripMenuItem";
-            this.eraserToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.eraserToolStripMenuItem.Size = new System.Drawing.Size(250, 40);
             this.eraserToolStripMenuItem.Text = "Eraser";
             // 
             // shapeBrushToolStripMenuItem
@@ -674,7 +675,7 @@ namespace Paint
             this.shapeBrushToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.shapeBrushToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.shapeBrushToolStripMenuItem.Name = "shapeBrushToolStripMenuItem";
-            this.shapeBrushToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.shapeBrushToolStripMenuItem.Size = new System.Drawing.Size(250, 40);
             this.shapeBrushToolStripMenuItem.Text = "Shape brush";
             // 
             // dotBrushToolStripMenuItem
@@ -682,7 +683,7 @@ namespace Paint
             this.dotBrushToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.dotBrushToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.dotBrushToolStripMenuItem.Name = "dotBrushToolStripMenuItem";
-            this.dotBrushToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.dotBrushToolStripMenuItem.Size = new System.Drawing.Size(250, 40);
             this.dotBrushToolStripMenuItem.Text = "Dot brush";
             // 
             // moveToolStripMenuItem
@@ -690,7 +691,7 @@ namespace Paint
             this.moveToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.moveToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.moveToolStripMenuItem.Name = "moveToolStripMenuItem";
-            this.moveToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.moveToolStripMenuItem.Size = new System.Drawing.Size(250, 40);
             this.moveToolStripMenuItem.Text = "Move";
             // 
             // fillToolStripMenuItem
@@ -698,7 +699,7 @@ namespace Paint
             this.fillToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.fillToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.fillToolStripMenuItem.Name = "fillToolStripMenuItem";
-            this.fillToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.fillToolStripMenuItem.Size = new System.Drawing.Size(250, 40);
             this.fillToolStripMenuItem.Text = "Fill";
             // 
             // gradientToolStripMenuItem
@@ -706,7 +707,7 @@ namespace Paint
             this.gradientToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.gradientToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.gradientToolStripMenuItem.Name = "gradientToolStripMenuItem";
-            this.gradientToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.gradientToolStripMenuItem.Size = new System.Drawing.Size(250, 40);
             this.gradientToolStripMenuItem.Text = "Gradient";
             // 
             // selectToolStripMenuItem1
@@ -714,7 +715,7 @@ namespace Paint
             this.selectToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.selectToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
             this.selectToolStripMenuItem1.Name = "selectToolStripMenuItem1";
-            this.selectToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
+            this.selectToolStripMenuItem1.Size = new System.Drawing.Size(250, 40);
             this.selectToolStripMenuItem1.Text = "Select";
             // 
             // lassoToolStripMenuItem
@@ -722,7 +723,7 @@ namespace Paint
             this.lassoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.lassoToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.lassoToolStripMenuItem.Name = "lassoToolStripMenuItem";
-            this.lassoToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.lassoToolStripMenuItem.Size = new System.Drawing.Size(250, 40);
             this.lassoToolStripMenuItem.Text = "Lasso";
             // 
             // textToolStripMenuItem
@@ -730,7 +731,7 @@ namespace Paint
             this.textToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.textToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.textToolStripMenuItem.Name = "textToolStripMenuItem";
-            this.textToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.textToolStripMenuItem.Size = new System.Drawing.Size(250, 40);
             this.textToolStripMenuItem.Text = "Text";
             // 
             // objectToolStripMenuItem
@@ -738,7 +739,7 @@ namespace Paint
             this.objectToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.objectToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.objectToolStripMenuItem.Name = "objectToolStripMenuItem";
-            this.objectToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.objectToolStripMenuItem.Size = new System.Drawing.Size(250, 40);
             this.objectToolStripMenuItem.Text = "Object";
             // 
             // windowToolStripMenuItem
@@ -748,7 +749,7 @@ namespace Paint
             this.showHideTabToolStripMenuItem});
             this.windowToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.windowToolStripMenuItem.Name = "windowToolStripMenuItem";
-            this.windowToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
+            this.windowToolStripMenuItem.Size = new System.Drawing.Size(109, 24);
             this.windowToolStripMenuItem.Text = "Window";
             // 
             // initializeToolStripMenuItem1
@@ -756,7 +757,7 @@ namespace Paint
             this.initializeToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.initializeToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
             this.initializeToolStripMenuItem1.Name = "initializeToolStripMenuItem1";
-            this.initializeToolStripMenuItem1.Size = new System.Drawing.Size(201, 26);
+            this.initializeToolStripMenuItem1.Size = new System.Drawing.Size(276, 40);
             this.initializeToolStripMenuItem1.Text = "Initialize";
             // 
             // showHideTabToolStripMenuItem
@@ -764,14 +765,14 @@ namespace Paint
             this.showHideTabToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.showHideTabToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.showHideTabToolStripMenuItem.Name = "showHideTabToolStripMenuItem";
-            this.showHideTabToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
+            this.showHideTabToolStripMenuItem.Size = new System.Drawing.Size(276, 40);
             this.showHideTabToolStripMenuItem.Text = "Show/Hide Tab";
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(56, 24);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // contextMenuStrip1
@@ -2815,7 +2816,7 @@ namespace Paint
             this.pictureBox_ColorPreview.BackColor = System.Drawing.Color.Black;
             this.pictureBox_ColorPreview.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox_ColorPreview.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox_ColorPreview.Location = new System.Drawing.Point(94, 0);
+            this.pictureBox_ColorPreview.Location = new System.Drawing.Point(140, 0);
             this.pictureBox_ColorPreview.Name = "pictureBox_ColorPreview";
             this.pictureBox_ColorPreview.Size = new System.Drawing.Size(58, 19);
             this.pictureBox_ColorPreview.TabIndex = 64;
@@ -2830,7 +2831,7 @@ namespace Paint
             this.label_ColorPreview.ForeColor = System.Drawing.Color.White;
             this.label_ColorPreview.Location = new System.Drawing.Point(0, 0);
             this.label_ColorPreview.Name = "label_ColorPreview";
-            this.label_ColorPreview.Size = new System.Drawing.Size(94, 16);
+            this.label_ColorPreview.Size = new System.Drawing.Size(140, 23);
             this.label_ColorPreview.TabIndex = 63;
             this.label_ColorPreview.Text = "Color Preview:";
             // 
@@ -2965,7 +2966,7 @@ namespace Paint
             this.textBox_Bvalue.Dock = System.Windows.Forms.DockStyle.Left;
             this.textBox_Bvalue.Font = new System.Drawing.Font("Century Schoolbook", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_Bvalue.ForeColor = System.Drawing.Color.White;
-            this.textBox_Bvalue.Location = new System.Drawing.Point(23, 0);
+            this.textBox_Bvalue.Location = new System.Drawing.Point(31, 0);
             this.textBox_Bvalue.Margin = new System.Windows.Forms.Padding(0);
             this.textBox_Bvalue.Multiline = true;
             this.textBox_Bvalue.Name = "textBox_Bvalue";
@@ -2984,7 +2985,7 @@ namespace Paint
             this.label_B_value.Margin = new System.Windows.Forms.Padding(6);
             this.label_B_value.Name = "label_B_value";
             this.label_B_value.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.label_B_value.Size = new System.Drawing.Size(23, 16);
+            this.label_B_value.Size = new System.Drawing.Size(31, 21);
             this.label_B_value.TabIndex = 53;
             this.label_B_value.Text = "B:";
             // 
@@ -3016,7 +3017,7 @@ namespace Paint
             this.textBox_Gvalue.Dock = System.Windows.Forms.DockStyle.Left;
             this.textBox_Gvalue.Font = new System.Drawing.Font("Century Schoolbook", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_Gvalue.ForeColor = System.Drawing.Color.White;
-            this.textBox_Gvalue.Location = new System.Drawing.Point(23, 0);
+            this.textBox_Gvalue.Location = new System.Drawing.Point(32, 0);
             this.textBox_Gvalue.Multiline = true;
             this.textBox_Gvalue.Name = "textBox_Gvalue";
             this.textBox_Gvalue.ReadOnly = true;
@@ -3034,7 +3035,7 @@ namespace Paint
             this.label_G_value.Margin = new System.Windows.Forms.Padding(6);
             this.label_G_value.Name = "label_G_value";
             this.label_G_value.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.label_G_value.Size = new System.Drawing.Size(23, 16);
+            this.label_G_value.Size = new System.Drawing.Size(32, 21);
             this.label_G_value.TabIndex = 52;
             this.label_G_value.Text = "G:";
             // 
@@ -3121,7 +3122,7 @@ namespace Paint
             this.textBox_Rvalue.Dock = System.Windows.Forms.DockStyle.Left;
             this.textBox_Rvalue.Font = new System.Drawing.Font("Century Schoolbook", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_Rvalue.ForeColor = System.Drawing.Color.White;
-            this.textBox_Rvalue.Location = new System.Drawing.Point(23, 0);
+            this.textBox_Rvalue.Location = new System.Drawing.Point(31, 0);
             this.textBox_Rvalue.Multiline = true;
             this.textBox_Rvalue.Name = "textBox_Rvalue";
             this.textBox_Rvalue.ReadOnly = true;
@@ -3139,7 +3140,7 @@ namespace Paint
             this.label_R_value.Margin = new System.Windows.Forms.Padding(6);
             this.label_R_value.Name = "label_R_value";
             this.label_R_value.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.label_R_value.Size = new System.Drawing.Size(23, 16);
+            this.label_R_value.Size = new System.Drawing.Size(31, 21);
             this.label_R_value.TabIndex = 51;
             this.label_R_value.Text = "R:";
             // 

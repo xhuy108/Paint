@@ -39,3 +39,16 @@ C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\obj\Debug\Paint.Prop
 C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\obj\Debug\Paint.exe.licenses
 C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\obj\Debug\Paint.exe
 C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\obj\Debug\Paint.pdb
+T:\Paint fke\Paint\bin\Debug\Paint.exe.config
+T:\Paint fke\Paint\bin\Debug\Paint.exe
+T:\Paint fke\Paint\bin\Debug\Paint.pdb
+T:\Paint fke\Paint\obj\Debug\Paint.csproj.AssemblyReference.cache
+T:\Paint fke\Paint\obj\Debug\Paint.csproj.SuggestedBindingRedirects.cache
+T:\Paint fke\Paint\obj\Debug\Paint.Form1.resources
+T:\Paint fke\Paint\obj\Debug\Paint.Properties.Resources.resources
+T:\Paint fke\Paint\obj\Debug\Paint.csproj.GenerateResource.cache
+T:\Paint fke\Paint\obj\Debug\Paint.exe.licenses
+T:\Paint fke\Paint\obj\Debug\Paint.csproj.CoreCompileInputs.cache
+T:\Paint fke\Paint\obj\Debug\Paint.csproj.CopyComplete
+T:\Paint fke\Paint\obj\Debug\Paint.exe
+T:\Paint fke\Paint\obj\Debug\Paint.pdb
