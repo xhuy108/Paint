@@ -41,14 +41,14 @@ namespace Paint
             InitializeComponent();
             DoubleBuffered = true;
             menuStrip1.Renderer = new MenuStripRenderer();
-            panel_paint.update(data_paint);
-            _g = panel_paint.CreateGraphics();
+            //panel_paint.update(data_paint);
+            //_g = panel_paint.CreateGraphics();
 
-            _g.SmoothingMode = SmoothingMode.AntiAlias;
-            _g.Clear(BackColor);
+            //_g.SmoothingMode = SmoothingMode.AntiAlias;
+            //_g.Clear(BackColor);
         }
 
-        #region pick color
+        #region Menu color
         public class MenuStripRenderer : ToolStripProfessionalRenderer
         {
             protected override void OnRenderMenuItemBackground(ToolStripItemRenderEventArgs e)
@@ -66,17 +66,6 @@ namespace Paint
                     using (SolidBrush brush = new SolidBrush(Color.FromArgb(37, 37, 37)))
                         e.Graphics.FillRectangle(brush, rect);
                 }
-            }
-
-            protected override void OnRenderItemText(ToolStripItemTextRenderEventArgs e)
-            {
-                e.Item.ForeColor = Color.White;
-                base.OnRenderItemText(e);
-            }
-
-            protected override void OnRenderSeparator(ToolStripSeparatorRenderEventArgs e)
-            {
-                base.OnRenderSeparator(e);
             }
 
             public MenuStripRenderer() : base(new MenuStripColors()) { }
@@ -99,16 +88,6 @@ namespace Paint
                 get { return MainColor; }
             }
 
-            public override Color MenuItemSelectedGradientBegin
-            {
-                get { return MainColor; }
-            }
-
-            public override Color MenuItemSelectedGradientEnd
-            {
-                get { return MainColor; }
-            }
-
             public override Color MenuBorder
             {
                 get { return MainColor; }
@@ -120,7 +99,7 @@ namespace Paint
         {
             this.DoubleBuffered = true;
             data_paint._color = Color.Pink;
-            panel_paint.update(data_paint);
+            //panel_paint.update(data_paint);
         }
 
         // mo file
@@ -134,18 +113,18 @@ namespace Paint
             if (openFile.ShowDialog() == DialogResult.OK)
             {
                 picturebox.Image = new Bitmap(openFile.FileName);
-                picturebox.Size = panel_paint.Size;
+                //picturebox.Size = panel_paint.Size;
 
             }
         }
 
         private void openfileToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MyPtb _myptb = new MyPtb(panel_paint);
-            OpenImage(_myptb);
-            _myptb.ptb_index = count_ptb;
-            count_ptb++;
-            panel_paint.list_ptb.Add(_myptb);
+            //MyPtb _myptb = new MyPtb(panel_paint);
+            //OpenImage(_myptb);
+            //_myptb.ptb_index = count_ptb;
+            //count_ptb++;
+            //panel_paint.list_ptb.Add(_myptb);
         }
         private void textBox_RGBvalueChange()
         {
@@ -172,16 +151,6 @@ namespace Paint
             textBox_RGBvalueChange();
         }
 
-        private void colorBarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            colorWheelToolStripMenuItem.Checked = false;
-        }
-
-        private void colorWheelToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            colorBarToolStripMenuItem.Checked = false;
-        }
-
         private void colorPicker_ColorPicked(object sender, EventArgs e)
         {
             pictureBox_Color_Front.BackColor = colorPicker.SelectedColor;
@@ -195,13 +164,13 @@ namespace Paint
         private void btn_Undo_Click(object sender, EventArgs e)
         {
             //panel_paint.Undo_Click();
-            panel_paint.updateData(data_paint);
+            //panel_paint.updateData(data_paint);
         }
 
         private void pictureBox_Color_Front_BackColorChanged(object sender, EventArgs e)
         {
             data_paint._color = pictureBox_Color_Front.BackColor;
-            panel_paint.update(data_paint);
+            //panel_paint.update(data_paint);
         }
 
         private void btn_Text_Click(object sender, EventArgs e)
