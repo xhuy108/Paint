@@ -56,4 +56,3 @@ D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.Utils.v22.2.x
 D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.XtraEditors.v22.2.xml
 D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.Pdf.v22.2.Core.xml
 D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.Pdf.v22.2.Drawing.xml
-D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\obj\Debug\Paint.Form_shape_selected.resources

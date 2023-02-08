@@ -81,29 +81,17 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_shape_select.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_shape_select.Designer.cs">
-      <DependentUpon>Form_shape_select.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Manager\MyData.cs" />
-    <Compile Include="MyItem\MyPanel.cs">
+    <Compile Include="Manager\History.cs" />
+    <Compile Include="Manager\MyData.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="MyItem\MyPtb.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="MyShape\MyLine.cs" />
-    <Compile Include="MyShape\MyPen.cs" />
-    <Compile Include="MyShape\Shape.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form_shape_select.resx">
-      <DependentUpon>Form_shape_select.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -129,8 +117,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="MyAct\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

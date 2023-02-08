@@ -11,7 +11,7 @@ namespace Paint.MyItem
         // lay stt ptb
         public int ptb_index { get; set; }
         public bool isPtbSelected { get; set; }
-        public MyPtb(MyPanel panel)
+        public MyPtb(Panel panel)
         {
             this.SizeMode = PictureBoxSizeMode.AutoSize;
             isPtbSelected = false;

@@ -10,7 +10,6 @@ using System.Windows.Forms;
 using System.Drawing.Drawing2D;
 using System.IO;
 
-using Paint.MyShape;
 using Paint.Manager;
 using Paint.MyItem;
 
@@ -18,30 +17,35 @@ namespace Paint
 {
     public partial class Form1 : Form
     {
-
+        #region khai báo
         private static Color MainColor = Color.Black;
-        private static int Size = 10;
+        
+        private static int Size = 3;
         private int count_ptb = 0;
-        // chỗ lưu tất cả data
-        public MyData data_paint = new MyData();
-
-        bool draw = false;
-        MyPen pen = new MyPen(Color.Black, Size);
         Image _img;
         Graphics _g;
-
+        // vị trí chuột
+        public Point mousedownptmain = new Point();
+        public Point mousemuveptmain = new Point();
+        public Point mouseupptmain = new Point();
+        public Point mousedownptve = new Point();
+        public Point mousemuveptve = new Point();
         int x = -1;
         int y = -1;
+        // cho phép vẽ
         bool allowDraw;
-
+        // độ phóng to thu nhỏ
+        public int hesonhan = 1;
+        // danh sach ptb
+        public List<MyPtb> list_ptb;
         Point lastPoint = Point.Empty;
-        
+        #endregion
         public Form1()
         {
             InitializeComponent();
             DoubleBuffered = true;
             menuStrip1.Renderer = new MenuStripRenderer();
-            panel_paint.update(data_paint);
+            
             _g = panel_paint.CreateGraphics();
 
             _g.SmoothingMode = SmoothingMode.AntiAlias;
@@ -119,8 +123,7 @@ namespace Paint
         private void Form1_Load(object sender, EventArgs e)
         {
             this.DoubleBuffered = true;
-            data_paint._color = Color.Pink;
-            panel_paint.update(data_paint);
+            
         }
 
         // mo file
@@ -145,7 +148,7 @@ namespace Paint
             OpenImage(_myptb);
             _myptb.ptb_index = count_ptb;
             count_ptb++;
-            panel_paint.list_ptb.Add(_myptb);
+            this.list_ptb.Add(_myptb);
         }
         private void textBox_RGBvalueChange()
         {
@@ -194,19 +197,17 @@ namespace Paint
         }
         private void btn_Undo_Click(object sender, EventArgs e)
         {
-            //panel_paint.Undo_Click();
-            panel_paint.updateData(data_paint);
+            //
         }
 
         private void pictureBox_Color_Front_BackColorChanged(object sender, EventArgs e)
         {
-            data_paint._color = pictureBox_Color_Front.BackColor;
-            panel_paint.update(data_paint);
+            
         }
 
         private void btn_Text_Click(object sender, EventArgs e)
         {
-            data_paint.isText = true;
+            
         }
 
         private void btn_Shape_Click(object sender, EventArgs e)
