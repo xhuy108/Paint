@@ -88,9 +88,6 @@
       <DependentUpon>Form_shape_select.cs</DependentUpon>
     </Compile>
     <Compile Include="Manager\MyData.cs" />
-    <Compile Include="MyItem\MyPanel.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="MyItem\MyPtb.cs">
       <SubType>Component</SubType>
     </Compile>
