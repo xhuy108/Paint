@@ -13,10 +13,10 @@ using System.IO;
 namespace Paint.Manager
 {
 
-    class MyData : PictureBox
+    public class MyData : PictureBox
     {
         #region biến và hàm khởi tạo
-        public History luu = new History() ;
+        public History luu = new History();
         public bool tam = true;
         public Point a = new Point();
         public Point b = new Point();
@@ -47,11 +47,11 @@ namespace Paint.Manager
             g.DrawImage(ima, 0, 0, new Rectangle(0, 0, this.Width, this.Height), GraphicsUnit.Pixel);
             this.Image.Dispose();
             this.Image = new Bitmap(bm);
-            luu.sd[luu.n] = new H();
-            luu.sd[luu.n].saveim = new Bitmap(bm);
-            luu.sd[luu.n].rec = new Rectangle(0, 0, Width, Height);
-            luu.sd[luu.n].vepen = 3;
-            luu.sd[luu.n].size = new Size(Width, Height);
+            luu.list[luu.n] = new H();
+            luu.list[luu.n].saveim = new Bitmap(bm);
+            luu.list[luu.n].rec = new Rectangle(0, 0, Width, Height);
+            luu.list[luu.n].vepen = 3;
+            luu.list[luu.n].size = new Size(Width, Height);
             luu.n++;
             n = luu.n;
         }
@@ -61,12 +61,14 @@ namespace Paint.Manager
         {
             Rectangle rec1 = new Rectangle(rec.Location.X * 10 / form.hesonhan, rec.Location.Y * 10 / form.hesonhan, rec.Width * 10 / form.hesonhan, rec.Height * 10 / form.hesonhan);
             #region điểm đầu cuối
-            if (form.panel_paint.Visible)
+            if (form.pt_draw.Visible)
             {
-                a.X = form.panel_paint.Location.X;
-                a.Y = form.panel_paint.Location.Y;
-                b.X = form.panel_paint.Location.X;
-                b.Y = form.panel_paint.Location.Y;
+                //a.X = form.mousedownptmain.X - form.pt_draw.Location.X;
+                //a.Y = form.mousedownptmain.Y - form.pt_draw.Location.Y;
+                //b.X = form.mousemuveptmain.X - form.pt_draw.Location.X;
+                //b.Y = form.mousemuveptmain.Y - form.pt_draw.Location.Y;
+                a = form.Brush_A;
+                b = form.Brush_B;
                 if (xet == 0)
                 {
                     pion[0] = new Point(a.X, a.Y);
@@ -76,48 +78,81 @@ namespace Paint.Manager
                 }
             }
             #endregion
-            
-            #region vẽ đường thẳng
-            if (form.tline.Checked)
-            {
-                if (form.ptbd1.BorderStyle == BorderStyle.Fixed3D)
-                {
-                    if (form.ptve.Image != null)
-                    {
-                        tanghinh(form, rec);
-                        Graphics g = Graphics.FromImage(form.ptve.Image);
-                        g.SmoothingMode = SmoothingMode.HighQuality;
 
-                        g.DrawLine(form.but, a, b);
-                        if (form.ptve.Visible == false)
+            #region vẽ hình chữ nhật
+            if (form.tool.isRect == true)
+            {
+                if (form.tool.isFill == false)
+                {
+                    if (form.pt_draw.BackgroundImage != null)
+                    {
+                        Graphics g = Graphics.FromImage(form.pt_draw.BackgroundImage);
+                        g.SmoothingMode = SmoothingMode.HighQuality;
+                        g.DrawRectangle(form._p, 5, 5, form.pt_draw.Width - 10, form.pt_draw.Height - 10);
+                        if (form.pt_draw.Visible == false)
                         {
-                            Graphics w = CreateGraphics();
-                            w.SmoothingMode = SmoothingMode.HighQuality;
                             Graphics f = Graphics.FromImage(this.Image);
                             f.SmoothingMode = SmoothingMode.HighQuality;
-                            f.DrawLine(form.but, a.X + rec.Location.X - 5, a.Y + rec.Location.Y - 5, b.X + rec.Location.X - 5, b.Y + rec.Location.Y - 5);
-                            w.DrawLine(form.but, a.X + rec.Location.X - 5, a.Y + rec.Location.Y - 5, b.X + rec.Location.X - 5, b.Y + rec.Location.Y - 5);
-                            luu.sd[luu.n] = new savedr();
-                            luu.sd[luu.n].path.AddLine(a.X + rec1.Location.X - 5, a.Y + rec1.Location.Y - 5, b.X + rec1.Location.X - 5, b.Y + rec1.Location.Y - 5);
-                            luu.sd[luu.n].vepen = 1;
-                            luu.sd[luu.n].size = new Size(Width * 10 / form.hesonhan, Height * 10 / form.hesonhan);
-                            luu.sd[luu.n].p = form.but;
+                            f.DrawRectangle(form._p, rec);
+                            luu.list[luu.n] = new H();
+                            luu.list[luu.n].path.AddRectangle(rec1);
+                            luu.list[luu.n].vepen = 1;
+                            luu.list[luu.n].size = new Size(Width * 10 / form.hesonhan, Height * 10 / form.hesonhan);
+                            luu.list[luu.n].p = form._p;
                             luu.n++;
                             n = luu.n;
                         }
                     }
                 }
+                else
+                {
+                    if (rec.Width > 4 && rec.Height > 4 && form.pt_draw.Image != null)
+                    {
+                        Graphics g = Graphics.FromImage(form.pt_draw.Image);
+                        g.SmoothingMode = SmoothingMode.HighQuality;
+                        if (form.ptbd3.BorderStyle == BorderStyle.Fixed3D)
+                            g.FillRectangle(form.co, 5, 5, form.pt_draw.Width - 10, form.pt_draw.Height - 10);
+                        else
+                        {
+                            g.FillRectangle(Brushes.White, 5, 5, form.pt_draw.Width - 10, form.pt_draw.Height - 10);
+                            g.DrawRectangle(form._p, 5, 5, form.pt_draw.Width - 10, form.pt_draw.Height - 10);
+                        }
+                    }
+                    if (form.pt_draw.Visible == false)
+                    {
+                        Graphics f = Graphics.FromImage(this.Image);
+                        f.SmoothingMode = SmoothingMode.HighQuality;
+                        luu.list[luu.n] = new H();
+                        if (form.ptbd3.BorderStyle == BorderStyle.Fixed3D)
+                        {
+                            f.FillRectangle(form.co, rec);
+                            luu.list[luu.n].br = form.co;
+                        }
+                        else
+                        {
+                            f.FillRectangle(Brushes.White, rec);
+                            luu.list[luu.n].br = Brushes.White;
+                            f.DrawRectangle(form._p, rec);
+                            luu.list[luu.n].p = form._p;
+                        }
+                        luu.list[luu.n].path.AddRectangle(rec1);
+                        luu.list[luu.n].vepen = 2;
+                        luu.list[luu.n].size = new Size(Width * 10 / form.hesonhan, Height * 10 / form.hesonhan);
+                        luu.n++;
+                        n = luu.n;
+                    }
+                }
             }
             #endregion
-           
+
         }
         #region phong to thu nho
         public void phongtothunho(Form1 form)
         {
             ima = new Bitmap(this.Image);
-            form.ptmain.Size = new Size(form.hesonhan * this.Width / 10, form.hesonhan * this.Height / 10);
-            this.Width = form.ptmain.Width;
-            this.Height = form.ptmain.Height;
+            form.pt_draw.Size = new Size(form.hesonhan * this.Width / 10, form.hesonhan * this.Height / 10);
+            this.Width = form.pt_draw.Width;
+            this.Height = form.pt_draw.Height;
             this.Image = new Bitmap(this.Width, this.Height);
             bm = new Bitmap(this.Width, this.Height);
             Graphics g = Graphics.FromImage(bm);
@@ -132,33 +167,33 @@ namespace Paint.Manager
             if (luu.n == 0)
                 this.Image = new Bitmap(this.Width, this.Height);
             else
-                this.Image = new Bitmap(luu.sd[luu.n - 1].size.Width, luu.sd[luu.n - 1].size.Height);
+                this.Image = new Bitmap(luu.list[luu.n - 1].size.Width, luu.list[luu.n - 1].size.Height);
             Graphics g = Graphics.FromImage(this.Image);
             g.SmoothingMode = SmoothingMode.HighQuality;
             for (int i = 0; i < luu.n; i++)
             {
-                form.panel_paint.Size = new Size(luu.sd[i].size.Width, luu.sd[i].size.Height);
-                this.Width = luu.sd[i].size.Width;
-                this.Height = luu.sd[i].size.Height;
-                this.Size = new Size(luu.sd[i].size.Width, luu.sd[i].size.Height);
-                if (luu.sd[i].vepen == 1)
-                    g.DrawPath(luu.sd[i].p, luu.sd[i].path);
-                if (luu.sd[i].vepen == 2)
+                form.pt_draw.Size = new Size(luu.list[i].size.Width, luu.list[i].size.Height);
+                this.Width = luu.list[i].size.Width;
+                this.Height = luu.list[i].size.Height;
+                this.Size = new Size(luu.list[i].size.Width, luu.list[i].size.Height);
+                if (luu.list[i].vepen == 1)
+                    g.DrawPath(luu.list[i].p, luu.list[i].path);
+                if (luu.list[i].vepen == 2)
                 {
-                    g.FillPath(luu.sd[i].br, luu.sd[i].path);
-                    if (luu.sd[i].br == Brushes.White)
-                        g.DrawPath(luu.sd[i].p, luu.sd[i].path);
+                    g.FillPath(luu.list[i].br, luu.list[i].path);
+                    if (luu.list[i].br == Brushes.White)
+                        g.DrawPath(luu.list[i].p, luu.list[i].path);
                 }
-                if (luu.sd[i].vepen == 3)
-                    g.DrawImage(luu.sd[i].saveim, luu.sd[i].rec);
+                if (luu.list[i].vepen == 3)
+                    g.DrawImage(luu.list[i].saveim, luu.list[i].rec);
             }
         }
         public void vehinhtheotoado(Form1 form, Rectangle rec)
         {
             GraphicsPath path2 = new GraphicsPath();
-            if (rec.Width > 4 && rec.Height > 4 && form.ptve.Image != null)
+            if (rec.Width > 4 && rec.Height > 4 && form.pt_draw.Image != null)
             {
-                Graphics g = Graphics.FromImage(form.ptve.Image);
+                Graphics g = Graphics.FromImage(form.pt_draw.Image);
                 g.SmoothingMode = SmoothingMode.HighQuality;
                 path = new GraphicsPath();
                 for (int i = 0; i < npoin - 1; i++)
@@ -169,27 +204,27 @@ namespace Paint.Manager
                 }
                 if (form.ptbd1.BorderStyle == BorderStyle.Fixed3D)
                 {
-                    g.DrawPath(form.but, path);
-                    if (form.ptve.Visible == false)
+                    g.DrawPath(form._p, path);
+                    if (form.pt_draw.Visible == false)
                     {
                         Graphics f = Graphics.FromImage(this.Image);
                         Graphics w = CreateGraphics();
                         f.SmoothingMode = SmoothingMode.HighQuality;
                         w.SmoothingMode = SmoothingMode.HighQuality;
-                        luu.sd[luu.n] = new savedr();
+                        luu.list[luu.n] = new H();
                         for (int i = 0; i < npoin - 1; i++)
                         {
-                            luu.sd[luu.n].path.AddLine((poin1[i].X + form.ptve.Location.X) * 10 / form.hesonhan, (poin1[i].Y + form.ptve.Location.Y) * 10 / form.hesonhan, (poin1[i + 1].X + form.ptve.Location.X) * 10 / form.hesonhan, (poin1[i + 1].Y + form.ptve.Location.Y) * 10 / form.hesonhan);
+                            luu.list[luu.n].path.AddLine((poin1[i].X + form.pt_draw.Location.X) * 10 / form.hesonhan, (poin1[i].Y + form.pt_draw.Location.Y) * 10 / form.hesonhan, (poin1[i + 1].X + form.pt_draw.Location.X) * 10 / form.hesonhan, (poin1[i + 1].Y + form.pt_draw.Location.Y) * 10 / form.hesonhan);
                         }
                         for (int i = 0; i < npoin - 1; i++)
                         {
-                            path2.AddLine(poin1[i].X + form.ptve.Location.X, poin1[i].Y + form.ptve.Location.Y, poin1[i + 1].X + form.ptve.Location.X, poin1[i + 1].Y + form.ptve.Location.Y);
+                            path2.AddLine(poin1[i].X + form.pt_draw.Location.X, poin1[i].Y + form.pt_draw.Location.Y, poin1[i + 1].X + form.pt_draw.Location.X, poin1[i + 1].Y + form.pt_draw.Location.Y);
                         }
-                        f.DrawPath(form.but, path2);
-                        w.DrawPath(form.but, path2);
-                        luu.sd[luu.n].vepen = 1;
-                        luu.sd[luu.n].size = new Size(Width * 10 / form.hesonhan, Height * 10 / form.hesonhan);
-                        luu.sd[luu.n].p = form.but;
+                        f.DrawPath(form._p, path2);
+                        w.DrawPath(form._p, path2);
+                        luu.list[luu.n].vepen = 1;
+                        luu.list[luu.n].size = new Size(Width * 10 / form.hesonhan, Height * 10 / form.hesonhan);
+                        luu.list[luu.n].p = form._p;
                         luu.n++;
                         n = luu.n;
                     }
@@ -203,40 +238,40 @@ namespace Paint.Manager
                     else
                     {
                         g.FillPath(Brushes.White, path);
-                        g.DrawPath(form.but, path);
+                        g.DrawPath(form._p, path);
                     }
-                    if (form.ptve.Visible == false)
+                    if (form.pt_draw.Visible == false)
                     {
                         Graphics f = Graphics.FromImage(this.Image);
                         Graphics w = CreateGraphics();
                         w.SmoothingMode = SmoothingMode.HighQuality;
                         f.SmoothingMode = SmoothingMode.HighQuality;
-                        luu.sd[luu.n] = new savedr();
+                        luu.list[luu.n] = new H();
                         for (int i = 0; i < npoin - 1; i++)
                         {
-                            luu.sd[luu.n].path.AddLine((poin1[i].X + form.ptve.Location.X) * 10 / form.hesonhan, (poin1[i].Y + form.ptve.Location.Y) * 10 / form.hesonhan, (poin1[i + 1].X + form.ptve.Location.X) * 10 / form.hesonhan, (poin1[i + 1].Y + form.ptve.Location.Y) * 10 / form.hesonhan);
+                            luu.list[luu.n].path.AddLine((poin1[i].X + form.pt_draw.Location.X) * 10 / form.hesonhan, (poin1[i].Y + form.pt_draw.Location.Y) * 10 / form.hesonhan, (poin1[i + 1].X + form.pt_draw.Location.X) * 10 / form.hesonhan, (poin1[i + 1].Y + form.pt_draw.Location.Y) * 10 / form.hesonhan);
                         }
                         for (int i = 0; i < npoin - 1; i++)
                         {
-                            path2.AddLine(poin1[i].X + form.ptve.Location.X, poin1[i].Y + form.ptve.Location.Y, poin1[i + 1].X + form.ptve.Location.X, poin1[i + 1].Y + form.ptve.Location.Y);
+                            path2.AddLine(poin1[i].X + form.pt_draw.Location.X, poin1[i].Y + form.pt_draw.Location.Y, poin1[i + 1].X + form.pt_draw.Location.X, poin1[i + 1].Y + form.pt_draw.Location.Y);
                         }
                         if (form.ptbd3.BorderStyle == BorderStyle.Fixed3D)
                         {
                             f.FillPath(form.co, path2);
                             w.FillPath(form.co, path2);
-                            luu.sd[luu.n].br = form.co;
+                            luu.list[luu.n].br = form.co;
                         }
                         else
                         {
                             f.FillPath(Brushes.White, path2);
                             w.FillPath(Brushes.White, path2);
-                            luu.sd[luu.n].br = Brushes.White;
-                            f.DrawPath(form.but, luu.sd[luu.n].path);
-                            w.DrawPath(form.but, luu.sd[luu.n].path);
-                            luu.sd[luu.n].p = form.but;
+                            luu.list[luu.n].br = Brushes.White;
+                            f.DrawPath(form._p, luu.list[luu.n].path);
+                            w.DrawPath(form._p, luu.list[luu.n].path);
+                            luu.list[luu.n].p = form._p;
                         }
-                        luu.sd[luu.n].vepen = 2;
-                        luu.sd[luu.n].size = new Size(Width * 10 / form.hesonhan, Height * 10 / form.hesonhan);
+                        luu.list[luu.n].vepen = 2;
+                        luu.list[luu.n].size = new Size(Width * 10 / form.hesonhan, Height * 10 / form.hesonhan);
                         luu.n++;
                         n = luu.n;
                     }
@@ -271,16 +306,16 @@ namespace Paint.Manager
             tam.Location = tam2;
             tam.Width = rec.Width + 10;
             tam.Height = rec.Height + 10;
-            if (form.panel_paint.Width > 0 && form.panel_paint.Height > 0)
+            if (form.pt_draw.Width > 0 && form.pt_draw.Height > 0)
             {
-                form.panel_paint.BackgroundImage = new Bitmap(form.panel_paint.Width, form.panel_paint.Height);
-                Graphics g = Graphics.FromImage(form.panel_paint.BackgroundImage);
+                form.pt_draw.BackgroundImage = new Bitmap(form.pt_draw.Width, form.pt_draw.Height);
+                Graphics g = Graphics.FromImage(form.pt_draw.BackgroundImage);
                 Pen t = new Pen(Color.Black, 2);
                 g.DrawImage(this.Image, 0, 0, tam, GraphicsUnit.Pixel);
-                g.DrawRectangle(t, new Rectangle(0, 0, form.panel_paint.Width, form.panel_paint.Height));
-                g.DrawLine(t, form.panel_paint.Width / 2, form.panel_paint.Height - 3, form.panel_paint.Width / 2, form.ptve.Height);
-                g.DrawLine(t, form.panel_paint.Width - 3, form.panel_paint.Height / 2, form.panel_paint.Width, form.ptve.Height / 2);
-                g.DrawLine(t, form.panel_paint.Width - 3, form.panel_paint.Height - 2, form.panel_paint.Width, form.ptve.Height - 2);
+                g.DrawRectangle(t, new Rectangle(0, 0, form.pt_draw.Width, form.pt_draw.Height));
+                g.DrawLine(t, form.pt_draw.Width / 2, form.pt_draw.Height - 3, form.pt_draw.Width / 2, form.pt_draw.Height);
+                g.DrawLine(t, form.pt_draw.Width - 3, form.pt_draw.Height / 2, form.pt_draw.Width, form.pt_draw.Height / 2);
+                g.DrawLine(t, form.pt_draw.Width - 3, form.pt_draw.Height - 2, form.pt_draw.Width, form.pt_draw.Height - 2);
             }
         }
         #endregion

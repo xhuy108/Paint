@@ -85,6 +85,7 @@
     <Compile Include="Manager\MyData.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Manager\SelectedTool.cs" />
     <Compile Include="MyItem\MyPtb.cs">
       <SubType>Component</SubType>
     </Compile>

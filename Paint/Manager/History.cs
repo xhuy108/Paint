@@ -8,7 +8,7 @@ using System.IO;
 
 namespace Paint.Manager
 {
-    class H
+    public class H
     {
         public H() { }
         public GraphicsPath path = new GraphicsPath();
@@ -20,9 +20,9 @@ namespace Paint.Manager
         public Point[] poin = new Point[100000];
         public Size size;
     }
-    class History
+    public class History
     {
-        public H[] sd = new H[200];
+        public H[] list = new H[200];
         public int n = 0;
         public History()
         {
