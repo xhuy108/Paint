@@ -128,7 +128,7 @@ namespace Paint
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.btn_Redo = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_Undo = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tLP_Shape = new System.Windows.Forms.TableLayoutPanel();
             this.btn_Polygon = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_Triangle = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_Circle = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -200,7 +200,7 @@ namespace Paint
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
+            this.tLP_Shape.SuspendLayout();
             this.tableLayoutPanel_PaintTool.SuspendLayout();
             this.panel_Color.SuspendLayout();
             this.subTableLayoutPanel_Color2.SuspendLayout();
@@ -799,7 +799,7 @@ namespace Paint
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.tableLayoutPanel3);
-            this.panel1.Controls.Add(this.tableLayoutPanel2);
+            this.panel1.Controls.Add(this.tLP_Shape);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 28);
             this.panel1.Name = "panel1";
@@ -1002,27 +1002,28 @@ namespace Paint
             this.btn_Undo.UseDefaultRadiusAndThickness = true;
             this.btn_Undo.Click += new System.EventHandler(this.btn_Undo_Click);
             // 
-            // tableLayoutPanel2
+            // tLP_Shape
             // 
-            this.tableLayoutPanel2.ColumnCount = 6;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel2.Controls.Add(this.btn_Polygon, 5, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btn_Triangle, 4, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btn_Circle, 3, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btn_Rectangle, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btn_Curve, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btn_Line, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(99, 0);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(227, 36);
-            this.tableLayoutPanel2.TabIndex = 4;
+            this.tLP_Shape.ColumnCount = 6;
+            this.tLP_Shape.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tLP_Shape.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tLP_Shape.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tLP_Shape.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tLP_Shape.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tLP_Shape.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tLP_Shape.Controls.Add(this.btn_Polygon, 5, 0);
+            this.tLP_Shape.Controls.Add(this.btn_Triangle, 4, 0);
+            this.tLP_Shape.Controls.Add(this.btn_Circle, 3, 0);
+            this.tLP_Shape.Controls.Add(this.btn_Rectangle, 2, 0);
+            this.tLP_Shape.Controls.Add(this.btn_Curve, 1, 0);
+            this.tLP_Shape.Controls.Add(this.btn_Line, 0, 0);
+            this.tLP_Shape.Location = new System.Drawing.Point(99, 0);
+            this.tLP_Shape.Name = "tLP_Shape";
+            this.tLP_Shape.RowCount = 1;
+            this.tLP_Shape.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tLP_Shape.Size = new System.Drawing.Size(227, 36);
+            this.tLP_Shape.TabIndex = 4;
+            this.tLP_Shape.Visible = false;
             // 
             // btn_Polygon
             // 
@@ -4115,7 +4116,7 @@ namespace Paint
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tLP_Shape.ResumeLayout(false);
             this.tableLayoutPanel_PaintTool.ResumeLayout(false);
             this.panel_Color.ResumeLayout(false);
             this.subTableLayoutPanel_Color2.ResumeLayout(false);
@@ -4198,7 +4199,7 @@ namespace Paint
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TableLayoutPanel tLP_Shape;
         private System.Windows.Forms.Panel panel_Color;
         private System.Windows.Forms.Label lb_Color;
         private System.Windows.Forms.Panel panel_BrushPreview;

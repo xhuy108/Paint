@@ -212,7 +212,7 @@ namespace Paint
 
         private void btn_Shape_Click(object sender, EventArgs e)
         {
-            
+            tLP_Shape.Visible = true;
         }
         #region panel_paint paint
         private void panel_paint_MouseDown(object sender, MouseEventArgs e)
