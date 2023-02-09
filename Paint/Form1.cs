@@ -251,12 +251,13 @@ namespace Paint
                 y = -1;
                 dt._points.Add(e.Location);
                 Graphics _g = pt_draw.CreateGraphics();
+                
                 _g.SmoothingMode = SmoothingMode.AntiAlias;
-               
+                
                 dt.luu.list[dt.luu.n] = new H();
-                dt.luu.list[dt.luu.n].path.AddCurve(dt._points.ToArray());
-                dt.luu.list[dt.luu.n].p = _p;
-                dt.luu.list[dt.luu.n].size = new Size(Width, Height);
+                dt.luu.list[dt.luu.n].path.AddCurve(dt._points.ToArray());   
+                dt.luu.list[dt.luu.n].p.Color = _p.Color;
+                dt.luu.list[dt.luu.n].p.Width = _p.Width;
 
 
                 _g.DrawPath(dt.luu.list[dt.luu.n].p, dt.luu.list[dt.luu.n].path);
@@ -273,7 +274,6 @@ namespace Paint
             /////
             ///
 
-            int sive = 10;
             ////
             ///
 

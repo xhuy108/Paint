@@ -12,7 +12,7 @@ namespace Paint.Manager
     {
         public H() { }
         public GraphicsPath path = new GraphicsPath();
-        public Pen p = new Pen(Color.Black, 3);
+        public Pen p = new Pen(Color.Black,10);
         public Brush br = Brushes.Black;
         public Image saveim = new Bitmap(557, 408);
         public int vepen = 1;
