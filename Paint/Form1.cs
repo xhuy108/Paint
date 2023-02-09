@@ -47,7 +47,11 @@ namespace Paint
             InitializeComponent();
             DoubleBuffered = true;
             menuStrip1.Renderer = new MenuStripRenderer();
-              
+            
+            _p.EndCap = LineCap.Round;
+            _p.DashStyle = DashStyle.Solid;
+            _p.DashCap = DashCap.Flat;
+            _p.StartCap = LineCap.Round;
         }
 
         #region pick color
@@ -283,10 +287,7 @@ namespace Paint
                 {
                     dt._points.Add(e.Location);
 
-                    _p.EndCap = LineCap.Round;
-                    _p.DashStyle = DashStyle.Solid;
-                    _p.DashCap = DashCap.Flat;
-                    _p.StartCap = LineCap.Round;
+                    
 
                     using (Graphics _g = pt_draw.CreateGraphics()) 
                     {
@@ -397,8 +398,7 @@ namespace Paint
         #region Size
         private void trackBarSize_Scroll(object sender, EventArgs e)
         {
-            Size = trackBar_Size.Value;
-            _p = new Pen(_p.Color, Size);
+            _p.Width = trackBar_Size.Value;
         }
         #endregion
 
