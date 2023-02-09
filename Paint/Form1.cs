@@ -21,12 +21,11 @@ namespace Paint
         private static Color MainColor = Color.Black;
         // Data save
         public SelectedTool tool = new SelectedTool();
-        public Pen _p = new Pen(Color.Black, Size);
+        private Pen _p = new Pen(Color.Black, Size);
         public MyData dt = new MyData();
         private static int Size = 3;
-        private int count_ptb = 0;
         
-        public Graphics _g;
+        
         public Point Brush_A = new Point();
         public Point Brush_B = new Point();
         // vị trí chuột
@@ -35,18 +34,13 @@ namespace Paint
         int y = -1;
         // cho phép vẽ
         bool allowDraw;
-        // stack
-        //private Bitmap currentBitmap;
-        //private Bitmap bmp;
-        //Stack<Bitmap> stack_Undo;
-        //Stack<Bitmap> stack_Redo;
-        //private int count_Stack = 0;
+
 
         // độ phóng to thu nhỏ
         public int hesonhan = 1;
         // danh sach ptb
         public List<MyPtb> list_ptb;
-        Point lastPoint = Point.Empty;
+        
         #endregion
         public Form1()
         {
@@ -129,15 +123,8 @@ namespace Paint
             this.DoubleBuffered = true;
             this.tool.isBrush = true;
             
-            //bmp = new Bitmap(pt_draw.Width, pt_draw.Height);
-            _g = pt_draw.CreateGraphics();
-            //_g.Clear(BackColor);
-            _g.SmoothingMode = SmoothingMode.AntiAlias;
-            //pt_draw.Image = bmp;
-            //RefreshFormBackground();
-            //stack_Undo = new Stack<Bitmap>();
-            //stack_Redo = new Stack<Bitmap>();
-            //stack_Undo.Push(currentBitmap);
+
+           
 
         }
 
@@ -214,25 +201,10 @@ namespace Paint
         #region Undo, Redo
         private void btn_Undo_Click(object sender, EventArgs e)
         {
-            //int x = stack_Undo.Count;
-            //if (x > 0)
-            //{
-            //    Undo();
-            //}
-            //if (x == 0) { }
+            if (dt.luu.n > 0)
+                dt.luu.n--;
+            dt.velai(this, pt_draw);
         }
-
-
-        //private void Undo()
-        //{
-        //    if (stack_Undo.Count >= 0)
-        //    {
-        //        stack_Redo.Push(stack_Undo.Pop());
-        //        pt_draw.Image = stack_Redo.Peek();
-
-        //    }
-        //}
-
 
 
         #endregion
@@ -253,11 +225,17 @@ namespace Paint
         #region panel_paint paint
         private void panel_paint_MouseDown(object sender, MouseEventArgs e)
         {
-            allowDraw = true;
-
+            allowDraw = true; 
+            
             Brush_A = e.Location;
-            x = e.X;
-            y = e.Y;
+            if (tool.isBrush)
+            {
+                x = e.X;
+                y = e.Y;
+                
+                dt._points.Add(e.Location);
+                
+            }
             
         }
 
@@ -266,23 +244,49 @@ namespace Paint
             allowDraw = false;
 
             Brush_B = e.Location;
-            x = -1;
-            y = -1;
 
-            //RefreshFormBackground();
-            //stack_Undo.Push(currentBitmap);
-            //count_Stack++;
+            if (tool.isBrush)
+            {
+                x = -1;
+                y = -1;
+                dt._points.Add(e.Location);
+                Graphics _g = pt_draw.CreateGraphics();
+                _g.SmoothingMode = SmoothingMode.AntiAlias;
+               
+                dt.luu.list[dt.luu.n] = new H();
+                dt.luu.list[dt.luu.n].path.AddCurve(dt._points.ToArray());
+                dt.luu.list[dt.luu.n].p = _p;
+                dt.luu.list[dt.luu.n].size = new Size(Width, Height);
+
+
+                _g.DrawPath(dt.luu.list[dt.luu.n].p, dt.luu.list[dt.luu.n].path);
+                dt.luu.n++;
+                dt.n = dt.luu.n;
+                
+                dt._points.Clear();
+            }
+            
         }
 
         private void panel_paint_MouseMove(object sender, MouseEventArgs e)
         {
+            /////
+            ///
+
             int sive = 10;
-            
+            ////
+            ///
+
             if (allowDraw)
             {
                 if (tool.isBrush && x != -1 && y != -1)
                 {
-                    _g.DrawLine(_p, new Point(x, y), e.Location);
+                    dt._points.Add(e.Location);
+                    using (Graphics _g = pt_draw.CreateGraphics())
+                    {
+                        _g.SmoothingMode = SmoothingMode.AntiAlias;
+                        _g.DrawLine(_p, new Point(x, y), e.Location);
+                    }
                     x = e.X;
                     y = e.Y;
                 }
@@ -383,10 +387,6 @@ namespace Paint
         }
 
         #endregion
-        //private void RefreshFormBackground()
-        //{
-        //    currentBitmap = new Bitmap(pt_draw.Image);
-        //    //pt_draw.Image = currentBitmap;
-        //}
+
     }
 }
