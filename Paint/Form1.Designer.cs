@@ -68,7 +68,6 @@ namespace Paint
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openRecentFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -91,9 +90,23 @@ namespace Paint
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inverseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.transformToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.snapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.transparentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.swapForToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.initializeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorBarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorWheelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lockPalletToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.zoomInToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.zoomOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fitToWindowSizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.rotateLeftToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.rotateRightToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.rotateRightToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.flipHorizontallyToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.brushToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eraserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -107,21 +120,22 @@ namespace Paint
             this.textToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.objectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.windowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.initializeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.showHideTabToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.btn_Redo = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_Undo = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.btn_OpenProjectDialog = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.btn_OpenVersionDialog = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.btn_ShowDetail = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.btn_AnnotationMode = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.btn_OpenMaterialDialog = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.btn_Submit = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.btn_OpenNetworkDialog = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tLP_Shape = new System.Windows.Forms.TableLayoutPanel();
+            this.btn_Polygon = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.btn_Triangle = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.btn_Circle = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.btn_Rectangle = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.btn_Curve = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.btn_Line = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.tableLayoutPanel_PaintTool = new System.Windows.Forms.TableLayoutPanel();
             this.btn_Gradient = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_Bucket = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_Eraser = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -135,17 +149,42 @@ namespace Paint
             this.btn_Shape = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_Fill = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_Move = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.panel_Color = new System.Windows.Forms.Panel();
+            this.subTableLayoutPanel_Color2 = new System.Windows.Forms.TableLayoutPanel();
+            this.colorPicker = new AboControls.ExtendedControls.ColorPickerControl();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lb_Color = new System.Windows.Forms.Label();
+            this.pictureBox_ColorPreview = new System.Windows.Forms.PictureBox();
+            this.label_ColorPreview = new System.Windows.Forms.Label();
+            this.subTableLayoutPanel_Color = new System.Windows.Forms.TableLayoutPanel();
+            this.btn_SelectColor = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.subPanelBtextBox = new System.Windows.Forms.Panel();
+            this.textBox_Bvalue = new System.Windows.Forms.TextBox();
+            this.label_B_value = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.subPanelGtextBox = new System.Windows.Forms.Panel();
+            this.textBox_Gvalue = new System.Windows.Forms.TextBox();
+            this.label_G_value = new System.Windows.Forms.Label();
+            this.subPanelColorPicked = new System.Windows.Forms.Panel();
+            this.pictureBox_Color_Front = new System.Windows.Forms.PictureBox();
+            this.pictureBox_Color_Back = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.subPanelRtextBox = new System.Windows.Forms.Panel();
+            this.textBox_Rvalue = new System.Windows.Forms.TextBox();
+            this.label_R_value = new System.Windows.Forms.Label();
+            this.lb_Color = new System.Windows.Forms.Label();
+            this.panel_BrushPreview = new System.Windows.Forms.Panel();
             this.lb_BrushPreview = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel_Brush = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel_BrushControl = new System.Windows.Forms.Panel();
+            this.trackBar_Size = new System.Windows.Forms.TrackBar();
+            this.lb_Size = new System.Windows.Forms.Label();
             this.lb_BrushControl = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel_Navigator = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel_NavigatorTool = new System.Windows.Forms.TableLayoutPanel();
             this.btn_ClearRotation = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_RotateLeft = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_FlipHorizontally = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -155,24 +194,43 @@ namespace Paint
             this.btn_ZoomOut = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btn_FitToWindowSize = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.lb_Navigator = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel_BrushSize = new System.Windows.Forms.Panel();
             this.lb_BrushSize = new System.Windows.Forms.Label();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.pt_draw = new System.Windows.Forms.PictureBox();
+            this.panel_paint = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.tLP_Shape.SuspendLayout();
+            this.tableLayoutPanel_PaintTool.SuspendLayout();
+            this.panel_Color.SuspendLayout();
+            this.subTableLayoutPanel_Color2.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
-            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ColorPreview)).BeginInit();
+            this.subTableLayoutPanel_Color.SuspendLayout();
+            this.subPanelBtextBox.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
-            this.panel8.SuspendLayout();
+            this.subPanelGtextBox.SuspendLayout();
+            this.subPanelColorPicked.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Color_Front)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Color_Back)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.subPanelRtextBox.SuspendLayout();
+            this.panel_BrushPreview.SuspendLayout();
+            this.panel_Brush.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            this.panel_BrushControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar_Size)).BeginInit();
+            this.panel_Navigator.SuspendLayout();
+            this.tableLayoutPanel_NavigatorTool.SuspendLayout();
+            this.panel_BrushSize.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pt_draw)).BeginInit();
+            this.panel_paint.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -186,7 +244,6 @@ namespace Paint
             this.editToolStripMenuItem,
             this.filterToolStripMenuItem,
             this.selectToolStripMenuItem,
-            this.snapToolStripMenuItem,
             this.colorToolStripMenuItem,
             this.viewToolStripMenuItem,
             this.toolToolStripMenuItem,
@@ -194,7 +251,7 @@ namespace Paint
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1036, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1032, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -205,7 +262,6 @@ namespace Paint
             this.openToolStripMenuItem,
             this.openRecentFileToolStripMenuItem,
             this.toolStripMenuItem4,
-            this.toolStripMenuItem3,
             this.toolStripMenuItem2,
             this.saveToolStripMenuItem,
             this.saveAsToolStripMenuItem});
@@ -216,7 +272,7 @@ namespace Paint
             // 
             // importFileToolStripMenuItem
             // 
-            this.importFileToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.importFileToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.importFileToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.importFileToolStripMenuItem.Name = "importFileToolStripMenuItem";
             this.importFileToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
@@ -224,15 +280,16 @@ namespace Paint
             // 
             // openToolStripMenuItem
             // 
-            this.openToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.openToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.openToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
             this.openToolStripMenuItem.Text = "Open";
+            this.openToolStripMenuItem.Click += new System.EventHandler(this.openfileToolStripMenuItem_Click);
             // 
             // openRecentFileToolStripMenuItem
             // 
-            this.openRecentFileToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.openRecentFileToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.openRecentFileToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.openRecentFileToolStripMenuItem.Name = "openRecentFileToolStripMenuItem";
             this.openRecentFileToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
@@ -240,23 +297,15 @@ namespace Paint
             // 
             // toolStripMenuItem4
             // 
-            this.toolStripMenuItem4.BackColor = System.Drawing.Color.DimGray;
+            this.toolStripMenuItem4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.toolStripMenuItem4.ForeColor = System.Drawing.Color.White;
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
             this.toolStripMenuItem4.Size = new System.Drawing.Size(218, 26);
             this.toolStripMenuItem4.Text = "Save";
             // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.BackColor = System.Drawing.Color.DimGray;
-            this.toolStripMenuItem3.ForeColor = System.Drawing.Color.White;
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(218, 26);
-            this.toolStripMenuItem3.Text = "Import File";
-            // 
             // toolStripMenuItem2
             // 
-            this.toolStripMenuItem2.BackColor = System.Drawing.Color.DimGray;
+            this.toolStripMenuItem2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.toolStripMenuItem2.ForeColor = System.Drawing.Color.White;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Size = new System.Drawing.Size(218, 26);
@@ -264,7 +313,7 @@ namespace Paint
             // 
             // saveToolStripMenuItem
             // 
-            this.saveToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.saveToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.saveToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
@@ -272,7 +321,7 @@ namespace Paint
             // 
             // saveAsToolStripMenuItem
             // 
-            this.saveAsToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.saveAsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.saveAsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
             this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
@@ -298,7 +347,7 @@ namespace Paint
             // 
             // undoToolStripMenuItem
             // 
-            this.undoToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.undoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.undoToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
             this.undoToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
@@ -306,7 +355,7 @@ namespace Paint
             // 
             // redoToolStripMenuItem
             // 
-            this.redoToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.redoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.redoToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
             this.redoToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
@@ -314,7 +363,7 @@ namespace Paint
             // 
             // cutToolStripMenuItem
             // 
-            this.cutToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.cutToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.cutToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
             this.cutToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
@@ -322,7 +371,7 @@ namespace Paint
             // 
             // copyToolStripMenuItem
             // 
-            this.copyToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.copyToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.copyToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
             this.copyToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
@@ -330,7 +379,7 @@ namespace Paint
             // 
             // pasteToolStripMenuItem
             // 
-            this.pasteToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.pasteToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.pasteToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
             this.pasteToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
@@ -338,7 +387,7 @@ namespace Paint
             // 
             // cropToolStripMenuItem
             // 
-            this.cropToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.cropToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.cropToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.cropToolStripMenuItem.Name = "cropToolStripMenuItem";
             this.cropToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
@@ -346,7 +395,7 @@ namespace Paint
             // 
             // rotateLeftToolStripMenuItem
             // 
-            this.rotateLeftToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.rotateLeftToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.rotateLeftToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.rotateLeftToolStripMenuItem.Name = "rotateLeftToolStripMenuItem";
             this.rotateLeftToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
@@ -354,7 +403,7 @@ namespace Paint
             // 
             // rotateRightToolStripMenuItem
             // 
-            this.rotateRightToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.rotateRightToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.rotateRightToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.rotateRightToolStripMenuItem.Name = "rotateRightToolStripMenuItem";
             this.rotateRightToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
@@ -362,7 +411,7 @@ namespace Paint
             // 
             // flipHorizontallyToolStripMenuItem
             // 
-            this.flipHorizontallyToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.flipHorizontallyToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.flipHorizontallyToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.flipHorizontallyToolStripMenuItem.Name = "flipHorizontallyToolStripMenuItem";
             this.flipHorizontallyToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
@@ -370,7 +419,7 @@ namespace Paint
             // 
             // imageSizeToolStripMenuItem
             // 
-            this.imageSizeToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.imageSizeToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.imageSizeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.imageSizeToolStripMenuItem.Name = "imageSizeToolStripMenuItem";
             this.imageSizeToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
@@ -388,7 +437,7 @@ namespace Paint
             // 
             // levelsToolStripMenuItem
             // 
-            this.levelsToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.levelsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.levelsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.levelsToolStripMenuItem.Name = "levelsToolStripMenuItem";
             this.levelsToolStripMenuItem.Size = new System.Drawing.Size(138, 26);
@@ -396,7 +445,7 @@ namespace Paint
             // 
             // hueToolStripMenuItem
             // 
-            this.hueToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.hueToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.hueToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.hueToolStripMenuItem.Name = "hueToolStripMenuItem";
             this.hueToolStripMenuItem.Size = new System.Drawing.Size(138, 26);
@@ -417,56 +466,193 @@ namespace Paint
             // 
             // addToolStripMenuItem
             // 
-            this.addToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.addToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.addToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(160, 26);
             this.addToolStripMenuItem.Text = "Add";
             // 
             // deleteToolStripMenuItem
             // 
-            this.deleteToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.deleteToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.deleteToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(160, 26);
             this.deleteToolStripMenuItem.Text = "Delete";
             // 
             // inverseToolStripMenuItem
             // 
-            this.inverseToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.inverseToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.inverseToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.inverseToolStripMenuItem.Name = "inverseToolStripMenuItem";
-            this.inverseToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.inverseToolStripMenuItem.Size = new System.Drawing.Size(160, 26);
             this.inverseToolStripMenuItem.Text = "Inverse";
             // 
             // transformToolStripMenuItem
             // 
-            this.transformToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.transformToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.transformToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.transformToolStripMenuItem.Name = "transformToolStripMenuItem";
-            this.transformToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.transformToolStripMenuItem.Size = new System.Drawing.Size(160, 26);
             this.transformToolStripMenuItem.Text = "Transform";
-            // 
-            // snapToolStripMenuItem
-            // 
-            this.snapToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.snapToolStripMenuItem.Name = "snapToolStripMenuItem";
-            this.snapToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
-            this.snapToolStripMenuItem.Text = "Snap";
             // 
             // colorToolStripMenuItem
             // 
+            this.colorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.transparentToolStripMenuItem,
+            this.swapForToolStripMenuItem,
+            this.initializeToolStripMenuItem,
+            this.colorBarToolStripMenuItem,
+            this.colorWheelToolStripMenuItem,
+            this.lockPalletToolStripMenuItem});
             this.colorToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
             this.colorToolStripMenuItem.Size = new System.Drawing.Size(63, 24);
             this.colorToolStripMenuItem.Text = "Color";
             // 
+            // transparentToolStripMenuItem
+            // 
+            this.transparentToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.transparentToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.transparentToolStripMenuItem.Name = "transparentToolStripMenuItem";
+            this.transparentToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
+            this.transparentToolStripMenuItem.Text = "Transparent";
+            // 
+            // swapForToolStripMenuItem
+            // 
+            this.swapForToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.swapForToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.swapForToolStripMenuItem.Name = "swapForToolStripMenuItem";
+            this.swapForToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
+            this.swapForToolStripMenuItem.Text = "Swap Fore/BG(S)";
+            // 
+            // initializeToolStripMenuItem
+            // 
+            this.initializeToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.initializeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.initializeToolStripMenuItem.Name = "initializeToolStripMenuItem";
+            this.initializeToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
+            this.initializeToolStripMenuItem.Text = "Initialize";
+            // 
+            // colorBarToolStripMenuItem
+            // 
+            this.colorBarToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.colorBarToolStripMenuItem.Checked = true;
+            this.colorBarToolStripMenuItem.CheckOnClick = true;
+            this.colorBarToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.colorBarToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.colorBarToolStripMenuItem.Name = "colorBarToolStripMenuItem";
+            this.colorBarToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
+            this.colorBarToolStripMenuItem.Text = "Color Bar";
+            this.colorBarToolStripMenuItem.Click += new System.EventHandler(this.colorBarToolStripMenuItem_Click);
+            // 
+            // colorWheelToolStripMenuItem
+            // 
+            this.colorWheelToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.colorWheelToolStripMenuItem.CheckOnClick = true;
+            this.colorWheelToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.colorWheelToolStripMenuItem.Name = "colorWheelToolStripMenuItem";
+            this.colorWheelToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
+            this.colorWheelToolStripMenuItem.Text = "Color Wheel";
+            this.colorWheelToolStripMenuItem.Click += new System.EventHandler(this.colorWheelToolStripMenuItem_Click);
+            // 
+            // lockPalletToolStripMenuItem
+            // 
+            this.lockPalletToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.lockPalletToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.lockPalletToolStripMenuItem.Name = "lockPalletToolStripMenuItem";
+            this.lockPalletToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
+            this.lockPalletToolStripMenuItem.Text = "Lock Palette";
+            // 
             // viewToolStripMenuItem
             // 
+            this.viewToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.zoomInToolStripMenuItem,
+            this.zoomOutToolStripMenuItem,
+            this.fitToWindowSizeToolStripMenuItem,
+            this.toolStripMenuItem5,
+            this.toolStripMenuItem6,
+            this.rotateLeftToolStripMenuItem1,
+            this.rotateRightToolStripMenuItem1,
+            this.rotateRightToolStripMenuItem2,
+            this.flipHorizontallyToolStripMenuItem1});
             this.viewToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(61, 24);
             this.viewToolStripMenuItem.Text = "View";
+            // 
+            // zoomInToolStripMenuItem
+            // 
+            this.zoomInToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.zoomInToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.zoomInToolStripMenuItem.Name = "zoomInToolStripMenuItem";
+            this.zoomInToolStripMenuItem.Size = new System.Drawing.Size(233, 26);
+            this.zoomInToolStripMenuItem.Text = "Zoom In";
+            // 
+            // zoomOutToolStripMenuItem
+            // 
+            this.zoomOutToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.zoomOutToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.zoomOutToolStripMenuItem.Name = "zoomOutToolStripMenuItem";
+            this.zoomOutToolStripMenuItem.Size = new System.Drawing.Size(233, 26);
+            this.zoomOutToolStripMenuItem.Text = "Zoom Out";
+            // 
+            // fitToWindowSizeToolStripMenuItem
+            // 
+            this.fitToWindowSizeToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.fitToWindowSizeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.fitToWindowSizeToolStripMenuItem.Name = "fitToWindowSizeToolStripMenuItem";
+            this.fitToWindowSizeToolStripMenuItem.Size = new System.Drawing.Size(233, 26);
+            this.fitToWindowSizeToolStripMenuItem.Text = "Fit to Window Size";
+            // 
+            // toolStripMenuItem5
+            // 
+            this.toolStripMenuItem5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.toolStripMenuItem5.ForeColor = System.Drawing.Color.White;
+            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(233, 26);
+            this.toolStripMenuItem5.Text = "100%";
+            // 
+            // toolStripMenuItem6
+            // 
+            this.toolStripMenuItem6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.toolStripMenuItem6.ForeColor = System.Drawing.Color.White;
+            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(233, 26);
+            this.toolStripMenuItem6.Text = "200%";
+            // 
+            // rotateLeftToolStripMenuItem1
+            // 
+            this.rotateLeftToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.rotateLeftToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
+            this.rotateLeftToolStripMenuItem1.Name = "rotateLeftToolStripMenuItem1";
+            this.rotateLeftToolStripMenuItem1.Size = new System.Drawing.Size(233, 26);
+            this.rotateLeftToolStripMenuItem1.Text = "Rotate Left";
+            // 
+            // rotateRightToolStripMenuItem1
+            // 
+            this.rotateRightToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.rotateRightToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
+            this.rotateRightToolStripMenuItem1.Name = "rotateRightToolStripMenuItem1";
+            this.rotateRightToolStripMenuItem1.Size = new System.Drawing.Size(233, 26);
+            this.rotateRightToolStripMenuItem1.Text = "Release Rotate/Flip";
+            // 
+            // rotateRightToolStripMenuItem2
+            // 
+            this.rotateRightToolStripMenuItem2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.rotateRightToolStripMenuItem2.ForeColor = System.Drawing.Color.White;
+            this.rotateRightToolStripMenuItem2.Name = "rotateRightToolStripMenuItem2";
+            this.rotateRightToolStripMenuItem2.Size = new System.Drawing.Size(233, 26);
+            this.rotateRightToolStripMenuItem2.Text = "Rotate Right";
+            // 
+            // flipHorizontallyToolStripMenuItem1
+            // 
+            this.flipHorizontallyToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.flipHorizontallyToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
+            this.flipHorizontallyToolStripMenuItem1.Name = "flipHorizontallyToolStripMenuItem1";
+            this.flipHorizontallyToolStripMenuItem1.Size = new System.Drawing.Size(233, 26);
+            this.flipHorizontallyToolStripMenuItem1.Text = "Flip Horizontally";
             // 
             // toolToolStripMenuItem
             // 
@@ -490,98 +676,117 @@ namespace Paint
             // 
             // brushToolStripMenuItem
             // 
-            this.brushToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.brushToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.brushToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.brushToolStripMenuItem.Name = "brushToolStripMenuItem";
-            this.brushToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.brushToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.brushToolStripMenuItem.Text = "Brush";
             // 
             // eraserToolStripMenuItem
             // 
-            this.eraserToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.eraserToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.eraserToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.eraserToolStripMenuItem.Name = "eraserToolStripMenuItem";
-            this.eraserToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.eraserToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.eraserToolStripMenuItem.Text = "Eraser";
             // 
             // shapeBrushToolStripMenuItem
             // 
-            this.shapeBrushToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.shapeBrushToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.shapeBrushToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.shapeBrushToolStripMenuItem.Name = "shapeBrushToolStripMenuItem";
-            this.shapeBrushToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.shapeBrushToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.shapeBrushToolStripMenuItem.Text = "Shape brush";
             // 
             // dotBrushToolStripMenuItem
             // 
-            this.dotBrushToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.dotBrushToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.dotBrushToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.dotBrushToolStripMenuItem.Name = "dotBrushToolStripMenuItem";
-            this.dotBrushToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.dotBrushToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.dotBrushToolStripMenuItem.Text = "Dot brush";
             // 
             // moveToolStripMenuItem
             // 
-            this.moveToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.moveToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.moveToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.moveToolStripMenuItem.Name = "moveToolStripMenuItem";
-            this.moveToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.moveToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.moveToolStripMenuItem.Text = "Move";
             // 
             // fillToolStripMenuItem
             // 
-            this.fillToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.fillToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.fillToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.fillToolStripMenuItem.Name = "fillToolStripMenuItem";
-            this.fillToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.fillToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.fillToolStripMenuItem.Text = "Fill";
             // 
             // gradientToolStripMenuItem
             // 
-            this.gradientToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.gradientToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.gradientToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.gradientToolStripMenuItem.Name = "gradientToolStripMenuItem";
-            this.gradientToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.gradientToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.gradientToolStripMenuItem.Text = "Gradient";
             // 
             // selectToolStripMenuItem1
             // 
-            this.selectToolStripMenuItem1.BackColor = System.Drawing.Color.DimGray;
+            this.selectToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.selectToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
             this.selectToolStripMenuItem1.Name = "selectToolStripMenuItem1";
-            this.selectToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.selectToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
             this.selectToolStripMenuItem1.Text = "Select";
             // 
             // lassoToolStripMenuItem
             // 
-            this.lassoToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.lassoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.lassoToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.lassoToolStripMenuItem.Name = "lassoToolStripMenuItem";
-            this.lassoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.lassoToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.lassoToolStripMenuItem.Text = "Lasso";
             // 
             // textToolStripMenuItem
             // 
-            this.textToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.textToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.textToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.textToolStripMenuItem.Name = "textToolStripMenuItem";
-            this.textToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.textToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.textToolStripMenuItem.Text = "Text";
             // 
             // objectToolStripMenuItem
             // 
-            this.objectToolStripMenuItem.BackColor = System.Drawing.Color.DimGray;
+            this.objectToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.objectToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.objectToolStripMenuItem.Name = "objectToolStripMenuItem";
-            this.objectToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.objectToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.objectToolStripMenuItem.Text = "Object";
             // 
             // windowToolStripMenuItem
             // 
+            this.windowToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.initializeToolStripMenuItem1,
+            this.showHideTabToolStripMenuItem});
             this.windowToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.windowToolStripMenuItem.Name = "windowToolStripMenuItem";
             this.windowToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
             this.windowToolStripMenuItem.Text = "Window";
+            // 
+            // initializeToolStripMenuItem1
+            // 
+            this.initializeToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.initializeToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
+            this.initializeToolStripMenuItem1.Name = "initializeToolStripMenuItem1";
+            this.initializeToolStripMenuItem1.Size = new System.Drawing.Size(201, 26);
+            this.initializeToolStripMenuItem1.Text = "Initialize";
+            // 
+            // showHideTabToolStripMenuItem
+            // 
+            this.showHideTabToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.showHideTabToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.showHideTabToolStripMenuItem.Name = "showHideTabToolStripMenuItem";
+            this.showHideTabToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
+            this.showHideTabToolStripMenuItem.Text = "Show/Hide Tab";
             // 
             // helpToolStripMenuItem
             // 
@@ -600,11 +805,11 @@ namespace Paint
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.tableLayoutPanel3);
-            this.panel1.Controls.Add(this.tableLayoutPanel2);
+            this.panel1.Controls.Add(this.tLP_Shape);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 28);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1036, 36);
+            this.panel1.Size = new System.Drawing.Size(1032, 36);
             this.panel1.TabIndex = 2;
             // 
             // tableLayoutPanel3
@@ -614,7 +819,8 @@ namespace Paint
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Controls.Add(this.btn_Redo, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.btn_Undo, 0, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(268, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -692,7 +898,7 @@ namespace Paint
             this.btn_Redo.OnIdleState.BorderThickness = 1;
             this.btn_Redo.OnIdleState.FillColor = System.Drawing.Color.DimGray;
             this.btn_Redo.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_Redo.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton22.OnIdleState.IconLeftImage")));
+            this.btn_Redo.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Redo.OnIdleState.IconLeftImage")));
             this.btn_Redo.OnIdleState.IconRightImage = null;
             this.btn_Redo.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btn_Redo.OnPressedState.BorderRadius = 10;
@@ -782,7 +988,7 @@ namespace Paint
             this.btn_Undo.OnIdleState.BorderThickness = 1;
             this.btn_Undo.OnIdleState.FillColor = System.Drawing.Color.DimGray;
             this.btn_Undo.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_Undo.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton21.OnIdleState.IconLeftImage")));
+            this.btn_Undo.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Undo.OnIdleState.IconLeftImage")));
             this.btn_Undo.OnIdleState.IconRightImage = null;
             this.btn_Undo.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btn_Undo.OnPressedState.BorderRadius = 10;
@@ -800,699 +1006,614 @@ namespace Paint
             this.btn_Undo.TextPadding = new System.Windows.Forms.Padding(0);
             this.toolTip1.SetToolTip(this.btn_Undo, "Undo");
             this.btn_Undo.UseDefaultRadiusAndThickness = true;
+            this.btn_Undo.Click += new System.EventHandler(this.btn_Undo_Click);
             // 
-            // tableLayoutPanel2
+            // tLP_Shape
             // 
-            this.tableLayoutPanel2.ColumnCount = 7;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel2.Controls.Add(this.btn_OpenProjectDialog, 6, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btn_OpenVersionDialog, 5, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btn_ShowDetail, 4, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btn_AnnotationMode, 3, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btn_OpenMaterialDialog, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btn_Submit, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btn_OpenNetworkDialog, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 0);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(250, 36);
-            this.tableLayoutPanel2.TabIndex = 4;
+            this.tLP_Shape.ColumnCount = 6;
+            this.tLP_Shape.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tLP_Shape.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tLP_Shape.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tLP_Shape.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tLP_Shape.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tLP_Shape.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tLP_Shape.Controls.Add(this.btn_Polygon, 5, 0);
+            this.tLP_Shape.Controls.Add(this.btn_Triangle, 4, 0);
+            this.tLP_Shape.Controls.Add(this.btn_Circle, 3, 0);
+            this.tLP_Shape.Controls.Add(this.btn_Rectangle, 2, 0);
+            this.tLP_Shape.Controls.Add(this.btn_Curve, 1, 0);
+            this.tLP_Shape.Controls.Add(this.btn_Line, 0, 0);
+            this.tLP_Shape.Location = new System.Drawing.Point(99, 0);
+            this.tLP_Shape.Name = "tLP_Shape";
+            this.tLP_Shape.RowCount = 1;
+            this.tLP_Shape.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tLP_Shape.Size = new System.Drawing.Size(227, 36);
+            this.tLP_Shape.TabIndex = 4;
+            this.tLP_Shape.Visible = false;
             // 
-            // btn_OpenProjectDialog
+            // btn_Polygon
             // 
-            this.btn_OpenProjectDialog.AllowAnimations = true;
-            this.btn_OpenProjectDialog.AllowMouseEffects = true;
-            this.btn_OpenProjectDialog.AllowToggling = false;
-            this.btn_OpenProjectDialog.AnimationSpeed = 200;
-            this.btn_OpenProjectDialog.AutoGenerateColors = false;
-            this.btn_OpenProjectDialog.AutoRoundBorders = false;
-            this.btn_OpenProjectDialog.AutoSizeLeftIcon = true;
-            this.btn_OpenProjectDialog.AutoSizeRightIcon = true;
-            this.btn_OpenProjectDialog.BackColor = System.Drawing.Color.Transparent;
-            this.btn_OpenProjectDialog.BackColor1 = System.Drawing.Color.DimGray;
-            this.btn_OpenProjectDialog.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_OpenProjectDialog.BackgroundImage")));
-            this.btn_OpenProjectDialog.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_OpenProjectDialog.ButtonText = "";
-            this.btn_OpenProjectDialog.ButtonTextMarginLeft = 0;
-            this.btn_OpenProjectDialog.ColorContrastOnClick = 45;
-            this.btn_OpenProjectDialog.ColorContrastOnHover = 45;
-            this.btn_OpenProjectDialog.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btn_Polygon.AllowAnimations = true;
+            this.btn_Polygon.AllowMouseEffects = true;
+            this.btn_Polygon.AllowToggling = false;
+            this.btn_Polygon.AnimationSpeed = 200;
+            this.btn_Polygon.AutoGenerateColors = false;
+            this.btn_Polygon.AutoRoundBorders = false;
+            this.btn_Polygon.AutoSizeLeftIcon = true;
+            this.btn_Polygon.AutoSizeRightIcon = true;
+            this.btn_Polygon.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Polygon.BackColor1 = System.Drawing.Color.DimGray;
+            this.btn_Polygon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Polygon.BackgroundImage")));
+            this.btn_Polygon.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Polygon.ButtonText = "";
+            this.btn_Polygon.ButtonTextMarginLeft = 0;
+            this.btn_Polygon.ColorContrastOnClick = 45;
+            this.btn_Polygon.ColorContrastOnHover = 45;
+            this.btn_Polygon.Cursor = System.Windows.Forms.Cursors.Default;
             borderEdges3.BottomLeft = true;
             borderEdges3.BottomRight = true;
             borderEdges3.TopLeft = true;
             borderEdges3.TopRight = true;
-            this.btn_OpenProjectDialog.CustomizableEdges = borderEdges3;
-            this.btn_OpenProjectDialog.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_OpenProjectDialog.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btn_OpenProjectDialog.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btn_OpenProjectDialog.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btn_OpenProjectDialog.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btn_OpenProjectDialog.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_OpenProjectDialog.ForeColor = System.Drawing.Color.White;
-            this.btn_OpenProjectDialog.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_OpenProjectDialog.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.btn_OpenProjectDialog.IconLeftPadding = new System.Windows.Forms.Padding(4, 3, 3, 3);
-            this.btn_OpenProjectDialog.IconMarginLeft = 11;
-            this.btn_OpenProjectDialog.IconPadding = 5;
-            this.btn_OpenProjectDialog.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_OpenProjectDialog.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.btn_OpenProjectDialog.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.btn_OpenProjectDialog.IconSize = 25;
-            this.btn_OpenProjectDialog.IdleBorderColor = System.Drawing.Color.White;
-            this.btn_OpenProjectDialog.IdleBorderRadius = 10;
-            this.btn_OpenProjectDialog.IdleBorderThickness = 1;
-            this.btn_OpenProjectDialog.IdleFillColor = System.Drawing.Color.DimGray;
-            this.btn_OpenProjectDialog.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_OpenProjectDialog.IdleIconLeftImage")));
-            this.btn_OpenProjectDialog.IdleIconRightImage = null;
-            this.btn_OpenProjectDialog.IndicateFocus = false;
-            this.btn_OpenProjectDialog.Location = new System.Drawing.Point(213, 3);
-            this.btn_OpenProjectDialog.Name = "btn_OpenProjectDialog";
-            this.btn_OpenProjectDialog.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btn_OpenProjectDialog.OnDisabledState.BorderRadius = 10;
-            this.btn_OpenProjectDialog.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_OpenProjectDialog.OnDisabledState.BorderThickness = 1;
-            this.btn_OpenProjectDialog.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btn_OpenProjectDialog.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btn_OpenProjectDialog.OnDisabledState.IconLeftImage = null;
-            this.btn_OpenProjectDialog.OnDisabledState.IconRightImage = null;
-            this.btn_OpenProjectDialog.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.btn_OpenProjectDialog.onHoverState.BorderRadius = 10;
-            this.btn_OpenProjectDialog.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_OpenProjectDialog.onHoverState.BorderThickness = 1;
-            this.btn_OpenProjectDialog.onHoverState.FillColor = System.Drawing.Color.Transparent;
-            this.btn_OpenProjectDialog.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.btn_OpenProjectDialog.onHoverState.IconLeftImage = null;
-            this.btn_OpenProjectDialog.onHoverState.IconRightImage = null;
-            this.btn_OpenProjectDialog.OnIdleState.BorderColor = System.Drawing.Color.White;
-            this.btn_OpenProjectDialog.OnIdleState.BorderRadius = 10;
-            this.btn_OpenProjectDialog.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_OpenProjectDialog.OnIdleState.BorderThickness = 1;
-            this.btn_OpenProjectDialog.OnIdleState.FillColor = System.Drawing.Color.DimGray;
-            this.btn_OpenProjectDialog.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_OpenProjectDialog.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton20.OnIdleState.IconLeftImage")));
-            this.btn_OpenProjectDialog.OnIdleState.IconRightImage = null;
-            this.btn_OpenProjectDialog.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btn_OpenProjectDialog.OnPressedState.BorderRadius = 10;
-            this.btn_OpenProjectDialog.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_OpenProjectDialog.OnPressedState.BorderThickness = 1;
-            this.btn_OpenProjectDialog.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btn_OpenProjectDialog.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.btn_OpenProjectDialog.OnPressedState.IconLeftImage = null;
-            this.btn_OpenProjectDialog.OnPressedState.IconRightImage = null;
-            this.btn_OpenProjectDialog.Size = new System.Drawing.Size(30, 30);
-            this.btn_OpenProjectDialog.TabIndex = 54;
-            this.btn_OpenProjectDialog.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_OpenProjectDialog.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btn_OpenProjectDialog.TextMarginLeft = 0;
-            this.btn_OpenProjectDialog.TextPadding = new System.Windows.Forms.Padding(0);
-            this.toolTip1.SetToolTip(this.btn_OpenProjectDialog, "Open project dialog");
-            this.btn_OpenProjectDialog.UseDefaultRadiusAndThickness = true;
+            this.btn_Polygon.CustomizableEdges = borderEdges3;
+            this.btn_Polygon.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_Polygon.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btn_Polygon.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btn_Polygon.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btn_Polygon.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btn_Polygon.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Polygon.ForeColor = System.Drawing.Color.White;
+            this.btn_Polygon.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Polygon.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btn_Polygon.IconLeftPadding = new System.Windows.Forms.Padding(3);
+            this.btn_Polygon.IconMarginLeft = 11;
+            this.btn_Polygon.IconPadding = 4;
+            this.btn_Polygon.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Polygon.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btn_Polygon.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btn_Polygon.IconSize = 25;
+            this.btn_Polygon.IdleBorderColor = System.Drawing.Color.White;
+            this.btn_Polygon.IdleBorderRadius = 10;
+            this.btn_Polygon.IdleBorderThickness = 1;
+            this.btn_Polygon.IdleFillColor = System.Drawing.Color.DimGray;
+            this.btn_Polygon.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Polygon.IdleIconLeftImage")));
+            this.btn_Polygon.IdleIconRightImage = null;
+            this.btn_Polygon.IndicateFocus = false;
+            this.btn_Polygon.Location = new System.Drawing.Point(188, 3);
+            this.btn_Polygon.Name = "btn_Polygon";
+            this.btn_Polygon.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btn_Polygon.OnDisabledState.BorderRadius = 10;
+            this.btn_Polygon.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Polygon.OnDisabledState.BorderThickness = 1;
+            this.btn_Polygon.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btn_Polygon.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btn_Polygon.OnDisabledState.IconLeftImage = null;
+            this.btn_Polygon.OnDisabledState.IconRightImage = null;
+            this.btn_Polygon.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btn_Polygon.onHoverState.BorderRadius = 10;
+            this.btn_Polygon.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Polygon.onHoverState.BorderThickness = 1;
+            this.btn_Polygon.onHoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btn_Polygon.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_Polygon.onHoverState.IconLeftImage = null;
+            this.btn_Polygon.onHoverState.IconRightImage = null;
+            this.btn_Polygon.OnIdleState.BorderColor = System.Drawing.Color.White;
+            this.btn_Polygon.OnIdleState.BorderRadius = 10;
+            this.btn_Polygon.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Polygon.OnIdleState.BorderThickness = 1;
+            this.btn_Polygon.OnIdleState.FillColor = System.Drawing.Color.DimGray;
+            this.btn_Polygon.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btn_Polygon.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Polygon.OnIdleState.IconLeftImage")));
+            this.btn_Polygon.OnIdleState.IconRightImage = null;
+            this.btn_Polygon.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btn_Polygon.OnPressedState.BorderRadius = 10;
+            this.btn_Polygon.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Polygon.OnPressedState.BorderThickness = 1;
+            this.btn_Polygon.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btn_Polygon.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btn_Polygon.OnPressedState.IconLeftImage = null;
+            this.btn_Polygon.OnPressedState.IconRightImage = null;
+            this.btn_Polygon.Size = new System.Drawing.Size(29, 30);
+            this.btn_Polygon.TabIndex = 53;
+            this.btn_Polygon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Polygon.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_Polygon.TextMarginLeft = 0;
+            this.btn_Polygon.TextPadding = new System.Windows.Forms.Padding(0);
+            this.toolTip1.SetToolTip(this.btn_Polygon, "Polygon");
+            this.btn_Polygon.UseDefaultRadiusAndThickness = true;
+            this.btn_Polygon.Click += new System.EventHandler(this.btn_Polygon_Click);
             // 
-            // btn_OpenVersionDialog
+            // btn_Triangle
             // 
-            this.btn_OpenVersionDialog.AllowAnimations = true;
-            this.btn_OpenVersionDialog.AllowMouseEffects = true;
-            this.btn_OpenVersionDialog.AllowToggling = false;
-            this.btn_OpenVersionDialog.AnimationSpeed = 200;
-            this.btn_OpenVersionDialog.AutoGenerateColors = false;
-            this.btn_OpenVersionDialog.AutoRoundBorders = false;
-            this.btn_OpenVersionDialog.AutoSizeLeftIcon = true;
-            this.btn_OpenVersionDialog.AutoSizeRightIcon = true;
-            this.btn_OpenVersionDialog.BackColor = System.Drawing.Color.Transparent;
-            this.btn_OpenVersionDialog.BackColor1 = System.Drawing.Color.DimGray;
-            this.btn_OpenVersionDialog.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_OpenVersionDialog.BackgroundImage")));
-            this.btn_OpenVersionDialog.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_OpenVersionDialog.ButtonText = "";
-            this.btn_OpenVersionDialog.ButtonTextMarginLeft = 0;
-            this.btn_OpenVersionDialog.ColorContrastOnClick = 45;
-            this.btn_OpenVersionDialog.ColorContrastOnHover = 45;
-            this.btn_OpenVersionDialog.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btn_Triangle.AllowAnimations = true;
+            this.btn_Triangle.AllowMouseEffects = true;
+            this.btn_Triangle.AllowToggling = false;
+            this.btn_Triangle.AnimationSpeed = 200;
+            this.btn_Triangle.AutoGenerateColors = false;
+            this.btn_Triangle.AutoRoundBorders = false;
+            this.btn_Triangle.AutoSizeLeftIcon = true;
+            this.btn_Triangle.AutoSizeRightIcon = true;
+            this.btn_Triangle.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Triangle.BackColor1 = System.Drawing.Color.DimGray;
+            this.btn_Triangle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Triangle.BackgroundImage")));
+            this.btn_Triangle.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Triangle.ButtonText = "";
+            this.btn_Triangle.ButtonTextMarginLeft = 0;
+            this.btn_Triangle.ColorContrastOnClick = 45;
+            this.btn_Triangle.ColorContrastOnHover = 45;
+            this.btn_Triangle.Cursor = System.Windows.Forms.Cursors.Default;
             borderEdges4.BottomLeft = true;
             borderEdges4.BottomRight = true;
             borderEdges4.TopLeft = true;
             borderEdges4.TopRight = true;
-            this.btn_OpenVersionDialog.CustomizableEdges = borderEdges4;
-            this.btn_OpenVersionDialog.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_OpenVersionDialog.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btn_OpenVersionDialog.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btn_OpenVersionDialog.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btn_OpenVersionDialog.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btn_OpenVersionDialog.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_OpenVersionDialog.ForeColor = System.Drawing.Color.White;
-            this.btn_OpenVersionDialog.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_OpenVersionDialog.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.btn_OpenVersionDialog.IconLeftPadding = new System.Windows.Forms.Padding(3);
-            this.btn_OpenVersionDialog.IconMarginLeft = 11;
-            this.btn_OpenVersionDialog.IconPadding = 4;
-            this.btn_OpenVersionDialog.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_OpenVersionDialog.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.btn_OpenVersionDialog.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.btn_OpenVersionDialog.IconSize = 25;
-            this.btn_OpenVersionDialog.IdleBorderColor = System.Drawing.Color.White;
-            this.btn_OpenVersionDialog.IdleBorderRadius = 10;
-            this.btn_OpenVersionDialog.IdleBorderThickness = 1;
-            this.btn_OpenVersionDialog.IdleFillColor = System.Drawing.Color.DimGray;
-            this.btn_OpenVersionDialog.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_OpenVersionDialog.IdleIconLeftImage")));
-            this.btn_OpenVersionDialog.IdleIconRightImage = null;
-            this.btn_OpenVersionDialog.IndicateFocus = false;
-            this.btn_OpenVersionDialog.Location = new System.Drawing.Point(178, 3);
-            this.btn_OpenVersionDialog.Name = "btn_OpenVersionDialog";
-            this.btn_OpenVersionDialog.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btn_OpenVersionDialog.OnDisabledState.BorderRadius = 10;
-            this.btn_OpenVersionDialog.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_OpenVersionDialog.OnDisabledState.BorderThickness = 1;
-            this.btn_OpenVersionDialog.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btn_OpenVersionDialog.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btn_OpenVersionDialog.OnDisabledState.IconLeftImage = null;
-            this.btn_OpenVersionDialog.OnDisabledState.IconRightImage = null;
-            this.btn_OpenVersionDialog.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.btn_OpenVersionDialog.onHoverState.BorderRadius = 10;
-            this.btn_OpenVersionDialog.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_OpenVersionDialog.onHoverState.BorderThickness = 1;
-            this.btn_OpenVersionDialog.onHoverState.FillColor = System.Drawing.Color.Transparent;
-            this.btn_OpenVersionDialog.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.btn_OpenVersionDialog.onHoverState.IconLeftImage = null;
-            this.btn_OpenVersionDialog.onHoverState.IconRightImage = null;
-            this.btn_OpenVersionDialog.OnIdleState.BorderColor = System.Drawing.Color.White;
-            this.btn_OpenVersionDialog.OnIdleState.BorderRadius = 10;
-            this.btn_OpenVersionDialog.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_OpenVersionDialog.OnIdleState.BorderThickness = 1;
-            this.btn_OpenVersionDialog.OnIdleState.FillColor = System.Drawing.Color.DimGray;
-            this.btn_OpenVersionDialog.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_OpenVersionDialog.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton19.OnIdleState.IconLeftImage")));
-            this.btn_OpenVersionDialog.OnIdleState.IconRightImage = null;
-            this.btn_OpenVersionDialog.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btn_OpenVersionDialog.OnPressedState.BorderRadius = 10;
-            this.btn_OpenVersionDialog.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_OpenVersionDialog.OnPressedState.BorderThickness = 1;
-            this.btn_OpenVersionDialog.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btn_OpenVersionDialog.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.btn_OpenVersionDialog.OnPressedState.IconLeftImage = null;
-            this.btn_OpenVersionDialog.OnPressedState.IconRightImage = null;
-            this.btn_OpenVersionDialog.Size = new System.Drawing.Size(29, 30);
-            this.btn_OpenVersionDialog.TabIndex = 53;
-            this.btn_OpenVersionDialog.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_OpenVersionDialog.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btn_OpenVersionDialog.TextMarginLeft = 0;
-            this.btn_OpenVersionDialog.TextPadding = new System.Windows.Forms.Padding(0);
-            this.toolTip1.SetToolTip(this.btn_OpenVersionDialog, "Open versions dialog");
-            this.btn_OpenVersionDialog.UseDefaultRadiusAndThickness = true;
+            this.btn_Triangle.CustomizableEdges = borderEdges4;
+            this.btn_Triangle.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_Triangle.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btn_Triangle.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btn_Triangle.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btn_Triangle.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btn_Triangle.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Triangle.ForeColor = System.Drawing.Color.White;
+            this.btn_Triangle.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Triangle.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btn_Triangle.IconLeftPadding = new System.Windows.Forms.Padding(3);
+            this.btn_Triangle.IconMarginLeft = 11;
+            this.btn_Triangle.IconPadding = 5;
+            this.btn_Triangle.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Triangle.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btn_Triangle.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btn_Triangle.IconSize = 25;
+            this.btn_Triangle.IdleBorderColor = System.Drawing.Color.White;
+            this.btn_Triangle.IdleBorderRadius = 10;
+            this.btn_Triangle.IdleBorderThickness = 1;
+            this.btn_Triangle.IdleFillColor = System.Drawing.Color.DimGray;
+            this.btn_Triangle.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Triangle.IdleIconLeftImage")));
+            this.btn_Triangle.IdleIconRightImage = null;
+            this.btn_Triangle.IndicateFocus = false;
+            this.btn_Triangle.Location = new System.Drawing.Point(151, 3);
+            this.btn_Triangle.Name = "btn_Triangle";
+            this.btn_Triangle.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btn_Triangle.OnDisabledState.BorderRadius = 10;
+            this.btn_Triangle.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Triangle.OnDisabledState.BorderThickness = 1;
+            this.btn_Triangle.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btn_Triangle.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btn_Triangle.OnDisabledState.IconLeftImage = null;
+            this.btn_Triangle.OnDisabledState.IconRightImage = null;
+            this.btn_Triangle.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btn_Triangle.onHoverState.BorderRadius = 10;
+            this.btn_Triangle.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Triangle.onHoverState.BorderThickness = 1;
+            this.btn_Triangle.onHoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btn_Triangle.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_Triangle.onHoverState.IconLeftImage = null;
+            this.btn_Triangle.onHoverState.IconRightImage = null;
+            this.btn_Triangle.OnIdleState.BorderColor = System.Drawing.Color.White;
+            this.btn_Triangle.OnIdleState.BorderRadius = 10;
+            this.btn_Triangle.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Triangle.OnIdleState.BorderThickness = 1;
+            this.btn_Triangle.OnIdleState.FillColor = System.Drawing.Color.DimGray;
+            this.btn_Triangle.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btn_Triangle.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Triangle.OnIdleState.IconLeftImage")));
+            this.btn_Triangle.OnIdleState.IconRightImage = null;
+            this.btn_Triangle.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btn_Triangle.OnPressedState.BorderRadius = 10;
+            this.btn_Triangle.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Triangle.OnPressedState.BorderThickness = 1;
+            this.btn_Triangle.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btn_Triangle.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btn_Triangle.OnPressedState.IconLeftImage = null;
+            this.btn_Triangle.OnPressedState.IconRightImage = null;
+            this.btn_Triangle.Size = new System.Drawing.Size(29, 30);
+            this.btn_Triangle.TabIndex = 52;
+            this.btn_Triangle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Triangle.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_Triangle.TextMarginLeft = 0;
+            this.btn_Triangle.TextPadding = new System.Windows.Forms.Padding(0);
+            this.toolTip1.SetToolTip(this.btn_Triangle, "Triangle");
+            this.btn_Triangle.UseDefaultRadiusAndThickness = true;
+            this.btn_Triangle.Click += new System.EventHandler(this.btn_Triangle_Click);
             // 
-            // btn_ShowDetail
+            // btn_Circle
             // 
-            this.btn_ShowDetail.AllowAnimations = true;
-            this.btn_ShowDetail.AllowMouseEffects = true;
-            this.btn_ShowDetail.AllowToggling = false;
-            this.btn_ShowDetail.AnimationSpeed = 200;
-            this.btn_ShowDetail.AutoGenerateColors = false;
-            this.btn_ShowDetail.AutoRoundBorders = false;
-            this.btn_ShowDetail.AutoSizeLeftIcon = true;
-            this.btn_ShowDetail.AutoSizeRightIcon = true;
-            this.btn_ShowDetail.BackColor = System.Drawing.Color.Transparent;
-            this.btn_ShowDetail.BackColor1 = System.Drawing.Color.DimGray;
-            this.btn_ShowDetail.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_ShowDetail.BackgroundImage")));
-            this.btn_ShowDetail.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_ShowDetail.ButtonText = "";
-            this.btn_ShowDetail.ButtonTextMarginLeft = 0;
-            this.btn_ShowDetail.ColorContrastOnClick = 45;
-            this.btn_ShowDetail.ColorContrastOnHover = 45;
-            this.btn_ShowDetail.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btn_Circle.AllowAnimations = true;
+            this.btn_Circle.AllowMouseEffects = true;
+            this.btn_Circle.AllowToggling = false;
+            this.btn_Circle.AnimationSpeed = 200;
+            this.btn_Circle.AutoGenerateColors = false;
+            this.btn_Circle.AutoRoundBorders = false;
+            this.btn_Circle.AutoSizeLeftIcon = true;
+            this.btn_Circle.AutoSizeRightIcon = true;
+            this.btn_Circle.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Circle.BackColor1 = System.Drawing.Color.DimGray;
+            this.btn_Circle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Circle.BackgroundImage")));
+            this.btn_Circle.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Circle.ButtonText = "";
+            this.btn_Circle.ButtonTextMarginLeft = 0;
+            this.btn_Circle.ColorContrastOnClick = 45;
+            this.btn_Circle.ColorContrastOnHover = 45;
+            this.btn_Circle.Cursor = System.Windows.Forms.Cursors.Default;
             borderEdges5.BottomLeft = true;
             borderEdges5.BottomRight = true;
             borderEdges5.TopLeft = true;
             borderEdges5.TopRight = true;
-            this.btn_ShowDetail.CustomizableEdges = borderEdges5;
-            this.btn_ShowDetail.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_ShowDetail.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btn_ShowDetail.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btn_ShowDetail.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btn_ShowDetail.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btn_ShowDetail.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_ShowDetail.ForeColor = System.Drawing.Color.White;
-            this.btn_ShowDetail.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_ShowDetail.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.btn_ShowDetail.IconLeftPadding = new System.Windows.Forms.Padding(3);
-            this.btn_ShowDetail.IconMarginLeft = 11;
-            this.btn_ShowDetail.IconPadding = 5;
-            this.btn_ShowDetail.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_ShowDetail.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.btn_ShowDetail.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.btn_ShowDetail.IconSize = 25;
-            this.btn_ShowDetail.IdleBorderColor = System.Drawing.Color.White;
-            this.btn_ShowDetail.IdleBorderRadius = 10;
-            this.btn_ShowDetail.IdleBorderThickness = 1;
-            this.btn_ShowDetail.IdleFillColor = System.Drawing.Color.DimGray;
-            this.btn_ShowDetail.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_ShowDetail.IdleIconLeftImage")));
-            this.btn_ShowDetail.IdleIconRightImage = null;
-            this.btn_ShowDetail.IndicateFocus = false;
-            this.btn_ShowDetail.Location = new System.Drawing.Point(143, 3);
-            this.btn_ShowDetail.Name = "btn_ShowDetail";
-            this.btn_ShowDetail.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btn_ShowDetail.OnDisabledState.BorderRadius = 10;
-            this.btn_ShowDetail.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_ShowDetail.OnDisabledState.BorderThickness = 1;
-            this.btn_ShowDetail.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btn_ShowDetail.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btn_ShowDetail.OnDisabledState.IconLeftImage = null;
-            this.btn_ShowDetail.OnDisabledState.IconRightImage = null;
-            this.btn_ShowDetail.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.btn_ShowDetail.onHoverState.BorderRadius = 10;
-            this.btn_ShowDetail.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_ShowDetail.onHoverState.BorderThickness = 1;
-            this.btn_ShowDetail.onHoverState.FillColor = System.Drawing.Color.Transparent;
-            this.btn_ShowDetail.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.btn_ShowDetail.onHoverState.IconLeftImage = null;
-            this.btn_ShowDetail.onHoverState.IconRightImage = null;
-            this.btn_ShowDetail.OnIdleState.BorderColor = System.Drawing.Color.White;
-            this.btn_ShowDetail.OnIdleState.BorderRadius = 10;
-            this.btn_ShowDetail.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_ShowDetail.OnIdleState.BorderThickness = 1;
-            this.btn_ShowDetail.OnIdleState.FillColor = System.Drawing.Color.DimGray;
-            this.btn_ShowDetail.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_ShowDetail.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton18.OnIdleState.IconLeftImage")));
-            this.btn_ShowDetail.OnIdleState.IconRightImage = null;
-            this.btn_ShowDetail.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btn_ShowDetail.OnPressedState.BorderRadius = 10;
-            this.btn_ShowDetail.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_ShowDetail.OnPressedState.BorderThickness = 1;
-            this.btn_ShowDetail.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btn_ShowDetail.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.btn_ShowDetail.OnPressedState.IconLeftImage = null;
-            this.btn_ShowDetail.OnPressedState.IconRightImage = null;
-            this.btn_ShowDetail.Size = new System.Drawing.Size(29, 30);
-            this.btn_ShowDetail.TabIndex = 52;
-            this.btn_ShowDetail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_ShowDetail.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btn_ShowDetail.TextMarginLeft = 0;
-            this.btn_ShowDetail.TextPadding = new System.Windows.Forms.Padding(0);
-            this.toolTip1.SetToolTip(this.btn_ShowDetail, "Show details");
-            this.btn_ShowDetail.UseDefaultRadiusAndThickness = true;
+            this.btn_Circle.CustomizableEdges = borderEdges5;
+            this.btn_Circle.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_Circle.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btn_Circle.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btn_Circle.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btn_Circle.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btn_Circle.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Circle.ForeColor = System.Drawing.Color.White;
+            this.btn_Circle.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Circle.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btn_Circle.IconLeftPadding = new System.Windows.Forms.Padding(3);
+            this.btn_Circle.IconMarginLeft = 11;
+            this.btn_Circle.IconPadding = 5;
+            this.btn_Circle.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Circle.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btn_Circle.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btn_Circle.IconSize = 25;
+            this.btn_Circle.IdleBorderColor = System.Drawing.Color.White;
+            this.btn_Circle.IdleBorderRadius = 10;
+            this.btn_Circle.IdleBorderThickness = 1;
+            this.btn_Circle.IdleFillColor = System.Drawing.Color.DimGray;
+            this.btn_Circle.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Circle.IdleIconLeftImage")));
+            this.btn_Circle.IdleIconRightImage = null;
+            this.btn_Circle.IndicateFocus = false;
+            this.btn_Circle.Location = new System.Drawing.Point(114, 3);
+            this.btn_Circle.Name = "btn_Circle";
+            this.btn_Circle.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btn_Circle.OnDisabledState.BorderRadius = 10;
+            this.btn_Circle.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Circle.OnDisabledState.BorderThickness = 1;
+            this.btn_Circle.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btn_Circle.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btn_Circle.OnDisabledState.IconLeftImage = null;
+            this.btn_Circle.OnDisabledState.IconRightImage = null;
+            this.btn_Circle.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btn_Circle.onHoverState.BorderRadius = 10;
+            this.btn_Circle.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Circle.onHoverState.BorderThickness = 1;
+            this.btn_Circle.onHoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btn_Circle.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_Circle.onHoverState.IconLeftImage = null;
+            this.btn_Circle.onHoverState.IconRightImage = null;
+            this.btn_Circle.OnIdleState.BorderColor = System.Drawing.Color.White;
+            this.btn_Circle.OnIdleState.BorderRadius = 10;
+            this.btn_Circle.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Circle.OnIdleState.BorderThickness = 1;
+            this.btn_Circle.OnIdleState.FillColor = System.Drawing.Color.DimGray;
+            this.btn_Circle.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btn_Circle.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Circle.OnIdleState.IconLeftImage")));
+            this.btn_Circle.OnIdleState.IconRightImage = null;
+            this.btn_Circle.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btn_Circle.OnPressedState.BorderRadius = 10;
+            this.btn_Circle.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Circle.OnPressedState.BorderThickness = 1;
+            this.btn_Circle.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btn_Circle.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btn_Circle.OnPressedState.IconLeftImage = null;
+            this.btn_Circle.OnPressedState.IconRightImage = null;
+            this.btn_Circle.Size = new System.Drawing.Size(29, 30);
+            this.btn_Circle.TabIndex = 51;
+            this.btn_Circle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Circle.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_Circle.TextMarginLeft = 0;
+            this.btn_Circle.TextPadding = new System.Windows.Forms.Padding(0);
+            this.toolTip1.SetToolTip(this.btn_Circle, "Circle");
+            this.btn_Circle.UseDefaultRadiusAndThickness = true;
+            this.btn_Circle.Click += new System.EventHandler(this.btn_Circle_Click);
             // 
-            // btn_AnnotationMode
+            // btn_Rectangle
             // 
-            this.btn_AnnotationMode.AllowAnimations = true;
-            this.btn_AnnotationMode.AllowMouseEffects = true;
-            this.btn_AnnotationMode.AllowToggling = false;
-            this.btn_AnnotationMode.AnimationSpeed = 200;
-            this.btn_AnnotationMode.AutoGenerateColors = false;
-            this.btn_AnnotationMode.AutoRoundBorders = false;
-            this.btn_AnnotationMode.AutoSizeLeftIcon = true;
-            this.btn_AnnotationMode.AutoSizeRightIcon = true;
-            this.btn_AnnotationMode.BackColor = System.Drawing.Color.Transparent;
-            this.btn_AnnotationMode.BackColor1 = System.Drawing.Color.DimGray;
-            this.btn_AnnotationMode.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_AnnotationMode.BackgroundImage")));
-            this.btn_AnnotationMode.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_AnnotationMode.ButtonText = "";
-            this.btn_AnnotationMode.ButtonTextMarginLeft = 0;
-            this.btn_AnnotationMode.ColorContrastOnClick = 45;
-            this.btn_AnnotationMode.ColorContrastOnHover = 45;
-            this.btn_AnnotationMode.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btn_Rectangle.AllowAnimations = true;
+            this.btn_Rectangle.AllowMouseEffects = true;
+            this.btn_Rectangle.AllowToggling = false;
+            this.btn_Rectangle.AnimationSpeed = 200;
+            this.btn_Rectangle.AutoGenerateColors = false;
+            this.btn_Rectangle.AutoRoundBorders = false;
+            this.btn_Rectangle.AutoSizeLeftIcon = true;
+            this.btn_Rectangle.AutoSizeRightIcon = true;
+            this.btn_Rectangle.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Rectangle.BackColor1 = System.Drawing.Color.DimGray;
+            this.btn_Rectangle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Rectangle.BackgroundImage")));
+            this.btn_Rectangle.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Rectangle.ButtonText = "";
+            this.btn_Rectangle.ButtonTextMarginLeft = 0;
+            this.btn_Rectangle.ColorContrastOnClick = 45;
+            this.btn_Rectangle.ColorContrastOnHover = 45;
+            this.btn_Rectangle.Cursor = System.Windows.Forms.Cursors.Default;
             borderEdges6.BottomLeft = true;
             borderEdges6.BottomRight = true;
             borderEdges6.TopLeft = true;
             borderEdges6.TopRight = true;
-            this.btn_AnnotationMode.CustomizableEdges = borderEdges6;
-            this.btn_AnnotationMode.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_AnnotationMode.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btn_AnnotationMode.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btn_AnnotationMode.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btn_AnnotationMode.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btn_AnnotationMode.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_AnnotationMode.ForeColor = System.Drawing.Color.White;
-            this.btn_AnnotationMode.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_AnnotationMode.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.btn_AnnotationMode.IconLeftPadding = new System.Windows.Forms.Padding(3);
-            this.btn_AnnotationMode.IconMarginLeft = 11;
-            this.btn_AnnotationMode.IconPadding = 5;
-            this.btn_AnnotationMode.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_AnnotationMode.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.btn_AnnotationMode.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.btn_AnnotationMode.IconSize = 25;
-            this.btn_AnnotationMode.IdleBorderColor = System.Drawing.Color.White;
-            this.btn_AnnotationMode.IdleBorderRadius = 10;
-            this.btn_AnnotationMode.IdleBorderThickness = 1;
-            this.btn_AnnotationMode.IdleFillColor = System.Drawing.Color.DimGray;
-            this.btn_AnnotationMode.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_AnnotationMode.IdleIconLeftImage")));
-            this.btn_AnnotationMode.IdleIconRightImage = null;
-            this.btn_AnnotationMode.IndicateFocus = false;
-            this.btn_AnnotationMode.Location = new System.Drawing.Point(108, 3);
-            this.btn_AnnotationMode.Name = "btn_AnnotationMode";
-            this.btn_AnnotationMode.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btn_AnnotationMode.OnDisabledState.BorderRadius = 10;
-            this.btn_AnnotationMode.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_AnnotationMode.OnDisabledState.BorderThickness = 1;
-            this.btn_AnnotationMode.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btn_AnnotationMode.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btn_AnnotationMode.OnDisabledState.IconLeftImage = null;
-            this.btn_AnnotationMode.OnDisabledState.IconRightImage = null;
-            this.btn_AnnotationMode.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.btn_AnnotationMode.onHoverState.BorderRadius = 10;
-            this.btn_AnnotationMode.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_AnnotationMode.onHoverState.BorderThickness = 1;
-            this.btn_AnnotationMode.onHoverState.FillColor = System.Drawing.Color.Transparent;
-            this.btn_AnnotationMode.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.btn_AnnotationMode.onHoverState.IconLeftImage = null;
-            this.btn_AnnotationMode.onHoverState.IconRightImage = null;
-            this.btn_AnnotationMode.OnIdleState.BorderColor = System.Drawing.Color.White;
-            this.btn_AnnotationMode.OnIdleState.BorderRadius = 10;
-            this.btn_AnnotationMode.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_AnnotationMode.OnIdleState.BorderThickness = 1;
-            this.btn_AnnotationMode.OnIdleState.FillColor = System.Drawing.Color.DimGray;
-            this.btn_AnnotationMode.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_AnnotationMode.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton17.OnIdleState.IconLeftImage")));
-            this.btn_AnnotationMode.OnIdleState.IconRightImage = null;
-            this.btn_AnnotationMode.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btn_AnnotationMode.OnPressedState.BorderRadius = 10;
-            this.btn_AnnotationMode.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_AnnotationMode.OnPressedState.BorderThickness = 1;
-            this.btn_AnnotationMode.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btn_AnnotationMode.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.btn_AnnotationMode.OnPressedState.IconLeftImage = null;
-            this.btn_AnnotationMode.OnPressedState.IconRightImage = null;
-            this.btn_AnnotationMode.Size = new System.Drawing.Size(29, 30);
-            this.btn_AnnotationMode.TabIndex = 51;
-            this.btn_AnnotationMode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_AnnotationMode.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btn_AnnotationMode.TextMarginLeft = 0;
-            this.btn_AnnotationMode.TextPadding = new System.Windows.Forms.Padding(0);
-            this.toolTip1.SetToolTip(this.btn_AnnotationMode, "Annotation Mode");
-            this.btn_AnnotationMode.UseDefaultRadiusAndThickness = true;
+            this.btn_Rectangle.CustomizableEdges = borderEdges6;
+            this.btn_Rectangle.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_Rectangle.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btn_Rectangle.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btn_Rectangle.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btn_Rectangle.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btn_Rectangle.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Rectangle.ForeColor = System.Drawing.Color.White;
+            this.btn_Rectangle.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Rectangle.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btn_Rectangle.IconLeftPadding = new System.Windows.Forms.Padding(3);
+            this.btn_Rectangle.IconMarginLeft = 11;
+            this.btn_Rectangle.IconPadding = 5;
+            this.btn_Rectangle.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Rectangle.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btn_Rectangle.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btn_Rectangle.IconSize = 25;
+            this.btn_Rectangle.IdleBorderColor = System.Drawing.Color.White;
+            this.btn_Rectangle.IdleBorderRadius = 10;
+            this.btn_Rectangle.IdleBorderThickness = 1;
+            this.btn_Rectangle.IdleFillColor = System.Drawing.Color.DimGray;
+            this.btn_Rectangle.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Rectangle.IdleIconLeftImage")));
+            this.btn_Rectangle.IdleIconRightImage = null;
+            this.btn_Rectangle.IndicateFocus = false;
+            this.btn_Rectangle.Location = new System.Drawing.Point(77, 3);
+            this.btn_Rectangle.Name = "btn_Rectangle";
+            this.btn_Rectangle.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btn_Rectangle.OnDisabledState.BorderRadius = 10;
+            this.btn_Rectangle.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Rectangle.OnDisabledState.BorderThickness = 1;
+            this.btn_Rectangle.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btn_Rectangle.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btn_Rectangle.OnDisabledState.IconLeftImage = null;
+            this.btn_Rectangle.OnDisabledState.IconRightImage = null;
+            this.btn_Rectangle.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btn_Rectangle.onHoverState.BorderRadius = 10;
+            this.btn_Rectangle.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Rectangle.onHoverState.BorderThickness = 1;
+            this.btn_Rectangle.onHoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btn_Rectangle.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_Rectangle.onHoverState.IconLeftImage = null;
+            this.btn_Rectangle.onHoverState.IconRightImage = null;
+            this.btn_Rectangle.OnIdleState.BorderColor = System.Drawing.Color.White;
+            this.btn_Rectangle.OnIdleState.BorderRadius = 10;
+            this.btn_Rectangle.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Rectangle.OnIdleState.BorderThickness = 1;
+            this.btn_Rectangle.OnIdleState.FillColor = System.Drawing.Color.DimGray;
+            this.btn_Rectangle.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btn_Rectangle.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Rectangle.OnIdleState.IconLeftImage")));
+            this.btn_Rectangle.OnIdleState.IconRightImage = null;
+            this.btn_Rectangle.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btn_Rectangle.OnPressedState.BorderRadius = 10;
+            this.btn_Rectangle.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Rectangle.OnPressedState.BorderThickness = 1;
+            this.btn_Rectangle.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btn_Rectangle.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btn_Rectangle.OnPressedState.IconLeftImage = null;
+            this.btn_Rectangle.OnPressedState.IconRightImage = null;
+            this.btn_Rectangle.Size = new System.Drawing.Size(29, 30);
+            this.btn_Rectangle.TabIndex = 50;
+            this.btn_Rectangle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Rectangle.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_Rectangle.TextMarginLeft = 0;
+            this.btn_Rectangle.TextPadding = new System.Windows.Forms.Padding(0);
+            this.toolTip1.SetToolTip(this.btn_Rectangle, "Rectangle");
+            this.btn_Rectangle.UseDefaultRadiusAndThickness = true;
+            this.btn_Rectangle.Click += new System.EventHandler(this.btn_Rectangle_Click);
             // 
-            // btn_OpenMaterialDialog
+            // btn_Curve
             // 
-            this.btn_OpenMaterialDialog.AllowAnimations = true;
-            this.btn_OpenMaterialDialog.AllowMouseEffects = true;
-            this.btn_OpenMaterialDialog.AllowToggling = false;
-            this.btn_OpenMaterialDialog.AnimationSpeed = 200;
-            this.btn_OpenMaterialDialog.AutoGenerateColors = false;
-            this.btn_OpenMaterialDialog.AutoRoundBorders = false;
-            this.btn_OpenMaterialDialog.AutoSizeLeftIcon = true;
-            this.btn_OpenMaterialDialog.AutoSizeRightIcon = true;
-            this.btn_OpenMaterialDialog.BackColor = System.Drawing.Color.Transparent;
-            this.btn_OpenMaterialDialog.BackColor1 = System.Drawing.Color.DimGray;
-            this.btn_OpenMaterialDialog.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_OpenMaterialDialog.BackgroundImage")));
-            this.btn_OpenMaterialDialog.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_OpenMaterialDialog.ButtonText = "";
-            this.btn_OpenMaterialDialog.ButtonTextMarginLeft = 0;
-            this.btn_OpenMaterialDialog.ColorContrastOnClick = 45;
-            this.btn_OpenMaterialDialog.ColorContrastOnHover = 45;
-            this.btn_OpenMaterialDialog.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btn_Curve.AllowAnimations = true;
+            this.btn_Curve.AllowMouseEffects = true;
+            this.btn_Curve.AllowToggling = false;
+            this.btn_Curve.AnimationSpeed = 200;
+            this.btn_Curve.AutoGenerateColors = false;
+            this.btn_Curve.AutoRoundBorders = false;
+            this.btn_Curve.AutoSizeLeftIcon = true;
+            this.btn_Curve.AutoSizeRightIcon = true;
+            this.btn_Curve.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Curve.BackColor1 = System.Drawing.Color.DimGray;
+            this.btn_Curve.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Curve.BackgroundImage")));
+            this.btn_Curve.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Curve.ButtonText = "";
+            this.btn_Curve.ButtonTextMarginLeft = 0;
+            this.btn_Curve.ColorContrastOnClick = 45;
+            this.btn_Curve.ColorContrastOnHover = 45;
+            this.btn_Curve.Cursor = System.Windows.Forms.Cursors.Default;
             borderEdges7.BottomLeft = true;
             borderEdges7.BottomRight = true;
             borderEdges7.TopLeft = true;
             borderEdges7.TopRight = true;
-            this.btn_OpenMaterialDialog.CustomizableEdges = borderEdges7;
-            this.btn_OpenMaterialDialog.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_OpenMaterialDialog.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btn_OpenMaterialDialog.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btn_OpenMaterialDialog.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btn_OpenMaterialDialog.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btn_OpenMaterialDialog.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_OpenMaterialDialog.ForeColor = System.Drawing.Color.White;
-            this.btn_OpenMaterialDialog.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_OpenMaterialDialog.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.btn_OpenMaterialDialog.IconLeftPadding = new System.Windows.Forms.Padding(3);
-            this.btn_OpenMaterialDialog.IconMarginLeft = 11;
-            this.btn_OpenMaterialDialog.IconPadding = 5;
-            this.btn_OpenMaterialDialog.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_OpenMaterialDialog.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.btn_OpenMaterialDialog.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.btn_OpenMaterialDialog.IconSize = 25;
-            this.btn_OpenMaterialDialog.IdleBorderColor = System.Drawing.Color.White;
-            this.btn_OpenMaterialDialog.IdleBorderRadius = 10;
-            this.btn_OpenMaterialDialog.IdleBorderThickness = 1;
-            this.btn_OpenMaterialDialog.IdleFillColor = System.Drawing.Color.DimGray;
-            this.btn_OpenMaterialDialog.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_OpenMaterialDialog.IdleIconLeftImage")));
-            this.btn_OpenMaterialDialog.IdleIconRightImage = null;
-            this.btn_OpenMaterialDialog.IndicateFocus = false;
-            this.btn_OpenMaterialDialog.Location = new System.Drawing.Point(73, 3);
-            this.btn_OpenMaterialDialog.Name = "btn_OpenMaterialDialog";
-            this.btn_OpenMaterialDialog.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btn_OpenMaterialDialog.OnDisabledState.BorderRadius = 10;
-            this.btn_OpenMaterialDialog.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_OpenMaterialDialog.OnDisabledState.BorderThickness = 1;
-            this.btn_OpenMaterialDialog.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btn_OpenMaterialDialog.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btn_OpenMaterialDialog.OnDisabledState.IconLeftImage = null;
-            this.btn_OpenMaterialDialog.OnDisabledState.IconRightImage = null;
-            this.btn_OpenMaterialDialog.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.btn_OpenMaterialDialog.onHoverState.BorderRadius = 10;
-            this.btn_OpenMaterialDialog.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_OpenMaterialDialog.onHoverState.BorderThickness = 1;
-            this.btn_OpenMaterialDialog.onHoverState.FillColor = System.Drawing.Color.Transparent;
-            this.btn_OpenMaterialDialog.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.btn_OpenMaterialDialog.onHoverState.IconLeftImage = null;
-            this.btn_OpenMaterialDialog.onHoverState.IconRightImage = null;
-            this.btn_OpenMaterialDialog.OnIdleState.BorderColor = System.Drawing.Color.White;
-            this.btn_OpenMaterialDialog.OnIdleState.BorderRadius = 10;
-            this.btn_OpenMaterialDialog.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_OpenMaterialDialog.OnIdleState.BorderThickness = 1;
-            this.btn_OpenMaterialDialog.OnIdleState.FillColor = System.Drawing.Color.DimGray;
-            this.btn_OpenMaterialDialog.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_OpenMaterialDialog.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton16.OnIdleState.IconLeftImage")));
-            this.btn_OpenMaterialDialog.OnIdleState.IconRightImage = null;
-            this.btn_OpenMaterialDialog.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btn_OpenMaterialDialog.OnPressedState.BorderRadius = 10;
-            this.btn_OpenMaterialDialog.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_OpenMaterialDialog.OnPressedState.BorderThickness = 1;
-            this.btn_OpenMaterialDialog.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btn_OpenMaterialDialog.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.btn_OpenMaterialDialog.OnPressedState.IconLeftImage = null;
-            this.btn_OpenMaterialDialog.OnPressedState.IconRightImage = null;
-            this.btn_OpenMaterialDialog.Size = new System.Drawing.Size(29, 30);
-            this.btn_OpenMaterialDialog.TabIndex = 50;
-            this.btn_OpenMaterialDialog.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_OpenMaterialDialog.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btn_OpenMaterialDialog.TextMarginLeft = 0;
-            this.btn_OpenMaterialDialog.TextPadding = new System.Windows.Forms.Padding(0);
-            this.toolTip1.SetToolTip(this.btn_OpenMaterialDialog, "Open material dialog");
-            this.btn_OpenMaterialDialog.UseDefaultRadiusAndThickness = true;
+            this.btn_Curve.CustomizableEdges = borderEdges7;
+            this.btn_Curve.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_Curve.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btn_Curve.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btn_Curve.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btn_Curve.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btn_Curve.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Curve.ForeColor = System.Drawing.Color.White;
+            this.btn_Curve.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Curve.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btn_Curve.IconLeftPadding = new System.Windows.Forms.Padding(3);
+            this.btn_Curve.IconMarginLeft = 11;
+            this.btn_Curve.IconPadding = 5;
+            this.btn_Curve.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Curve.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btn_Curve.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btn_Curve.IconSize = 25;
+            this.btn_Curve.IdleBorderColor = System.Drawing.Color.White;
+            this.btn_Curve.IdleBorderRadius = 10;
+            this.btn_Curve.IdleBorderThickness = 1;
+            this.btn_Curve.IdleFillColor = System.Drawing.Color.DimGray;
+            this.btn_Curve.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Curve.IdleIconLeftImage")));
+            this.btn_Curve.IdleIconRightImage = null;
+            this.btn_Curve.IndicateFocus = false;
+            this.btn_Curve.Location = new System.Drawing.Point(40, 3);
+            this.btn_Curve.Name = "btn_Curve";
+            this.btn_Curve.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btn_Curve.OnDisabledState.BorderRadius = 10;
+            this.btn_Curve.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Curve.OnDisabledState.BorderThickness = 1;
+            this.btn_Curve.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btn_Curve.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btn_Curve.OnDisabledState.IconLeftImage = null;
+            this.btn_Curve.OnDisabledState.IconRightImage = null;
+            this.btn_Curve.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btn_Curve.onHoverState.BorderRadius = 10;
+            this.btn_Curve.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Curve.onHoverState.BorderThickness = 1;
+            this.btn_Curve.onHoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btn_Curve.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_Curve.onHoverState.IconLeftImage = null;
+            this.btn_Curve.onHoverState.IconRightImage = null;
+            this.btn_Curve.OnIdleState.BorderColor = System.Drawing.Color.White;
+            this.btn_Curve.OnIdleState.BorderRadius = 10;
+            this.btn_Curve.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Curve.OnIdleState.BorderThickness = 1;
+            this.btn_Curve.OnIdleState.FillColor = System.Drawing.Color.DimGray;
+            this.btn_Curve.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btn_Curve.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Curve.OnIdleState.IconLeftImage")));
+            this.btn_Curve.OnIdleState.IconRightImage = null;
+            this.btn_Curve.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btn_Curve.OnPressedState.BorderRadius = 10;
+            this.btn_Curve.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Curve.OnPressedState.BorderThickness = 1;
+            this.btn_Curve.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btn_Curve.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btn_Curve.OnPressedState.IconLeftImage = null;
+            this.btn_Curve.OnPressedState.IconRightImage = null;
+            this.btn_Curve.Size = new System.Drawing.Size(29, 30);
+            this.btn_Curve.TabIndex = 49;
+            this.btn_Curve.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Curve.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_Curve.TextMarginLeft = 0;
+            this.btn_Curve.TextPadding = new System.Windows.Forms.Padding(0);
+            this.toolTip1.SetToolTip(this.btn_Curve, "Curve");
+            this.btn_Curve.UseDefaultRadiusAndThickness = true;
+            this.btn_Curve.Click += new System.EventHandler(this.btn_Curve_Click);
             // 
-            // btn_Submit
+            // btn_Line
             // 
-            this.btn_Submit.AllowAnimations = true;
-            this.btn_Submit.AllowMouseEffects = true;
-            this.btn_Submit.AllowToggling = false;
-            this.btn_Submit.AnimationSpeed = 200;
-            this.btn_Submit.AutoGenerateColors = false;
-            this.btn_Submit.AutoRoundBorders = false;
-            this.btn_Submit.AutoSizeLeftIcon = true;
-            this.btn_Submit.AutoSizeRightIcon = true;
-            this.btn_Submit.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Submit.BackColor1 = System.Drawing.Color.DimGray;
-            this.btn_Submit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Submit.BackgroundImage")));
-            this.btn_Submit.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_Submit.ButtonText = "";
-            this.btn_Submit.ButtonTextMarginLeft = 0;
-            this.btn_Submit.ColorContrastOnClick = 45;
-            this.btn_Submit.ColorContrastOnHover = 45;
-            this.btn_Submit.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btn_Line.AllowAnimations = true;
+            this.btn_Line.AllowMouseEffects = true;
+            this.btn_Line.AllowToggling = false;
+            this.btn_Line.AnimationSpeed = 200;
+            this.btn_Line.AutoGenerateColors = false;
+            this.btn_Line.AutoRoundBorders = false;
+            this.btn_Line.AutoSizeLeftIcon = true;
+            this.btn_Line.AutoSizeRightIcon = true;
+            this.btn_Line.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Line.BackColor1 = System.Drawing.Color.DimGray;
+            this.btn_Line.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Line.BackgroundImage")));
+            this.btn_Line.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Line.ButtonText = "";
+            this.btn_Line.ButtonTextMarginLeft = 0;
+            this.btn_Line.ColorContrastOnClick = 45;
+            this.btn_Line.ColorContrastOnHover = 45;
+            this.btn_Line.Cursor = System.Windows.Forms.Cursors.Default;
             borderEdges8.BottomLeft = true;
             borderEdges8.BottomRight = true;
             borderEdges8.TopLeft = true;
             borderEdges8.TopRight = true;
-            this.btn_Submit.CustomizableEdges = borderEdges8;
-            this.btn_Submit.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_Submit.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btn_Submit.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btn_Submit.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btn_Submit.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btn_Submit.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_Submit.ForeColor = System.Drawing.Color.White;
-            this.btn_Submit.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Submit.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.btn_Submit.IconLeftPadding = new System.Windows.Forms.Padding(3);
-            this.btn_Submit.IconMarginLeft = 11;
-            this.btn_Submit.IconPadding = 5;
-            this.btn_Submit.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_Submit.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.btn_Submit.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.btn_Submit.IconSize = 25;
-            this.btn_Submit.IdleBorderColor = System.Drawing.Color.White;
-            this.btn_Submit.IdleBorderRadius = 10;
-            this.btn_Submit.IdleBorderThickness = 1;
-            this.btn_Submit.IdleFillColor = System.Drawing.Color.DimGray;
-            this.btn_Submit.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Submit.IdleIconLeftImage")));
-            this.btn_Submit.IdleIconRightImage = null;
-            this.btn_Submit.IndicateFocus = false;
-            this.btn_Submit.Location = new System.Drawing.Point(38, 3);
-            this.btn_Submit.Name = "btn_Submit";
-            this.btn_Submit.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btn_Submit.OnDisabledState.BorderRadius = 10;
-            this.btn_Submit.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_Submit.OnDisabledState.BorderThickness = 1;
-            this.btn_Submit.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btn_Submit.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btn_Submit.OnDisabledState.IconLeftImage = null;
-            this.btn_Submit.OnDisabledState.IconRightImage = null;
-            this.btn_Submit.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.btn_Submit.onHoverState.BorderRadius = 10;
-            this.btn_Submit.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_Submit.onHoverState.BorderThickness = 1;
-            this.btn_Submit.onHoverState.FillColor = System.Drawing.Color.Transparent;
-            this.btn_Submit.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.btn_Submit.onHoverState.IconLeftImage = null;
-            this.btn_Submit.onHoverState.IconRightImage = null;
-            this.btn_Submit.OnIdleState.BorderColor = System.Drawing.Color.White;
-            this.btn_Submit.OnIdleState.BorderRadius = 10;
-            this.btn_Submit.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_Submit.OnIdleState.BorderThickness = 1;
-            this.btn_Submit.OnIdleState.FillColor = System.Drawing.Color.DimGray;
-            this.btn_Submit.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_Submit.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton15.OnIdleState.IconLeftImage")));
-            this.btn_Submit.OnIdleState.IconRightImage = null;
-            this.btn_Submit.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btn_Submit.OnPressedState.BorderRadius = 10;
-            this.btn_Submit.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_Submit.OnPressedState.BorderThickness = 1;
-            this.btn_Submit.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btn_Submit.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.btn_Submit.OnPressedState.IconLeftImage = null;
-            this.btn_Submit.OnPressedState.IconRightImage = null;
-            this.btn_Submit.Size = new System.Drawing.Size(29, 30);
-            this.btn_Submit.TabIndex = 49;
-            this.btn_Submit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_Submit.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btn_Submit.TextMarginLeft = 0;
-            this.btn_Submit.TextPadding = new System.Windows.Forms.Padding(0);
-            this.toolTip1.SetToolTip(this.btn_Submit, "Submit to ART street");
-            this.btn_Submit.UseDefaultRadiusAndThickness = true;
+            this.btn_Line.CustomizableEdges = borderEdges8;
+            this.btn_Line.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_Line.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btn_Line.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btn_Line.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btn_Line.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btn_Line.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Line.ForeColor = System.Drawing.Color.White;
+            this.btn_Line.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Line.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btn_Line.IconLeftPadding = new System.Windows.Forms.Padding(3);
+            this.btn_Line.IconMarginLeft = 11;
+            this.btn_Line.IconPadding = 5;
+            this.btn_Line.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Line.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btn_Line.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btn_Line.IconSize = 25;
+            this.btn_Line.IdleBorderColor = System.Drawing.Color.White;
+            this.btn_Line.IdleBorderRadius = 10;
+            this.btn_Line.IdleBorderThickness = 1;
+            this.btn_Line.IdleFillColor = System.Drawing.Color.DimGray;
+            this.btn_Line.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Line.IdleIconLeftImage")));
+            this.btn_Line.IdleIconRightImage = null;
+            this.btn_Line.IndicateFocus = false;
+            this.btn_Line.Location = new System.Drawing.Point(3, 3);
+            this.btn_Line.Name = "btn_Line";
+            this.btn_Line.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btn_Line.OnDisabledState.BorderRadius = 10;
+            this.btn_Line.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Line.OnDisabledState.BorderThickness = 1;
+            this.btn_Line.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btn_Line.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btn_Line.OnDisabledState.IconLeftImage = null;
+            this.btn_Line.OnDisabledState.IconRightImage = null;
+            this.btn_Line.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btn_Line.onHoverState.BorderRadius = 10;
+            this.btn_Line.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Line.onHoverState.BorderThickness = 1;
+            this.btn_Line.onHoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btn_Line.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_Line.onHoverState.IconLeftImage = null;
+            this.btn_Line.onHoverState.IconRightImage = null;
+            this.btn_Line.OnIdleState.BorderColor = System.Drawing.Color.White;
+            this.btn_Line.OnIdleState.BorderRadius = 10;
+            this.btn_Line.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Line.OnIdleState.BorderThickness = 1;
+            this.btn_Line.OnIdleState.FillColor = System.Drawing.Color.DimGray;
+            this.btn_Line.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btn_Line.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Line.OnIdleState.IconLeftImage")));
+            this.btn_Line.OnIdleState.IconRightImage = null;
+            this.btn_Line.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btn_Line.OnPressedState.BorderRadius = 10;
+            this.btn_Line.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Line.OnPressedState.BorderThickness = 1;
+            this.btn_Line.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btn_Line.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btn_Line.OnPressedState.IconLeftImage = null;
+            this.btn_Line.OnPressedState.IconRightImage = null;
+            this.btn_Line.Size = new System.Drawing.Size(29, 30);
+            this.btn_Line.TabIndex = 48;
+            this.btn_Line.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Line.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_Line.TextMarginLeft = 0;
+            this.btn_Line.TextPadding = new System.Windows.Forms.Padding(0);
+            this.toolTip1.SetToolTip(this.btn_Line, "Line");
+            this.btn_Line.UseDefaultRadiusAndThickness = true;
+            this.btn_Line.Click += new System.EventHandler(this.btn_Line_Click);
             // 
-            // btn_OpenNetworkDialog
+            // tableLayoutPanel_PaintTool
             // 
-            this.btn_OpenNetworkDialog.AllowAnimations = true;
-            this.btn_OpenNetworkDialog.AllowMouseEffects = true;
-            this.btn_OpenNetworkDialog.AllowToggling = false;
-            this.btn_OpenNetworkDialog.AnimationSpeed = 200;
-            this.btn_OpenNetworkDialog.AutoGenerateColors = false;
-            this.btn_OpenNetworkDialog.AutoRoundBorders = false;
-            this.btn_OpenNetworkDialog.AutoSizeLeftIcon = true;
-            this.btn_OpenNetworkDialog.AutoSizeRightIcon = true;
-            this.btn_OpenNetworkDialog.BackColor = System.Drawing.Color.Transparent;
-            this.btn_OpenNetworkDialog.BackColor1 = System.Drawing.Color.DimGray;
-            this.btn_OpenNetworkDialog.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_OpenNetworkDialog.BackgroundImage")));
-            this.btn_OpenNetworkDialog.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_OpenNetworkDialog.ButtonText = "";
-            this.btn_OpenNetworkDialog.ButtonTextMarginLeft = 0;
-            this.btn_OpenNetworkDialog.ColorContrastOnClick = 45;
-            this.btn_OpenNetworkDialog.ColorContrastOnHover = 45;
-            this.btn_OpenNetworkDialog.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges9.BottomLeft = true;
-            borderEdges9.BottomRight = true;
-            borderEdges9.TopLeft = true;
-            borderEdges9.TopRight = true;
-            this.btn_OpenNetworkDialog.CustomizableEdges = borderEdges9;
-            this.btn_OpenNetworkDialog.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_OpenNetworkDialog.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btn_OpenNetworkDialog.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btn_OpenNetworkDialog.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btn_OpenNetworkDialog.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btn_OpenNetworkDialog.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_OpenNetworkDialog.ForeColor = System.Drawing.Color.White;
-            this.btn_OpenNetworkDialog.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_OpenNetworkDialog.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.btn_OpenNetworkDialog.IconLeftPadding = new System.Windows.Forms.Padding(3);
-            this.btn_OpenNetworkDialog.IconMarginLeft = 11;
-            this.btn_OpenNetworkDialog.IconPadding = 5;
-            this.btn_OpenNetworkDialog.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_OpenNetworkDialog.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.btn_OpenNetworkDialog.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.btn_OpenNetworkDialog.IconSize = 25;
-            this.btn_OpenNetworkDialog.IdleBorderColor = System.Drawing.Color.White;
-            this.btn_OpenNetworkDialog.IdleBorderRadius = 10;
-            this.btn_OpenNetworkDialog.IdleBorderThickness = 1;
-            this.btn_OpenNetworkDialog.IdleFillColor = System.Drawing.Color.DimGray;
-            this.btn_OpenNetworkDialog.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_OpenNetworkDialog.IdleIconLeftImage")));
-            this.btn_OpenNetworkDialog.IdleIconRightImage = null;
-            this.btn_OpenNetworkDialog.IndicateFocus = false;
-            this.btn_OpenNetworkDialog.Location = new System.Drawing.Point(3, 3);
-            this.btn_OpenNetworkDialog.Name = "btn_OpenNetworkDialog";
-            this.btn_OpenNetworkDialog.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btn_OpenNetworkDialog.OnDisabledState.BorderRadius = 10;
-            this.btn_OpenNetworkDialog.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_OpenNetworkDialog.OnDisabledState.BorderThickness = 1;
-            this.btn_OpenNetworkDialog.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btn_OpenNetworkDialog.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btn_OpenNetworkDialog.OnDisabledState.IconLeftImage = null;
-            this.btn_OpenNetworkDialog.OnDisabledState.IconRightImage = null;
-            this.btn_OpenNetworkDialog.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.btn_OpenNetworkDialog.onHoverState.BorderRadius = 10;
-            this.btn_OpenNetworkDialog.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_OpenNetworkDialog.onHoverState.BorderThickness = 1;
-            this.btn_OpenNetworkDialog.onHoverState.FillColor = System.Drawing.Color.Transparent;
-            this.btn_OpenNetworkDialog.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.btn_OpenNetworkDialog.onHoverState.IconLeftImage = null;
-            this.btn_OpenNetworkDialog.onHoverState.IconRightImage = null;
-            this.btn_OpenNetworkDialog.OnIdleState.BorderColor = System.Drawing.Color.White;
-            this.btn_OpenNetworkDialog.OnIdleState.BorderRadius = 10;
-            this.btn_OpenNetworkDialog.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_OpenNetworkDialog.OnIdleState.BorderThickness = 1;
-            this.btn_OpenNetworkDialog.OnIdleState.FillColor = System.Drawing.Color.DimGray;
-            this.btn_OpenNetworkDialog.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_OpenNetworkDialog.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton14.OnIdleState.IconLeftImage")));
-            this.btn_OpenNetworkDialog.OnIdleState.IconRightImage = null;
-            this.btn_OpenNetworkDialog.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btn_OpenNetworkDialog.OnPressedState.BorderRadius = 10;
-            this.btn_OpenNetworkDialog.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_OpenNetworkDialog.OnPressedState.BorderThickness = 1;
-            this.btn_OpenNetworkDialog.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btn_OpenNetworkDialog.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.btn_OpenNetworkDialog.OnPressedState.IconLeftImage = null;
-            this.btn_OpenNetworkDialog.OnPressedState.IconRightImage = null;
-            this.btn_OpenNetworkDialog.Size = new System.Drawing.Size(29, 30);
-            this.btn_OpenNetworkDialog.TabIndex = 48;
-            this.btn_OpenNetworkDialog.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_OpenNetworkDialog.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btn_OpenNetworkDialog.TextMarginLeft = 0;
-            this.btn_OpenNetworkDialog.TextPadding = new System.Windows.Forms.Padding(0);
-            this.toolTip1.SetToolTip(this.btn_OpenNetworkDialog, "Open network dialog");
-            this.btn_OpenNetworkDialog.UseDefaultRadiusAndThickness = true;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.btn_Gradient, 0, 6);
-            this.tableLayoutPanel1.Controls.Add(this.btn_Bucket, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.btn_Eraser, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.btn_Brush, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btn_Select, 0, 7);
-            this.tableLayoutPanel1.Controls.Add(this.btn_Lasso, 0, 8);
-            this.tableLayoutPanel1.Controls.Add(this.btn_MagicWandTool, 0, 9);
-            this.tableLayoutPanel1.Controls.Add(this.btn_Text, 0, 10);
-            this.tableLayoutPanel1.Controls.Add(this.btn_Hand, 0, 12);
-            this.tableLayoutPanel1.Controls.Add(this.btn_Eyedropper, 0, 11);
-            this.tableLayoutPanel1.Controls.Add(this.btn_Shape, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.btn_Fill, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.btn_Move, 0, 3);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 64);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 13;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(36, 619);
-            this.tableLayoutPanel1.TabIndex = 3;
+            this.tableLayoutPanel_PaintTool.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tableLayoutPanel_PaintTool.ColumnCount = 1;
+            this.tableLayoutPanel_PaintTool.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel_PaintTool.Controls.Add(this.btn_Gradient, 0, 6);
+            this.tableLayoutPanel_PaintTool.Controls.Add(this.btn_Bucket, 0, 5);
+            this.tableLayoutPanel_PaintTool.Controls.Add(this.btn_Eraser, 0, 1);
+            this.tableLayoutPanel_PaintTool.Controls.Add(this.btn_Brush, 0, 0);
+            this.tableLayoutPanel_PaintTool.Controls.Add(this.btn_Select, 0, 7);
+            this.tableLayoutPanel_PaintTool.Controls.Add(this.btn_Lasso, 0, 8);
+            this.tableLayoutPanel_PaintTool.Controls.Add(this.btn_MagicWandTool, 0, 9);
+            this.tableLayoutPanel_PaintTool.Controls.Add(this.btn_Text, 0, 10);
+            this.tableLayoutPanel_PaintTool.Controls.Add(this.btn_Hand, 0, 12);
+            this.tableLayoutPanel_PaintTool.Controls.Add(this.btn_Eyedropper, 0, 11);
+            this.tableLayoutPanel_PaintTool.Controls.Add(this.btn_Shape, 0, 2);
+            this.tableLayoutPanel_PaintTool.Controls.Add(this.btn_Fill, 0, 4);
+            this.tableLayoutPanel_PaintTool.Controls.Add(this.btn_Move, 0, 3);
+            this.tableLayoutPanel_PaintTool.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tableLayoutPanel_PaintTool.Location = new System.Drawing.Point(0, 64);
+            this.tableLayoutPanel_PaintTool.Name = "tableLayoutPanel_PaintTool";
+            this.tableLayoutPanel_PaintTool.RowCount = 13;
+            this.tableLayoutPanel_PaintTool.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel_PaintTool.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel_PaintTool.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel_PaintTool.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel_PaintTool.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel_PaintTool.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel_PaintTool.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel_PaintTool.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel_PaintTool.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel_PaintTool.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel_PaintTool.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel_PaintTool.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel_PaintTool.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel_PaintTool.Size = new System.Drawing.Size(36, 569);
+            this.tableLayoutPanel_PaintTool.TabIndex = 3;
             // 
             // btn_Gradient
             // 
@@ -1513,11 +1634,11 @@ namespace Paint
             this.btn_Gradient.ColorContrastOnClick = 45;
             this.btn_Gradient.ColorContrastOnHover = 45;
             this.btn_Gradient.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges10.BottomLeft = true;
-            borderEdges10.BottomRight = true;
-            borderEdges10.TopLeft = true;
-            borderEdges10.TopRight = true;
-            this.btn_Gradient.CustomizableEdges = borderEdges10;
+            borderEdges9.BottomLeft = true;
+            borderEdges9.BottomRight = true;
+            borderEdges9.TopLeft = true;
+            borderEdges9.TopRight = true;
+            this.btn_Gradient.CustomizableEdges = borderEdges9;
             this.btn_Gradient.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Gradient.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Gradient.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1541,7 +1662,7 @@ namespace Paint
             this.btn_Gradient.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Gradient.IdleIconLeftImage")));
             this.btn_Gradient.IdleIconRightImage = null;
             this.btn_Gradient.IndicateFocus = false;
-            this.btn_Gradient.Location = new System.Drawing.Point(3, 243);
+            this.btn_Gradient.Location = new System.Drawing.Point(3, 231);
             this.btn_Gradient.Name = "btn_Gradient";
             this.btn_Gradient.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Gradient.OnDisabledState.BorderRadius = 10;
@@ -1603,11 +1724,11 @@ namespace Paint
             this.btn_Bucket.ColorContrastOnClick = 45;
             this.btn_Bucket.ColorContrastOnHover = 45;
             this.btn_Bucket.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges11.BottomLeft = true;
-            borderEdges11.BottomRight = true;
-            borderEdges11.TopLeft = true;
-            borderEdges11.TopRight = true;
-            this.btn_Bucket.CustomizableEdges = borderEdges11;
+            borderEdges10.BottomLeft = true;
+            borderEdges10.BottomRight = true;
+            borderEdges10.TopLeft = true;
+            borderEdges10.TopRight = true;
+            this.btn_Bucket.CustomizableEdges = borderEdges10;
             this.btn_Bucket.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Bucket.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Bucket.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1631,7 +1752,7 @@ namespace Paint
             this.btn_Bucket.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Bucket.IdleIconLeftImage")));
             this.btn_Bucket.IdleIconRightImage = null;
             this.btn_Bucket.IndicateFocus = false;
-            this.btn_Bucket.Location = new System.Drawing.Point(3, 203);
+            this.btn_Bucket.Location = new System.Drawing.Point(3, 193);
             this.btn_Bucket.Name = "btn_Bucket";
             this.btn_Bucket.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Bucket.OnDisabledState.BorderRadius = 10;
@@ -1693,11 +1814,11 @@ namespace Paint
             this.btn_Eraser.ColorContrastOnClick = 45;
             this.btn_Eraser.ColorContrastOnHover = 45;
             this.btn_Eraser.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges12.BottomLeft = true;
-            borderEdges12.BottomRight = true;
-            borderEdges12.TopLeft = true;
-            borderEdges12.TopRight = true;
-            this.btn_Eraser.CustomizableEdges = borderEdges12;
+            borderEdges11.BottomLeft = true;
+            borderEdges11.BottomRight = true;
+            borderEdges11.TopLeft = true;
+            borderEdges11.TopRight = true;
+            this.btn_Eraser.CustomizableEdges = borderEdges11;
             this.btn_Eraser.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Eraser.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Eraser.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1721,7 +1842,7 @@ namespace Paint
             this.btn_Eraser.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Eraser.IdleIconLeftImage")));
             this.btn_Eraser.IdleIconRightImage = null;
             this.btn_Eraser.IndicateFocus = false;
-            this.btn_Eraser.Location = new System.Drawing.Point(3, 43);
+            this.btn_Eraser.Location = new System.Drawing.Point(3, 41);
             this.btn_Eraser.Name = "btn_Eraser";
             this.btn_Eraser.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Eraser.OnDisabledState.BorderRadius = 10;
@@ -1783,11 +1904,11 @@ namespace Paint
             this.btn_Brush.ColorContrastOnClick = 45;
             this.btn_Brush.ColorContrastOnHover = 45;
             this.btn_Brush.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges13.BottomLeft = true;
-            borderEdges13.BottomRight = true;
-            borderEdges13.TopLeft = true;
-            borderEdges13.TopRight = true;
-            this.btn_Brush.CustomizableEdges = borderEdges13;
+            borderEdges12.BottomLeft = true;
+            borderEdges12.BottomRight = true;
+            borderEdges12.TopLeft = true;
+            borderEdges12.TopRight = true;
+            this.btn_Brush.CustomizableEdges = borderEdges12;
             this.btn_Brush.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Brush.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Brush.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1853,6 +1974,7 @@ namespace Paint
             this.btn_Brush.TextPadding = new System.Windows.Forms.Padding(0);
             this.toolTip1.SetToolTip(this.btn_Brush, "Brush Tool");
             this.btn_Brush.UseDefaultRadiusAndThickness = true;
+            this.btn_Brush.Click += new System.EventHandler(this.btn_Brush_Click);
             // 
             // btn_Select
             // 
@@ -1873,11 +1995,11 @@ namespace Paint
             this.btn_Select.ColorContrastOnClick = 45;
             this.btn_Select.ColorContrastOnHover = 45;
             this.btn_Select.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges14.BottomLeft = true;
-            borderEdges14.BottomRight = true;
-            borderEdges14.TopLeft = true;
-            borderEdges14.TopRight = true;
-            this.btn_Select.CustomizableEdges = borderEdges14;
+            borderEdges13.BottomLeft = true;
+            borderEdges13.BottomRight = true;
+            borderEdges13.TopLeft = true;
+            borderEdges13.TopRight = true;
+            this.btn_Select.CustomizableEdges = borderEdges13;
             this.btn_Select.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Select.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Select.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1901,7 +2023,7 @@ namespace Paint
             this.btn_Select.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Select.IdleIconLeftImage")));
             this.btn_Select.IdleIconRightImage = null;
             this.btn_Select.IndicateFocus = false;
-            this.btn_Select.Location = new System.Drawing.Point(3, 283);
+            this.btn_Select.Location = new System.Drawing.Point(3, 269);
             this.btn_Select.Name = "btn_Select";
             this.btn_Select.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Select.OnDisabledState.BorderRadius = 10;
@@ -1963,11 +2085,11 @@ namespace Paint
             this.btn_Lasso.ColorContrastOnClick = 45;
             this.btn_Lasso.ColorContrastOnHover = 45;
             this.btn_Lasso.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges15.BottomLeft = true;
-            borderEdges15.BottomRight = true;
-            borderEdges15.TopLeft = true;
-            borderEdges15.TopRight = true;
-            this.btn_Lasso.CustomizableEdges = borderEdges15;
+            borderEdges14.BottomLeft = true;
+            borderEdges14.BottomRight = true;
+            borderEdges14.TopLeft = true;
+            borderEdges14.TopRight = true;
+            this.btn_Lasso.CustomizableEdges = borderEdges14;
             this.btn_Lasso.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Lasso.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Lasso.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1991,7 +2113,7 @@ namespace Paint
             this.btn_Lasso.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Lasso.IdleIconLeftImage")));
             this.btn_Lasso.IdleIconRightImage = null;
             this.btn_Lasso.IndicateFocus = false;
-            this.btn_Lasso.Location = new System.Drawing.Point(3, 323);
+            this.btn_Lasso.Location = new System.Drawing.Point(3, 307);
             this.btn_Lasso.Name = "btn_Lasso";
             this.btn_Lasso.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Lasso.OnDisabledState.BorderRadius = 10;
@@ -2053,11 +2175,11 @@ namespace Paint
             this.btn_MagicWandTool.ColorContrastOnClick = 45;
             this.btn_MagicWandTool.ColorContrastOnHover = 45;
             this.btn_MagicWandTool.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges16.BottomLeft = true;
-            borderEdges16.BottomRight = true;
-            borderEdges16.TopLeft = true;
-            borderEdges16.TopRight = true;
-            this.btn_MagicWandTool.CustomizableEdges = borderEdges16;
+            borderEdges15.BottomLeft = true;
+            borderEdges15.BottomRight = true;
+            borderEdges15.TopLeft = true;
+            borderEdges15.TopRight = true;
+            this.btn_MagicWandTool.CustomizableEdges = borderEdges15;
             this.btn_MagicWandTool.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_MagicWandTool.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_MagicWandTool.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2081,7 +2203,7 @@ namespace Paint
             this.btn_MagicWandTool.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_MagicWandTool.IdleIconLeftImage")));
             this.btn_MagicWandTool.IdleIconRightImage = null;
             this.btn_MagicWandTool.IndicateFocus = false;
-            this.btn_MagicWandTool.Location = new System.Drawing.Point(3, 363);
+            this.btn_MagicWandTool.Location = new System.Drawing.Point(3, 345);
             this.btn_MagicWandTool.Name = "btn_MagicWandTool";
             this.btn_MagicWandTool.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_MagicWandTool.OnDisabledState.BorderRadius = 10;
@@ -2143,11 +2265,11 @@ namespace Paint
             this.btn_Text.ColorContrastOnClick = 45;
             this.btn_Text.ColorContrastOnHover = 45;
             this.btn_Text.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges17.BottomLeft = true;
-            borderEdges17.BottomRight = true;
-            borderEdges17.TopLeft = true;
-            borderEdges17.TopRight = true;
-            this.btn_Text.CustomizableEdges = borderEdges17;
+            borderEdges16.BottomLeft = true;
+            borderEdges16.BottomRight = true;
+            borderEdges16.TopLeft = true;
+            borderEdges16.TopRight = true;
+            this.btn_Text.CustomizableEdges = borderEdges16;
             this.btn_Text.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Text.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Text.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2171,7 +2293,7 @@ namespace Paint
             this.btn_Text.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Text.IdleIconLeftImage")));
             this.btn_Text.IdleIconRightImage = null;
             this.btn_Text.IndicateFocus = false;
-            this.btn_Text.Location = new System.Drawing.Point(3, 403);
+            this.btn_Text.Location = new System.Drawing.Point(3, 383);
             this.btn_Text.Name = "btn_Text";
             this.btn_Text.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Text.OnDisabledState.BorderRadius = 10;
@@ -2213,6 +2335,7 @@ namespace Paint
             this.btn_Text.TextPadding = new System.Windows.Forms.Padding(0);
             this.toolTip1.SetToolTip(this.btn_Text, "Text Tool");
             this.btn_Text.UseDefaultRadiusAndThickness = true;
+            this.btn_Text.Click += new System.EventHandler(this.btn_Text_Click);
             // 
             // btn_Hand
             // 
@@ -2233,11 +2356,11 @@ namespace Paint
             this.btn_Hand.ColorContrastOnClick = 45;
             this.btn_Hand.ColorContrastOnHover = 45;
             this.btn_Hand.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges18.BottomLeft = true;
-            borderEdges18.BottomRight = true;
-            borderEdges18.TopLeft = true;
-            borderEdges18.TopRight = true;
-            this.btn_Hand.CustomizableEdges = borderEdges18;
+            borderEdges17.BottomLeft = true;
+            borderEdges17.BottomRight = true;
+            borderEdges17.TopLeft = true;
+            borderEdges17.TopRight = true;
+            this.btn_Hand.CustomizableEdges = borderEdges17;
             this.btn_Hand.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Hand.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Hand.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2261,7 +2384,7 @@ namespace Paint
             this.btn_Hand.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Hand.IdleIconLeftImage")));
             this.btn_Hand.IdleIconRightImage = null;
             this.btn_Hand.IndicateFocus = false;
-            this.btn_Hand.Location = new System.Drawing.Point(3, 483);
+            this.btn_Hand.Location = new System.Drawing.Point(3, 459);
             this.btn_Hand.Name = "btn_Hand";
             this.btn_Hand.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Hand.OnDisabledState.BorderRadius = 10;
@@ -2323,11 +2446,11 @@ namespace Paint
             this.btn_Eyedropper.ColorContrastOnClick = 45;
             this.btn_Eyedropper.ColorContrastOnHover = 45;
             this.btn_Eyedropper.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges19.BottomLeft = true;
-            borderEdges19.BottomRight = true;
-            borderEdges19.TopLeft = true;
-            borderEdges19.TopRight = true;
-            this.btn_Eyedropper.CustomizableEdges = borderEdges19;
+            borderEdges18.BottomLeft = true;
+            borderEdges18.BottomRight = true;
+            borderEdges18.TopLeft = true;
+            borderEdges18.TopRight = true;
+            this.btn_Eyedropper.CustomizableEdges = borderEdges18;
             this.btn_Eyedropper.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Eyedropper.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Eyedropper.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2351,7 +2474,7 @@ namespace Paint
             this.btn_Eyedropper.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Eyedropper.IdleIconLeftImage")));
             this.btn_Eyedropper.IdleIconRightImage = null;
             this.btn_Eyedropper.IndicateFocus = false;
-            this.btn_Eyedropper.Location = new System.Drawing.Point(3, 443);
+            this.btn_Eyedropper.Location = new System.Drawing.Point(3, 421);
             this.btn_Eyedropper.Name = "btn_Eyedropper";
             this.btn_Eyedropper.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Eyedropper.OnDisabledState.BorderRadius = 10;
@@ -2413,11 +2536,11 @@ namespace Paint
             this.btn_Shape.ColorContrastOnClick = 45;
             this.btn_Shape.ColorContrastOnHover = 45;
             this.btn_Shape.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges20.BottomLeft = true;
-            borderEdges20.BottomRight = true;
-            borderEdges20.TopLeft = true;
-            borderEdges20.TopRight = true;
-            this.btn_Shape.CustomizableEdges = borderEdges20;
+            borderEdges19.BottomLeft = true;
+            borderEdges19.BottomRight = true;
+            borderEdges19.TopLeft = true;
+            borderEdges19.TopRight = true;
+            this.btn_Shape.CustomizableEdges = borderEdges19;
             this.btn_Shape.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Shape.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Shape.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2441,7 +2564,7 @@ namespace Paint
             this.btn_Shape.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Shape.IdleIconLeftImage")));
             this.btn_Shape.IdleIconRightImage = null;
             this.btn_Shape.IndicateFocus = false;
-            this.btn_Shape.Location = new System.Drawing.Point(3, 83);
+            this.btn_Shape.Location = new System.Drawing.Point(3, 79);
             this.btn_Shape.Name = "btn_Shape";
             this.btn_Shape.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Shape.OnDisabledState.BorderRadius = 10;
@@ -2483,6 +2606,7 @@ namespace Paint
             this.btn_Shape.TextPadding = new System.Windows.Forms.Padding(0);
             this.toolTip1.SetToolTip(this.btn_Shape, "Shape Brush Tool");
             this.btn_Shape.UseDefaultRadiusAndThickness = true;
+            this.btn_Shape.Click += new System.EventHandler(this.btn_Shape_Click);
             // 
             // btn_Fill
             // 
@@ -2503,11 +2627,11 @@ namespace Paint
             this.btn_Fill.ColorContrastOnClick = 45;
             this.btn_Fill.ColorContrastOnHover = 45;
             this.btn_Fill.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges21.BottomLeft = true;
-            borderEdges21.BottomRight = true;
-            borderEdges21.TopLeft = true;
-            borderEdges21.TopRight = true;
-            this.btn_Fill.CustomizableEdges = borderEdges21;
+            borderEdges20.BottomLeft = true;
+            borderEdges20.BottomRight = true;
+            borderEdges20.TopLeft = true;
+            borderEdges20.TopRight = true;
+            this.btn_Fill.CustomizableEdges = borderEdges20;
             this.btn_Fill.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Fill.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Fill.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2531,7 +2655,7 @@ namespace Paint
             this.btn_Fill.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Fill.IdleIconLeftImage")));
             this.btn_Fill.IdleIconRightImage = null;
             this.btn_Fill.IndicateFocus = false;
-            this.btn_Fill.Location = new System.Drawing.Point(3, 163);
+            this.btn_Fill.Location = new System.Drawing.Point(3, 155);
             this.btn_Fill.Name = "btn_Fill";
             this.btn_Fill.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Fill.OnDisabledState.BorderRadius = 10;
@@ -2573,6 +2697,7 @@ namespace Paint
             this.btn_Fill.TextPadding = new System.Windows.Forms.Padding(0);
             this.toolTip1.SetToolTip(this.btn_Fill, "Fill Tool");
             this.btn_Fill.UseDefaultRadiusAndThickness = true;
+            this.btn_Fill.Click += new System.EventHandler(this.btn_Fill_Click);
             // 
             // btn_Move
             // 
@@ -2593,11 +2718,11 @@ namespace Paint
             this.btn_Move.ColorContrastOnClick = 45;
             this.btn_Move.ColorContrastOnHover = 45;
             this.btn_Move.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges22.BottomLeft = true;
-            borderEdges22.BottomRight = true;
-            borderEdges22.TopLeft = true;
-            borderEdges22.TopRight = true;
-            this.btn_Move.CustomizableEdges = borderEdges22;
+            borderEdges21.BottomLeft = true;
+            borderEdges21.BottomRight = true;
+            borderEdges21.TopLeft = true;
+            borderEdges21.TopRight = true;
+            this.btn_Move.CustomizableEdges = borderEdges21;
             this.btn_Move.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Move.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Move.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2621,7 +2746,7 @@ namespace Paint
             this.btn_Move.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Move.IdleIconLeftImage")));
             this.btn_Move.IdleIconRightImage = null;
             this.btn_Move.IndicateFocus = false;
-            this.btn_Move.Location = new System.Drawing.Point(3, 123);
+            this.btn_Move.Location = new System.Drawing.Point(3, 117);
             this.btn_Move.Name = "btn_Move";
             this.btn_Move.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Move.OnDisabledState.BorderRadius = 10;
@@ -2664,16 +2789,389 @@ namespace Paint
             this.toolTip1.SetToolTip(this.btn_Move, "Move Tool");
             this.btn_Move.UseDefaultRadiusAndThickness = true;
             // 
+            // panel_Color
+            // 
+            this.panel_Color.BackColor = System.Drawing.Color.DimGray;
+            this.panel_Color.Controls.Add(this.subTableLayoutPanel_Color2);
+            this.panel_Color.Controls.Add(this.subTableLayoutPanel_Color);
+            this.panel_Color.Controls.Add(this.lb_Color);
+            this.panel_Color.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_Color.Location = new System.Drawing.Point(0, 0);
+            this.panel_Color.Margin = new System.Windows.Forms.Padding(0);
+            this.panel_Color.Name = "panel_Color";
+            this.panel_Color.Size = new System.Drawing.Size(220, 175);
+            this.panel_Color.TabIndex = 4;
+            // 
+            // subTableLayoutPanel_Color2
+            // 
+            this.subTableLayoutPanel_Color2.ColumnCount = 1;
+            this.subTableLayoutPanel_Color2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.subTableLayoutPanel_Color2.Controls.Add(this.colorPicker, 0, 0);
+            this.subTableLayoutPanel_Color2.Controls.Add(this.panel2, 0, 1);
+            this.subTableLayoutPanel_Color2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.subTableLayoutPanel_Color2.Location = new System.Drawing.Point(62, 28);
+            this.subTableLayoutPanel_Color2.Name = "subTableLayoutPanel_Color2";
+            this.subTableLayoutPanel_Color2.RowCount = 2;
+            this.subTableLayoutPanel_Color2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.subTableLayoutPanel_Color2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.subTableLayoutPanel_Color2.Size = new System.Drawing.Size(158, 147);
+            this.subTableLayoutPanel_Color2.TabIndex = 65;
+            // 
+            // colorPicker
+            // 
+            this.colorPicker.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.colorPicker.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.colorPicker.Location = new System.Drawing.Point(3, 3);
+            this.colorPicker.Name = "colorPicker";
+            this.colorPicker.Size = new System.Drawing.Size(152, 111);
+            this.colorPicker.TabIndex = 64;
+            this.colorPicker.ColorPicked += new System.EventHandler(this.colorPicker_ColorPicked);
+            this.colorPicker.MouseMove += new System.Windows.Forms.MouseEventHandler(this.colorPicker_MouseMove);
+            // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.DimGray;
-            this.panel2.Controls.Add(this.lb_Color);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Controls.Add(this.pictureBox_ColorPreview);
+            this.panel2.Controls.Add(this.label_ColorPreview);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 117);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(239, 187);
-            this.panel2.TabIndex = 4;
+            this.panel2.Size = new System.Drawing.Size(158, 19);
+            this.panel2.TabIndex = 65;
+            // 
+            // pictureBox_ColorPreview
+            // 
+            this.pictureBox_ColorPreview.BackColor = System.Drawing.Color.Black;
+            this.pictureBox_ColorPreview.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox_ColorPreview.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox_ColorPreview.Location = new System.Drawing.Point(94, 0);
+            this.pictureBox_ColorPreview.Name = "pictureBox_ColorPreview";
+            this.pictureBox_ColorPreview.Size = new System.Drawing.Size(58, 19);
+            this.pictureBox_ColorPreview.TabIndex = 64;
+            this.pictureBox_ColorPreview.TabStop = false;
+            // 
+            // label_ColorPreview
+            // 
+            this.label_ColorPreview.AutoSize = true;
+            this.label_ColorPreview.BackColor = System.Drawing.Color.Transparent;
+            this.label_ColorPreview.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label_ColorPreview.Font = new System.Drawing.Font("Century Schoolbook", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_ColorPreview.ForeColor = System.Drawing.Color.White;
+            this.label_ColorPreview.Location = new System.Drawing.Point(0, 0);
+            this.label_ColorPreview.Name = "label_ColorPreview";
+            this.label_ColorPreview.Size = new System.Drawing.Size(94, 16);
+            this.label_ColorPreview.TabIndex = 63;
+            this.label_ColorPreview.Text = "Color Preview:";
+            // 
+            // subTableLayoutPanel_Color
+            // 
+            this.subTableLayoutPanel_Color.ColumnCount = 1;
+            this.subTableLayoutPanel_Color.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.subTableLayoutPanel_Color.Controls.Add(this.btn_SelectColor, 0, 4);
+            this.subTableLayoutPanel_Color.Controls.Add(this.subPanelBtextBox, 0, 3);
+            this.subTableLayoutPanel_Color.Controls.Add(this.panel7, 0, 2);
+            this.subTableLayoutPanel_Color.Controls.Add(this.subPanelColorPicked, 0, 0);
+            this.subTableLayoutPanel_Color.Controls.Add(this.panel3, 0, 1);
+            this.subTableLayoutPanel_Color.Dock = System.Windows.Forms.DockStyle.Left;
+            this.subTableLayoutPanel_Color.Location = new System.Drawing.Point(0, 28);
+            this.subTableLayoutPanel_Color.Name = "subTableLayoutPanel_Color";
+            this.subTableLayoutPanel_Color.RowCount = 5;
+            this.subTableLayoutPanel_Color.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56F));
+            this.subTableLayoutPanel_Color.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.39754F));
+            this.subTableLayoutPanel_Color.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.39754F));
+            this.subTableLayoutPanel_Color.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.39754F));
+            this.subTableLayoutPanel_Color.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 38.80738F));
+            this.subTableLayoutPanel_Color.Size = new System.Drawing.Size(62, 147);
+            this.subTableLayoutPanel_Color.TabIndex = 57;
+            // 
+            // btn_SelectColor
+            // 
+            this.btn_SelectColor.AllowAnimations = true;
+            this.btn_SelectColor.AllowMouseEffects = true;
+            this.btn_SelectColor.AllowToggling = false;
+            this.btn_SelectColor.AnimationSpeed = 200;
+            this.btn_SelectColor.AutoGenerateColors = false;
+            this.btn_SelectColor.AutoRoundBorders = false;
+            this.btn_SelectColor.AutoSizeLeftIcon = true;
+            this.btn_SelectColor.AutoSizeRightIcon = true;
+            this.btn_SelectColor.BackColor = System.Drawing.Color.Transparent;
+            this.btn_SelectColor.BackColor1 = System.Drawing.Color.DimGray;
+            this.btn_SelectColor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_SelectColor.BackgroundImage")));
+            this.btn_SelectColor.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_SelectColor.ButtonText = "";
+            this.btn_SelectColor.ButtonTextMarginLeft = 0;
+            this.btn_SelectColor.ColorContrastOnClick = 45;
+            this.btn_SelectColor.ColorContrastOnHover = 45;
+            this.btn_SelectColor.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges22.BottomLeft = true;
+            borderEdges22.BottomRight = true;
+            borderEdges22.TopLeft = true;
+            borderEdges22.TopRight = true;
+            this.btn_SelectColor.CustomizableEdges = borderEdges22;
+            this.btn_SelectColor.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_SelectColor.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btn_SelectColor.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btn_SelectColor.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btn_SelectColor.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btn_SelectColor.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_SelectColor.ForeColor = System.Drawing.Color.White;
+            this.btn_SelectColor.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_SelectColor.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btn_SelectColor.IconLeftPadding = new System.Windows.Forms.Padding(3);
+            this.btn_SelectColor.IconMarginLeft = 11;
+            this.btn_SelectColor.IconPadding = 5;
+            this.btn_SelectColor.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_SelectColor.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btn_SelectColor.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btn_SelectColor.IconSize = 25;
+            this.btn_SelectColor.IdleBorderColor = System.Drawing.Color.White;
+            this.btn_SelectColor.IdleBorderRadius = 8;
+            this.btn_SelectColor.IdleBorderThickness = 1;
+            this.btn_SelectColor.IdleFillColor = System.Drawing.Color.DimGray;
+            this.btn_SelectColor.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_SelectColor.IdleIconLeftImage")));
+            this.btn_SelectColor.IdleIconRightImage = null;
+            this.btn_SelectColor.IndicateFocus = false;
+            this.btn_SelectColor.Location = new System.Drawing.Point(6, 113);
+            this.btn_SelectColor.Margin = new System.Windows.Forms.Padding(6, 3, 3, 3);
+            this.btn_SelectColor.Name = "btn_SelectColor";
+            this.btn_SelectColor.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btn_SelectColor.OnDisabledState.BorderRadius = 8;
+            this.btn_SelectColor.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_SelectColor.OnDisabledState.BorderThickness = 1;
+            this.btn_SelectColor.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btn_SelectColor.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btn_SelectColor.OnDisabledState.IconLeftImage = null;
+            this.btn_SelectColor.OnDisabledState.IconRightImage = null;
+            this.btn_SelectColor.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btn_SelectColor.onHoverState.BorderRadius = 8;
+            this.btn_SelectColor.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_SelectColor.onHoverState.BorderThickness = 1;
+            this.btn_SelectColor.onHoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btn_SelectColor.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_SelectColor.onHoverState.IconLeftImage = null;
+            this.btn_SelectColor.onHoverState.IconRightImage = null;
+            this.btn_SelectColor.OnIdleState.BorderColor = System.Drawing.Color.White;
+            this.btn_SelectColor.OnIdleState.BorderRadius = 8;
+            this.btn_SelectColor.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_SelectColor.OnIdleState.BorderThickness = 1;
+            this.btn_SelectColor.OnIdleState.FillColor = System.Drawing.Color.DimGray;
+            this.btn_SelectColor.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btn_SelectColor.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_SelectColor.OnIdleState.IconLeftImage")));
+            this.btn_SelectColor.OnIdleState.IconRightImage = null;
+            this.btn_SelectColor.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btn_SelectColor.OnPressedState.BorderRadius = 8;
+            this.btn_SelectColor.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_SelectColor.OnPressedState.BorderThickness = 1;
+            this.btn_SelectColor.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btn_SelectColor.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btn_SelectColor.OnPressedState.IconLeftImage = null;
+            this.btn_SelectColor.OnPressedState.IconRightImage = null;
+            this.btn_SelectColor.Size = new System.Drawing.Size(28, 28);
+            this.btn_SelectColor.TabIndex = 48;
+            this.btn_SelectColor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_SelectColor.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_SelectColor.TextMarginLeft = 0;
+            this.btn_SelectColor.TextPadding = new System.Windows.Forms.Padding(0);
+            this.toolTip1.SetToolTip(this.btn_SelectColor, "Brush Tool");
+            this.btn_SelectColor.UseDefaultRadiusAndThickness = true;
+            this.btn_SelectColor.Click += new System.EventHandler(this.btn_SelectColor_Click);
+            // 
+            // subPanelBtextBox
+            // 
+            this.subPanelBtextBox.Controls.Add(this.textBox_Bvalue);
+            this.subPanelBtextBox.Controls.Add(this.label_B_value);
+            this.subPanelBtextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.subPanelBtextBox.Location = new System.Drawing.Point(0, 92);
+            this.subPanelBtextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.subPanelBtextBox.Name = "subPanelBtextBox";
+            this.subPanelBtextBox.Size = new System.Drawing.Size(62, 18);
+            this.subPanelBtextBox.TabIndex = 4;
+            // 
+            // textBox_Bvalue
+            // 
+            this.textBox_Bvalue.BackColor = System.Drawing.Color.DimGray;
+            this.textBox_Bvalue.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox_Bvalue.Dock = System.Windows.Forms.DockStyle.Left;
+            this.textBox_Bvalue.Font = new System.Drawing.Font("Century Schoolbook", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_Bvalue.ForeColor = System.Drawing.Color.White;
+            this.textBox_Bvalue.Location = new System.Drawing.Point(23, 0);
+            this.textBox_Bvalue.Margin = new System.Windows.Forms.Padding(0);
+            this.textBox_Bvalue.Multiline = true;
+            this.textBox_Bvalue.Name = "textBox_Bvalue";
+            this.textBox_Bvalue.ReadOnly = true;
+            this.textBox_Bvalue.Size = new System.Drawing.Size(30, 18);
+            this.textBox_Bvalue.TabIndex = 57;
+            this.textBox_Bvalue.Text = "0";
+            // 
+            // label_B_value
+            // 
+            this.label_B_value.AutoSize = true;
+            this.label_B_value.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label_B_value.Font = new System.Drawing.Font("Century Schoolbook", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_B_value.ForeColor = System.Drawing.Color.White;
+            this.label_B_value.Location = new System.Drawing.Point(0, 0);
+            this.label_B_value.Margin = new System.Windows.Forms.Padding(6);
+            this.label_B_value.Name = "label_B_value";
+            this.label_B_value.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            this.label_B_value.Size = new System.Drawing.Size(23, 16);
+            this.label_B_value.TabIndex = 53;
+            this.label_B_value.Text = "B:";
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.subPanelGtextBox);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel7.Location = new System.Drawing.Point(0, 74);
+            this.panel7.Margin = new System.Windows.Forms.Padding(0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(62, 18);
+            this.panel7.TabIndex = 3;
+            // 
+            // subPanelGtextBox
+            // 
+            this.subPanelGtextBox.Controls.Add(this.textBox_Gvalue);
+            this.subPanelGtextBox.Controls.Add(this.label_G_value);
+            this.subPanelGtextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.subPanelGtextBox.Location = new System.Drawing.Point(0, 0);
+            this.subPanelGtextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.subPanelGtextBox.Name = "subPanelGtextBox";
+            this.subPanelGtextBox.Size = new System.Drawing.Size(62, 18);
+            this.subPanelGtextBox.TabIndex = 3;
+            // 
+            // textBox_Gvalue
+            // 
+            this.textBox_Gvalue.BackColor = System.Drawing.Color.DimGray;
+            this.textBox_Gvalue.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox_Gvalue.Dock = System.Windows.Forms.DockStyle.Left;
+            this.textBox_Gvalue.Font = new System.Drawing.Font("Century Schoolbook", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_Gvalue.ForeColor = System.Drawing.Color.White;
+            this.textBox_Gvalue.Location = new System.Drawing.Point(23, 0);
+            this.textBox_Gvalue.Multiline = true;
+            this.textBox_Gvalue.Name = "textBox_Gvalue";
+            this.textBox_Gvalue.ReadOnly = true;
+            this.textBox_Gvalue.Size = new System.Drawing.Size(28, 18);
+            this.textBox_Gvalue.TabIndex = 56;
+            this.textBox_Gvalue.Text = "0";
+            // 
+            // label_G_value
+            // 
+            this.label_G_value.AutoSize = true;
+            this.label_G_value.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label_G_value.Font = new System.Drawing.Font("Century Schoolbook", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_G_value.ForeColor = System.Drawing.Color.White;
+            this.label_G_value.Location = new System.Drawing.Point(0, 0);
+            this.label_G_value.Margin = new System.Windows.Forms.Padding(6);
+            this.label_G_value.Name = "label_G_value";
+            this.label_G_value.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            this.label_G_value.Size = new System.Drawing.Size(23, 16);
+            this.label_G_value.TabIndex = 52;
+            this.label_G_value.Text = "G:";
+            // 
+            // subPanelColorPicked
+            // 
+            this.subPanelColorPicked.Controls.Add(this.pictureBox_Color_Front);
+            this.subPanelColorPicked.Controls.Add(this.pictureBox_Color_Back);
+            this.subPanelColorPicked.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.subPanelColorPicked.Location = new System.Drawing.Point(0, 0);
+            this.subPanelColorPicked.Margin = new System.Windows.Forms.Padding(0);
+            this.subPanelColorPicked.Name = "subPanelColorPicked";
+            this.subPanelColorPicked.Size = new System.Drawing.Size(62, 56);
+            this.subPanelColorPicked.TabIndex = 0;
+            // 
+            // pictureBox_Color_Front
+            // 
+            this.pictureBox_Color_Front.BackColor = System.Drawing.Color.Black;
+            this.pictureBox_Color_Front.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox_Color_Front.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_Color_Front.Location = new System.Drawing.Point(8, 6);
+            this.pictureBox_Color_Front.Name = "pictureBox_Color_Front";
+            this.pictureBox_Color_Front.Size = new System.Drawing.Size(28, 28);
+            this.pictureBox_Color_Front.TabIndex = 50;
+            this.pictureBox_Color_Front.TabStop = false;
+            this.pictureBox_Color_Front.BackColorChanged += new System.EventHandler(this.pictureBox_Color_Front_BackColorChanged);
+            this.pictureBox_Color_Front.Click += new System.EventHandler(this.color_Swap);
+            // 
+            // pictureBox_Color_Back
+            // 
+            this.pictureBox_Color_Back.BackColor = System.Drawing.Color.ForestGreen;
+            this.pictureBox_Color_Back.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox_Color_Back.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox_Color_Back.Location = new System.Drawing.Point(22, 19);
+            this.pictureBox_Color_Back.Name = "pictureBox_Color_Back";
+            this.pictureBox_Color_Back.Size = new System.Drawing.Size(28, 28);
+            this.pictureBox_Color_Back.TabIndex = 49;
+            this.pictureBox_Color_Back.TabStop = false;
+            this.pictureBox_Color_Back.Click += new System.EventHandler(this.color_Swap);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(0, 56);
+            this.panel3.Margin = new System.Windows.Forms.Padding(0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(62, 18);
+            this.panel3.TabIndex = 1;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.panel5);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(62, 18);
+            this.panel4.TabIndex = 2;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.subPanelRtextBox);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(62, 18);
+            this.panel5.TabIndex = 3;
+            // 
+            // subPanelRtextBox
+            // 
+            this.subPanelRtextBox.Controls.Add(this.textBox_Rvalue);
+            this.subPanelRtextBox.Controls.Add(this.label_R_value);
+            this.subPanelRtextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.subPanelRtextBox.Location = new System.Drawing.Point(0, 0);
+            this.subPanelRtextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.subPanelRtextBox.Name = "subPanelRtextBox";
+            this.subPanelRtextBox.Size = new System.Drawing.Size(62, 18);
+            this.subPanelRtextBox.TabIndex = 3;
+            // 
+            // textBox_Rvalue
+            // 
+            this.textBox_Rvalue.BackColor = System.Drawing.Color.DimGray;
+            this.textBox_Rvalue.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox_Rvalue.Dock = System.Windows.Forms.DockStyle.Left;
+            this.textBox_Rvalue.Font = new System.Drawing.Font("Century Schoolbook", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_Rvalue.ForeColor = System.Drawing.Color.White;
+            this.textBox_Rvalue.Location = new System.Drawing.Point(23, 0);
+            this.textBox_Rvalue.Multiline = true;
+            this.textBox_Rvalue.Name = "textBox_Rvalue";
+            this.textBox_Rvalue.ReadOnly = true;
+            this.textBox_Rvalue.Size = new System.Drawing.Size(30, 18);
+            this.textBox_Rvalue.TabIndex = 54;
+            this.textBox_Rvalue.Text = "0";
+            // 
+            // label_R_value
+            // 
+            this.label_R_value.AutoSize = true;
+            this.label_R_value.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label_R_value.Font = new System.Drawing.Font("Century Schoolbook", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_R_value.ForeColor = System.Drawing.Color.White;
+            this.label_R_value.Location = new System.Drawing.Point(0, 0);
+            this.label_R_value.Margin = new System.Windows.Forms.Padding(6);
+            this.label_R_value.Name = "label_R_value";
+            this.label_R_value.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            this.label_R_value.Size = new System.Drawing.Size(23, 16);
+            this.label_R_value.TabIndex = 51;
+            this.label_R_value.Text = "R:";
             // 
             // lb_Color
             // 
@@ -2683,21 +3181,21 @@ namespace Paint
             this.lb_Color.ForeColor = System.Drawing.Color.White;
             this.lb_Color.Location = new System.Drawing.Point(0, 0);
             this.lb_Color.Name = "lb_Color";
-            this.lb_Color.Size = new System.Drawing.Size(239, 28);
+            this.lb_Color.Size = new System.Drawing.Size(220, 28);
             this.lb_Color.TabIndex = 5;
             this.lb_Color.Text = "Color";
             this.lb_Color.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel3
+            // panel_BrushPreview
             // 
-            this.panel3.BackColor = System.Drawing.Color.DimGray;
-            this.panel3.Controls.Add(this.lb_BrushPreview);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 187);
-            this.panel3.Margin = new System.Windows.Forms.Padding(0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(239, 121);
-            this.panel3.TabIndex = 6;
+            this.panel_BrushPreview.BackColor = System.Drawing.Color.DimGray;
+            this.panel_BrushPreview.Controls.Add(this.lb_BrushPreview);
+            this.panel_BrushPreview.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_BrushPreview.Location = new System.Drawing.Point(0, 175);
+            this.panel_BrushPreview.Margin = new System.Windows.Forms.Padding(0);
+            this.panel_BrushPreview.Name = "panel_BrushPreview";
+            this.panel_BrushPreview.Size = new System.Drawing.Size(220, 110);
+            this.panel_BrushPreview.TabIndex = 6;
             // 
             // lb_BrushPreview
             // 
@@ -2707,21 +3205,21 @@ namespace Paint
             this.lb_BrushPreview.ForeColor = System.Drawing.Color.White;
             this.lb_BrushPreview.Location = new System.Drawing.Point(0, 0);
             this.lb_BrushPreview.Name = "lb_BrushPreview";
-            this.lb_BrushPreview.Size = new System.Drawing.Size(239, 28);
+            this.lb_BrushPreview.Size = new System.Drawing.Size(220, 28);
             this.lb_BrushPreview.TabIndex = 5;
             this.lb_BrushPreview.Text = "Brush Preview";
             this.lb_BrushPreview.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel6
+            // panel_Brush
             // 
-            this.panel6.BackColor = System.Drawing.Color.DimGray;
-            this.panel6.Controls.Add(this.label5);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(0, 491);
-            this.panel6.Margin = new System.Windows.Forms.Padding(0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(239, 128);
-            this.panel6.TabIndex = 7;
+            this.panel_Brush.BackColor = System.Drawing.Color.DimGray;
+            this.panel_Brush.Controls.Add(this.label5);
+            this.panel_Brush.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_Brush.Location = new System.Drawing.Point(0, 451);
+            this.panel_Brush.Margin = new System.Windows.Forms.Padding(0);
+            this.panel_Brush.Name = "panel_Brush";
+            this.panel_Brush.Size = new System.Drawing.Size(220, 118);
+            this.panel_Brush.TabIndex = 7;
             // 
             // label5
             // 
@@ -2731,7 +3229,7 @@ namespace Paint
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(0, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(239, 28);
+            this.label5.Size = new System.Drawing.Size(220, 28);
             this.label5.TabIndex = 5;
             this.label5.Text = "Brush ";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2740,31 +3238,55 @@ namespace Paint
             // 
             this.tableLayoutPanel4.ColumnCount = 1;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Controls.Add(this.panel4, 0, 2);
-            this.tableLayoutPanel4.Controls.Add(this.panel6, 0, 3);
-            this.tableLayoutPanel4.Controls.Add(this.panel2, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.panel3, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.panel_Brush, 0, 3);
+            this.tableLayoutPanel4.Controls.Add(this.panel_BrushControl, 0, 2);
+            this.tableLayoutPanel4.Controls.Add(this.panel_Color, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.panel_BrushPreview, 0, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(36, 64);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 4;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.24F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.68F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29.6F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.48F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(239, 619);
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.88525F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.49797F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29.32621F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.29057F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(220, 569);
             this.tableLayoutPanel4.TabIndex = 10;
             // 
-            // panel4
+            // panel_BrushControl
             // 
-            this.panel4.BackColor = System.Drawing.Color.DimGray;
-            this.panel4.Controls.Add(this.lb_BrushControl);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(0, 308);
-            this.panel4.Margin = new System.Windows.Forms.Padding(0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(239, 183);
-            this.panel4.TabIndex = 6;
+            this.panel_BrushControl.BackColor = System.Drawing.Color.DimGray;
+            this.panel_BrushControl.Controls.Add(this.trackBar_Size);
+            this.panel_BrushControl.Controls.Add(this.lb_Size);
+            this.panel_BrushControl.Controls.Add(this.lb_BrushControl);
+            this.panel_BrushControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_BrushControl.Location = new System.Drawing.Point(0, 285);
+            this.panel_BrushControl.Margin = new System.Windows.Forms.Padding(0);
+            this.panel_BrushControl.Name = "panel_BrushControl";
+            this.panel_BrushControl.Size = new System.Drawing.Size(220, 166);
+            this.panel_BrushControl.TabIndex = 6;
+            // 
+            // trackBar_Size
+            // 
+            this.trackBar_Size.Location = new System.Drawing.Point(81, 46);
+            this.trackBar_Size.Maximum = 100;
+            this.trackBar_Size.Minimum = 1;
+            this.trackBar_Size.Name = "trackBar_Size";
+            this.trackBar_Size.Size = new System.Drawing.Size(124, 56);
+            this.trackBar_Size.TabIndex = 7;
+            this.trackBar_Size.Value = 1;
+            this.trackBar_Size.Scroll += new System.EventHandler(this.trackBarSize_Scroll);
+            // 
+            // lb_Size
+            // 
+            this.lb_Size.AutoSize = true;
+            this.lb_Size.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Size.ForeColor = System.Drawing.Color.White;
+            this.lb_Size.Location = new System.Drawing.Point(23, 46);
+            this.lb_Size.Name = "lb_Size";
+            this.lb_Size.Size = new System.Drawing.Size(39, 21);
+            this.lb_Size.TabIndex = 6;
+            this.lb_Size.Text = "Size";
             // 
             // lb_BrushControl
             // 
@@ -2774,50 +3296,50 @@ namespace Paint
             this.lb_BrushControl.ForeColor = System.Drawing.Color.White;
             this.lb_BrushControl.Location = new System.Drawing.Point(0, 0);
             this.lb_BrushControl.Name = "lb_BrushControl";
-            this.lb_BrushControl.Size = new System.Drawing.Size(239, 28);
+            this.lb_BrushControl.Size = new System.Drawing.Size(220, 28);
             this.lb_BrushControl.TabIndex = 5;
             this.lb_BrushControl.Text = "Brush Control";
             this.lb_BrushControl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel7
+            // panel_Navigator
             // 
-            this.panel7.BackColor = System.Drawing.Color.DimGray;
-            this.panel7.Controls.Add(this.tableLayoutPanel5);
-            this.panel7.Controls.Add(this.lb_Navigator);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Margin = new System.Windows.Forms.Padding(0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(249, 227);
-            this.panel7.TabIndex = 0;
+            this.panel_Navigator.BackColor = System.Drawing.Color.DimGray;
+            this.panel_Navigator.Controls.Add(this.tableLayoutPanel_NavigatorTool);
+            this.panel_Navigator.Controls.Add(this.lb_Navigator);
+            this.panel_Navigator.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_Navigator.Location = new System.Drawing.Point(0, 0);
+            this.panel_Navigator.Margin = new System.Windows.Forms.Padding(0);
+            this.panel_Navigator.Name = "panel_Navigator";
+            this.panel_Navigator.Size = new System.Drawing.Size(249, 209);
+            this.panel_Navigator.TabIndex = 0;
             // 
-            // tableLayoutPanel5
+            // tableLayoutPanel_NavigatorTool
             // 
-            this.tableLayoutPanel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tableLayoutPanel5.ColumnCount = 8;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel5.Controls.Add(this.btn_ClearRotation, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.btn_RotateLeft, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.btn_FlipHorizontally, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.btn_RotateRight, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.btn_ZoomIn, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.btn_ActualPixel, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.btn_ZoomOut, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.btn_FitToWindowSize, 0, 0);
-            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 28);
-            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 1;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(249, 31);
-            this.tableLayoutPanel5.TabIndex = 1;
+            this.tableLayoutPanel_NavigatorTool.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tableLayoutPanel_NavigatorTool.ColumnCount = 8;
+            this.tableLayoutPanel_NavigatorTool.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel_NavigatorTool.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel_NavigatorTool.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel_NavigatorTool.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel_NavigatorTool.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel_NavigatorTool.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel_NavigatorTool.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel_NavigatorTool.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel_NavigatorTool.Controls.Add(this.btn_ClearRotation, 0, 0);
+            this.tableLayoutPanel_NavigatorTool.Controls.Add(this.btn_RotateLeft, 0, 0);
+            this.tableLayoutPanel_NavigatorTool.Controls.Add(this.btn_FlipHorizontally, 0, 0);
+            this.tableLayoutPanel_NavigatorTool.Controls.Add(this.btn_RotateRight, 0, 0);
+            this.tableLayoutPanel_NavigatorTool.Controls.Add(this.btn_ZoomIn, 0, 0);
+            this.tableLayoutPanel_NavigatorTool.Controls.Add(this.btn_ActualPixel, 0, 0);
+            this.tableLayoutPanel_NavigatorTool.Controls.Add(this.btn_ZoomOut, 0, 0);
+            this.tableLayoutPanel_NavigatorTool.Controls.Add(this.btn_FitToWindowSize, 0, 0);
+            this.tableLayoutPanel_NavigatorTool.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel_NavigatorTool.Location = new System.Drawing.Point(0, 28);
+            this.tableLayoutPanel_NavigatorTool.Name = "tableLayoutPanel_NavigatorTool";
+            this.tableLayoutPanel_NavigatorTool.RowCount = 1;
+            this.tableLayoutPanel_NavigatorTool.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel_NavigatorTool.Size = new System.Drawing.Size(249, 31);
+            this.tableLayoutPanel_NavigatorTool.TabIndex = 1;
             // 
             // btn_ClearRotation
             // 
@@ -2890,7 +3412,7 @@ namespace Paint
             this.btn_ClearRotation.OnIdleState.BorderThickness = 1;
             this.btn_ClearRotation.OnIdleState.FillColor = System.Drawing.Color.DimGray;
             this.btn_ClearRotation.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_ClearRotation.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton30.OnIdleState.IconLeftImage")));
+            this.btn_ClearRotation.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_ClearRotation.OnIdleState.IconLeftImage")));
             this.btn_ClearRotation.OnIdleState.IconRightImage = null;
             this.btn_ClearRotation.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btn_ClearRotation.OnPressedState.BorderRadius = 10;
@@ -2980,7 +3502,7 @@ namespace Paint
             this.btn_RotateLeft.OnIdleState.BorderThickness = 1;
             this.btn_RotateLeft.OnIdleState.FillColor = System.Drawing.Color.DimGray;
             this.btn_RotateLeft.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_RotateLeft.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton29.OnIdleState.IconLeftImage")));
+            this.btn_RotateLeft.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_RotateLeft.OnIdleState.IconLeftImage")));
             this.btn_RotateLeft.OnIdleState.IconRightImage = null;
             this.btn_RotateLeft.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btn_RotateLeft.OnPressedState.BorderRadius = 10;
@@ -3070,7 +3592,7 @@ namespace Paint
             this.btn_FlipHorizontally.OnIdleState.BorderThickness = 1;
             this.btn_FlipHorizontally.OnIdleState.FillColor = System.Drawing.Color.DimGray;
             this.btn_FlipHorizontally.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_FlipHorizontally.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton28.OnIdleState.IconLeftImage")));
+            this.btn_FlipHorizontally.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_FlipHorizontally.OnIdleState.IconLeftImage")));
             this.btn_FlipHorizontally.OnIdleState.IconRightImage = null;
             this.btn_FlipHorizontally.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btn_FlipHorizontally.OnPressedState.BorderRadius = 10;
@@ -3160,7 +3682,7 @@ namespace Paint
             this.btn_RotateRight.OnIdleState.BorderThickness = 1;
             this.btn_RotateRight.OnIdleState.FillColor = System.Drawing.Color.DimGray;
             this.btn_RotateRight.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_RotateRight.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton27.OnIdleState.IconLeftImage")));
+            this.btn_RotateRight.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_RotateRight.OnIdleState.IconLeftImage")));
             this.btn_RotateRight.OnIdleState.IconRightImage = null;
             this.btn_RotateRight.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btn_RotateRight.OnPressedState.BorderRadius = 10;
@@ -3250,7 +3772,7 @@ namespace Paint
             this.btn_ZoomIn.OnIdleState.BorderThickness = 1;
             this.btn_ZoomIn.OnIdleState.FillColor = System.Drawing.Color.DimGray;
             this.btn_ZoomIn.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_ZoomIn.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton26.OnIdleState.IconLeftImage")));
+            this.btn_ZoomIn.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_ZoomIn.OnIdleState.IconLeftImage")));
             this.btn_ZoomIn.OnIdleState.IconRightImage = null;
             this.btn_ZoomIn.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btn_ZoomIn.OnPressedState.BorderRadius = 10;
@@ -3340,7 +3862,7 @@ namespace Paint
             this.btn_ActualPixel.OnIdleState.BorderThickness = 1;
             this.btn_ActualPixel.OnIdleState.FillColor = System.Drawing.Color.DimGray;
             this.btn_ActualPixel.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_ActualPixel.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton25.OnIdleState.IconLeftImage")));
+            this.btn_ActualPixel.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_ActualPixel.OnIdleState.IconLeftImage")));
             this.btn_ActualPixel.OnIdleState.IconRightImage = null;
             this.btn_ActualPixel.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btn_ActualPixel.OnPressedState.BorderRadius = 10;
@@ -3430,7 +3952,7 @@ namespace Paint
             this.btn_ZoomOut.OnIdleState.BorderThickness = 1;
             this.btn_ZoomOut.OnIdleState.FillColor = System.Drawing.Color.DimGray;
             this.btn_ZoomOut.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_ZoomOut.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton24.OnIdleState.IconLeftImage")));
+            this.btn_ZoomOut.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_ZoomOut.OnIdleState.IconLeftImage")));
             this.btn_ZoomOut.OnIdleState.IconRightImage = null;
             this.btn_ZoomOut.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btn_ZoomOut.OnPressedState.BorderRadius = 10;
@@ -3521,7 +4043,7 @@ namespace Paint
             this.btn_FitToWindowSize.OnIdleState.BorderThickness = 1;
             this.btn_FitToWindowSize.OnIdleState.FillColor = System.Drawing.Color.DimGray;
             this.btn_FitToWindowSize.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_FitToWindowSize.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton23.OnIdleState.IconLeftImage")));
+            this.btn_FitToWindowSize.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_FitToWindowSize.OnIdleState.IconLeftImage")));
             this.btn_FitToWindowSize.OnIdleState.IconRightImage = null;
             this.btn_FitToWindowSize.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btn_FitToWindowSize.OnPressedState.BorderRadius = 10;
@@ -3553,16 +4075,16 @@ namespace Paint
             this.lb_Navigator.Text = "Navigator";
             this.lb_Navigator.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel8
+            // panel_BrushSize
             // 
-            this.panel8.BackColor = System.Drawing.Color.DimGray;
-            this.panel8.Controls.Add(this.lb_BrushSize);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(0, 227);
-            this.panel8.Margin = new System.Windows.Forms.Padding(0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(249, 392);
-            this.panel8.TabIndex = 2;
+            this.panel_BrushSize.BackColor = System.Drawing.Color.DimGray;
+            this.panel_BrushSize.Controls.Add(this.lb_BrushSize);
+            this.panel_BrushSize.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_BrushSize.Location = new System.Drawing.Point(0, 209);
+            this.panel_BrushSize.Margin = new System.Windows.Forms.Padding(0);
+            this.panel_BrushSize.Name = "panel_BrushSize";
+            this.panel_BrushSize.Size = new System.Drawing.Size(249, 360);
+            this.panel_BrushSize.TabIndex = 2;
             // 
             // lb_BrushSize
             // 
@@ -3581,64 +4103,112 @@ namespace Paint
             // 
             this.tableLayoutPanel6.ColumnCount = 1;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Controls.Add(this.panel7, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.panel8, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.panel_Navigator, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.panel_BrushSize, 0, 1);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(787, 64);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(783, 64);
             this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 2;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 36.8336F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 63.1664F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(249, 619);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(249, 569);
             this.tableLayoutPanel6.TabIndex = 11;
             // 
             // toolTip1
             // 
             this.toolTip1.ShowAlways = true;
             // 
+            // pt_draw
+            // 
+            this.pt_draw.BackColor = System.Drawing.Color.White;
+            this.pt_draw.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pt_draw.Location = new System.Drawing.Point(0, 0);
+            this.pt_draw.Name = "pt_draw";
+            this.pt_draw.Size = new System.Drawing.Size(527, 569);
+            this.pt_draw.TabIndex = 12;
+            this.pt_draw.TabStop = false;
+            this.pt_draw.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel_paint_MouseDown);
+            this.pt_draw.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel_paint_MouseMove);
+            this.pt_draw.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel_paint_MouseUp);
+            // 
+            // panel_paint
+            // 
+            this.panel_paint.BackColor = System.Drawing.Color.White;
+            this.panel_paint.Controls.Add(this.pt_draw);
+            this.panel_paint.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_paint.Location = new System.Drawing.Point(256, 64);
+            this.panel_paint.Name = "panel_paint";
+            this.panel_paint.Size = new System.Drawing.Size(527, 569);
+            this.panel_paint.TabIndex = 13;
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1036, 683);
+            this.BackColor = System.Drawing.Color.Gray;
+            this.ClientSize = new System.Drawing.Size(1032, 633);
+            this.Controls.Add(this.panel_paint);
             this.Controls.Add(this.tableLayoutPanel6);
             this.Controls.Add(this.tableLayoutPanel4);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.tableLayoutPanel_PaintTool);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.MinimumSize = new System.Drawing.Size(950, 600);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Paint";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tLP_Shape.ResumeLayout(false);
+            this.tableLayoutPanel_PaintTool.ResumeLayout(false);
+            this.panel_Color.ResumeLayout(false);
+            this.subTableLayoutPanel_Color2.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ColorPreview)).EndInit();
+            this.subTableLayoutPanel_Color.ResumeLayout(false);
+            this.subPanelBtextBox.ResumeLayout(false);
+            this.subPanelBtextBox.PerformLayout();
             this.panel7.ResumeLayout(false);
-            this.tableLayoutPanel5.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
+            this.subPanelGtextBox.ResumeLayout(false);
+            this.subPanelGtextBox.PerformLayout();
+            this.subPanelColorPicked.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Color_Front)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Color_Back)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.subPanelRtextBox.ResumeLayout(false);
+            this.subPanelRtextBox.PerformLayout();
+            this.panel_BrushPreview.ResumeLayout(false);
+            this.panel_Brush.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.panel_BrushControl.ResumeLayout(false);
+            this.panel_BrushControl.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar_Size)).EndInit();
+            this.panel_Navigator.ResumeLayout(false);
+            this.tableLayoutPanel_NavigatorTool.ResumeLayout(false);
+            this.panel_BrushSize.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pt_draw)).EndInit();
+            this.panel_paint.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
+  
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem filterToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem selectToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem snapToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem colorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolToolStripMenuItem;
@@ -3646,7 +4216,7 @@ namespace Paint
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_PaintTool;
         private System.Windows.Forms.ToolStripMenuItem importFileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openRecentFileToolStripMenuItem;
@@ -3680,15 +4250,14 @@ namespace Paint
         private System.Windows.Forms.ToolStripMenuItem textToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem objectToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TableLayoutPanel tLP_Shape;
+        private System.Windows.Forms.Panel panel_Color;
         private System.Windows.Forms.Label lb_Color;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel_BrushPreview;
         private System.Windows.Forms.Label lb_BrushPreview;
-        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel_Brush;
         private System.Windows.Forms.Label label5;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_Lasso;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_Gradient;
@@ -3706,15 +4275,14 @@ namespace Paint
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_Redo;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_Undo;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_OpenProjectDialog;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_OpenVersionDialog;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_ShowDetail;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_AnnotationMode;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_OpenMaterialDialog;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_Submit;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_OpenNetworkDialog;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_Polygon;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_Triangle;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_Circle;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_Rectangle;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_Curve;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_Line;
+        private System.Windows.Forms.Panel panel_Navigator;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_NavigatorTool;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_ClearRotation;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_RotateLeft;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_FlipHorizontally;
@@ -3724,12 +4292,56 @@ namespace Paint
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_ZoomOut;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_FitToWindowSize;
         private System.Windows.Forms.Label lb_Navigator;
-        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel_BrushSize;
         private System.Windows.Forms.Label lb_BrushSize;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel_BrushControl;
         private System.Windows.Forms.Label lb_BrushControl;
         private System.Windows.Forms.ToolTip toolTip1;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_SelectColor;
+        private System.Windows.Forms.PictureBox pictureBox_Color_Front;
+        private System.Windows.Forms.PictureBox pictureBox_Color_Back;
+        private System.Windows.Forms.ToolStripMenuItem transparentToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem swapForToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem initializeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem colorBarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem colorWheelToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lockPalletToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem initializeToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem showHideTabToolStripMenuItem;
+        private System.Windows.Forms.Label label_B_value;
+        private System.Windows.Forms.Label label_G_value;
+        private System.Windows.Forms.Label label_R_value;
+        private System.Windows.Forms.TextBox textBox_Rvalue;
+        private System.Windows.Forms.ToolStripMenuItem zoomInToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem zoomOutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fitToWindowSizeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
+        private System.Windows.Forms.ToolStripMenuItem rotateLeftToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem rotateRightToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem rotateRightToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem flipHorizontallyToolStripMenuItem1;
+        private System.Windows.Forms.Label label_ColorPreview;
+        private System.Windows.Forms.TableLayoutPanel subTableLayoutPanel_Color;
+        private System.Windows.Forms.Panel subPanelBtextBox;
+        private System.Windows.Forms.TextBox textBox_Bvalue;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel subPanelGtextBox;
+        private System.Windows.Forms.TextBox textBox_Gvalue;
+        private System.Windows.Forms.Panel subPanelColorPicked;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel subPanelRtextBox;
+        private AboControls.ExtendedControls.ColorPickerControl colorPicker;
+        private System.Windows.Forms.TableLayoutPanel subTableLayoutPanel_Color2;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox_ColorPreview;
+        private System.Windows.Forms.Panel panel_paint;
+        public System.Windows.Forms.PictureBox pt_draw;
+        private System.Windows.Forms.TrackBar trackBar_Size;
+        private System.Windows.Forms.Label lb_Size;
     }
 }
 
