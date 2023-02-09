@@ -23,7 +23,7 @@ namespace Paint
         public SelectedTool tool = new SelectedTool();
         private Pen _p = new Pen(Color.Black, Size);
         public MyData dt = new MyData();
-        private static int Size = 3;
+        private static int Size = 1;
         
         
         public Point Brush_A = new Point();
@@ -284,6 +284,11 @@ namespace Paint
                     dt._points.Add(e.Location);
                     using (Graphics _g = pt_draw.CreateGraphics())
                     {
+                        _p.EndCap = LineCap.Round;
+                        _p.DashStyle = DashStyle.Solid;
+                        _p.DashCap = DashCap.Flat;
+                        _p.StartCap = LineCap.Round;
+
                         _g.SmoothingMode = SmoothingMode.AntiAlias;
                         _g.DrawLine(_p, new Point(x, y), e.Location);
                     }
@@ -293,7 +298,7 @@ namespace Paint
             }
         }
         
-#endregion
+        #endregion
 
         #region tool check
         private void btn_Brush_Click(object sender, EventArgs e)
@@ -387,6 +392,15 @@ namespace Paint
         }
 
         #endregion
+
+        #region Size
+        private void trackBarSize_Scroll(object sender, EventArgs e)
+        {
+            Size = trackBar_Size.Value;
+            _p = new Pen(_p.Color, Size);
+        }
+        #endregion
+
 
     }
 }

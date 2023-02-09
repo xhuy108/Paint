@@ -65,3 +65,26 @@ D:\Paint\Paint\obj\Debug\Paint.exe.licenses
 D:\Paint\Paint\obj\Debug\Paint.csproj.CoreCompileInputs.cache
 D:\Paint\Paint\obj\Debug\Paint.exe
 D:\Paint\Paint\obj\Debug\Paint.pdb
+D:\New folder\Paint\bin\Debug\Paint.exe.config
+D:\New folder\Paint\bin\Debug\Paint.exe
+D:\New folder\Paint\bin\Debug\Paint.pdb
+D:\New folder\Paint\bin\Debug\DevExpress.Pdf.v22.2.Core.dll
+D:\New folder\Paint\bin\Debug\DevExpress.Pdf.v22.2.Drawing.dll
+D:\New folder\Paint\bin\Debug\DevExpress.Data.Desktop.v22.2.xml
+D:\New folder\Paint\bin\Debug\DevExpress.Data.v22.2.xml
+D:\New folder\Paint\bin\Debug\DevExpress.Printing.v22.2.Core.xml
+D:\New folder\Paint\bin\Debug\DevExpress.Sparkline.v22.2.Core.xml
+D:\New folder\Paint\bin\Debug\DevExpress.Utils.v22.2.xml
+D:\New folder\Paint\bin\Debug\DevExpress.XtraEditors.v22.2.xml
+D:\New folder\Paint\bin\Debug\DevExpress.Pdf.v22.2.Core.xml
+D:\New folder\Paint\bin\Debug\DevExpress.Pdf.v22.2.Drawing.xml
+D:\New folder\Paint\obj\Debug\Paint.csproj.AssemblyReference.cache
+D:\New folder\Paint\obj\Debug\Paint.csproj.SuggestedBindingRedirects.cache
+D:\New folder\Paint\obj\Debug\Paint.Form1.resources
+D:\New folder\Paint\obj\Debug\Paint.Properties.Resources.resources
+D:\New folder\Paint\obj\Debug\Paint.csproj.GenerateResource.cache
+D:\New folder\Paint\obj\Debug\Paint.exe.licenses
+D:\New folder\Paint\obj\Debug\Paint.csproj.CoreCompileInputs.cache
+D:\New folder\Paint\obj\Debug\Paint.csproj.CopyComplete
+D:\New folder\Paint\obj\Debug\Paint.exe
+D:\New folder\Paint\obj\Debug\Paint.pdb
