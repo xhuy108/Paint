@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Drawing.Drawing2D;
-using System.IO;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace Paint.Manager
 {
@@ -25,8 +19,8 @@ namespace Paint.Manager
         public int npoin = 0;
         public Point[] poin1;
         private Image ima, bm;
-        
-        
+
+
         public int n = 0, xet = 0;
         public MyData()
         {
@@ -38,27 +32,139 @@ namespace Paint.Manager
             this.BackColor = Color.White;
         }
         #endregion
-        #region keo
-        public void vekeo()
-        {
-            ima = new Bitmap(this.Image);
-            bm = new Bitmap(this.Width, this.Height);
-            Graphics g = Graphics.FromImage(bm);
-            g.DrawImage(ima, 0, 0, new Rectangle(0, 0, this.Width, this.Height), GraphicsUnit.Pixel);
-            this.Image.Dispose();
-            this.Image = new Bitmap(bm);
-            luu.list[luu.n] = new H();
-            luu.list[luu.n].saveim = new Bitmap(bm);
-            luu.list[luu.n].rec = new Rectangle(0, 0, Width, Height);
-            luu.list[luu.n].vepen = 3;
-            luu.list[luu.n].size = new Size(Width, Height);
-            luu.n++;
-            n = luu.n;
-        }
-        #endregion
         #region vẽ
-        public void vehinh(Form1 form, Rectangle rec, Graphics g)
+        public void vehinh(Form1 form, Point A, Point B, PictureBox ptb)
         {
+            Bitmap bitmap = new Bitmap(ptb.Width, ptb.Height, System.Drawing.Imaging.PixelFormat.Format32bppPArgb);
+            
+            Graphics g = Graphics.FromImage(bitmap);
+
+            //Graphics g = ptb.CreateGraphics();
+            g.SmoothingMode = SmoothingMode.AntiAlias;
+            if (form.tool.isLine)
+            {
+                g.DrawLine(form._p, A, B);
+                luu.list[luu.n] = new H();
+                luu.list[luu.n].path.AddLine(A, B);
+                luu.list[luu.n].p.Color = form._p.Color;
+                luu.list[luu.n].p.Width = form._p.Width;
+                luu.list[luu.n].p.EndCap = form._p.EndCap;
+                luu.list[luu.n].p.DashStyle = form._p.DashStyle;
+                luu.list[luu.n].p.DashCap = form._p.DashCap;
+                luu.list[luu.n].p.StartCap = form._p.StartCap;
+                luu.n++;
+                n = luu.n;
+            }
+            else if (form.tool.isRect)
+            {
+                if (form.tool.isFill)
+                {
+                    Brush _br = new SolidBrush(form._p.Color);
+                    g.DrawRectangle(form._p, form.rec);
+                    g.FillRectangle(_br, form.rec);
+
+                    luu.list[luu.n] = new H();
+                    luu.list[luu.n].p.Color = form._p.Color;
+                    luu.list[luu.n].p.Width = form._p.Width;
+                    luu.list[luu.n].p.EndCap = form._p.EndCap;
+                    luu.list[luu.n].p.DashStyle = form._p.DashStyle;
+                    luu.list[luu.n].p.DashCap = form._p.DashCap;
+                    luu.list[luu.n].p.StartCap = form._p.StartCap;
+                    luu.list[luu.n].path.AddRectangle(form.rec);
+                    luu.list[luu.n].br = _br;
+                    luu.list[luu.n].mode = 2;
+                    luu.n++;
+                    n = luu.n;
+                }
+                else
+                {
+                    g.DrawRectangle(form._p, form.rec);
+                    luu.list[luu.n] = new H();
+                    luu.list[luu.n].path.AddRectangle(form.rec);
+                    luu.list[luu.n].p.Color = form._p.Color;
+                    luu.list[luu.n].p.Width = form._p.Width;
+                    luu.list[luu.n].p.EndCap = form._p.EndCap;
+                    luu.list[luu.n].p.DashStyle = form._p.DashStyle;
+                    luu.list[luu.n].p.DashCap = form._p.DashCap;
+                    luu.list[luu.n].p.StartCap = form._p.StartCap;
+                    luu.n++;
+                    n = luu.n;
+                }
+            }
+            else if (form.tool.isCircle)
+            {
+                if (form.tool.isFill)
+                {
+                    Brush _br = new SolidBrush(form._p.Color);
+                    g.DrawEllipse(form._p, form.rec);
+                    g.FillEllipse(_br, form.rec);
+
+                    luu.list[luu.n] = new H();
+                    luu.list[luu.n].p.Color = form._p.Color;
+                    luu.list[luu.n].p.Width = form._p.Width;
+                    luu.list[luu.n].p.EndCap = form._p.EndCap;
+                    luu.list[luu.n].p.DashStyle = form._p.DashStyle;
+                    luu.list[luu.n].p.DashCap = form._p.DashCap;
+                    luu.list[luu.n].p.StartCap = form._p.StartCap;
+                    luu.list[luu.n].path.AddEllipse(form.rec);
+                    luu.list[luu.n].br = _br;
+                    luu.list[luu.n].mode = 2;
+                    luu.n++;
+                    n = luu.n;
+                }
+                else
+                {
+                    g.DrawEllipse(form._p, form.rec);
+                    luu.list[luu.n] = new H();
+                    luu.list[luu.n].path.AddEllipse(form.rec);
+                    luu.list[luu.n].p.Color = form._p.Color;
+                    luu.list[luu.n].p.Width = form._p.Width;
+                    luu.list[luu.n].p.EndCap = form._p.EndCap;
+                    luu.list[luu.n].p.DashStyle = form._p.DashStyle;
+                    luu.list[luu.n].p.DashCap = form._p.DashCap;
+                    luu.list[luu.n].p.StartCap = form._p.StartCap;
+                    luu.n++;
+                    n = luu.n;
+                }
+            }
+            else if (form.tool.isTriangle)
+            {
+
+                if (form.tool.isFill)
+                {
+                    Brush _br = new SolidBrush(form._p.Color);
+                    form.DrawTriagle(form.rec, g, form._p);
+                    form.FillTriagle(form.rec, g, _br);
+                    luu.list[luu.n] = new H();
+                    luu.list[luu.n].p.Color = form._p.Color;
+                    luu.list[luu.n].p.Width = form._p.Width;
+                    luu.list[luu.n].p.EndCap = form._p.EndCap;
+                    luu.list[luu.n].p.DashStyle = form._p.DashStyle;
+                    luu.list[luu.n].p.DashCap = form._p.DashCap;
+                    luu.list[luu.n].p.StartCap = form._p.StartCap;
+                    luu.list[luu.n].path.AddPolygon(form.tri_points);
+                    luu.list[luu.n].br = _br;
+                    luu.list[luu.n].mode = 2;
+                    luu.n++;
+                    n = luu.n;
+                }
+                else
+                {
+                    form.DrawTriagle(form.rec, g, form._p);
+                    luu.list[luu.n] = new H();
+                    luu.list[luu.n].path.AddPolygon(form.tri_points);
+                    luu.list[luu.n].p.Color = form._p.Color;
+                    luu.list[luu.n].p.Width = form._p.Width;
+                    luu.list[luu.n].p.EndCap = form._p.EndCap;
+                    luu.list[luu.n].p.DashStyle = form._p.DashStyle;
+                    luu.list[luu.n].p.DashCap = form._p.DashCap;
+                    luu.list[luu.n].p.StartCap = form._p.StartCap;
+                    luu.n++;
+                    n = luu.n;
+                }
+
+            }
+            form.pt_draw.Image = bitmap;
             
         }
         #region phong to thu nho
@@ -76,29 +182,35 @@ namespace Paint.Manager
             this.Image = new Bitmap(bm);
         }
         #endregion
+
+
+
         #endregion
         public void velai(Form1 form, PictureBox ptb)
         {
-            Graphics g = ptb.CreateGraphics();
+            Bitmap bitmap = new Bitmap(ptb.Width, ptb.Height, System.Drawing.Imaging.PixelFormat.Format32bppPArgb);
+
+            Graphics g = Graphics.FromImage(bitmap);
+            //Graphics g = ptb.CreateGraphics();
             g.Clear(Color.White);
             g.SmoothingMode = SmoothingMode.HighQuality;
-            
-            
+
             for (int i = 0; i < luu.n; i++)
             {
-                if (luu.list[i].vepen == 1)
-                    g.DrawPath(luu.list[i].p, luu.list[i].path);
-                if (luu.list[i].vepen == 2)
+
+                g.DrawPath(luu.list[i].p, luu.list[i].path);
+                if (luu.list[i].mode == 2)
                 {
                     g.FillPath(luu.list[i].br, luu.list[i].path);
                     if (luu.list[i].br == Brushes.White)
-                    g.DrawPath(luu.list[i].p, luu.list[i].path);
+                        g.DrawPath(luu.list[i].p, luu.list[i].path);
                 }
-                if (luu.list[i].vepen == 3)
-                    g.DrawImage(luu.list[i].saveim, luu.list[i].rec);
+
             }
+
+            form.pt_draw.Image = bitmap;
         }
-     
-        
+
+
     }
 }
