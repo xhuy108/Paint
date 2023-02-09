@@ -335,6 +335,8 @@ namespace Paint
 
         private void panel_paint_MouseMove(object sender, MouseEventArgs e)
         {
+            lb_x.Text = e.Location.X.ToString();
+            lb_y.Text = e.Location.Y.ToString();
             isMouseUp = false;
             tmp = e.Location;
             if (allowDraw)
