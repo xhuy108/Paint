@@ -282,13 +282,14 @@ namespace Paint
                 if (tool.isBrush && x != -1 && y != -1)
                 {
                     dt._points.Add(e.Location);
-                    using (Graphics _g = pt_draw.CreateGraphics())
-                    {
-                        _p.EndCap = LineCap.Round;
-                        _p.DashStyle = DashStyle.Solid;
-                        _p.DashCap = DashCap.Flat;
-                        _p.StartCap = LineCap.Round;
 
+                    _p.EndCap = LineCap.Round;
+                    _p.DashStyle = DashStyle.Solid;
+                    _p.DashCap = DashCap.Flat;
+                    _p.StartCap = LineCap.Round;
+
+                    using (Graphics _g = pt_draw.CreateGraphics()) 
+                    {
                         _g.SmoothingMode = SmoothingMode.AntiAlias;
                         _g.DrawLine(_p, new Point(x, y), e.Location);
                     }
