@@ -13,9 +13,9 @@ namespace Paint.Manager
         public H() { }
         public GraphicsPath path = new GraphicsPath();
         public Pen p = new Pen(Color.Black,10);
-        public Brush br = Brushes.Black;
+        public Brush br = new SolidBrush(Color.Black);
         public Image saveim = new Bitmap(557, 408);
-        public int vepen = 1;
+        public int mode = 1;
         public Rectangle rec;
         public Point[] poin = new Point[100000];
         public Size size;
