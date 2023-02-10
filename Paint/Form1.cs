@@ -742,13 +742,11 @@ namespace Paint
         {
             _p.Color = pictureBox_Color_Front.BackColor;
             if (this.tool.isFill == false) tool.isFill = true;
-            else tool.isFill = false;
+            else if (this.tool.isFill == true) tool.isFill = false;
 
             this.tool.isBrush = false;
             this.tool.isLine = false;
-            this.tool.isRect = false;
-            this.tool.isCircle = false;
-            this.tool.isTriangle = false;
+
             this.tool.isBucket = false;
             this.tool.isColorPicker = false;
             this.tool.isText = false;
@@ -899,7 +897,5 @@ namespace Paint
                 }
             }
         }
-
-        
     }
 }
