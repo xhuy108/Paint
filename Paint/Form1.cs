@@ -26,7 +26,7 @@ namespace Paint
         public Pen _p = new Pen(Color.Black, Size);
         public MyData dt = new MyData();
         private static int Size = 1;
-       
+
         //public Point Brush_A = new Point();
         int A_x = -1;
         int A_y = -1;
@@ -34,6 +34,7 @@ namespace Paint
         int B_y = -1;
 
         public Point tmp = new Point();
+        private bool isSave = false;
 
         public Point[] tri_points = new Point[2];
         public Rectangle rec = new Rectangle();
@@ -46,7 +47,7 @@ namespace Paint
         // độ phóng to thu nhỏ
         public int hesonhan = 1;
         // danh sach ptb
-        public List<Point> l_fillPoint = new List<Point>() ;
+        public List<Point> l_fillPoint = new List<Point>();
 
         #endregion
         public Form1()
@@ -155,10 +156,7 @@ namespace Paint
             textBox_RGBvalueChange();
         }
 
-        private void colorBarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            colorWheelToolStripMenuItem.Checked = false;
-        }
+        
 
         private void colorWheelToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -210,7 +208,7 @@ namespace Paint
         }
 
         #endregion
-        
+
 
         #region Undo, Redo
         private void btn_Undo_Click(object sender, EventArgs e)
@@ -234,10 +232,11 @@ namespace Paint
         }
 
 
-        
+
         #region panel_paint paint
         private void panel_paint_MouseDown(object sender, MouseEventArgs e)
         {
+            isSave = false;
             allowDraw = true;
             isMouseUp = false;
             A_x = e.Location.X;
@@ -320,7 +319,7 @@ namespace Paint
                 }
             }
 
-     
+
 
 
         }
@@ -358,7 +357,7 @@ namespace Paint
                             _g.SmoothingMode = SmoothingMode.AntiAlias;
                             _g.DrawLine(_p, new Point(A_x, A_y), e.Location);
                         }
-                        
+
                     }
                     else if (tool.isRect)
                     {
@@ -366,14 +365,14 @@ namespace Paint
                         {
                             _g.SmoothingMode = SmoothingMode.AntiAlias;
                             _g.DrawRectangle(_p, rec);
-                            if(tool.isFill)
+                            if (tool.isFill)
                             {
                                 Brush _br = new SolidBrush(_p.Color);
                                 _g.FillRectangle(_br, rec);
                             }
-                        }    
+                        }
                     }
-                    else if(tool.isCircle)
+                    else if (tool.isCircle)
                     {
                         using (Graphics _g = pt_draw.CreateGraphics())
                         {
@@ -399,7 +398,7 @@ namespace Paint
                             }
                         }
                     }
-                    else if(tool.isCrop)
+                    else if (tool.isCrop)
                     {
                         using (Graphics _g = pt_draw.CreateGraphics())
                         {
@@ -410,7 +409,7 @@ namespace Paint
                     }
                     pt_draw.Invalidate();
                 }
-                
+
 
             }
 
@@ -427,9 +426,9 @@ namespace Paint
                 if (dt.luu.list[i].mode == 2)
                 {
                     g.FillPath(dt.luu.list[i].br, dt.luu.list[i].path);
-                    
+
                 }
-                
+
             }
 
             if (allowDraw)
@@ -443,7 +442,7 @@ namespace Paint
                         g.DrawLine(_p, new Point(A_x, A_y), tmp);
                     }
                 }
-                else if(tool.isRect)
+                else if (tool.isRect)
                 {
                     g.SmoothingMode = SmoothingMode.AntiAlias;
                     if (A_x != -1 && B_x != -1)
@@ -610,7 +609,7 @@ namespace Paint
             } while (stack.Count > 0);
         }
         public Bitmap Fill(Bitmap bm, Point pos, Color color)
-        { 
+        {
             //Lock the bitmap data
             BitmapData bmd = bm.LockBits(new
             Rectangle(0, 0, bm.Width, bm.Height), ImageLockMode.ReadWrite, bm.PixelFormat);
@@ -633,7 +632,7 @@ namespace Paint
             ps.Y = Y;
             ps_.X = e.X;
             ps_.Y = e.Y;
-            PictureBox pb = (PictureBox) sender;
+            PictureBox pb = (PictureBox)sender;
             if (e.Button == MouseButtons.Left)
             {
                 if (tool.isBucket)
@@ -649,9 +648,16 @@ namespace Paint
                     if (b != null)
                     {
                         graphics.DrawImage(b, 0, 0);
-                        dt.luu.list[dt.luu.n].path.AddLines(l_fillPoint.ToArray());
-                        dt.luu.list[dt.luu.n].p.Color = pictureBox_Color_Front.BackColor;
-
+                        if (l_fillPoint.Count > 1)
+                        {
+                            dt.luu.list[dt.luu.n] = new H();
+                            dt.luu.list[dt.luu.n].path.AddLines(l_fillPoint.ToArray());
+                            dt.luu.list[dt.luu.n].p.Color = pictureBox_Color_Front.BackColor;
+                            dt.luu.list[dt.luu.n].p.Width = 1;
+                            dt.luu.n++;
+                            dt.n = dt.luu.n;
+                            l_fillPoint.Clear();
+                        }
                     }
                     pb.Refresh();
                 }
@@ -768,7 +774,7 @@ namespace Paint
             this.tool.isText = false;
             this.tool.isCrop = false;
         }
-        
+
         private void btn_Eyedropper_Click(object sender, EventArgs e)
         {
             this.tool.isBrush = false;
@@ -829,16 +835,20 @@ namespace Paint
         private void toolStripMenuItem4_Click(object sender, EventArgs e)
         {
             Bitmap bm = ConvertToBM(pt_draw);
-
-            bm.Save("D:\\Image2.png", ImageFormat.Png);
-
+            SaveFileDialog sv = new SaveFileDialog();
+            sv.Filter = "*.png|*.jpg";
+            if (sv.ShowDialog() == DialogResult.OK)
+            {
+                bm.Save(sv.FileName, ImageFormat.Png);
+            }
+            isSave = true;
         }
 
         private Bitmap ConvertToBM(PictureBox ptb)
         {
             Size sz = ptb.ClientSize;
 
-            Rectangle rect2 = new Rectangle(0, 0, sz.Width , sz.Height );
+            Rectangle rect2 = new Rectangle(0, 0, sz.Width, sz.Height);
             Bitmap bmp2 = new Bitmap(rect2.Width, rect2.Height);
 
             ptb.ClientSize = rect2.Size;
@@ -846,9 +856,9 @@ namespace Paint
             ptb.DrawToBitmap(bmp2, rect2);
 
             ptb.ClientSize = sz;
-            
+
             return bmp2;
-            
+
         }
         #endregion
 
@@ -858,6 +868,43 @@ namespace Paint
 
         }
 
-        
+        private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!isSave)
+            {
+                Bitmap bm = ConvertToBM(pt_draw);
+                SaveFileDialog sv = new SaveFileDialog();
+                sv.Filter = "*.png|*.jpg";
+                sv.RestoreDirectory = true;
+                if (sv.ShowDialog() == DialogResult.OK)
+                {
+                    bm.Save(sv.FileName, ImageFormat.Png);
+                }
+                isSave = true;
+            }
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (!isSave)
+            {
+                switch (MessageBox.Show("Bạn có muốn lưu file không", "Thông Báo", MessageBoxButtons.YesNoCancel))
+                {
+                    case DialogResult.Yes:
+                        Bitmap bm = ConvertToBM(pt_draw);
+                        SaveFileDialog sv = new SaveFileDialog();
+                        sv.Filter = "*.png|*.jpg";
+                        if (sv.ShowDialog() == DialogResult.OK)
+                        {
+                            bm.Save(sv.FileName, ImageFormat.Png);
+                        }
+                        isSave = true;
+                        break;
+                    case DialogResult.No:
+                        
+                        break;
+                }
+            }
+        }
     }
 }
