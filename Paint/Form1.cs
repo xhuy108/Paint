@@ -46,7 +46,7 @@ namespace Paint
         // độ phóng to thu nhỏ
         public int hesonhan = 1;
         // danh sach ptb
-        public List<MyPtb> list_ptb;
+        public List<Point> l_fillPoint = new List<Point>() ;
 
         #endregion
         public Form1()
@@ -129,42 +129,6 @@ namespace Paint
             }
         }
 
-        #endregion
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            this.DoubleBuffered = true;
-            this.tool.isBrush = true;
-
-            pt_redraw.Size = pt_draw.Size;
-            pt_redraw.Visible = false;
-            pt_redraw.BackColor = Color.White;
-
-
-        }
-
-        // mo file
-
-        public void OpenImage(PictureBox picturebox)
-        {
-            OpenFileDialog openFile = new OpenFileDialog();
-            openFile.Filter = "Image Files(*.png;*.jpg; *.jpeg; *.gif; *.bmp)|*.png;*.jpg; *.jpeg; *.gif; *.bmp";
-            openFile.CheckFileExists = true;
-            openFile.CheckPathExists = true;
-            if (openFile.ShowDialog() == DialogResult.OK)
-            {
-                picturebox.Image = new Bitmap(openFile.FileName);
-                picturebox.Size = pt_draw.Size;
-
-            }
-        }
-
-        private void openfileToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            PictureBox _myptb = new PictureBox();
-            OpenImage(_myptb);
-            pt_draw.Image = _myptb.Image;
-
-        }
         private void textBox_RGBvalueChange()
         {
             textBox_Rvalue.Text = pictureBox_Color_Front.BackColor.R.ToString();
@@ -212,6 +176,46 @@ namespace Paint
         {
             pictureBox_ColorPreview.BackColor = colorPicker._canvas.GetPixel(e.X, e.Y);
         }
+        #endregion
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.DoubleBuffered = true;
+            this.tool.isBrush = true;
+
+            pt_redraw.Size = pt_draw.Size;
+            pt_redraw.Visible = false;
+            pt_redraw.BackColor = Color.White;
+
+
+        }
+
+        #region mo file
+
+        public void OpenImage(PictureBox picturebox)
+        {
+            OpenFileDialog openFile = new OpenFileDialog();
+            openFile.Filter = "Image Files(*.png;*.jpg; *.jpeg; *.gif; *.bmp)|*.png;*.jpg; *.jpeg; *.gif; *.bmp";
+            openFile.CheckFileExists = true;
+            openFile.CheckPathExists = true;
+            if (openFile.ShowDialog() == DialogResult.OK)
+            {
+                picturebox.Image = new Bitmap(openFile.FileName);
+                picturebox.Size = pt_draw.Size;
+
+            }
+        }
+
+        private void openfileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PictureBox _myptb = new PictureBox();
+            OpenImage(_myptb);
+            pt_draw.Image = _myptb.Image;
+
+        }
+
+        #endregion
+        
+
         #region Undo, Redo
         private void btn_Undo_Click(object sender, EventArgs e)
         {
@@ -233,10 +237,6 @@ namespace Paint
 
         }
 
-        private void btn_Text_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btn_Shape_Click(object sender, EventArgs e)
         {
@@ -318,7 +318,7 @@ namespace Paint
 
                     if (tool.isColorPicker)
                     {
-                        Bitmap bmps = new Bitmap(pt_draw.Image);
+                        Bitmap bmps = ConvertToBM(pt_draw);
                         Color c;
                         float _zoom = 1f;
                         c = bmps.GetPixel(e.X, e.Y + Convert.ToInt32(15 / _zoom));
@@ -575,31 +575,41 @@ namespace Paint
             else
                 return Color.FromArgb(0, 0, 0, 0);
         }
-        private static void FillPixel(Point pos, BitmapData bmd, Color c, Color org)
+        private void FillPixel(Point pos, BitmapData bmd, Color c, Color org)
         {
             if (c.ToArgb() == org.ToArgb())
                 return;
             Point currpos = new Point(0, 0);
+            l_fillPoint.Add(pos);
             stack.Push(pos);
             do
             {
                 currpos = (Point)stack.Pop();
                 SetPixel(currpos, bmd, c);
                 if (GetPixel(new Point(currpos.X + 1, currpos.Y), bmd) == org)
+                {
                     stack.Push(new Point(currpos.X + 1, currpos.Y));
+                    l_fillPoint.Add(new Point(currpos.X + 1, currpos.Y));
+                }
                 if (GetPixel(new Point(currpos.X, currpos.Y - 1), bmd) == org)
+                {
                     stack.Push(new Point(currpos.X, currpos.Y - 1));
+                    l_fillPoint.Add(new Point(currpos.X, currpos.Y - 1));
+                }
                 if (GetPixel(new Point(currpos.X - 1, currpos.Y), bmd) == org)
+                {
                     stack.Push(new Point(currpos.X - 1, currpos.Y));
+                    l_fillPoint.Add(new Point(currpos.X - 1, currpos.Y));
+                }
                 if (GetPixel(new Point(currpos.X, currpos.Y + 1), bmd) == org)
+                {
                     stack.Push(new Point(currpos.X, currpos.Y + 1));
+                    l_fillPoint.Add(new Point(currpos.X, currpos.Y + 1));
+                }
             } while (stack.Count > 0);
         }
-        public Bitmap Fill(Image img, Point pos, Color color)
-        {
-            //Ensure the bitmap is in the right format
-            Bitmap bm = (Bitmap)img;
-
+        public Bitmap Fill(Bitmap bm, Point pos, Color color)
+        { 
             //Lock the bitmap data
             BitmapData bmd = bm.LockBits(new
             Rectangle(0, 0, bm.Width, bm.Height), ImageLockMode.ReadWrite, bm.PixelFormat);
@@ -622,7 +632,7 @@ namespace Paint
             ps.Y = Y;
             ps_.X = e.X;
             ps_.Y = e.Y;
-            PictureBox pb = pt_draw;
+            PictureBox pb = (PictureBox) sender;
             if (e.Button == MouseButtons.Left)
             {
                 if (tool.isBucket)
@@ -632,14 +642,17 @@ namespace Paint
                     Bitmap b;
                     pb.Cursor = Cursors.WaitCursor;
                     pb.Enabled = false;
-                    b = Fill(pb.Image, new Point(X, Y), pictureBox_Color_Front.BackColor);
+                    b = Fill(ConvertToBM(pb), new Point(X, Y), pictureBox_Color_Front.BackColor);
                     pb.Enabled = true;
                     pb.Cursor = cur;
                     if (b != null)
                     {
                         graphics.DrawImage(b, 0, 0);
+                        dt.luu.list[dt.luu.n].path.AddLines(l_fillPoint.ToArray());
+                        dt.luu.list[dt.luu.n].p.Color = pictureBox_Color_Front.BackColor;
+
                     }
-                        pb.Refresh();
+                    pb.Refresh();
                 }
                 pe = ps;
                 pe_ = ps_;
@@ -740,6 +753,12 @@ namespace Paint
             this.tool.isBucket = false;
             this.tool.isColorPicker = true;
         }
+
+        private void btn_Text_Click(object sender, EventArgs e)
+        {
+
+        }
+
         #endregion
 
         #region Size
@@ -754,8 +773,39 @@ namespace Paint
 
 
 
+
         #endregion
 
-        
+        #region Edit
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            Bitmap bm = ConvertToBM(pt_draw);
+
+            bm.Save("D:\\Image2.png", ImageFormat.Png);
+
+        }
+
+        private Bitmap ConvertToBM(PictureBox ptb)
+        {
+            Size sz = ptb.ClientSize;
+
+            Rectangle rect2 = new Rectangle(0, 0, sz.Width , sz.Height );
+            Bitmap bmp2 = new Bitmap(rect2.Width, rect2.Height);
+
+            ptb.ClientSize = rect2.Size;
+
+            ptb.DrawToBitmap(bmp2, rect2);
+
+            ptb.ClientSize = sz;
+            
+            return bmp2;
+            
+        }
+        #endregion
+
+        private void btn_Eraser_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
