@@ -141,3 +141,26 @@ C:\Users\Hi\OneDrive\Tài liệu\Paint-BC\Paint\obj\Debug\Paint.csproj.CoreCom
 C:\Users\Hi\OneDrive\Tài liệu\Paint-BC\Paint\obj\Debug\Paint.csproj.CopyComplete
 C:\Users\Hi\OneDrive\Tài liệu\Paint-BC\Paint\obj\Debug\Paint.exe
 C:\Users\Hi\OneDrive\Tài liệu\Paint-BC\Paint\obj\Debug\Paint.pdb
+D:\Workspace\paint\Paint\bin\Debug\Paint.exe.config
+D:\Workspace\paint\Paint\bin\Debug\Paint.exe
+D:\Workspace\paint\Paint\bin\Debug\Paint.pdb
+D:\Workspace\paint\Paint\bin\Debug\DevExpress.Pdf.v22.2.Core.dll
+D:\Workspace\paint\Paint\bin\Debug\DevExpress.Pdf.v22.2.Drawing.dll
+D:\Workspace\paint\Paint\bin\Debug\DevExpress.Data.Desktop.v22.2.xml
+D:\Workspace\paint\Paint\bin\Debug\DevExpress.Data.v22.2.xml
+D:\Workspace\paint\Paint\bin\Debug\DevExpress.Printing.v22.2.Core.xml
+D:\Workspace\paint\Paint\bin\Debug\DevExpress.Sparkline.v22.2.Core.xml
+D:\Workspace\paint\Paint\bin\Debug\DevExpress.Utils.v22.2.xml
+D:\Workspace\paint\Paint\bin\Debug\DevExpress.XtraEditors.v22.2.xml
+D:\Workspace\paint\Paint\bin\Debug\DevExpress.Pdf.v22.2.Core.xml
+D:\Workspace\paint\Paint\bin\Debug\DevExpress.Pdf.v22.2.Drawing.xml
+D:\Workspace\paint\Paint\obj\Debug\Paint.csproj.AssemblyReference.cache
+D:\Workspace\paint\Paint\obj\Debug\Paint.csproj.SuggestedBindingRedirects.cache
+D:\Workspace\paint\Paint\obj\Debug\Paint.Form1.resources
+D:\Workspace\paint\Paint\obj\Debug\Paint.Properties.Resources.resources
+D:\Workspace\paint\Paint\obj\Debug\Paint.csproj.GenerateResource.cache
+D:\Workspace\paint\Paint\obj\Debug\Paint.exe.licenses
+D:\Workspace\paint\Paint\obj\Debug\Paint.csproj.CoreCompileInputs.cache
+D:\Workspace\paint\Paint\obj\Debug\Paint.csproj.CopyComplete
+D:\Workspace\paint\Paint\obj\Debug\Paint.exe
+D:\Workspace\paint\Paint\obj\Debug\Paint.pdb

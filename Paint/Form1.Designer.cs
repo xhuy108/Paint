@@ -55,11 +55,8 @@ namespace Paint
             this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.swapForToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.initializeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colorBarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.colorWheelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lockPalletToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.brushToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eraserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -91,7 +88,6 @@ namespace Paint
             this.lb_MousePos = new System.Windows.Forms.Label();
             this.panel_Color = new System.Windows.Forms.Panel();
             this.subTableLayoutPanel_Color2 = new System.Windows.Forms.TableLayoutPanel();
-            this.colorPicker = new AboControls.ExtendedControls.ColorPickerControl();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox_ColorPreview = new System.Windows.Forms.PictureBox();
             this.label_ColorPreview = new System.Windows.Forms.Label();
@@ -125,6 +121,7 @@ namespace Paint
             this.label1 = new System.Windows.Forms.Label();
             this.lb_pos = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.colorPicker = new AboControls.ExtendedControls.ColorPickerControl();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -216,6 +213,7 @@ namespace Paint
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
             this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.saveAsToolStripMenuItem.Text = "Save As";
+            this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -246,61 +244,29 @@ namespace Paint
             // colorToolStripMenuItem
             // 
             this.colorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.swapForToolStripMenuItem,
             this.initializeToolStripMenuItem,
-            this.colorBarToolStripMenuItem,
-            this.colorWheelToolStripMenuItem,
-            this.lockPalletToolStripMenuItem});
+            this.colorBarToolStripMenuItem});
             this.colorToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
             this.colorToolStripMenuItem.Size = new System.Drawing.Size(63, 24);
             this.colorToolStripMenuItem.Text = "Color";
-            // 
-            // swapForToolStripMenuItem
-            // 
-            this.swapForToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.swapForToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.swapForToolStripMenuItem.Name = "swapForToolStripMenuItem";
-            this.swapForToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
-            this.swapForToolStripMenuItem.Text = "Swap Fore/BG(S)";
             // 
             // initializeToolStripMenuItem
             // 
             this.initializeToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.initializeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.initializeToolStripMenuItem.Name = "initializeToolStripMenuItem";
-            this.initializeToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
+            this.initializeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.initializeToolStripMenuItem.Text = "Initialize";
             // 
             // colorBarToolStripMenuItem
             // 
             this.colorBarToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.colorBarToolStripMenuItem.Checked = true;
             this.colorBarToolStripMenuItem.CheckOnClick = true;
-            this.colorBarToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.colorBarToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.colorBarToolStripMenuItem.Name = "colorBarToolStripMenuItem";
-            this.colorBarToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
+            this.colorBarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.colorBarToolStripMenuItem.Text = "Color Bar";
-            this.colorBarToolStripMenuItem.Click += new System.EventHandler(this.colorBarToolStripMenuItem_Click);
-            // 
-            // colorWheelToolStripMenuItem
-            // 
-            this.colorWheelToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.colorWheelToolStripMenuItem.CheckOnClick = true;
-            this.colorWheelToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.colorWheelToolStripMenuItem.Name = "colorWheelToolStripMenuItem";
-            this.colorWheelToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
-            this.colorWheelToolStripMenuItem.Text = "Color Wheel";
-            this.colorWheelToolStripMenuItem.Click += new System.EventHandler(this.colorWheelToolStripMenuItem_Click);
-            // 
-            // lockPalletToolStripMenuItem
-            // 
-            this.lockPalletToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.lockPalletToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.lockPalletToolStripMenuItem.Name = "lockPalletToolStripMenuItem";
-            this.lockPalletToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
-            this.lockPalletToolStripMenuItem.Text = "Lock Palette";
             // 
             // toolToolStripMenuItem
             // 
@@ -321,7 +287,7 @@ namespace Paint
             this.brushToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.brushToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.brushToolStripMenuItem.Name = "brushToolStripMenuItem";
-            this.brushToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.brushToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.brushToolStripMenuItem.Text = "Brush";
             // 
             // eraserToolStripMenuItem
@@ -329,7 +295,7 @@ namespace Paint
             this.eraserToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.eraserToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.eraserToolStripMenuItem.Name = "eraserToolStripMenuItem";
-            this.eraserToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.eraserToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.eraserToolStripMenuItem.Text = "Eraser";
             // 
             // shapeBrushToolStripMenuItem
@@ -337,7 +303,7 @@ namespace Paint
             this.shapeBrushToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.shapeBrushToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.shapeBrushToolStripMenuItem.Name = "shapeBrushToolStripMenuItem";
-            this.shapeBrushToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.shapeBrushToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.shapeBrushToolStripMenuItem.Text = "Shape brush";
             // 
             // moveToolStripMenuItem
@@ -345,7 +311,7 @@ namespace Paint
             this.moveToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.moveToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.moveToolStripMenuItem.Name = "moveToolStripMenuItem";
-            this.moveToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.moveToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.moveToolStripMenuItem.Text = "Move";
             // 
             // fillToolStripMenuItem
@@ -353,7 +319,7 @@ namespace Paint
             this.fillToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.fillToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.fillToolStripMenuItem.Name = "fillToolStripMenuItem";
-            this.fillToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.fillToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.fillToolStripMenuItem.Text = "Fill";
             // 
             // helpToolStripMenuItem
@@ -1700,17 +1666,6 @@ namespace Paint
             this.subTableLayoutPanel_Color2.Size = new System.Drawing.Size(152, 189);
             this.subTableLayoutPanel_Color2.TabIndex = 65;
             // 
-            // colorPicker
-            // 
-            this.colorPicker.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.colorPicker.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.colorPicker.Location = new System.Drawing.Point(3, 3);
-            this.colorPicker.Name = "colorPicker";
-            this.colorPicker.Size = new System.Drawing.Size(146, 145);
-            this.colorPicker.TabIndex = 64;
-            this.colorPicker.ColorPicked += new System.EventHandler(this.colorPicker_ColorPicked);
-            this.colorPicker.MouseMove += new System.Windows.Forms.MouseEventHandler(this.colorPicker_MouseMove);
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.pictureBox_ColorPreview);
@@ -2121,6 +2076,17 @@ namespace Paint
             this.tableLayoutPanel4.Size = new System.Drawing.Size(214, 497);
             this.tableLayoutPanel4.TabIndex = 10;
             // 
+            // colorPicker
+            // 
+            this.colorPicker.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.colorPicker.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.colorPicker.Location = new System.Drawing.Point(3, 3);
+            this.colorPicker.Name = "colorPicker";
+            this.colorPicker.Size = new System.Drawing.Size(146, 145);
+            this.colorPicker.TabIndex = 64;
+            this.colorPicker.ColorPicked += new System.EventHandler(this.colorPicker_ColorPicked);
+            this.colorPicker.MouseMove += new System.Windows.Forms.MouseEventHandler(this.colorPicker_MouseMove);
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -2139,6 +2105,7 @@ namespace Paint
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Paint";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -2219,11 +2186,8 @@ namespace Paint
         private System.Windows.Forms.Label lb_BrushSize;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.ToolStripMenuItem swapForToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem initializeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem colorBarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem colorWheelToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem lockPalletToolStripMenuItem;
         public System.Windows.Forms.PictureBox pt_draw;
         private System.Windows.Forms.Panel panel_paint;
         private System.Windows.Forms.Label lb_MousePos;
