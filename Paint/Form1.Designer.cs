@@ -85,7 +85,6 @@ namespace Paint
             this.lb_MousePos = new System.Windows.Forms.Label();
             this.panel_Color = new System.Windows.Forms.Panel();
             this.subTableLayoutPanel_Color2 = new System.Windows.Forms.TableLayoutPanel();
-            this.colorPicker = new AboControls.ExtendedControls.ColorPickerControl();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox_ColorPreview = new System.Windows.Forms.PictureBox();
             this.label_ColorPreview = new System.Windows.Forms.Label();
@@ -119,6 +118,8 @@ namespace Paint
             this.label1 = new System.Windows.Forms.Label();
             this.lb_pos = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.colorPicker = new AboControls.ExtendedControls.ColorPickerControl();
+            this.bucketToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -226,16 +227,18 @@ namespace Paint
             this.undoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.undoToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(132, 26);
             this.undoToolStripMenuItem.Text = "Undo";
+            this.undoToolStripMenuItem.Click += new System.EventHandler(this.btn_Undo_Click);
             // 
             // redoToolStripMenuItem
             // 
             this.redoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.redoToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
-            this.redoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.redoToolStripMenuItem.Size = new System.Drawing.Size(132, 26);
             this.redoToolStripMenuItem.Text = "Redo";
+            this.redoToolStripMenuItem.Click += new System.EventHandler(this.btn_Redo_Click);
             // 
             // toolToolStripMenuItem
             // 
@@ -245,7 +248,8 @@ namespace Paint
             this.eraserToolStripMenuItem,
             this.shapeBrushToolStripMenuItem,
             this.moveToolStripMenuItem,
-            this.fillToolStripMenuItem});
+            this.fillToolStripMenuItem,
+            this.bucketToolStripMenuItem});
             this.toolToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.toolToolStripMenuItem.Name = "toolToolStripMenuItem";
             this.toolToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
@@ -258,6 +262,7 @@ namespace Paint
             this.brushToolStripMenuItem.Name = "brushToolStripMenuItem";
             this.brushToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.brushToolStripMenuItem.Text = "Brush";
+            this.brushToolStripMenuItem.Click += new System.EventHandler(this.btn_Brush_Click);
             // 
             // eraserToolStripMenuItem
             // 
@@ -266,6 +271,7 @@ namespace Paint
             this.eraserToolStripMenuItem.Name = "eraserToolStripMenuItem";
             this.eraserToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.eraserToolStripMenuItem.Text = "Eraser";
+            this.eraserToolStripMenuItem.Click += new System.EventHandler(this.btn_Eraser_Click);
             // 
             // shapeBrushToolStripMenuItem
             // 
@@ -274,6 +280,7 @@ namespace Paint
             this.shapeBrushToolStripMenuItem.Name = "shapeBrushToolStripMenuItem";
             this.shapeBrushToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.shapeBrushToolStripMenuItem.Text = "Shape brush";
+            this.shapeBrushToolStripMenuItem.Click += new System.EventHandler(this.btn_Shape_Click);
             // 
             // moveToolStripMenuItem
             // 
@@ -281,7 +288,8 @@ namespace Paint
             this.moveToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.moveToolStripMenuItem.Name = "moveToolStripMenuItem";
             this.moveToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.moveToolStripMenuItem.Text = "Move";
+            this.moveToolStripMenuItem.Text = "Eyedropper";
+            this.moveToolStripMenuItem.Click += new System.EventHandler(this.btn_Eyedropper_Click);
             // 
             // fillToolStripMenuItem
             // 
@@ -290,6 +298,7 @@ namespace Paint
             this.fillToolStripMenuItem.Name = "fillToolStripMenuItem";
             this.fillToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.fillToolStripMenuItem.Text = "Fill";
+            this.fillToolStripMenuItem.Click += new System.EventHandler(this.btn_Fill_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -1635,17 +1644,6 @@ namespace Paint
             this.subTableLayoutPanel_Color2.Size = new System.Drawing.Size(152, 189);
             this.subTableLayoutPanel_Color2.TabIndex = 65;
             // 
-            // colorPicker
-            // 
-            this.colorPicker.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.colorPicker.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.colorPicker.Location = new System.Drawing.Point(3, 3);
-            this.colorPicker.Name = "colorPicker";
-            this.colorPicker.Size = new System.Drawing.Size(146, 145);
-            this.colorPicker.TabIndex = 64;
-            this.colorPicker.ColorPicked += new System.EventHandler(this.colorPicker_ColorPicked);
-            this.colorPicker.MouseMove += new System.Windows.Forms.MouseEventHandler(this.colorPicker_MouseMove);
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.pictureBox_ColorPreview);
@@ -2056,6 +2054,26 @@ namespace Paint
             this.tableLayoutPanel4.Size = new System.Drawing.Size(214, 497);
             this.tableLayoutPanel4.TabIndex = 10;
             // 
+            // colorPicker
+            // 
+            this.colorPicker.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.colorPicker.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.colorPicker.Location = new System.Drawing.Point(3, 3);
+            this.colorPicker.Name = "colorPicker";
+            this.colorPicker.Size = new System.Drawing.Size(146, 145);
+            this.colorPicker.TabIndex = 64;
+            this.colorPicker.ColorPicked += new System.EventHandler(this.colorPicker_ColorPicked);
+            this.colorPicker.MouseMove += new System.Windows.Forms.MouseEventHandler(this.colorPicker_MouseMove);
+            // 
+            // bucketToolStripMenuItem
+            // 
+            this.bucketToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.bucketToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.bucketToolStripMenuItem.Name = "bucketToolStripMenuItem";
+            this.bucketToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.bucketToolStripMenuItem.Text = "Bucket";
+            this.bucketToolStripMenuItem.Click += new System.EventHandler(this.btn_Bucket_Click);
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -2194,6 +2212,7 @@ namespace Paint
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lb_pos;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.ToolStripMenuItem bucketToolStripMenuItem;
     }
 }
 
