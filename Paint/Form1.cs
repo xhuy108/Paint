@@ -666,6 +666,19 @@ namespace Paint
         {
             tLP_Shape.Visible = true;
         }
+        private void btn_Eraser_Click(object sender, EventArgs e)
+        {
+            _p.Color = Color.White;
+            this.tool.isBrush = true;
+            this.tool.isLine = false;
+            this.tool.isRect = false;
+            this.tool.isCircle = false;
+            this.tool.isTriangle = false;
+            this.tool.isBucket = false;
+            this.tool.isColorPicker = false;
+            this.tool.isText = false;
+            this.tool.isCrop = false;
+        }
         private void btn_Brush_Click(object sender, EventArgs e)
         {
             _p.Color = pictureBox_Color_Front.BackColor;
@@ -745,10 +758,7 @@ namespace Paint
             else tool.isFill = false;
 
             this.tool.isBrush = false;
-            this.tool.isLine = false;
-            this.tool.isRect = false;
-            this.tool.isCircle = false;
-            this.tool.isTriangle = false;
+            
             this.tool.isBucket = false;
             this.tool.isColorPicker = false;
             this.tool.isText = false;
@@ -855,11 +865,7 @@ namespace Paint
         }
         #endregion
 
-        private void btn_Eraser_Click(object sender, EventArgs e)
-        {
-            _p.Color = Color.White;
-
-        }
+        
 
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
