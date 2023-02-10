@@ -189,27 +189,29 @@ namespace Paint.Manager
         #endregion
         public void velai(Form1 form, PictureBox ptb)
         {
-            Bitmap bitmap = new Bitmap(ptb.Width, ptb.Height, System.Drawing.Imaging.PixelFormat.Format32bppPArgb);
-
-            Graphics g = Graphics.FromImage(bitmap);
-            //Graphics g = ptb.CreateGraphics();
+            Graphics g = ptb.CreateGraphics();
             g.Clear(Color.White);
+            if (form.isPic)
+            {
+                form.pt_draw.Image = form.img;
+                form.isPic = false;
+            }
+
             g.SmoothingMode = SmoothingMode.HighQuality;
 
             for (int i = 0; i < luu.n; i++)
             {
-
-                g.DrawPath(luu.list[i].p, luu.list[i].path);
-                if (luu.list[i].mode == 2)
-                {
-                    g.FillPath(luu.list[i].br, luu.list[i].path);
-                    if (luu.list[i].br == Brushes.White)
-                        g.DrawPath(luu.list[i].p, luu.list[i].path);
-                }
+                
+                    g.DrawPath(luu.list[i].p, luu.list[i].path);
+                    if (luu.list[i].mode == 2)
+                    {
+                        g.FillPath(luu.list[i].br, luu.list[i].path);
+                        if (luu.list[i].br == Brushes.White)
+                            g.DrawPath(luu.list[i].p, luu.list[i].path);
+                    }
+                
 
             }
-
-            form.pt_draw.Image = bitmap;
         }
 
 

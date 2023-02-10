@@ -35,7 +35,8 @@ namespace Paint
 
         public Point tmp = new Point();
         private bool isSave = false;
-
+        public bool isPic = false;
+        public Image img;
         public Point[] tri_points = new Point[2];
         public Rectangle rec = new Rectangle();
         // vị trí chuột
@@ -197,7 +198,8 @@ namespace Paint
             PictureBox _myptb = new PictureBox();
             OpenImage(_myptb);
             pt_draw.Image = _myptb.Image;
-
+            img = _myptb.Image;
+            
         }
 
         #endregion
@@ -411,16 +413,21 @@ namespace Paint
         private void pt_draw_Paint(object sender, PaintEventArgs e)
         {
             var g = e.Graphics;
-
             for (int i = 0; i < dt.luu.n; i++)
             {
-                //if (dt.luu.list[i].vepen == 1)
-                g.DrawPath(dt.luu.list[i].p, dt.luu.list[i].path);
-                if (dt.luu.list[i].mode == 2)
-                {
-                    g.FillPath(dt.luu.list[i].br, dt.luu.list[i].path);
+                //if (dt.luu.list[i].mode == -1)
+                //{
+                //    pt_draw.Image = dt.luu.list[i].saveim;
+                //}
+                //else
+                //{
+                    g.DrawPath(dt.luu.list[i].p, dt.luu.list[i].path);
+                    if (dt.luu.list[i].mode == 2)
+                    {
+                        g.FillPath(dt.luu.list[i].br, dt.luu.list[i].path);
 
-                }
+                    }
+                
 
             }
 
@@ -649,6 +656,7 @@ namespace Paint
                             dt.luu.list[dt.luu.n].p.Width = 1;
                             dt.luu.n++;
                             dt.n = dt.luu.n;
+                            
                             l_fillPoint.Clear();
                         }
                     }
