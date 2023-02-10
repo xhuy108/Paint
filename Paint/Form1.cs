@@ -900,6 +900,12 @@ namespace Paint
             }
         }
 
-        
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            dt = new MyData();
+            Graphics g = pt_draw.CreateGraphics();
+            g.Clear(Color.White);
+
+        }
     }
 }

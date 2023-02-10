@@ -60,7 +60,7 @@ namespace Paint
             this.shapeBrushToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.moveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fillToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bucketToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -119,7 +119,6 @@ namespace Paint
             this.lb_pos = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.colorPicker = new AboControls.ExtendedControls.ColorPickerControl();
-            this.bucketToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -157,8 +156,7 @@ namespace Paint
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem,
-            this.toolToolStripMenuItem,
-            this.helpToolStripMenuItem});
+            this.toolToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1038, 28);
@@ -182,7 +180,7 @@ namespace Paint
             this.openToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.openToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openfileToolStripMenuItem_Click);
             // 
@@ -191,15 +189,16 @@ namespace Paint
             this.toolStripMenuItem2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.toolStripMenuItem2.ForeColor = System.Drawing.Color.White;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(150, 26);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
             this.toolStripMenuItem2.Text = "New";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.saveToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
@@ -208,7 +207,7 @@ namespace Paint
             this.saveAsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.saveAsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.saveAsToolStripMenuItem.Text = "Save As";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
@@ -260,7 +259,7 @@ namespace Paint
             this.brushToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.brushToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.brushToolStripMenuItem.Name = "brushToolStripMenuItem";
-            this.brushToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.brushToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.brushToolStripMenuItem.Text = "Brush";
             this.brushToolStripMenuItem.Click += new System.EventHandler(this.btn_Brush_Click);
             // 
@@ -269,7 +268,7 @@ namespace Paint
             this.eraserToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.eraserToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.eraserToolStripMenuItem.Name = "eraserToolStripMenuItem";
-            this.eraserToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.eraserToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.eraserToolStripMenuItem.Text = "Eraser";
             this.eraserToolStripMenuItem.Click += new System.EventHandler(this.btn_Eraser_Click);
             // 
@@ -278,7 +277,7 @@ namespace Paint
             this.shapeBrushToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.shapeBrushToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.shapeBrushToolStripMenuItem.Name = "shapeBrushToolStripMenuItem";
-            this.shapeBrushToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.shapeBrushToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.shapeBrushToolStripMenuItem.Text = "Shape brush";
             this.shapeBrushToolStripMenuItem.Click += new System.EventHandler(this.btn_Shape_Click);
             // 
@@ -287,7 +286,7 @@ namespace Paint
             this.moveToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.moveToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.moveToolStripMenuItem.Name = "moveToolStripMenuItem";
-            this.moveToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.moveToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.moveToolStripMenuItem.Text = "Eyedropper";
             this.moveToolStripMenuItem.Click += new System.EventHandler(this.btn_Eyedropper_Click);
             // 
@@ -296,16 +295,18 @@ namespace Paint
             this.fillToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.fillToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.fillToolStripMenuItem.Name = "fillToolStripMenuItem";
-            this.fillToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.fillToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.fillToolStripMenuItem.Text = "Fill";
             this.fillToolStripMenuItem.Click += new System.EventHandler(this.btn_Fill_Click);
             // 
-            // helpToolStripMenuItem
+            // bucketToolStripMenuItem
             // 
-            this.helpToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(56, 24);
-            this.helpToolStripMenuItem.Text = "Help";
+            this.bucketToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.bucketToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.bucketToolStripMenuItem.Name = "bucketToolStripMenuItem";
+            this.bucketToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.bucketToolStripMenuItem.Text = "Bucket";
+            this.bucketToolStripMenuItem.Click += new System.EventHandler(this.btn_Bucket_Click);
             // 
             // contextMenuStrip1
             // 
@@ -2065,15 +2066,6 @@ namespace Paint
             this.colorPicker.ColorPicked += new System.EventHandler(this.colorPicker_ColorPicked);
             this.colorPicker.MouseMove += new System.Windows.Forms.MouseEventHandler(this.colorPicker_MouseMove);
             // 
-            // bucketToolStripMenuItem
-            // 
-            this.bucketToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.bucketToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.bucketToolStripMenuItem.Name = "bucketToolStripMenuItem";
-            this.bucketToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.bucketToolStripMenuItem.Text = "Bucket";
-            this.bucketToolStripMenuItem.Click += new System.EventHandler(this.btn_Bucket_Click);
-            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -2137,7 +2129,6 @@ namespace Paint
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel_PaintTool;
