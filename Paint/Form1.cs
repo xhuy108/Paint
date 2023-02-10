@@ -156,13 +156,6 @@ namespace Paint
             textBox_RGBvalueChange();
         }
 
-        
-
-        private void colorWheelToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            colorBarToolStripMenuItem.Checked = false;
-        }
-
         private void colorPicker_ColorPicked(object sender, EventArgs e)
         {
             pictureBox_Color_Front.BackColor = colorPicker.SelectedColor;
