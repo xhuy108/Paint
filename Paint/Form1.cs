@@ -546,7 +546,7 @@ namespace Paint
         {
             if (CheckPixel(pos, bmd))
             {
-                //always assumes 32 bit per pixels
+
                 int offset = pos.Y * bmd.Stride + (4 * pos.X);
                 Marshal.WriteByte(bmd.Scan0, offset + 2, c.R);
                 Marshal.WriteByte(bmd.Scan0, offset + 1, c.G);
@@ -766,6 +766,21 @@ namespace Paint
             this.tool.isCrop = false;
         }
 
+        private void btn_Eraser_Click(object sender, EventArgs e)
+        {
+            _p.Color = Color.White;
+            this.tool.isBrush = true;
+            this.tool.isLine = false;
+            this.tool.isRect = false;
+            this.tool.isCircle = false;
+            this.tool.isTriangle = false;
+            this.tool.isBucket = false;
+            this.tool.isColorPicker = false;
+            this.tool.isText = false;
+            this.tool.isCrop = false;
+
+
+        }
         private void btn_Eyedropper_Click(object sender, EventArgs e)
         {
             this.tool.isBrush = false;
@@ -853,11 +868,7 @@ namespace Paint
         }
         #endregion
 
-        private void btn_Eraser_Click(object sender, EventArgs e)
-        {
-            _p.Color = Color.White;
-
-        }
+       
 
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
