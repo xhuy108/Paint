@@ -32,37 +32,37 @@ namespace Paint
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges280 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges281 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges282 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges283 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges284 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges285 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges286 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges287 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges288 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges289 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges290 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges291 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges292 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges293 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges294 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges295 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges296 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges297 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges298 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges299 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges300 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges301 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges302 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges303 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges304 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges305 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges306 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges307 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges308 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges309 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges310 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges13 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges14 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges15 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges16 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges17 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges18 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges19 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges20 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges21 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges22 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges23 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges24 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges25 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges26 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges27 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges28 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges29 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges30 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges31 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.importFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -870,11 +870,11 @@ namespace Paint
             this.btn_Redo.ColorContrastOnClick = 45;
             this.btn_Redo.ColorContrastOnHover = 45;
             this.btn_Redo.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges280.BottomLeft = true;
-            borderEdges280.BottomRight = true;
-            borderEdges280.TopLeft = true;
-            borderEdges280.TopRight = true;
-            this.btn_Redo.CustomizableEdges = borderEdges280;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btn_Redo.CustomizableEdges = borderEdges1;
             this.btn_Redo.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Redo.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Redo.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -960,11 +960,11 @@ namespace Paint
             this.btn_Undo.ColorContrastOnClick = 45;
             this.btn_Undo.ColorContrastOnHover = 45;
             this.btn_Undo.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges281.BottomLeft = true;
-            borderEdges281.BottomRight = true;
-            borderEdges281.TopLeft = true;
-            borderEdges281.TopRight = true;
-            this.btn_Undo.CustomizableEdges = borderEdges281;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btn_Undo.CustomizableEdges = borderEdges2;
             this.btn_Undo.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Undo.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Undo.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1075,11 +1075,11 @@ namespace Paint
             this.btn_OpenProjectDialog.ColorContrastOnClick = 45;
             this.btn_OpenProjectDialog.ColorContrastOnHover = 45;
             this.btn_OpenProjectDialog.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges282.BottomLeft = true;
-            borderEdges282.BottomRight = true;
-            borderEdges282.TopLeft = true;
-            borderEdges282.TopRight = true;
-            this.btn_OpenProjectDialog.CustomizableEdges = borderEdges282;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.btn_OpenProjectDialog.CustomizableEdges = borderEdges3;
             this.btn_OpenProjectDialog.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_OpenProjectDialog.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_OpenProjectDialog.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1165,11 +1165,11 @@ namespace Paint
             this.btn_OpenVersionDialog.ColorContrastOnClick = 45;
             this.btn_OpenVersionDialog.ColorContrastOnHover = 45;
             this.btn_OpenVersionDialog.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges283.BottomLeft = true;
-            borderEdges283.BottomRight = true;
-            borderEdges283.TopLeft = true;
-            borderEdges283.TopRight = true;
-            this.btn_OpenVersionDialog.CustomizableEdges = borderEdges283;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.btn_OpenVersionDialog.CustomizableEdges = borderEdges4;
             this.btn_OpenVersionDialog.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_OpenVersionDialog.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_OpenVersionDialog.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1255,11 +1255,11 @@ namespace Paint
             this.btn_ShowDetail.ColorContrastOnClick = 45;
             this.btn_ShowDetail.ColorContrastOnHover = 45;
             this.btn_ShowDetail.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges284.BottomLeft = true;
-            borderEdges284.BottomRight = true;
-            borderEdges284.TopLeft = true;
-            borderEdges284.TopRight = true;
-            this.btn_ShowDetail.CustomizableEdges = borderEdges284;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.btn_ShowDetail.CustomizableEdges = borderEdges5;
             this.btn_ShowDetail.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_ShowDetail.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_ShowDetail.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1345,11 +1345,11 @@ namespace Paint
             this.btn_AnnotationMode.ColorContrastOnClick = 45;
             this.btn_AnnotationMode.ColorContrastOnHover = 45;
             this.btn_AnnotationMode.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges285.BottomLeft = true;
-            borderEdges285.BottomRight = true;
-            borderEdges285.TopLeft = true;
-            borderEdges285.TopRight = true;
-            this.btn_AnnotationMode.CustomizableEdges = borderEdges285;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.btn_AnnotationMode.CustomizableEdges = borderEdges6;
             this.btn_AnnotationMode.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_AnnotationMode.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_AnnotationMode.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1435,11 +1435,11 @@ namespace Paint
             this.btn_OpenMaterialDialog.ColorContrastOnClick = 45;
             this.btn_OpenMaterialDialog.ColorContrastOnHover = 45;
             this.btn_OpenMaterialDialog.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges286.BottomLeft = true;
-            borderEdges286.BottomRight = true;
-            borderEdges286.TopLeft = true;
-            borderEdges286.TopRight = true;
-            this.btn_OpenMaterialDialog.CustomizableEdges = borderEdges286;
+            borderEdges7.BottomLeft = true;
+            borderEdges7.BottomRight = true;
+            borderEdges7.TopLeft = true;
+            borderEdges7.TopRight = true;
+            this.btn_OpenMaterialDialog.CustomizableEdges = borderEdges7;
             this.btn_OpenMaterialDialog.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_OpenMaterialDialog.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_OpenMaterialDialog.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1525,11 +1525,11 @@ namespace Paint
             this.btn_Submit.ColorContrastOnClick = 45;
             this.btn_Submit.ColorContrastOnHover = 45;
             this.btn_Submit.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges287.BottomLeft = true;
-            borderEdges287.BottomRight = true;
-            borderEdges287.TopLeft = true;
-            borderEdges287.TopRight = true;
-            this.btn_Submit.CustomizableEdges = borderEdges287;
+            borderEdges8.BottomLeft = true;
+            borderEdges8.BottomRight = true;
+            borderEdges8.TopLeft = true;
+            borderEdges8.TopRight = true;
+            this.btn_Submit.CustomizableEdges = borderEdges8;
             this.btn_Submit.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Submit.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Submit.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1615,11 +1615,11 @@ namespace Paint
             this.btn_OpenNetworkDialog.ColorContrastOnClick = 45;
             this.btn_OpenNetworkDialog.ColorContrastOnHover = 45;
             this.btn_OpenNetworkDialog.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges288.BottomLeft = true;
-            borderEdges288.BottomRight = true;
-            borderEdges288.TopLeft = true;
-            borderEdges288.TopRight = true;
-            this.btn_OpenNetworkDialog.CustomizableEdges = borderEdges288;
+            borderEdges9.BottomLeft = true;
+            borderEdges9.BottomRight = true;
+            borderEdges9.TopLeft = true;
+            borderEdges9.TopRight = true;
+            this.btn_OpenNetworkDialog.CustomizableEdges = borderEdges9;
             this.btn_OpenNetworkDialog.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_OpenNetworkDialog.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_OpenNetworkDialog.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1743,11 +1743,11 @@ namespace Paint
             this.btn_Gradient.ColorContrastOnClick = 45;
             this.btn_Gradient.ColorContrastOnHover = 45;
             this.btn_Gradient.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges289.BottomLeft = true;
-            borderEdges289.BottomRight = true;
-            borderEdges289.TopLeft = true;
-            borderEdges289.TopRight = true;
-            this.btn_Gradient.CustomizableEdges = borderEdges289;
+            borderEdges10.BottomLeft = true;
+            borderEdges10.BottomRight = true;
+            borderEdges10.TopLeft = true;
+            borderEdges10.TopRight = true;
+            this.btn_Gradient.CustomizableEdges = borderEdges10;
             this.btn_Gradient.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Gradient.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Gradient.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1833,11 +1833,11 @@ namespace Paint
             this.btn_Bucket.ColorContrastOnClick = 45;
             this.btn_Bucket.ColorContrastOnHover = 45;
             this.btn_Bucket.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges290.BottomLeft = true;
-            borderEdges290.BottomRight = true;
-            borderEdges290.TopLeft = true;
-            borderEdges290.TopRight = true;
-            this.btn_Bucket.CustomizableEdges = borderEdges290;
+            borderEdges11.BottomLeft = true;
+            borderEdges11.BottomRight = true;
+            borderEdges11.TopLeft = true;
+            borderEdges11.TopRight = true;
+            this.btn_Bucket.CustomizableEdges = borderEdges11;
             this.btn_Bucket.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Bucket.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Bucket.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1923,11 +1923,11 @@ namespace Paint
             this.btn_Eraser.ColorContrastOnClick = 45;
             this.btn_Eraser.ColorContrastOnHover = 45;
             this.btn_Eraser.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges291.BottomLeft = true;
-            borderEdges291.BottomRight = true;
-            borderEdges291.TopLeft = true;
-            borderEdges291.TopRight = true;
-            this.btn_Eraser.CustomizableEdges = borderEdges291;
+            borderEdges12.BottomLeft = true;
+            borderEdges12.BottomRight = true;
+            borderEdges12.TopLeft = true;
+            borderEdges12.TopRight = true;
+            this.btn_Eraser.CustomizableEdges = borderEdges12;
             this.btn_Eraser.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Eraser.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Eraser.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2013,11 +2013,11 @@ namespace Paint
             this.btn_Brush.ColorContrastOnClick = 45;
             this.btn_Brush.ColorContrastOnHover = 45;
             this.btn_Brush.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges292.BottomLeft = true;
-            borderEdges292.BottomRight = true;
-            borderEdges292.TopLeft = true;
-            borderEdges292.TopRight = true;
-            this.btn_Brush.CustomizableEdges = borderEdges292;
+            borderEdges13.BottomLeft = true;
+            borderEdges13.BottomRight = true;
+            borderEdges13.TopLeft = true;
+            borderEdges13.TopRight = true;
+            this.btn_Brush.CustomizableEdges = borderEdges13;
             this.btn_Brush.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Brush.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Brush.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2103,11 +2103,11 @@ namespace Paint
             this.btn_Select.ColorContrastOnClick = 45;
             this.btn_Select.ColorContrastOnHover = 45;
             this.btn_Select.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges293.BottomLeft = true;
-            borderEdges293.BottomRight = true;
-            borderEdges293.TopLeft = true;
-            borderEdges293.TopRight = true;
-            this.btn_Select.CustomizableEdges = borderEdges293;
+            borderEdges14.BottomLeft = true;
+            borderEdges14.BottomRight = true;
+            borderEdges14.TopLeft = true;
+            borderEdges14.TopRight = true;
+            this.btn_Select.CustomizableEdges = borderEdges14;
             this.btn_Select.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Select.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Select.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2193,11 +2193,11 @@ namespace Paint
             this.btn_Lasso.ColorContrastOnClick = 45;
             this.btn_Lasso.ColorContrastOnHover = 45;
             this.btn_Lasso.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges294.BottomLeft = true;
-            borderEdges294.BottomRight = true;
-            borderEdges294.TopLeft = true;
-            borderEdges294.TopRight = true;
-            this.btn_Lasso.CustomizableEdges = borderEdges294;
+            borderEdges15.BottomLeft = true;
+            borderEdges15.BottomRight = true;
+            borderEdges15.TopLeft = true;
+            borderEdges15.TopRight = true;
+            this.btn_Lasso.CustomizableEdges = borderEdges15;
             this.btn_Lasso.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Lasso.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Lasso.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2283,11 +2283,11 @@ namespace Paint
             this.btn_MagicWandTool.ColorContrastOnClick = 45;
             this.btn_MagicWandTool.ColorContrastOnHover = 45;
             this.btn_MagicWandTool.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges295.BottomLeft = true;
-            borderEdges295.BottomRight = true;
-            borderEdges295.TopLeft = true;
-            borderEdges295.TopRight = true;
-            this.btn_MagicWandTool.CustomizableEdges = borderEdges295;
+            borderEdges16.BottomLeft = true;
+            borderEdges16.BottomRight = true;
+            borderEdges16.TopLeft = true;
+            borderEdges16.TopRight = true;
+            this.btn_MagicWandTool.CustomizableEdges = borderEdges16;
             this.btn_MagicWandTool.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_MagicWandTool.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_MagicWandTool.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2373,11 +2373,11 @@ namespace Paint
             this.btn_Text.ColorContrastOnClick = 45;
             this.btn_Text.ColorContrastOnHover = 45;
             this.btn_Text.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges296.BottomLeft = true;
-            borderEdges296.BottomRight = true;
-            borderEdges296.TopLeft = true;
-            borderEdges296.TopRight = true;
-            this.btn_Text.CustomizableEdges = borderEdges296;
+            borderEdges17.BottomLeft = true;
+            borderEdges17.BottomRight = true;
+            borderEdges17.TopLeft = true;
+            borderEdges17.TopRight = true;
+            this.btn_Text.CustomizableEdges = borderEdges17;
             this.btn_Text.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Text.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Text.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2463,11 +2463,11 @@ namespace Paint
             this.btn_Hand.ColorContrastOnClick = 45;
             this.btn_Hand.ColorContrastOnHover = 45;
             this.btn_Hand.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges297.BottomLeft = true;
-            borderEdges297.BottomRight = true;
-            borderEdges297.TopLeft = true;
-            borderEdges297.TopRight = true;
-            this.btn_Hand.CustomizableEdges = borderEdges297;
+            borderEdges18.BottomLeft = true;
+            borderEdges18.BottomRight = true;
+            borderEdges18.TopLeft = true;
+            borderEdges18.TopRight = true;
+            this.btn_Hand.CustomizableEdges = borderEdges18;
             this.btn_Hand.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Hand.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Hand.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2553,11 +2553,11 @@ namespace Paint
             this.btn_Eyedropper.ColorContrastOnClick = 45;
             this.btn_Eyedropper.ColorContrastOnHover = 45;
             this.btn_Eyedropper.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges298.BottomLeft = true;
-            borderEdges298.BottomRight = true;
-            borderEdges298.TopLeft = true;
-            borderEdges298.TopRight = true;
-            this.btn_Eyedropper.CustomizableEdges = borderEdges298;
+            borderEdges19.BottomLeft = true;
+            borderEdges19.BottomRight = true;
+            borderEdges19.TopLeft = true;
+            borderEdges19.TopRight = true;
+            this.btn_Eyedropper.CustomizableEdges = borderEdges19;
             this.btn_Eyedropper.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Eyedropper.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Eyedropper.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2643,11 +2643,11 @@ namespace Paint
             this.btn_Shape.ColorContrastOnClick = 45;
             this.btn_Shape.ColorContrastOnHover = 45;
             this.btn_Shape.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges299.BottomLeft = true;
-            borderEdges299.BottomRight = true;
-            borderEdges299.TopLeft = true;
-            borderEdges299.TopRight = true;
-            this.btn_Shape.CustomizableEdges = borderEdges299;
+            borderEdges20.BottomLeft = true;
+            borderEdges20.BottomRight = true;
+            borderEdges20.TopLeft = true;
+            borderEdges20.TopRight = true;
+            this.btn_Shape.CustomizableEdges = borderEdges20;
             this.btn_Shape.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Shape.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Shape.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2733,11 +2733,11 @@ namespace Paint
             this.btn_Fill.ColorContrastOnClick = 45;
             this.btn_Fill.ColorContrastOnHover = 45;
             this.btn_Fill.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges300.BottomLeft = true;
-            borderEdges300.BottomRight = true;
-            borderEdges300.TopLeft = true;
-            borderEdges300.TopRight = true;
-            this.btn_Fill.CustomizableEdges = borderEdges300;
+            borderEdges21.BottomLeft = true;
+            borderEdges21.BottomRight = true;
+            borderEdges21.TopLeft = true;
+            borderEdges21.TopRight = true;
+            this.btn_Fill.CustomizableEdges = borderEdges21;
             this.btn_Fill.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Fill.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Fill.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -2823,11 +2823,11 @@ namespace Paint
             this.btn_Move.ColorContrastOnClick = 45;
             this.btn_Move.ColorContrastOnHover = 45;
             this.btn_Move.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges301.BottomLeft = true;
-            borderEdges301.BottomRight = true;
-            borderEdges301.TopLeft = true;
-            borderEdges301.TopRight = true;
-            this.btn_Move.CustomizableEdges = borderEdges301;
+            borderEdges22.BottomLeft = true;
+            borderEdges22.BottomRight = true;
+            borderEdges22.TopLeft = true;
+            borderEdges22.TopRight = true;
+            this.btn_Move.CustomizableEdges = borderEdges22;
             this.btn_Move.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_Move.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_Move.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -3009,11 +3009,11 @@ namespace Paint
             this.btn_SelectColor.ColorContrastOnClick = 45;
             this.btn_SelectColor.ColorContrastOnHover = 45;
             this.btn_SelectColor.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges302.BottomLeft = true;
-            borderEdges302.BottomRight = true;
-            borderEdges302.TopLeft = true;
-            borderEdges302.TopRight = true;
-            this.btn_SelectColor.CustomizableEdges = borderEdges302;
+            borderEdges23.BottomLeft = true;
+            borderEdges23.BottomRight = true;
+            borderEdges23.TopLeft = true;
+            borderEdges23.TopRight = true;
+            this.btn_SelectColor.CustomizableEdges = borderEdges23;
             this.btn_SelectColor.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_SelectColor.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_SelectColor.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -3511,11 +3511,11 @@ namespace Paint
             this.btn_ClearRotation.ColorContrastOnClick = 45;
             this.btn_ClearRotation.ColorContrastOnHover = 45;
             this.btn_ClearRotation.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges303.BottomLeft = true;
-            borderEdges303.BottomRight = true;
-            borderEdges303.TopLeft = true;
-            borderEdges303.TopRight = true;
-            this.btn_ClearRotation.CustomizableEdges = borderEdges303;
+            borderEdges24.BottomLeft = true;
+            borderEdges24.BottomRight = true;
+            borderEdges24.TopLeft = true;
+            borderEdges24.TopRight = true;
+            this.btn_ClearRotation.CustomizableEdges = borderEdges24;
             this.btn_ClearRotation.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_ClearRotation.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_ClearRotation.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -3601,11 +3601,11 @@ namespace Paint
             this.btn_RotateLeft.ColorContrastOnClick = 45;
             this.btn_RotateLeft.ColorContrastOnHover = 45;
             this.btn_RotateLeft.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges304.BottomLeft = true;
-            borderEdges304.BottomRight = true;
-            borderEdges304.TopLeft = true;
-            borderEdges304.TopRight = true;
-            this.btn_RotateLeft.CustomizableEdges = borderEdges304;
+            borderEdges25.BottomLeft = true;
+            borderEdges25.BottomRight = true;
+            borderEdges25.TopLeft = true;
+            borderEdges25.TopRight = true;
+            this.btn_RotateLeft.CustomizableEdges = borderEdges25;
             this.btn_RotateLeft.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_RotateLeft.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_RotateLeft.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -3691,11 +3691,11 @@ namespace Paint
             this.btn_FlipHorizontally.ColorContrastOnClick = 45;
             this.btn_FlipHorizontally.ColorContrastOnHover = 45;
             this.btn_FlipHorizontally.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges305.BottomLeft = true;
-            borderEdges305.BottomRight = true;
-            borderEdges305.TopLeft = true;
-            borderEdges305.TopRight = true;
-            this.btn_FlipHorizontally.CustomizableEdges = borderEdges305;
+            borderEdges26.BottomLeft = true;
+            borderEdges26.BottomRight = true;
+            borderEdges26.TopLeft = true;
+            borderEdges26.TopRight = true;
+            this.btn_FlipHorizontally.CustomizableEdges = borderEdges26;
             this.btn_FlipHorizontally.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_FlipHorizontally.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_FlipHorizontally.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -3781,11 +3781,11 @@ namespace Paint
             this.btn_RotateRight.ColorContrastOnClick = 45;
             this.btn_RotateRight.ColorContrastOnHover = 45;
             this.btn_RotateRight.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges306.BottomLeft = true;
-            borderEdges306.BottomRight = true;
-            borderEdges306.TopLeft = true;
-            borderEdges306.TopRight = true;
-            this.btn_RotateRight.CustomizableEdges = borderEdges306;
+            borderEdges27.BottomLeft = true;
+            borderEdges27.BottomRight = true;
+            borderEdges27.TopLeft = true;
+            borderEdges27.TopRight = true;
+            this.btn_RotateRight.CustomizableEdges = borderEdges27;
             this.btn_RotateRight.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_RotateRight.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_RotateRight.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -3871,11 +3871,11 @@ namespace Paint
             this.btn_ZoomIn.ColorContrastOnClick = 45;
             this.btn_ZoomIn.ColorContrastOnHover = 45;
             this.btn_ZoomIn.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges307.BottomLeft = true;
-            borderEdges307.BottomRight = true;
-            borderEdges307.TopLeft = true;
-            borderEdges307.TopRight = true;
-            this.btn_ZoomIn.CustomizableEdges = borderEdges307;
+            borderEdges28.BottomLeft = true;
+            borderEdges28.BottomRight = true;
+            borderEdges28.TopLeft = true;
+            borderEdges28.TopRight = true;
+            this.btn_ZoomIn.CustomizableEdges = borderEdges28;
             this.btn_ZoomIn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_ZoomIn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_ZoomIn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -3961,11 +3961,11 @@ namespace Paint
             this.btn_ActualPixel.ColorContrastOnClick = 45;
             this.btn_ActualPixel.ColorContrastOnHover = 45;
             this.btn_ActualPixel.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges308.BottomLeft = true;
-            borderEdges308.BottomRight = true;
-            borderEdges308.TopLeft = true;
-            borderEdges308.TopRight = true;
-            this.btn_ActualPixel.CustomizableEdges = borderEdges308;
+            borderEdges29.BottomLeft = true;
+            borderEdges29.BottomRight = true;
+            borderEdges29.TopLeft = true;
+            borderEdges29.TopRight = true;
+            this.btn_ActualPixel.CustomizableEdges = borderEdges29;
             this.btn_ActualPixel.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_ActualPixel.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_ActualPixel.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -4051,11 +4051,11 @@ namespace Paint
             this.btn_ZoomOut.ColorContrastOnClick = 45;
             this.btn_ZoomOut.ColorContrastOnHover = 45;
             this.btn_ZoomOut.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges309.BottomLeft = true;
-            borderEdges309.BottomRight = true;
-            borderEdges309.TopLeft = true;
-            borderEdges309.TopRight = true;
-            this.btn_ZoomOut.CustomizableEdges = borderEdges309;
+            borderEdges30.BottomLeft = true;
+            borderEdges30.BottomRight = true;
+            borderEdges30.TopLeft = true;
+            borderEdges30.TopRight = true;
+            this.btn_ZoomOut.CustomizableEdges = borderEdges30;
             this.btn_ZoomOut.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_ZoomOut.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_ZoomOut.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -4141,11 +4141,11 @@ namespace Paint
             this.btn_FitToWindowSize.ColorContrastOnClick = 45;
             this.btn_FitToWindowSize.ColorContrastOnHover = 45;
             this.btn_FitToWindowSize.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges310.BottomLeft = true;
-            borderEdges310.BottomRight = true;
-            borderEdges310.TopLeft = true;
-            borderEdges310.TopRight = true;
-            this.btn_FitToWindowSize.CustomizableEdges = borderEdges310;
+            borderEdges31.BottomLeft = true;
+            borderEdges31.BottomRight = true;
+            borderEdges31.TopLeft = true;
+            borderEdges31.TopRight = true;
+            this.btn_FitToWindowSize.CustomizableEdges = borderEdges31;
             this.btn_FitToWindowSize.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_FitToWindowSize.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_FitToWindowSize.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -4249,7 +4249,7 @@ namespace Paint
             // 
             // ptbSize45
             // 
-            this.ptbSize45.Image = global::WindowsFormsApp1.Properties.Resources._100;
+            this.ptbSize45.Image = ((System.Drawing.Image)(resources.GetObject("ptbSize45.Image")));
             this.ptbSize45.Location = new System.Drawing.Point(18, 285);
             this.ptbSize45.Name = "ptbSize45";
             this.ptbSize45.Size = new System.Drawing.Size(52, 50);
@@ -4260,7 +4260,7 @@ namespace Paint
             // 
             // ptbSize40
             // 
-            this.ptbSize40.Image = global::WindowsFormsApp1.Properties.Resources._90;
+            this.ptbSize40.Image = ((System.Drawing.Image)(resources.GetObject("ptbSize40.Image")));
             this.ptbSize40.Location = new System.Drawing.Point(173, 204);
             this.ptbSize40.Name = "ptbSize40";
             this.ptbSize40.Size = new System.Drawing.Size(52, 50);
@@ -4271,7 +4271,7 @@ namespace Paint
             // 
             // ptbSize35
             // 
-            this.ptbSize35.Image = global::WindowsFormsApp1.Properties.Resources._80;
+            this.ptbSize35.Image = ((System.Drawing.Image)(resources.GetObject("ptbSize35.Image")));
             this.ptbSize35.Location = new System.Drawing.Point(96, 204);
             this.ptbSize35.Name = "ptbSize35";
             this.ptbSize35.Size = new System.Drawing.Size(52, 50);
@@ -4282,7 +4282,7 @@ namespace Paint
             // 
             // ptbSize30
             // 
-            this.ptbSize30.Image = global::WindowsFormsApp1.Properties.Resources._80;
+            this.ptbSize30.Image = ((System.Drawing.Image)(resources.GetObject("ptbSize30.Image")));
             this.ptbSize30.Location = new System.Drawing.Point(18, 204);
             this.ptbSize30.Name = "ptbSize30";
             this.ptbSize30.Size = new System.Drawing.Size(52, 50);
@@ -4293,7 +4293,7 @@ namespace Paint
             // 
             // ptbSize25
             // 
-            this.ptbSize25.Image = global::WindowsFormsApp1.Properties.Resources._60;
+            this.ptbSize25.Image = ((System.Drawing.Image)(resources.GetObject("ptbSize25.Image")));
             this.ptbSize25.Location = new System.Drawing.Point(173, 120);
             this.ptbSize25.Name = "ptbSize25";
             this.ptbSize25.Size = new System.Drawing.Size(52, 50);
@@ -4304,7 +4304,7 @@ namespace Paint
             // 
             // ptbSize20
             // 
-            this.ptbSize20.Image = global::WindowsFormsApp1.Properties.Resources._50;
+            this.ptbSize20.Image = ((System.Drawing.Image)(resources.GetObject("ptbSize20.Image")));
             this.ptbSize20.Location = new System.Drawing.Point(96, 120);
             this.ptbSize20.Name = "ptbSize20";
             this.ptbSize20.Size = new System.Drawing.Size(52, 50);
@@ -4315,7 +4315,7 @@ namespace Paint
             // 
             // ptbSize15
             // 
-            this.ptbSize15.Image = global::WindowsFormsApp1.Properties.Resources._40;
+            this.ptbSize15.Image = ((System.Drawing.Image)(resources.GetObject("ptbSize15.Image")));
             this.ptbSize15.Location = new System.Drawing.Point(18, 120);
             this.ptbSize15.Name = "ptbSize15";
             this.ptbSize15.Size = new System.Drawing.Size(52, 50);
@@ -4326,7 +4326,7 @@ namespace Paint
             // 
             // ptbSize10
             // 
-            this.ptbSize10.Image = global::WindowsFormsApp1.Properties.Resources._30;
+            this.ptbSize10.Image = ((System.Drawing.Image)(resources.GetObject("ptbSize10.Image")));
             this.ptbSize10.Location = new System.Drawing.Point(173, 40);
             this.ptbSize10.Name = "ptbSize10";
             this.ptbSize10.Size = new System.Drawing.Size(52, 50);
@@ -4337,7 +4337,7 @@ namespace Paint
             // 
             // ptbSize5
             // 
-            this.ptbSize5.Image = global::WindowsFormsApp1.Properties.Resources._20;
+            this.ptbSize5.Image = ((System.Drawing.Image)(resources.GetObject("ptbSize5.Image")));
             this.ptbSize5.Location = new System.Drawing.Point(96, 40);
             this.ptbSize5.Name = "ptbSize5";
             this.ptbSize5.Size = new System.Drawing.Size(52, 50);
@@ -4349,9 +4349,8 @@ namespace Paint
             // ptbSize1
             // 
             this.ptbSize1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ptbSize1.ErrorImage = global::WindowsFormsApp1.Properties.Resources._10;
-            this.ptbSize1.Image = global::WindowsFormsApp1.Properties.Resources._10;
-            this.ptbSize1.InitialImage = ((System.Drawing.Image)(resources.GetObject("ptbSize1.InitialImage")));
+            this.ptbSize1.Image = ((System.Drawing.Image)(resources.GetObject("ptbSize1.Image")));
+            this.ptbSize1.InitialImage = null;
             this.ptbSize1.Location = new System.Drawing.Point(18, 40);
             this.ptbSize1.Name = "ptbSize1";
             this.ptbSize1.Size = new System.Drawing.Size(52, 50);

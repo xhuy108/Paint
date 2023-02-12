@@ -33,9 +33,6 @@ namespace Paint.MyBrush
             base.OnValueChanged(e);
             myPanel.Data._size = this.Value;
             myPanel.update(myPanel.Data);
-
         }
-
-       
     }
 }

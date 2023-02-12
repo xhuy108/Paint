@@ -52,3 +52,16 @@ T:\Paint fke\Paint\obj\Debug\Paint.csproj.CoreCompileInputs.cache
 T:\Paint fke\Paint\obj\Debug\Paint.csproj.CopyComplete
 T:\Paint fke\Paint\obj\Debug\WindowsFormsApp1.exe
 T:\Paint fke\Paint\obj\Debug\WindowsFormsApp1.pdb
+T:\np\Paint\bin\Debug\WindowsFormsApp1.exe.config
+T:\np\Paint\bin\Debug\WindowsFormsApp1.exe
+T:\np\Paint\bin\Debug\WindowsFormsApp1.pdb
+T:\np\Paint\obj\Debug\Paint.csproj.AssemblyReference.cache
+T:\np\Paint\obj\Debug\Paint.csproj.SuggestedBindingRedirects.cache
+T:\np\Paint\obj\Debug\Paint.Form1.resources
+T:\np\Paint\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+T:\np\Paint\obj\Debug\Paint.csproj.GenerateResource.cache
+T:\np\Paint\obj\Debug\WindowsFormsApp1.exe.licenses
+T:\np\Paint\obj\Debug\Paint.csproj.CoreCompileInputs.cache
+T:\np\Paint\obj\Debug\Paint.csproj.CopyComplete
+T:\np\Paint\obj\Debug\WindowsFormsApp1.exe
+T:\np\Paint\obj\Debug\WindowsFormsApp1.pdb
