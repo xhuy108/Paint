@@ -74,7 +74,6 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Manager\MyData.cs" />
-    <Compile Include="MyBrush\PenColor.cs" />
     <Compile Include="MyBrush\PenOpacity.cs">
       <SubType>Component</SubType>
     </Compile>
