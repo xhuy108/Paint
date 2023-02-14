@@ -9,6 +9,7 @@ namespace Paint.Manager
 
     public class MyData : PictureBox
     {
+
         #region biến và hàm khởi tạo
         public History luu = new History();
         public bool tam = true;
