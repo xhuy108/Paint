@@ -152,7 +152,6 @@ namespace Paint
             this.menuStrip1.AutoSize = false;
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.menuStrip1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
@@ -173,7 +172,7 @@ namespace Paint
             this.saveAsToolStripMenuItem});
             this.fileToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(60, 24);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // openToolStripMenuItem
@@ -181,7 +180,7 @@ namespace Paint
             this.openToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.openToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(205, 40);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openfileToolStripMenuItem_Click);
             // 
@@ -190,7 +189,7 @@ namespace Paint
             this.toolStripMenuItem2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.toolStripMenuItem2.ForeColor = System.Drawing.Color.White;
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(205, 40);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(150, 26);
             this.toolStripMenuItem2.Text = "New";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
@@ -199,7 +198,7 @@ namespace Paint
             this.saveToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.saveToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(205, 40);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
@@ -208,7 +207,7 @@ namespace Paint
             this.saveAsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.saveAsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(205, 40);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.saveAsToolStripMenuItem.Text = "Save As";
             this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
@@ -219,7 +218,7 @@ namespace Paint
             this.redoToolStripMenuItem});
             this.editToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(63, 24);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(49, 24);
             this.editToolStripMenuItem.Text = "Edit";
             // 
             // undoToolStripMenuItem
@@ -227,7 +226,7 @@ namespace Paint
             this.undoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.undoToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(180, 40);
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(132, 26);
             this.undoToolStripMenuItem.Text = "Undo";
             this.undoToolStripMenuItem.Click += new System.EventHandler(this.btn_Undo_Click);
             // 
@@ -236,7 +235,7 @@ namespace Paint
             this.redoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.redoToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
-            this.redoToolStripMenuItem.Size = new System.Drawing.Size(180, 40);
+            this.redoToolStripMenuItem.Size = new System.Drawing.Size(132, 26);
             this.redoToolStripMenuItem.Text = "Redo";
             this.redoToolStripMenuItem.Click += new System.EventHandler(this.btn_Redo_Click);
             // 
@@ -252,7 +251,7 @@ namespace Paint
             this.bucketToolStripMenuItem});
             this.toolToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.toolToolStripMenuItem.Name = "toolToolStripMenuItem";
-            this.toolToolStripMenuItem.Size = new System.Drawing.Size(69, 24);
+            this.toolToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
             this.toolToolStripMenuItem.Text = "Tool";
             // 
             // brushToolStripMenuItem
@@ -260,7 +259,7 @@ namespace Paint
             this.brushToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.brushToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.brushToolStripMenuItem.Name = "brushToolStripMenuItem";
-            this.brushToolStripMenuItem.Size = new System.Drawing.Size(250, 40);
+            this.brushToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.brushToolStripMenuItem.Text = "Brush";
             this.brushToolStripMenuItem.Click += new System.EventHandler(this.btn_Brush_Click);
             // 
@@ -269,7 +268,7 @@ namespace Paint
             this.eraserToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.eraserToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.eraserToolStripMenuItem.Name = "eraserToolStripMenuItem";
-            this.eraserToolStripMenuItem.Size = new System.Drawing.Size(250, 40);
+            this.eraserToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.eraserToolStripMenuItem.Text = "Eraser";
             this.eraserToolStripMenuItem.Click += new System.EventHandler(this.btn_Eraser_Click);
             // 
@@ -278,7 +277,7 @@ namespace Paint
             this.shapeBrushToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.shapeBrushToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.shapeBrushToolStripMenuItem.Name = "shapeBrushToolStripMenuItem";
-            this.shapeBrushToolStripMenuItem.Size = new System.Drawing.Size(250, 40);
+            this.shapeBrushToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.shapeBrushToolStripMenuItem.Text = "Shape brush";
             this.shapeBrushToolStripMenuItem.Click += new System.EventHandler(this.btn_Shape_Click);
             // 
@@ -287,7 +286,7 @@ namespace Paint
             this.moveToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.moveToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.moveToolStripMenuItem.Name = "moveToolStripMenuItem";
-            this.moveToolStripMenuItem.Size = new System.Drawing.Size(250, 40);
+            this.moveToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.moveToolStripMenuItem.Text = "Eyedropper";
             this.moveToolStripMenuItem.Click += new System.EventHandler(this.btn_Eyedropper_Click);
             // 
@@ -296,7 +295,7 @@ namespace Paint
             this.fillToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.fillToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.fillToolStripMenuItem.Name = "fillToolStripMenuItem";
-            this.fillToolStripMenuItem.Size = new System.Drawing.Size(250, 40);
+            this.fillToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.fillToolStripMenuItem.Text = "Fill";
             this.fillToolStripMenuItem.Click += new System.EventHandler(this.btn_Fill_Click);
             // 
@@ -305,7 +304,7 @@ namespace Paint
             this.bucketToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.bucketToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.bucketToolStripMenuItem.Name = "bucketToolStripMenuItem";
-            this.bucketToolStripMenuItem.Size = new System.Drawing.Size(250, 40);
+            this.bucketToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.bucketToolStripMenuItem.Text = "Bucket";
             this.bucketToolStripMenuItem.Click += new System.EventHandler(this.btn_Bucket_Click);
             // 
@@ -1673,7 +1672,7 @@ namespace Paint
             this.pictureBox_ColorPreview.BackColor = System.Drawing.Color.Black;
             this.pictureBox_ColorPreview.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox_ColorPreview.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox_ColorPreview.Location = new System.Drawing.Point(140, 0);
+            this.pictureBox_ColorPreview.Location = new System.Drawing.Point(94, 0);
             this.pictureBox_ColorPreview.Name = "pictureBox_ColorPreview";
             this.pictureBox_ColorPreview.Size = new System.Drawing.Size(58, 19);
             this.pictureBox_ColorPreview.TabIndex = 64;
@@ -1688,7 +1687,7 @@ namespace Paint
             this.label_ColorPreview.ForeColor = System.Drawing.Color.White;
             this.label_ColorPreview.Location = new System.Drawing.Point(0, 0);
             this.label_ColorPreview.Name = "label_ColorPreview";
-            this.label_ColorPreview.Size = new System.Drawing.Size(140, 23);
+            this.label_ColorPreview.Size = new System.Drawing.Size(94, 16);
             this.label_ColorPreview.TabIndex = 63;
             this.label_ColorPreview.Text = "Color Preview:";
             // 
@@ -1731,7 +1730,7 @@ namespace Paint
             this.textBox_Bvalue.Dock = System.Windows.Forms.DockStyle.Left;
             this.textBox_Bvalue.Font = new System.Drawing.Font("Century Schoolbook", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_Bvalue.ForeColor = System.Drawing.Color.White;
-            this.textBox_Bvalue.Location = new System.Drawing.Point(31, 0);
+            this.textBox_Bvalue.Location = new System.Drawing.Point(23, 0);
             this.textBox_Bvalue.Margin = new System.Windows.Forms.Padding(0);
             this.textBox_Bvalue.Multiline = true;
             this.textBox_Bvalue.Name = "textBox_Bvalue";
@@ -1750,7 +1749,7 @@ namespace Paint
             this.label_B_value.Margin = new System.Windows.Forms.Padding(6);
             this.label_B_value.Name = "label_B_value";
             this.label_B_value.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.label_B_value.Size = new System.Drawing.Size(31, 21);
+            this.label_B_value.Size = new System.Drawing.Size(23, 16);
             this.label_B_value.TabIndex = 53;
             this.label_B_value.Text = "B:";
             // 
@@ -1782,7 +1781,7 @@ namespace Paint
             this.textBox_Gvalue.Dock = System.Windows.Forms.DockStyle.Left;
             this.textBox_Gvalue.Font = new System.Drawing.Font("Century Schoolbook", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_Gvalue.ForeColor = System.Drawing.Color.White;
-            this.textBox_Gvalue.Location = new System.Drawing.Point(32, 0);
+            this.textBox_Gvalue.Location = new System.Drawing.Point(23, 0);
             this.textBox_Gvalue.Multiline = true;
             this.textBox_Gvalue.Name = "textBox_Gvalue";
             this.textBox_Gvalue.ReadOnly = true;
@@ -1800,7 +1799,7 @@ namespace Paint
             this.label_G_value.Margin = new System.Windows.Forms.Padding(6);
             this.label_G_value.Name = "label_G_value";
             this.label_G_value.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.label_G_value.Size = new System.Drawing.Size(32, 21);
+            this.label_G_value.Size = new System.Drawing.Size(23, 16);
             this.label_G_value.TabIndex = 52;
             this.label_G_value.Text = "G:";
             // 
@@ -1888,7 +1887,7 @@ namespace Paint
             this.textBox_Rvalue.Dock = System.Windows.Forms.DockStyle.Left;
             this.textBox_Rvalue.Font = new System.Drawing.Font("Century Schoolbook", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_Rvalue.ForeColor = System.Drawing.Color.White;
-            this.textBox_Rvalue.Location = new System.Drawing.Point(31, 0);
+            this.textBox_Rvalue.Location = new System.Drawing.Point(23, 0);
             this.textBox_Rvalue.Multiline = true;
             this.textBox_Rvalue.Name = "textBox_Rvalue";
             this.textBox_Rvalue.ReadOnly = true;
@@ -1906,7 +1905,7 @@ namespace Paint
             this.label_R_value.Margin = new System.Windows.Forms.Padding(6);
             this.label_R_value.Name = "label_R_value";
             this.label_R_value.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.label_R_value.Size = new System.Drawing.Size(31, 21);
+            this.label_R_value.Size = new System.Drawing.Size(23, 16);
             this.label_R_value.TabIndex = 51;
             this.label_R_value.Text = "R:";
             // 
@@ -1943,7 +1942,7 @@ namespace Paint
             this.lb_value_size.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lb_value_size.Location = new System.Drawing.Point(27, 60);
             this.lb_value_size.Name = "lb_value_size";
-            this.lb_value_size.Size = new System.Drawing.Size(21, 22);
+            this.lb_value_size.Size = new System.Drawing.Size(15, 17);
             this.lb_value_size.TabIndex = 8;
             this.lb_value_size.Text = "1";
             this.lb_value_size.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1954,7 +1953,7 @@ namespace Paint
             this.trackBar_Size.Maximum = 100;
             this.trackBar_Size.Minimum = 1;
             this.trackBar_Size.Name = "trackBar_Size";
-            this.trackBar_Size.Size = new System.Drawing.Size(124, 80);
+            this.trackBar_Size.Size = new System.Drawing.Size(124, 56);
             this.trackBar_Size.TabIndex = 7;
             this.trackBar_Size.Value = 1;
             this.trackBar_Size.Scroll += new System.EventHandler(this.trackBarSize_Scroll);
@@ -1966,7 +1965,7 @@ namespace Paint
             this.lb_Size.ForeColor = System.Drawing.Color.White;
             this.lb_Size.Location = new System.Drawing.Point(21, 43);
             this.lb_Size.Name = "lb_Size";
-            this.lb_Size.Size = new System.Drawing.Size(57, 30);
+            this.lb_Size.Size = new System.Drawing.Size(39, 21);
             this.lb_Size.TabIndex = 6;
             this.lb_Size.Text = "Size";
             // 
@@ -2003,7 +2002,7 @@ namespace Paint
             this.lb_y.AutoSize = true;
             this.lb_y.Location = new System.Drawing.Point(136, 59);
             this.lb_y.Name = "lb_y";
-            this.lb_y.Size = new System.Drawing.Size(21, 22);
+            this.lb_y.Size = new System.Drawing.Size(15, 17);
             this.lb_y.TabIndex = 9;
             this.lb_y.Text = "0";
             // 
@@ -2012,7 +2011,7 @@ namespace Paint
             this.lb_x.AutoSize = true;
             this.lb_x.Location = new System.Drawing.Point(54, 58);
             this.lb_x.Name = "lb_x";
-            this.lb_x.Size = new System.Drawing.Size(21, 22);
+            this.lb_x.Size = new System.Drawing.Size(15, 17);
             this.lb_x.TabIndex = 8;
             this.lb_x.Text = "0";
             // 
@@ -2022,7 +2021,7 @@ namespace Paint
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(110, 56);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 30);
+            this.label2.Size = new System.Drawing.Size(26, 21);
             this.label2.TabIndex = 7;
             this.label2.Text = "Y:";
             // 
@@ -2032,7 +2031,7 @@ namespace Paint
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(26, 56);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 30);
+            this.label1.Size = new System.Drawing.Size(25, 21);
             this.label1.TabIndex = 6;
             this.label1.Text = "X:";
             // 
