@@ -1,16 +1,9 @@
-C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\bin\Debug\WindowsFormsApp1.exe.config
-C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\bin\Debug\WindowsFormsApp1.exe
-C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\bin\Debug\WindowsFormsApp1.pdb
 C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\obj\Debug\Paint.csproj.AssemblyReference.cache
 C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\obj\Debug\Paint.csproj.SuggestedBindingRedirects.cache
 C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\obj\Debug\Paint.Form1.resources
-C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
 C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\obj\Debug\Paint.csproj.GenerateResource.cache
-C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\obj\Debug\WindowsFormsApp1.exe.licenses
 C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\obj\Debug\Paint.csproj.CoreCompileInputs.cache
 C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\obj\Debug\Paint.csproj.CopyComplete
-C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\obj\Debug\WindowsFormsApp1.exe
-C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
 C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
 D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\XH\Paint\Paint\bin\Debug\WindowsFormsApp1.exe.config
@@ -26,42 +19,171 @@ D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\XH\Paint\Paint\obj\Debug\Paint.csproj.Co
 D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\XH\Paint\Paint\obj\Debug\Paint.csproj.CopyComplete
 D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\XH\Paint\Paint\obj\Debug\WindowsFormsApp1.exe
 D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\XH\Paint\Paint\obj\Debug\WindowsFormsApp1.pdb
-D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\WindowsFormsApp1.exe.config
-D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\WindowsFormsApp1.exe
-D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\WindowsFormsApp1.pdb
 D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\obj\Debug\Paint.csproj.AssemblyReference.cache
 D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\obj\Debug\Paint.csproj.SuggestedBindingRedirects.cache
 D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\obj\Debug\Paint.Form1.resources
-D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
 D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\obj\Debug\Paint.csproj.GenerateResource.cache
-D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\obj\Debug\WindowsFormsApp1.exe.licenses
 D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\obj\Debug\Paint.csproj.CoreCompileInputs.cache
 D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\obj\Debug\Paint.csproj.CopyComplete
-D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\obj\Debug\WindowsFormsApp1.exe
-D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\obj\Debug\WindowsFormsApp1.pdb
-T:\Paint fke\Paint\bin\Debug\WindowsFormsApp1.exe.config
-T:\Paint fke\Paint\bin\Debug\WindowsFormsApp1.exe
-T:\Paint fke\Paint\bin\Debug\WindowsFormsApp1.pdb
-T:\Paint fke\Paint\obj\Debug\Paint.csproj.AssemblyReference.cache
-T:\Paint fke\Paint\obj\Debug\Paint.csproj.SuggestedBindingRedirects.cache
-T:\Paint fke\Paint\obj\Debug\Paint.Form1.resources
-T:\Paint fke\Paint\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
-T:\Paint fke\Paint\obj\Debug\Paint.csproj.GenerateResource.cache
-T:\Paint fke\Paint\obj\Debug\WindowsFormsApp1.exe.licenses
-T:\Paint fke\Paint\obj\Debug\Paint.csproj.CoreCompileInputs.cache
-T:\Paint fke\Paint\obj\Debug\Paint.csproj.CopyComplete
-T:\Paint fke\Paint\obj\Debug\WindowsFormsApp1.exe
-T:\Paint fke\Paint\obj\Debug\WindowsFormsApp1.pdb
-T:\np\Paint\bin\Debug\WindowsFormsApp1.exe.config
-T:\np\Paint\bin\Debug\WindowsFormsApp1.exe
-T:\np\Paint\bin\Debug\WindowsFormsApp1.pdb
-T:\np\Paint\obj\Debug\Paint.csproj.AssemblyReference.cache
-T:\np\Paint\obj\Debug\Paint.csproj.SuggestedBindingRedirects.cache
-T:\np\Paint\obj\Debug\Paint.Form1.resources
-T:\np\Paint\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
-T:\np\Paint\obj\Debug\Paint.csproj.GenerateResource.cache
-T:\np\Paint\obj\Debug\WindowsFormsApp1.exe.licenses
-T:\np\Paint\obj\Debug\Paint.csproj.CoreCompileInputs.cache
-T:\np\Paint\obj\Debug\Paint.csproj.CopyComplete
-T:\np\Paint\obj\Debug\WindowsFormsApp1.exe
-T:\np\Paint\obj\Debug\WindowsFormsApp1.pdb
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\Paint.exe.config
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\Paint.exe
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\Paint.pdb
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\obj\Debug\Paint.Properties.Resources.resources
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\obj\Debug\Paint.exe.licenses
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\obj\Debug\Paint.exe
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\obj\Debug\Paint.pdb
+C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\bin\Debug\Paint.exe.config
+C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\bin\Debug\Paint.exe
+C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\bin\Debug\Paint.pdb
+C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\obj\Debug\Paint.Properties.Resources.resources
+C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\obj\Debug\Paint.exe.licenses
+C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\obj\Debug\Paint.exe
+C:\Users\Hi\OneDrive\Tài liệu\Bài giảng\Paint\Paint\obj\Debug\Paint.pdb
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.Data.Desktop.v22.2.dll
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.Data.v22.2.dll
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.Drawing.v22.2.dll
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.Printing.v22.2.Core.dll
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.Sparkline.v22.2.Core.dll
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.Utils.v22.2.dll
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.XtraEditors.v22.2.dll
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.Pdf.v22.2.Core.dll
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.Pdf.v22.2.Drawing.dll
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.Data.Desktop.v22.2.xml
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.Data.v22.2.xml
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.Printing.v22.2.Core.xml
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.Sparkline.v22.2.Core.xml
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.Utils.v22.2.xml
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.XtraEditors.v22.2.xml
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.Pdf.v22.2.Core.xml
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\demo\Paint\bin\Debug\DevExpress.Pdf.v22.2.Drawing.xml
+D:\Paint\Paint\obj\Debug\Paint.csproj.AssemblyReference.cache
+D:\Paint\Paint\obj\Debug\Paint.csproj.SuggestedBindingRedirects.cache
+D:\Paint\Paint\obj\Debug\Paint.Form1.resources
+D:\Paint\Paint\obj\Debug\Paint.Properties.Resources.resources
+D:\Paint\Paint\obj\Debug\Paint.csproj.GenerateResource.cache
+D:\Paint\Paint\obj\Debug\Paint.exe.licenses
+D:\Paint\Paint\obj\Debug\Paint.csproj.CoreCompileInputs.cache
+D:\Paint\Paint\obj\Debug\Paint.exe
+D:\Paint\Paint\obj\Debug\Paint.pdb
+D:\New folder\Paint\bin\Debug\Paint.exe.config
+D:\New folder\Paint\bin\Debug\Paint.exe
+D:\New folder\Paint\bin\Debug\Paint.pdb
+D:\New folder\Paint\bin\Debug\DevExpress.Pdf.v22.2.Core.dll
+D:\New folder\Paint\bin\Debug\DevExpress.Pdf.v22.2.Drawing.dll
+D:\New folder\Paint\bin\Debug\DevExpress.Data.Desktop.v22.2.xml
+D:\New folder\Paint\bin\Debug\DevExpress.Data.v22.2.xml
+D:\New folder\Paint\bin\Debug\DevExpress.Printing.v22.2.Core.xml
+D:\New folder\Paint\bin\Debug\DevExpress.Sparkline.v22.2.Core.xml
+D:\New folder\Paint\bin\Debug\DevExpress.Utils.v22.2.xml
+D:\New folder\Paint\bin\Debug\DevExpress.XtraEditors.v22.2.xml
+D:\New folder\Paint\bin\Debug\DevExpress.Pdf.v22.2.Core.xml
+D:\New folder\Paint\bin\Debug\DevExpress.Pdf.v22.2.Drawing.xml
+D:\New folder\Paint\obj\Debug\Paint.csproj.AssemblyReference.cache
+D:\New folder\Paint\obj\Debug\Paint.csproj.SuggestedBindingRedirects.cache
+D:\New folder\Paint\obj\Debug\Paint.Form1.resources
+D:\New folder\Paint\obj\Debug\Paint.Properties.Resources.resources
+D:\New folder\Paint\obj\Debug\Paint.csproj.GenerateResource.cache
+D:\New folder\Paint\obj\Debug\Paint.exe.licenses
+D:\New folder\Paint\obj\Debug\Paint.csproj.CoreCompileInputs.cache
+D:\New folder\Paint\obj\Debug\Paint.csproj.CopyComplete
+D:\New folder\Paint\obj\Debug\Paint.exe
+D:\New folder\Paint\obj\Debug\Paint.pdb
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\Paint-BC\Paint\bin\Debug\Paint.exe.config
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\Paint-BC\Paint\bin\Debug\Paint.exe
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\Paint-BC\Paint\bin\Debug\Paint.pdb
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\Paint-BC\Paint\bin\Debug\DevExpress.Data.Desktop.v22.2.dll
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\Paint-BC\Paint\bin\Debug\DevExpress.Data.v22.2.dll
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\Paint-BC\Paint\bin\Debug\DevExpress.Drawing.v22.2.dll
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\Paint-BC\Paint\bin\Debug\DevExpress.Printing.v22.2.Core.dll
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\Paint-BC\Paint\bin\Debug\DevExpress.Sparkline.v22.2.Core.dll
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\Paint-BC\Paint\bin\Debug\DevExpress.Utils.v22.2.dll
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\Paint-BC\Paint\bin\Debug\DevExpress.XtraEditors.v22.2.dll
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\Paint-BC\Paint\bin\Debug\DevExpress.Pdf.v22.2.Core.dll
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\Paint-BC\Paint\bin\Debug\DevExpress.Pdf.v22.2.Drawing.dll
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\Paint-BC\Paint\bin\Debug\DevExpress.Data.Desktop.v22.2.xml
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\Paint-BC\Paint\bin\Debug\DevExpress.Data.v22.2.xml
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\Paint-BC\Paint\bin\Debug\DevExpress.Printing.v22.2.Core.xml
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\Paint-BC\Paint\bin\Debug\DevExpress.Sparkline.v22.2.Core.xml
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\Paint-BC\Paint\bin\Debug\DevExpress.Utils.v22.2.xml
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\Paint-BC\Paint\bin\Debug\DevExpress.XtraEditors.v22.2.xml
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\Paint-BC\Paint\bin\Debug\DevExpress.Pdf.v22.2.Core.xml
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\Paint-BC\Paint\bin\Debug\DevExpress.Pdf.v22.2.Drawing.xml
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\Paint-BC\Paint\obj\Debug\Paint.csproj.AssemblyReference.cache
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\Paint-BC\Paint\obj\Debug\Paint.csproj.SuggestedBindingRedirects.cache
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\Paint-BC\Paint\obj\Debug\Paint.Form1.resources
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\Paint-BC\Paint\obj\Debug\Paint.Properties.Resources.resources
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\Paint-BC\Paint\obj\Debug\Paint.csproj.GenerateResource.cache
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\Paint-BC\Paint\obj\Debug\Paint.exe.licenses
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\Paint-BC\Paint\obj\Debug\Paint.csproj.CoreCompileInputs.cache
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\Paint-BC\Paint\obj\Debug\Paint.csproj.CopyComplete
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\Paint-BC\Paint\obj\Debug\Paint.exe
+D:\1.SCHOOL\HK3\LTTQ\Paint\Winform\Paint-BC\Paint\obj\Debug\Paint.pdb
+C:\Users\Hi\OneDrive\Tài liệu\Paint-BC\Paint\bin\Debug\Paint.exe.config
+C:\Users\Hi\OneDrive\Tài liệu\Paint-BC\Paint\bin\Debug\Paint.exe
+C:\Users\Hi\OneDrive\Tài liệu\Paint-BC\Paint\bin\Debug\Paint.pdb
+C:\Users\Hi\OneDrive\Tài liệu\Paint-BC\Paint\bin\Debug\DevExpress.Pdf.v22.2.Core.dll
+C:\Users\Hi\OneDrive\Tài liệu\Paint-BC\Paint\bin\Debug\DevExpress.Pdf.v22.2.Drawing.dll
+C:\Users\Hi\OneDrive\Tài liệu\Paint-BC\Paint\bin\Debug\DevExpress.Data.Desktop.v22.2.xml
+C:\Users\Hi\OneDrive\Tài liệu\Paint-BC\Paint\bin\Debug\DevExpress.Data.v22.2.xml
+C:\Users\Hi\OneDrive\Tài liệu\Paint-BC\Paint\bin\Debug\DevExpress.Printing.v22.2.Core.xml
+C:\Users\Hi\OneDrive\Tài liệu\Paint-BC\Paint\bin\Debug\DevExpress.Sparkline.v22.2.Core.xml
+C:\Users\Hi\OneDrive\Tài liệu\Paint-BC\Paint\bin\Debug\DevExpress.Utils.v22.2.xml
+C:\Users\Hi\OneDrive\Tài liệu\Paint-BC\Paint\bin\Debug\DevExpress.XtraEditors.v22.2.xml
+C:\Users\Hi\OneDrive\Tài liệu\Paint-BC\Paint\bin\Debug\DevExpress.Pdf.v22.2.Core.xml
+C:\Users\Hi\OneDrive\Tài liệu\Paint-BC\Paint\bin\Debug\DevExpress.Pdf.v22.2.Drawing.xml
+C:\Users\Hi\OneDrive\Tài liệu\Paint-BC\Paint\obj\Debug\Paint.csproj.AssemblyReference.cache
+C:\Users\Hi\OneDrive\Tài liệu\Paint-BC\Paint\obj\Debug\Paint.csproj.SuggestedBindingRedirects.cache
+C:\Users\Hi\OneDrive\Tài liệu\Paint-BC\Paint\obj\Debug\Paint.Form1.resources
+C:\Users\Hi\OneDrive\Tài liệu\Paint-BC\Paint\obj\Debug\Paint.Properties.Resources.resources
+C:\Users\Hi\OneDrive\Tài liệu\Paint-BC\Paint\obj\Debug\Paint.csproj.GenerateResource.cache
+C:\Users\Hi\OneDrive\Tài liệu\Paint-BC\Paint\obj\Debug\Paint.exe.licenses
+C:\Users\Hi\OneDrive\Tài liệu\Paint-BC\Paint\obj\Debug\Paint.csproj.CoreCompileInputs.cache
+C:\Users\Hi\OneDrive\Tài liệu\Paint-BC\Paint\obj\Debug\Paint.csproj.CopyComplete
+C:\Users\Hi\OneDrive\Tài liệu\Paint-BC\Paint\obj\Debug\Paint.exe
+C:\Users\Hi\OneDrive\Tài liệu\Paint-BC\Paint\obj\Debug\Paint.pdb
+D:\Workspace\paint\Paint\bin\Debug\Paint.exe.config
+D:\Workspace\paint\Paint\bin\Debug\Paint.exe
+D:\Workspace\paint\Paint\bin\Debug\Paint.pdb
+D:\Workspace\paint\Paint\bin\Debug\DevExpress.Pdf.v22.2.Core.dll
+D:\Workspace\paint\Paint\bin\Debug\DevExpress.Pdf.v22.2.Drawing.dll
+D:\Workspace\paint\Paint\bin\Debug\DevExpress.Data.Desktop.v22.2.xml
+D:\Workspace\paint\Paint\bin\Debug\DevExpress.Data.v22.2.xml
+D:\Workspace\paint\Paint\bin\Debug\DevExpress.Printing.v22.2.Core.xml
+D:\Workspace\paint\Paint\bin\Debug\DevExpress.Sparkline.v22.2.Core.xml
+D:\Workspace\paint\Paint\bin\Debug\DevExpress.Utils.v22.2.xml
+D:\Workspace\paint\Paint\bin\Debug\DevExpress.XtraEditors.v22.2.xml
+D:\Workspace\paint\Paint\bin\Debug\DevExpress.Pdf.v22.2.Core.xml
+D:\Workspace\paint\Paint\bin\Debug\DevExpress.Pdf.v22.2.Drawing.xml
+D:\Workspace\paint\Paint\obj\Debug\Paint.csproj.AssemblyReference.cache
+D:\Workspace\paint\Paint\obj\Debug\Paint.csproj.SuggestedBindingRedirects.cache
+D:\Workspace\paint\Paint\obj\Debug\Paint.Form1.resources
+D:\Workspace\paint\Paint\obj\Debug\Paint.Properties.Resources.resources
+D:\Workspace\paint\Paint\obj\Debug\Paint.csproj.GenerateResource.cache
+D:\Workspace\paint\Paint\obj\Debug\Paint.exe.licenses
+D:\Workspace\paint\Paint\obj\Debug\Paint.csproj.CoreCompileInputs.cache
+D:\Workspace\paint\Paint\obj\Debug\Paint.csproj.CopyComplete
+D:\Workspace\paint\Paint\obj\Debug\Paint.exe
+D:\Workspace\paint\Paint\obj\Debug\Paint.pdb
+C:\Users\Hi\OneDrive\Tài liệu\test\Paint\bin\Debug\Paint.exe.config
+C:\Users\Hi\OneDrive\Tài liệu\test\Paint\bin\Debug\Paint.exe
+C:\Users\Hi\OneDrive\Tài liệu\test\Paint\bin\Debug\Paint.pdb
+C:\Users\Hi\OneDrive\Tài liệu\test\Paint\bin\Debug\DevExpress.Pdf.v22.2.Core.dll
+C:\Users\Hi\OneDrive\Tài liệu\test\Paint\bin\Debug\DevExpress.Pdf.v22.2.Drawing.dll
+C:\Users\Hi\OneDrive\Tài liệu\test\Paint\bin\Debug\DevExpress.Data.Desktop.v22.2.xml
+C:\Users\Hi\OneDrive\Tài liệu\test\Paint\bin\Debug\DevExpress.Data.v22.2.xml
+C:\Users\Hi\OneDrive\Tài liệu\test\Paint\bin\Debug\DevExpress.Printing.v22.2.Core.xml
+C:\Users\Hi\OneDrive\Tài liệu\test\Paint\bin\Debug\DevExpress.Sparkline.v22.2.Core.xml
+C:\Users\Hi\OneDrive\Tài liệu\test\Paint\bin\Debug\DevExpress.Utils.v22.2.xml
+C:\Users\Hi\OneDrive\Tài liệu\test\Paint\bin\Debug\DevExpress.XtraEditors.v22.2.xml
+C:\Users\Hi\OneDrive\Tài liệu\test\Paint\bin\Debug\DevExpress.Pdf.v22.2.Core.xml
+C:\Users\Hi\OneDrive\Tài liệu\test\Paint\bin\Debug\DevExpress.Pdf.v22.2.Drawing.xml
+C:\Users\Hi\OneDrive\Tài liệu\test\Paint\obj\Debug\Paint.csproj.AssemblyReference.cache
+C:\Users\Hi\OneDrive\Tài liệu\test\Paint\obj\Debug\Paint.csproj.SuggestedBindingRedirects.cache
+C:\Users\Hi\OneDrive\Tài liệu\test\Paint\obj\Debug\Paint.Form1.resources
+C:\Users\Hi\OneDrive\Tài liệu\test\Paint\obj\Debug\Paint.Properties.Resources.resources
+C:\Users\Hi\OneDrive\Tài liệu\test\Paint\obj\Debug\Paint.csproj.GenerateResource.cache
+C:\Users\Hi\OneDrive\Tài liệu\test\Paint\obj\Debug\Paint.exe.licenses
+C:\Users\Hi\OneDrive\Tài liệu\test\Paint\obj\Debug\Paint.csproj.CoreCompileInputs.cache
+C:\Users\Hi\OneDrive\Tài liệu\test\Paint\obj\Debug\Paint.csproj.CopyComplete
+C:\Users\Hi\OneDrive\Tài liệu\test\Paint\obj\Debug\Paint.exe
+C:\Users\Hi\OneDrive\Tài liệu\test\Paint\obj\Debug\Paint.pdb

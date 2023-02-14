@@ -11,11 +11,12 @@ namespace Paint.MyItem
         // lay stt ptb
         public int ptb_index { get; set; }
         public bool isPtbSelected { get; set; }
-        public MyPtb(MyPanel panel)
+        public MyPtb(PictureBox panel)
         {
-            this.SizeMode = PictureBoxSizeMode.AutoSize;
-            isPtbSelected = false;
-            panel.Controls.Add(this);
+            this.SizeMode = PictureBoxSizeMode.Normal;
+            isPtbSelected = true;
+            panel.Image = this.Image;
+            //panel.Controls.Add(this);
         }
         public MyPtb()
         {
@@ -38,10 +39,6 @@ namespace Paint.MyItem
                 this.Left += e.X - move.X;
                 this.Top += e.Y - move.Y;
             }
-            if (e.Button == MouseButtons.Left)
-            {
-
-            }
         }
 
         // phong to, thu nho ptb
@@ -63,11 +60,12 @@ namespace Paint.MyItem
             }
         }
 
-        public static Image resizeImage(Image imgToResize, Size size)
+        protected override void OnDoubleClick(EventArgs e)
         {
-            return (Image)(new Bitmap(imgToResize, size));
-        }
+            base.OnDoubleClick(e);
 
+            this.Enabled = false;
+        }
         protected override void OnClick(EventArgs e)
         {
             base.OnClick(e);

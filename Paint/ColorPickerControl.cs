@@ -3,34 +3,19 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
-using Paint.MyItem;
 
 namespace AboControls.ExtendedControls
 {
     [DefaultEvent("ColorPicked")]
     public class ColorPickerControl : Control
     {
-        public MyPanel panel;
         public Bitmap _canvas;
         private Graphics _graphicsBuffer;
         private LinearGradientBrush _spectrumGradient, _blackBottomGradient, _whiteTopGradient;
         private float _boxSizeRatio = 0.15f; // In percent
         private float _paddingPercentage = 0.05f;
-        private Color _selectedColor;
-        public Color SelectedColor 
-        {
-            get
-            {
-                return _selectedColor;
-            }
-            set 
-            { 
-                panel.Data._color = value;
-                panel.update(panel.Data);
-            }
-        }
+        public Color SelectedColor;
         public event EventHandler ColorPicked;
-
 
         public ColorPickerControl()
         {
@@ -42,7 +27,6 @@ namespace AboControls.ExtendedControls
             this.Size = new Size(200, 100);
             UpdateLinearGradientBrushes();
             UpdateGraphicsBuffer();
-            panel = new MyPanel();
         }
 
         protected virtual void OnColorPicked()
