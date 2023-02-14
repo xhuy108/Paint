@@ -189,6 +189,7 @@ namespace Paint
             {
                 picturebox.Image = new Bitmap(openFile.FileName);
                 picturebox.Size = pt_draw.Size;
+                picturebox.SizeMode = PictureBoxSizeMode.StretchImage;
 
             }
         }
@@ -198,6 +199,7 @@ namespace Paint
             PictureBox _myptb = new PictureBox();
             OpenImage(_myptb);
             pt_draw.Image = _myptb.Image;
+            pt_draw.SizeMode = PictureBoxSizeMode.StretchImage;
             img = _myptb.Image;
             
         }
