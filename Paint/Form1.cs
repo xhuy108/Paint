@@ -14,6 +14,9 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Threading;
 using System.Drawing.Imaging;
+using DevExpress.XtraEditors.Repository;
+using DevExpress.Utils.Extensions;
+using static DevExpress.Utils.Drawing.Helpers.NativeMethods;
 
 namespace Paint
 {
@@ -258,13 +261,18 @@ namespace Paint
                 dt._points.Add(e.Location);
             }
 
-            //if (tool.isCrop)
-            //{
-            //    x = e.X;
-            //    y = e.Y;
-            //    dt._points.Add(e.Location);
-              
-            //}
+            if (tool.isCrop)
+            {
+                allowDraw = false;
+                if (tool.isSelect)
+                {
+
+                }
+                //x = e.X;
+                //y = e.Y;
+                //dt._points.Add(e.Location);
+
+            }
 
         }
 
@@ -321,23 +329,40 @@ namespace Paint
                         _p.Color = c;
                         pictureBox_Color_Front.BackColor = c;
                     }
+                    
+                    if (tool.isCrop)
+                    {
+                        if (tool.isSelect)
+                        {
+                            // anh goc
+                            Bitmap OriginalImage = ConvertToBM(pt_draw);
+                            Graphics g_original = Graphics.FromImage(OriginalImage);
+                            
+                            // anh cat
+                            Bitmap _img = new Bitmap(rec.Width, rec.Height);
+                            Graphics g = Graphics.FromImage(_img);
+                         
+                            //  set thuoc tinh cho anh 
+                            g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
+                            g.PixelOffsetMode = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+                            g.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
+                            g.DrawImage(OriginalImage, 0, 0, rec, GraphicsUnit.Pixel);
+                            PictureBox pt_tmp = pt_draw;
 
-                    //if (tool.isCrop)
-                    //{
-                    //    dt.luu.list[dt.luu.n] = new H();
-                    //    dt.luu.list[dt.luu.n].path.AddRectangle(rec);
-                    //    dt.luu.list[dt.luu.n].p.Color = _p.Color;
-                    //    dt.luu.list[dt.luu.n].p.Width = _p.Width;
-                    //    dt.luu.list[dt.luu.n].p.EndCap = _p.EndCap;
-                    //    dt.luu.list[dt.luu.n].p.DashStyle = _p.DashStyle;
-                    //    dt.luu.list[dt.luu.n].p.DashCap = _p.DashCap;
-                    //    dt.luu.list[dt.luu.n].p.StartCap = _p.StartCap;
+                            // xoa tren pt_draw
 
-                    //    _g.DrawRectangle(dt.luu.list[dt.luu.n].p, rec);
-                    //    dt.luu.n++;
-                    //    dt.n = dt.luu.n;
+                            // luu anh cat vao ptb
+                            pt_draw.Image = _img;
+                            pt_draw.Width = _img.Width;
+                            pt_draw.Height = _img.Height;
+                            pt_draw.Location = new System.Drawing.Point(rec.X,rec.Y);
 
-                    //}
+                            
+
+                            // tool.isSelect = false;
+                            // btn_Crop.Enabled = false;
+                        }
+                    }
                 }
             }
 
@@ -979,6 +1004,8 @@ namespace Paint
             this.tool.isSelect = true;
 
         }
+
+    
 
     }
 }
