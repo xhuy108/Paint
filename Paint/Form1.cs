@@ -258,6 +258,14 @@ namespace Paint
                 dt._points.Add(e.Location);
             }
 
+            //if (tool.isCrop)
+            //{
+            //    x = e.X;
+            //    y = e.Y;
+            //    dt._points.Add(e.Location);
+              
+            //}
+
         }
 
         private void panel_paint_MouseUp(object sender, MouseEventArgs e)
@@ -313,6 +321,23 @@ namespace Paint
                         _p.Color = c;
                         pictureBox_Color_Front.BackColor = c;
                     }
+
+                    //if (tool.isCrop)
+                    //{
+                    //    dt.luu.list[dt.luu.n] = new H();
+                    //    dt.luu.list[dt.luu.n].path.AddRectangle(rec);
+                    //    dt.luu.list[dt.luu.n].p.Color = _p.Color;
+                    //    dt.luu.list[dt.luu.n].p.Width = _p.Width;
+                    //    dt.luu.list[dt.luu.n].p.EndCap = _p.EndCap;
+                    //    dt.luu.list[dt.luu.n].p.DashStyle = _p.DashStyle;
+                    //    dt.luu.list[dt.luu.n].p.DashCap = _p.DashCap;
+                    //    dt.luu.list[dt.luu.n].p.StartCap = _p.StartCap;
+
+                    //    _g.DrawRectangle(dt.luu.list[dt.luu.n].p, rec);
+                    //    dt.luu.n++;
+                    //    dt.n = dt.luu.n;
+
+                    //}
                 }
             }
 
@@ -395,21 +420,37 @@ namespace Paint
                             }
                         }
                     }
-                    else if (tool.isCrop)
-                    {
-                        using (Graphics _g = pt_draw.CreateGraphics())
-                        {
-                            _g.SmoothingMode = SmoothingMode.AntiAlias;
-                            Pen p = new Pen(Color.Black, 3);
-                            _g.DrawRectangle(p, rec);
-                        }
-                    }
+                    //else if (tool.isCrop)
+                    //{
+                    //    using (Graphics _g = pt_draw.CreateGraphics())
+                    //    {
+                    //        _g.SmoothingMode = SmoothingMode.AntiAlias;
+                    //        Pen p = new Pen(Color.Black, 3);
+                    //        p.DashStyle = DashStyle.Dot;
+                    //        _g.DrawRectangle(p, rec);
+
+                    //      //  MessageBox.Show("ok mousemove");
+                    //    }
+                    //}
                     pt_draw.Invalidate();
                 }
-
-
             }
 
+            else
+            {
+                if (tool.isCrop)
+                {
+                    using (Graphics _g = pt_draw.CreateGraphics())
+                    {
+                        _g.SmoothingMode = SmoothingMode.AntiAlias;
+                        Pen p = new Pen(Color.Black, 3);
+                        p.DashStyle = DashStyle.Dot;
+                        _g.DrawRectangle(p, rec);
+
+                        //  MessageBox.Show("ok mousemove");
+                    }
+                }
+            }
         }
 
         private void pt_draw_Paint(object sender, PaintEventArgs e)
@@ -688,6 +729,7 @@ namespace Paint
             this.tool.isColorPicker = false;
             this.tool.isText = false;
             this.tool.isCrop = false;
+            this.tool.isSelect = false;
         }
         private void btn_Brush_Click(object sender, EventArgs e)
         {
@@ -701,6 +743,7 @@ namespace Paint
             this.tool.isColorPicker = false;
             this.tool.isText = false;
             this.tool.isCrop = false;
+            this.tool.isSelect = false;
         }
 
         private void btn_Line_Click(object sender, EventArgs e)
@@ -715,6 +758,7 @@ namespace Paint
             this.tool.isColorPicker = false;
             this.tool.isText = false;
             this.tool.isCrop = false;
+            this.tool.isSelect = false;
         }
 
 
@@ -731,6 +775,7 @@ namespace Paint
             this.tool.isColorPicker = false;
             this.tool.isText = false;
             this.tool.isCrop = false;
+            this.tool.isSelect = false;
         }
 
         private void btn_Circle_Click(object sender, EventArgs e)
@@ -745,6 +790,7 @@ namespace Paint
             this.tool.isColorPicker = false;
             this.tool.isText = false;
             this.tool.isCrop = false;
+            this.tool.isSelect = false;
         }
 
         private void btn_Triangle_Click(object sender, EventArgs e)
@@ -759,6 +805,7 @@ namespace Paint
             this.tool.isColorPicker = false;
             this.tool.isText = false;
             this.tool.isCrop = false;
+            this.tool.isSelect = false;
         }
 
         private void btn_Fill_Click(object sender, EventArgs e)
@@ -773,6 +820,7 @@ namespace Paint
             this.tool.isColorPicker = false;
             this.tool.isText = false;
             this.tool.isCrop = false;
+            this.tool.isSelect = false;
         }
         private void btn_Bucket_Click(object sender, EventArgs e)
         {
@@ -786,6 +834,7 @@ namespace Paint
             this.tool.isColorPicker = false;
             this.tool.isText = false;
             this.tool.isCrop = false;
+            this.tool.isSelect = false;
         }
 
         private void btn_Eyedropper_Click(object sender, EventArgs e)
@@ -799,6 +848,7 @@ namespace Paint
             this.tool.isColorPicker = true;
             this.tool.isText = false;
             this.tool.isCrop = false;
+            this.tool.isSelect = false;
         }
 
         private void btn_Text_Click(object sender, EventArgs e)
@@ -812,20 +862,9 @@ namespace Paint
             this.tool.isTriangle = false;
             this.tool.isBucket = false;
             this.tool.isColorPicker = false;
+            this.tool.isSelect = false;
         }
 
-        private void btn_Select_Click(object sender, EventArgs e)
-        {
-            this.tool.isText = false;
-            this.tool.isCrop = true;
-            this.tool.isBrush = false;
-            this.tool.isLine = false;
-            this.tool.isRect = false;
-            this.tool.isCircle = false;
-            this.tool.isTriangle = false;
-            this.tool.isBucket = false;
-            this.tool.isColorPicker = false;
-        }
 
         #endregion
 
@@ -923,5 +962,23 @@ namespace Paint
             g.Clear(Color.White);
 
         }
+
+        private void btn_Crop_Click_1(object sender, EventArgs e)
+        {
+            _p.Color = pictureBox_Color_Front.BackColor;
+            this.tool.isBrush = false;
+            this.tool.isLine = false;
+            this.tool.isRect = false;
+            this.tool.isCircle = false;
+            this.tool.isTriangle = false;
+            this.tool.isBucket = false;
+            this.tool.isColorPicker = false;
+            this.tool.isText = false;
+            this.tool.isCrop = true;
+            this.allowDraw = false;
+            this.tool.isSelect = true;
+
+        }
+
     }
 }
