@@ -240,6 +240,7 @@ namespace Paint
         private void panel_paint_MouseDown(object sender, MouseEventArgs e)
         {
             pt_draw.Refresh();
+           // pt_draw.Dock = DockStyle.Fill;
             isSave = false;
             allowDraw = true;
             isMouseUp = false;
@@ -271,7 +272,6 @@ namespace Paint
 
                 x = e.X;
                 y = e.Y;
-                dt._points.Add(e.Location);
 
             }
 
@@ -280,6 +280,7 @@ namespace Paint
         private void panel_paint_MouseUp(object sender, MouseEventArgs e)
         {
             pt_draw.Refresh();
+         //   pt_draw.Dock = DockStyle.Fill;
             allowDraw = false;
             isMouseUp = true;
             B_x = e.Location.X;
@@ -337,6 +338,7 @@ namespace Paint
 
                         if (tool.isSelect)
                         {
+
                             pt_draw.Refresh();
                             recta = new Rectangle(
                                  Math.Min(x, e.X),
@@ -350,7 +352,8 @@ namespace Paint
                             // anh cat
                             Bitmap _img = new Bitmap(recta.Width, recta.Height);
                             Graphics g = Graphics.FromImage(_img);
-
+                            x = -1;
+                            y = -1;
                             //  set thuoc tinh cho anh 
                             g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
                             g.PixelOffsetMode = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
@@ -358,7 +361,6 @@ namespace Paint
                             g.DrawImage(OriginalImage, 10, 10, recta, GraphicsUnit.Pixel);
 
                             Crop(_img);
-                          
                         }
 
 
@@ -375,7 +377,7 @@ namespace Paint
         {
             Graphics g = pt_draw.CreateGraphics();
             g.Clear(Color.White);
-            pt_draw.Dock = DockStyle.None;
+        //    pt_draw.Dock = DockStyle.None;
             pt_draw.Size = new Size(recta.Width, recta.Height);  
             pt_draw.Image = _img;
             pt_draw.Width = _img.Width;
