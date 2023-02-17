@@ -42,6 +42,9 @@ namespace Paint
         public Image img;
         public Point[] tri_points = new Point[2];
         public Rectangle rec = new Rectangle();
+
+        // for crop funct
+        public Rectangle recta = new Rectangle(); 
         // vị trí chuột
         public bool isMouseUp = false;
         int x = -1;
@@ -236,6 +239,7 @@ namespace Paint
         #region panel_paint paint
         private void panel_paint_MouseDown(object sender, MouseEventArgs e)
         {
+            pt_draw.Refresh();
             isSave = false;
             allowDraw = true;
             isMouseUp = false;
@@ -264,13 +268,10 @@ namespace Paint
             if (tool.isCrop)
             {
                 allowDraw = false;
-                if (tool.isSelect)
-                {
 
-                }
-                //x = e.X;
-                //y = e.Y;
-                //dt._points.Add(e.Location);
+                x = e.X;
+                y = e.Y;
+                dt._points.Add(e.Location);
 
             }
 
@@ -278,6 +279,7 @@ namespace Paint
 
         private void panel_paint_MouseUp(object sender, MouseEventArgs e)
         {
+            pt_draw.Refresh();
             allowDraw = false;
             isMouseUp = true;
             B_x = e.Location.X;
@@ -332,32 +334,42 @@ namespace Paint
                     
                     if (tool.isCrop)
                     {
+
                         if (tool.isSelect)
                         {
+                            pt_draw.Refresh();
+                            recta = new Rectangle(
+                                 Math.Min(x, e.X),
+                                 Math.Min(y, e.Y),
+                                 Math.Abs(x - e.X),
+                                 Math.Abs(y - e.Y));
                             // anh goc
                             Bitmap OriginalImage = ConvertToBM(pt_draw);
-                            Graphics g_original = Graphics.FromImage(OriginalImage);
-                            
+                            // Graphics g_original = Graphics.FromImage(OriginalImage);
+
+                            // anh copy
+                            PictureBox pt_draw_copy = new PictureBox();
+                            // Bitmap CopyImage = ConvertToBM(pt_draw_copy);
+
                             // anh cat
-                            Bitmap _img = new Bitmap(rec.Width, rec.Height);
+                            Bitmap _img = new Bitmap(recta.Width, recta.Height);
                             Graphics g = Graphics.FromImage(_img);
-                         
+
                             //  set thuoc tinh cho anh 
                             g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
                             g.PixelOffsetMode = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
                             g.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
-                            g.DrawImage(OriginalImage, 0, 0, rec, GraphicsUnit.Pixel);
-                            PictureBox pt_tmp = pt_draw;
+                            g.DrawImage(OriginalImage, 10, 10, recta, GraphicsUnit.Pixel);
+
 
                             // xoa tren pt_draw
+
 
                             // luu anh cat vao ptb
                             pt_draw.Image = _img;
                             pt_draw.Width = _img.Width;
                             pt_draw.Height = _img.Height;
-                            pt_draw.Location = new System.Drawing.Point(rec.X,rec.Y);
-
-                            
+                            pt_draw.Location = new System.Drawing.Point(recta.X, recta.Y);
 
                             // tool.isSelect = false;
                             // btn_Crop.Enabled = false;
@@ -470,7 +482,7 @@ namespace Paint
                         _g.SmoothingMode = SmoothingMode.AntiAlias;
                         Pen p = new Pen(Color.Black, 3);
                         p.DashStyle = DashStyle.Dot;
-                        _g.DrawRectangle(p, rec);
+                        _g.DrawRectangle(p, recta);
 
                         //  MessageBox.Show("ok mousemove");
                     }
