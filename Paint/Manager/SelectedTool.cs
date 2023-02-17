@@ -18,6 +18,7 @@ namespace Paint.Manager
         public bool isColorPicker { get; set; }
 
         public bool isCrop { get; set; }
+        public bool isSelect { get; set; }  
         public bool isText { get; set; }
         public SelectedTool()
         {
@@ -31,6 +32,7 @@ namespace Paint.Manager
             isColorPicker = false;
             isText = false;
             isCrop = false;
+            isSelect = false;
         }
     }
 }

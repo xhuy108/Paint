@@ -44,6 +44,7 @@ namespace Paint
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges14 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges13 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -85,7 +86,6 @@ namespace Paint
             this.lb_MousePos = new System.Windows.Forms.Label();
             this.panel_Color = new System.Windows.Forms.Panel();
             this.subTableLayoutPanel_Color2 = new System.Windows.Forms.TableLayoutPanel();
-            this.colorPicker = new AboControls.ExtendedControls.ColorPickerControl();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox_ColorPreview = new System.Windows.Forms.PictureBox();
             this.label_ColorPreview = new System.Windows.Forms.Label();
@@ -119,6 +119,8 @@ namespace Paint
             this.label1 = new System.Windows.Forms.Label();
             this.lb_pos = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.colorPicker = new AboControls.ExtendedControls.ColorPickerControl();
+            this.btn_Crop = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -173,7 +175,7 @@ namespace Paint
             this.saveAsToolStripMenuItem});
             this.fileToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(60, 24);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // openToolStripMenuItem
@@ -219,7 +221,7 @@ namespace Paint
             this.redoToolStripMenuItem});
             this.editToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(63, 24);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
             this.editToolStripMenuItem.Text = "Edit";
             // 
             // undoToolStripMenuItem
@@ -252,7 +254,7 @@ namespace Paint
             this.bucketToolStripMenuItem});
             this.toolToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.toolToolStripMenuItem.Name = "toolToolStripMenuItem";
-            this.toolToolStripMenuItem.Size = new System.Drawing.Size(69, 24);
+            this.toolToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.toolToolStripMenuItem.Text = "Tool";
             // 
             // brushToolStripMenuItem
@@ -919,6 +921,7 @@ namespace Paint
             this.tableLayoutPanel_PaintTool.Controls.Add(this.btn_Shape, 0, 2);
             this.tableLayoutPanel_PaintTool.Controls.Add(this.btn_Fill, 0, 4);
             this.tableLayoutPanel_PaintTool.Controls.Add(this.btn_Eyedropper, 0, 3);
+            this.tableLayoutPanel_PaintTool.Controls.Add(this.btn_Crop, 0, 6);
             this.tableLayoutPanel_PaintTool.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel_PaintTool.Location = new System.Drawing.Point(0, 64);
             this.tableLayoutPanel_PaintTool.Name = "tableLayoutPanel_PaintTool";
@@ -1508,11 +1511,11 @@ namespace Paint
             this.btn_SelectColor.ColorContrastOnClick = 45;
             this.btn_SelectColor.ColorContrastOnHover = 45;
             this.btn_SelectColor.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges13.BottomLeft = true;
-            borderEdges13.BottomRight = true;
-            borderEdges13.TopLeft = true;
-            borderEdges13.TopRight = true;
-            this.btn_SelectColor.CustomizableEdges = borderEdges13;
+            borderEdges14.BottomLeft = true;
+            borderEdges14.BottomRight = true;
+            borderEdges14.TopLeft = true;
+            borderEdges14.TopRight = true;
+            this.btn_SelectColor.CustomizableEdges = borderEdges14;
             this.btn_SelectColor.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btn_SelectColor.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btn_SelectColor.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1645,17 +1648,6 @@ namespace Paint
             this.subTableLayoutPanel_Color2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.subTableLayoutPanel_Color2.Size = new System.Drawing.Size(152, 189);
             this.subTableLayoutPanel_Color2.TabIndex = 65;
-            // 
-            // colorPicker
-            // 
-            this.colorPicker.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.colorPicker.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.colorPicker.Location = new System.Drawing.Point(3, 3);
-            this.colorPicker.Name = "colorPicker";
-            this.colorPicker.Size = new System.Drawing.Size(146, 145);
-            this.colorPicker.TabIndex = 64;
-            this.colorPicker.ColorPicked += new System.EventHandler(this.colorPicker_ColorPicked);
-            this.colorPicker.MouseMove += new System.Windows.Forms.MouseEventHandler(this.colorPicker_MouseMove);
             // 
             // panel2
             // 
@@ -2067,6 +2059,108 @@ namespace Paint
             this.tableLayoutPanel4.Size = new System.Drawing.Size(214, 497);
             this.tableLayoutPanel4.TabIndex = 10;
             // 
+            // colorPicker
+            // 
+            this.colorPicker.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.colorPicker.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.colorPicker.Location = new System.Drawing.Point(3, 3);
+            this.colorPicker.Name = "colorPicker";
+            this.colorPicker.Size = new System.Drawing.Size(146, 145);
+            this.colorPicker.TabIndex = 64;
+            this.colorPicker.ColorPicked += new System.EventHandler(this.colorPicker_ColorPicked);
+            this.colorPicker.MouseMove += new System.Windows.Forms.MouseEventHandler(this.colorPicker_MouseMove);
+            // 
+            // btn_Crop
+            // 
+            this.btn_Crop.AllowAnimations = true;
+            this.btn_Crop.AllowMouseEffects = true;
+            this.btn_Crop.AllowToggling = false;
+            this.btn_Crop.AnimationSpeed = 200;
+            this.btn_Crop.AutoGenerateColors = false;
+            this.btn_Crop.AutoRoundBorders = false;
+            this.btn_Crop.AutoSizeLeftIcon = true;
+            this.btn_Crop.AutoSizeRightIcon = true;
+            this.btn_Crop.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Crop.BackColor1 = System.Drawing.Color.DimGray;
+            this.btn_Crop.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Crop.BackgroundImage")));
+            this.btn_Crop.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Crop.ButtonText = "";
+            this.btn_Crop.ButtonTextMarginLeft = 0;
+            this.btn_Crop.ColorContrastOnClick = 45;
+            this.btn_Crop.ColorContrastOnHover = 45;
+            this.btn_Crop.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges13.BottomLeft = true;
+            borderEdges13.BottomRight = true;
+            borderEdges13.TopLeft = true;
+            borderEdges13.TopRight = true;
+            this.btn_Crop.CustomizableEdges = borderEdges13;
+            this.btn_Crop.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_Crop.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btn_Crop.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btn_Crop.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btn_Crop.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btn_Crop.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Crop.ForeColor = System.Drawing.Color.White;
+            this.btn_Crop.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Crop.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btn_Crop.IconLeftPadding = new System.Windows.Forms.Padding(3);
+            this.btn_Crop.IconMarginLeft = 11;
+            this.btn_Crop.IconPadding = 5;
+            this.btn_Crop.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Crop.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btn_Crop.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btn_Crop.IconSize = 25;
+            this.btn_Crop.IdleBorderColor = System.Drawing.Color.White;
+            this.btn_Crop.IdleBorderRadius = 10;
+            this.btn_Crop.IdleBorderThickness = 1;
+            this.btn_Crop.IdleFillColor = System.Drawing.Color.DimGray;
+            this.btn_Crop.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Crop.IdleIconLeftImage")));
+            this.btn_Crop.IdleIconRightImage = null;
+            this.btn_Crop.IndicateFocus = false;
+            this.btn_Crop.Location = new System.Drawing.Point(3, 231);
+            this.btn_Crop.Name = "btn_Crop";
+            this.btn_Crop.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btn_Crop.OnDisabledState.BorderRadius = 10;
+            this.btn_Crop.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Crop.OnDisabledState.BorderThickness = 1;
+            this.btn_Crop.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btn_Crop.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btn_Crop.OnDisabledState.IconLeftImage = null;
+            this.btn_Crop.OnDisabledState.IconRightImage = null;
+            this.btn_Crop.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btn_Crop.onHoverState.BorderRadius = 10;
+            this.btn_Crop.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Crop.onHoverState.BorderThickness = 1;
+            this.btn_Crop.onHoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btn_Crop.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_Crop.onHoverState.IconLeftImage = null;
+            this.btn_Crop.onHoverState.IconRightImage = null;
+            this.btn_Crop.OnIdleState.BorderColor = System.Drawing.Color.White;
+            this.btn_Crop.OnIdleState.BorderRadius = 10;
+            this.btn_Crop.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Crop.OnIdleState.BorderThickness = 1;
+            this.btn_Crop.OnIdleState.FillColor = System.Drawing.Color.DimGray;
+            this.btn_Crop.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btn_Crop.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton1.OnIdleState.IconLeftImage")));
+            this.btn_Crop.OnIdleState.IconRightImage = null;
+            this.btn_Crop.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btn_Crop.OnPressedState.BorderRadius = 10;
+            this.btn_Crop.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btn_Crop.OnPressedState.BorderThickness = 1;
+            this.btn_Crop.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btn_Crop.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btn_Crop.OnPressedState.IconLeftImage = null;
+            this.btn_Crop.OnPressedState.IconRightImage = null;
+            this.btn_Crop.Size = new System.Drawing.Size(30, 30);
+            this.btn_Crop.TabIndex = 58;
+            this.btn_Crop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Crop.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_Crop.TextMarginLeft = 0;
+            this.btn_Crop.TextPadding = new System.Windows.Forms.Padding(0);
+            this.toolTip1.SetToolTip(this.btn_Crop, "Bucket Tool");
+            this.btn_Crop.UseDefaultRadiusAndThickness = true;
+            this.btn_Crop.Click += new System.EventHandler(this.btn_Crop_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -2205,6 +2299,7 @@ namespace Paint
         private System.Windows.Forms.Label lb_pos;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.ToolStripMenuItem bucketToolStripMenuItem;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_Crop;
     }
 }
 
