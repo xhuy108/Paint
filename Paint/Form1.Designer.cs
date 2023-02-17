@@ -1531,7 +1531,7 @@ namespace Paint
             this.btn_Crop.IdleBorderRadius = 10;
             this.btn_Crop.IdleBorderThickness = 1;
             this.btn_Crop.IdleFillColor = System.Drawing.Color.DimGray;
-            this.btn_Crop.IdleIconLeftImage = null;
+            this.btn_Crop.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Crop.IdleIconLeftImage")));
             this.btn_Crop.IdleIconRightImage = null;
             this.btn_Crop.IndicateFocus = false;
             this.btn_Crop.Location = new System.Drawing.Point(3, 231);
@@ -1558,7 +1558,7 @@ namespace Paint
             this.btn_Crop.OnIdleState.BorderThickness = 1;
             this.btn_Crop.OnIdleState.FillColor = System.Drawing.Color.DimGray;
             this.btn_Crop.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btn_Crop.OnIdleState.IconLeftImage = null;
+            this.btn_Crop.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btn_Crop.OnIdleState.IconLeftImage")));
             this.btn_Crop.OnIdleState.IconRightImage = null;
             this.btn_Crop.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btn_Crop.OnPressedState.BorderRadius = 10;
