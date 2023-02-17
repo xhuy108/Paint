@@ -347,10 +347,6 @@ namespace Paint
                             Bitmap OriginalImage = ConvertToBM(pt_draw);
                             // Graphics g_original = Graphics.FromImage(OriginalImage);
 
-                            // anh copy
-                            PictureBox pt_draw_copy = new PictureBox();
-                            // Bitmap CopyImage = ConvertToBM(pt_draw_copy);
-
                             // anh cat
                             Bitmap _img = new Bitmap(recta.Width, recta.Height);
                             Graphics g = Graphics.FromImage(_img);
@@ -361,19 +357,12 @@ namespace Paint
                             g.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
                             g.DrawImage(OriginalImage, 10, 10, recta, GraphicsUnit.Pixel);
 
-
-                            // xoa tren pt_draw
-
-
-                            // luu anh cat vao ptb
-                            pt_draw.Image = _img;
-                            pt_draw.Width = _img.Width;
-                            pt_draw.Height = _img.Height;
-                            pt_draw.Location = new System.Drawing.Point(recta.X, recta.Y);
-
-                            // tool.isSelect = false;
-                            // btn_Crop.Enabled = false;
+                            Crop(_img);
+                          
                         }
+
+
+
                     }
                 }
             }
@@ -382,7 +371,18 @@ namespace Paint
 
 
         }
-
+        private void Crop(Bitmap _img)
+        {
+            Graphics g = pt_draw.CreateGraphics();
+            g.Clear(Color.White);
+            pt_draw.Dock = DockStyle.None;
+            pt_draw.Size = new Size(recta.Width, recta.Height);  
+            pt_draw.Image = _img;
+            pt_draw.Width = _img.Width;
+            pt_draw.Height = _img.Height;
+            pt_draw.Location = new System.Drawing.Point(recta.X, recta.Y);
+            
+        }
         private void panel_paint_MouseMove(object sender, MouseEventArgs e)
         {
             lb_x.Text = e.Location.X.ToString();
