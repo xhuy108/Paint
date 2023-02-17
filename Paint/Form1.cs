@@ -753,9 +753,21 @@ namespace Paint
         private void btn_Shape_Click(object sender, EventArgs e)
         {
             tLP_Shape.Visible = true;
+            this.tool.isBrush = false;
+            this.tool.isLine = false;
+            this.tool.isRect = false;
+            this.tool.isCircle = false;
+            this.tool.isTriangle = false;
+            this.tool.isBucket = false;
+            this.tool.isColorPicker = false;
+            this.tool.isText = false;
+            this.tool.isCrop = false;
+            this.tool.isSelect = false;
+            tool.isFill = false;
         }
         private void btn_Eraser_Click(object sender, EventArgs e)
         {
+            tLP_Shape.Visible = false;
             _p.Color = Color.White;
             this.tool.isBrush = true;
             this.tool.isLine = false;
@@ -770,6 +782,7 @@ namespace Paint
         }
         private void btn_Brush_Click(object sender, EventArgs e)
         {
+            tLP_Shape.Visible = false;
             _p.Color = pictureBox_Color_Front.BackColor;
             this.tool.isBrush = true;
             this.tool.isLine = false;
@@ -847,6 +860,7 @@ namespace Paint
 
         private void btn_Fill_Click(object sender, EventArgs e)
         {
+            tLP_Shape.Visible = true;
             _p.Color = pictureBox_Color_Front.BackColor;
             if (this.tool.isFill == false) tool.isFill = true;
             else tool.isFill = false;
@@ -858,6 +872,7 @@ namespace Paint
             this.tool.isText = false;
             this.tool.isCrop = false;
             this.tool.isSelect = false;
+            tLP_Shape.Visible = false;
         }
         private void btn_Bucket_Click(object sender, EventArgs e)
         {
@@ -872,6 +887,7 @@ namespace Paint
             this.tool.isText = false;
             this.tool.isCrop = false;
             this.tool.isSelect = false;
+            tLP_Shape.Visible = false;
         }
 
         private void btn_Eyedropper_Click(object sender, EventArgs e)
@@ -886,6 +902,7 @@ namespace Paint
             this.tool.isText = false;
             this.tool.isCrop = false;
             this.tool.isSelect = false;
+            tLP_Shape.Visible = false;
         }
 
         private void btn_Text_Click(object sender, EventArgs e)
